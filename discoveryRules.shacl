@@ -660,6 +660,7 @@ cdifd:CDIFVariableMeasuredShape
         sh:message "a propertID must be a uri reference, a name string, or a schema:DefinedTerm";
      ]; # end propertyID rule
         	
+    sh:property cdifd:nameRequiredProperty;
     sh:property cdifd:name3Property;
     sh:property [
        sh:path schema:description;
@@ -714,15 +715,25 @@ cdifd:CDIFVariableMeasuredShape
     ]
   .
 
-cdifd:name3Property
-# names must be a literal, .
+cdifd:nameRequiredProperty
+# Violation if schema:name is missing or an empty string.
     a sh:PropertyShape ;
     sh:path schema:name;
 	sh:minCount 1 ;
     sh:datatype xsd:string ;
+	sh:minLength 1 ;
+    sh:message "variableMeasured must have a non-empty schema:name."
+    .
+
+cdifd:name3Property
+# Warning (not Violation) if the variable name is fewer than 3 characters.
+# Short scientific channel names like 'I', 'I0', 'It' are legitimate; this is a soft hint.
+    a sh:PropertyShape ;
+    sh:path schema:name;
+    sh:datatype xsd:string ;
 	sh:minLength 3 ;
-	# sh:severity sh:Warning ;
-    sh:message "a name for the variable must be provided, and have a length of at least 3 characters." 
+	sh:severity sh:Warning ;
+    sh:message "variable name is <3 characters, is this name useful?"
     .
 
 cdifd:spatialExtentProperty
