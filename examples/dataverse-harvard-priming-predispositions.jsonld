@@ -94,7 +94,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 5248612,
+      "schema:contentSize": "5248612",
       "schema:description": "1956-1960 ANES Panel Data used in Study 1",
       "@id": "https://doi.org/10.7910/DVN/26721/IB7QUC",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/IB7QUC",
@@ -108,7 +108,7 @@
       "schema:encodingFormat": [
         "text/x-stata-syntax; charset=US-ASCII"
       ],
-      "schema:contentSize": 2550,
+      "schema:contentSize": "2550",
       "schema:description": "Stata Do file to reproduce results in Study 1",
       "@id": "https://doi.org/10.7910/DVN/26721/3CLDVV",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/3CLDVV",
@@ -122,7 +122,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 12052661,
+      "schema:contentSize": "12052661",
       "schema:description": "2000-2004 ANES Panel Data used in Study 2",
       "@id": "https://doi.org/10.7910/DVN/26721/KE28HI",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/KE28HI",
@@ -136,7 +136,7 @@
       "schema:encodingFormat": [
         "text/x-stata-syntax; charset=US-ASCII"
       ],
-      "schema:contentSize": 3755,
+      "schema:contentSize": "3755",
       "schema:description": "Stata Do file to reproduce results in Study 2",
       "@id": "https://doi.org/10.7910/DVN/26721/NGUMQV",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/NGUMQV",
@@ -150,7 +150,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 14474719,
+      "schema:contentSize": "14474719",
       "schema:description": "2011-2012 Panel Data used in Study 3",
       "@id": "https://doi.org/10.7910/DVN/26721/NFTVYU",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/NFTVYU",
@@ -164,7 +164,7 @@
       "schema:encodingFormat": [
         "text/x-stata-syntax; charset=US-ASCII"
       ],
-      "schema:contentSize": 3647,
+      "schema:contentSize": "3647",
       "schema:description": "Stata Do file to reproduce results in Study 3",
       "@id": "https://doi.org/10.7910/DVN/26721/HTBHXZ",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/HTBHXZ",
@@ -178,7 +178,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 7974993,
+      "schema:contentSize": "7974993",
       "schema:description": "2008-2012 CCAP Panel Data used in Study 5",
       "@id": "https://doi.org/10.7910/DVN/26721/KL8XK6",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/KL8XK6",
@@ -192,7 +192,7 @@
       "schema:encodingFormat": [
         "text/x-stata-syntax; charset=US-ASCII"
       ],
-      "schema:contentSize": 3610,
+      "schema:contentSize": "3610",
       "schema:description": "Stata Do file to reproduce results in Study 4",
       "@id": "https://doi.org/10.7910/DVN/26721/ARQFVQ",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/ARQFVQ",
@@ -206,7 +206,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 4614445,
+      "schema:contentSize": "4614445",
       "schema:description": "1982-1997 Youth Socialization Data used in Study 4 ",
       "@id": "https://doi.org/10.7910/DVN/26721/I1YGS0",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/I1YGS0",
@@ -220,7 +220,7 @@
       "schema:encodingFormat": [
         "text/x-stata-syntax; charset=US-ASCII"
       ],
-      "schema:contentSize": 3528,
+      "schema:contentSize": "3528",
       "schema:description": "Stata Do file to reproduce results in Study 5",
       "@id": "https://doi.org/10.7910/DVN/26721/ZYDUF5",
       "schema:identifier": "https://doi.org/10.7910/DVN/26721/ZYDUF5",

@@ -128,7 +128,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 22799,
+      "schema:contentSize": "22799",
       "schema:description": "To request access to the data, please complete this form and email it to Dr. Aaron Berg (aberg@uoguelph) and/or Dr. Tracy Rowlandson (trowland@uoguelph.ca).",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/50029"
     },
@@ -140,7 +140,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 207403,
+      "schema:contentSize": "207403",
       "schema:description": "Explanation of the variables and codes found in the data files. Includes information about individual data files including collection dates and geographic coordinates of each sampling location.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/52229"
     },
@@ -152,7 +152,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 63444260,
+      "schema:contentSize": "63444260",
       "schema:description": "Soil moisture and temperature calibration data.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/52230"
     }

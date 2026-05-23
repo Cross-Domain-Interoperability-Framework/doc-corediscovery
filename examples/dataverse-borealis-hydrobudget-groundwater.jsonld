@@ -159,7 +159,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 1320057,
+      "schema:contentSize": "1320057",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/273962"
     },
     {
@@ -170,7 +170,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 14581,
+      "schema:contentSize": "14581",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/631171"
     },
     {
@@ -181,7 +181,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 218,
+      "schema:contentSize": "218",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234918"
     },
     {
@@ -192,7 +192,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 4803,
+      "schema:contentSize": "4803",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234914"
     },
     {
@@ -203,7 +203,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 48,
+      "schema:contentSize": "48",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234922"
     },
     {
@@ -214,7 +214,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 7777704,
+      "schema:contentSize": "7777704",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234926"
     },
     {
@@ -225,7 +225,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 53739,
+      "schema:contentSize": "53739",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234930"
     },
     {
@@ -236,7 +236,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 38304,
+      "schema:contentSize": "38304",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234939"
     },
     {
@@ -247,7 +247,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 495862,
+      "schema:contentSize": "495862",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234928"
     },
     {
@@ -258,7 +258,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 2633,
+      "schema:contentSize": "2633",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234911"
     },
     {
@@ -269,7 +269,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 25202,
+      "schema:contentSize": "25202",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/285685"
     },
     {
@@ -280,7 +280,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 11297,
+      "schema:contentSize": "11297",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234931"
     },
     {
@@ -291,7 +291,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 1582,
+      "schema:contentSize": "1582",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234904"
     },
     {
@@ -302,7 +302,7 @@
       "schema:encodingFormat": [
         "image/tiff"
       ],
-      "schema:contentSize": 13657,
+      "schema:contentSize": "13657",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234927"
     },
     {
@@ -313,7 +313,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 2180,
+      "schema:contentSize": "2180",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234916"
     },
     {
@@ -324,7 +324,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 11185,
+      "schema:contentSize": "11185",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234938"
     },
     {
@@ -335,7 +335,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 97158,
+      "schema:contentSize": "97158",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234912"
     },
     {
@@ -346,7 +346,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 66520,
+      "schema:contentSize": "66520",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234915"
     },
     {
@@ -357,7 +357,7 @@
       "schema:encodingFormat": [
         "application/zipped-shapefile"
       ],
-      "schema:contentSize": 26733,
+      "schema:contentSize": "26733",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/234924"
     }
   ],

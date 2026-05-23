@@ -142,7 +142,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 1080510,
+      "schema:contentSize": "1080510",
       "schema:description": "Bounding box cooridinates for the Gold Standard Snapshot Serengeti dataset.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/63072"
     },
@@ -154,7 +154,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 1528546954,
+      "schema:contentSize": "1528546954",
       "schema:description": "Images from SnapshotSafari.org, accessed under a CC0 Creative Commons licence.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71294"
     },
@@ -166,7 +166,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 1391329468,
+      "schema:contentSize": "1391329468",
       "schema:description": "Images from SnapshotSafari.org, accessed under a CC0 Creative Commons licence.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71295"
     },
@@ -178,7 +178,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 2027093,
+      "schema:contentSize": "2027093",
       "schema:description": "Snapshot Serengeti labels for all, test and train sets.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71293"
     },
@@ -190,7 +190,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 401949260,
+      "schema:contentSize": "401949260",
       "schema:description": "Reconyx Camera Trap data set. The source of this data set is Yu et al. (2013).",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/71292"
     }

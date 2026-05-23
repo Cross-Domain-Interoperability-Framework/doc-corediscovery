@@ -159,7 +159,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 1948709485,
+      "schema:contentSize": "1948709485",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740709"
     },
     {
@@ -170,7 +170,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 2974287875,
+      "schema:contentSize": "2974287875",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740710"
     },
     {
@@ -181,7 +181,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 3833424691,
+      "schema:contentSize": "3833424691",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740708"
     },
     {
@@ -192,7 +192,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 4083763704,
+      "schema:contentSize": "4083763704",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740707"
     },
     {
@@ -203,7 +203,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 343906,
+      "schema:contentSize": "343906",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740704"
     },
     {
@@ -214,7 +214,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 45806,
+      "schema:contentSize": "45806",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740705"
     },
     {
@@ -225,7 +225,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 1065,
+      "schema:contentSize": "1065",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10740706"
     }
   ],

@@ -146,7 +146,7 @@
       "schema:encodingFormat": [
         "text/plain;charset=UTF-8"
       ],
-      "schema:contentSize": 4595,
+      "schema:contentSize": "4595",
       "schema:description": "Original JSON from Dryad",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151379"
     },
@@ -158,7 +158,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 320719,
+      "schema:contentSize": "320719",
       "schema:description": "This tree is the summary of 5000 trees downloaded from http://birdtree.org. The birdtree.org website accompanies the following study: Jetz W, Thomas GH, Joy JB, Hartmann K, Mooers AO (2012) The global diversity of birds in space and time. Nature 491: 444-448. http://dx.doi.org/10.1038/nature11631, and the Jetz et al. article in Nature should be cited in the primary reference list of any publication that uses data culled from birdtree.org",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151377"
     },
@@ -170,7 +170,7 @@
       "schema:encodingFormat": [
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
       ],
-      "schema:contentSize": 293588,
+      "schema:contentSize": "293588",
       "schema:description": "",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/151378"
     }

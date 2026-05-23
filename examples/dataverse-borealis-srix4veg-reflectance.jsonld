@@ -221,7 +221,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 1165,
+      "schema:contentSize": "1165",
       "schema:description": "Attribution, contact information and metadata",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/665216"
     }

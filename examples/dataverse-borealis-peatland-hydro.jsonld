@@ -144,7 +144,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 457,
+      "schema:contentSize": "457",
       "schema:description": "Data Collection Period: 2014-10-01 to 2015-09-30.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/69525"
     },
@@ -156,7 +156,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 2763,
+      "schema:contentSize": "2763",
       "schema:description": "Data Collection Period: 2014-10-01 to 2015-09-30.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/69523"
     },
@@ -168,7 +168,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 790519,
+      "schema:contentSize": "790519",
       "schema:description": "Data Collection Period: 2014-10-01 to 2015-09-30.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/69522"
     },
@@ -180,7 +180,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 1221,
+      "schema:contentSize": "1221",
       "schema:description": "Data Collection Period: 2014-10-01 to 2015-09-30.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/69521"
     }

@@ -88,7 +88,7 @@
       "schema:encodingFormat": [
         "image/tiff"
       ],
-      "schema:contentSize": 4722615,
+      "schema:contentSize": "4722615",
       "schema:description": "This raster shows the a large portion of Lake Opinicon’s bathymetry and can be used in studies requiring precise depths of the lake. The raster has a cell size of 3 and 3 meters and was created using the Hydroball medium-shallow model. The points were then interpolated into a raster in ArcMap using Natural Neighbour (Spatial Analyst). ARC MAP is needed to open this file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/115294"
     },
@@ -100,7 +100,7 @@
       "schema:encodingFormat": [
         "image/jpeg"
       ],
-      "schema:contentSize": 120651,
+      "schema:contentSize": "120651",
       "schema:description": "JPEG version of the TIF file. Tif file should be open using ArcMap",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/115295"
     },
@@ -112,7 +112,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 3145,
+      "schema:contentSize": "3145",
       "schema:description": "Metadata File",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/115296"
     }

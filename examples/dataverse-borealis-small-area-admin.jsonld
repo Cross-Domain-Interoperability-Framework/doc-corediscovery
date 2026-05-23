@@ -85,7 +85,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 208141,
+      "schema:contentSize": "208141",
       "schema:description": "User Guide 2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17230"
     },
@@ -97,7 +97,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 249149,
+      "schema:contentSize": "249149",
       "schema:description": "User Guide 2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17122"
     },
@@ -109,7 +109,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 288478,
+      "schema:contentSize": "288478",
       "schema:description": "User Guide 2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17111"
     },
@@ -121,7 +121,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 319207,
+      "schema:contentSize": "319207",
       "schema:description": "User Guide 2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17087"
     },
@@ -133,7 +133,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 855924,
+      "schema:contentSize": "855924",
       "schema:description": "User Guide 2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17106"
     },
@@ -145,7 +145,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 115753,
+      "schema:contentSize": "115753",
       "schema:description": "User Guide 2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17110"
     },
@@ -157,7 +157,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 355524,
+      "schema:contentSize": "355524",
       "schema:description": "User Guide 2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17091"
     },
@@ -169,7 +169,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 44425,
+      "schema:contentSize": "44425",
       "schema:description": "User Guide 2011",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17212"
     },
@@ -181,7 +181,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 356290,
+      "schema:contentSize": "356290",
       "schema:description": "User Guide 2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17077"
     },
@@ -193,7 +193,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 190050,
+      "schema:contentSize": "190050",
       "schema:description": "User Guide 2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17124"
     },
@@ -205,7 +205,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 169191,
+      "schema:contentSize": "169191",
       "schema:description": "User Guide 2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17139"
     },
@@ -217,7 +217,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 383074,
+      "schema:contentSize": "383074",
       "schema:description": "User Guide 2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17114"
     },
@@ -229,7 +229,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 118784,
+      "schema:contentSize": "118784",
       "schema:description": "1997-2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17219"
     },
@@ -241,7 +241,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48128,
+      "schema:contentSize": "48128",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17164"
     },
@@ -253,7 +253,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 29696,
+      "schema:contentSize": "29696",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17166"
     },
@@ -265,7 +265,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48640,
+      "schema:contentSize": "48640",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17101"
     },
@@ -277,7 +277,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 398848,
+      "schema:contentSize": "398848",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17128"
     },
@@ -289,7 +289,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 25600,
+      "schema:contentSize": "25600",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17227"
     },
@@ -301,7 +301,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48640,
+      "schema:contentSize": "48640",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17157"
     },
@@ -313,7 +313,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 60416,
+      "schema:contentSize": "60416",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17099"
     },
@@ -325,7 +325,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 435200,
+      "schema:contentSize": "435200",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17134"
     },
@@ -337,7 +337,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 49152,
+      "schema:contentSize": "49152",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17172"
     },
@@ -349,7 +349,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48640,
+      "schema:contentSize": "48640",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17185"
     },
@@ -361,7 +361,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 236032,
+      "schema:contentSize": "236032",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17116"
     },
@@ -373,7 +373,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 34304,
+      "schema:contentSize": "34304",
       "schema:description": "2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17191"
     },
@@ -385,7 +385,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 31744,
+      "schema:contentSize": "31744",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17104"
     },
@@ -397,7 +397,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 33792,
+      "schema:contentSize": "33792",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17146"
     },
@@ -409,7 +409,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 34304,
+      "schema:contentSize": "34304",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17167"
     },
@@ -421,7 +421,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 29696,
+      "schema:contentSize": "29696",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17188"
     },
@@ -433,7 +433,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 27136,
+      "schema:contentSize": "27136",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17192"
     },
@@ -445,7 +445,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 23040,
+      "schema:contentSize": "23040",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17225"
     },
@@ -457,7 +457,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 30720,
+      "schema:contentSize": "30720",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17232"
     },
@@ -469,7 +469,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 34304,
+      "schema:contentSize": "34304",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17231"
     },
@@ -481,7 +481,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 108544,
+      "schema:contentSize": "108544",
       "schema:description": "Layouts",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17079"
     },
@@ -493,7 +493,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 11144,
+      "schema:contentSize": "11144",
       "schema:description": "Layouts",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17102"
     },
@@ -505,7 +505,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 123904,
+      "schema:contentSize": "123904",
       "schema:description": "1990-2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17100"
     },
@@ -517,7 +517,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 30720,
+      "schema:contentSize": "30720",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17107"
     },
@@ -529,7 +529,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 39424,
+      "schema:contentSize": "39424",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17108"
     },
@@ -541,7 +541,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 52736,
+      "schema:contentSize": "52736",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17103"
     },
@@ -553,7 +553,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 42496,
+      "schema:contentSize": "42496",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17109"
     },
@@ -565,7 +565,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 46080,
+      "schema:contentSize": "46080",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17105"
     },
@@ -577,7 +577,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 52224,
+      "schema:contentSize": "52224",
       "schema:description": "2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17080"
     },
@@ -589,7 +589,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 58368,
+      "schema:contentSize": "58368",
       "schema:description": "2004 (CMA)",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17086"
     },
@@ -601,7 +601,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 36352,
+      "schema:contentSize": "36352",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17082"
     },
@@ -613,7 +613,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 42496,
+      "schema:contentSize": "42496",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17081"
     },
@@ -625,7 +625,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 40960,
+      "schema:contentSize": "40960",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17085"
     },
@@ -637,7 +637,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 46080,
+      "schema:contentSize": "46080",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17084"
     },
@@ -649,7 +649,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 39936,
+      "schema:contentSize": "39936",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17088"
     },
@@ -661,7 +661,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 1959566,
+      "schema:contentSize": "1959566",
       "schema:description": "1995-2000",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17131"
     },
@@ -673,7 +673,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 839168,
+      "schema:contentSize": "839168",
       "schema:description": "2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17130"
     },
@@ -685,7 +685,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 832512,
+      "schema:contentSize": "832512",
       "schema:description": "2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17129"
     },
@@ -697,7 +697,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 558448,
+      "schema:contentSize": "558448",
       "schema:description": "2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17125"
     },
@@ -709,7 +709,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 398336,
+      "schema:contentSize": "398336",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17121"
     },
@@ -721,7 +721,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 489472,
+      "schema:contentSize": "489472",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17126"
     },
@@ -733,7 +733,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 418304,
+      "schema:contentSize": "418304",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17127"
     },
@@ -745,7 +745,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 425984,
+      "schema:contentSize": "425984",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17123"
     },
@@ -757,7 +757,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 500736,
+      "schema:contentSize": "500736",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17120"
     },
@@ -769,7 +769,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 20992,
+      "schema:contentSize": "20992",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17226"
     },
@@ -781,7 +781,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 29696,
+      "schema:contentSize": "29696",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17223"
     },
@@ -793,7 +793,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 29696,
+      "schema:contentSize": "29696",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17222"
     },
@@ -805,7 +805,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 32256,
+      "schema:contentSize": "32256",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17220"
     },
@@ -817,7 +817,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 27136,
+      "schema:contentSize": "27136",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17221"
     },
@@ -829,7 +829,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 38400,
+      "schema:contentSize": "38400",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17145"
     },
@@ -841,7 +841,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 33280,
+      "schema:contentSize": "33280",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17155"
     },
@@ -853,7 +853,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 43008,
+      "schema:contentSize": "43008",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17154"
     },
@@ -865,7 +865,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 40960,
+      "schema:contentSize": "40960",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17144"
     },
@@ -877,7 +877,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 42496,
+      "schema:contentSize": "42496",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17149"
     },
@@ -889,7 +889,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 47750,
+      "schema:contentSize": "47750",
       "schema:description": "1995-2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17158"
     },
@@ -901,7 +901,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 45512,
+      "schema:contentSize": "45512",
       "schema:description": "1999-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17165"
     },
@@ -913,7 +913,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 38400,
+      "schema:contentSize": "38400",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17159"
     },
@@ -925,7 +925,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 44032,
+      "schema:contentSize": "44032",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17163"
     },
@@ -937,7 +937,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 43008,
+      "schema:contentSize": "43008",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17162"
     },
@@ -949,7 +949,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 45056,
+      "schema:contentSize": "45056",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17160"
     },
@@ -961,7 +961,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 42496,
+      "schema:contentSize": "42496",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17161"
     },
@@ -973,7 +973,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 52736,
+      "schema:contentSize": "52736",
       "schema:description": "1999-2003: 1",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17148"
     },
@@ -985,7 +985,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 58368,
+      "schema:contentSize": "58368",
       "schema:description": "1999-2003: 2",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17150"
     },
@@ -997,7 +997,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 54272,
+      "schema:contentSize": "54272",
       "schema:description": "1999-2003: 3",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17152"
     },
@@ -1009,7 +1009,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 55296,
+      "schema:contentSize": "55296",
       "schema:description": "1999-2003: 4",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17156"
     },
@@ -1021,7 +1021,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 56320,
+      "schema:contentSize": "56320",
       "schema:description": "2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17090"
     },
@@ -1033,7 +1033,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 59392,
+      "schema:contentSize": "59392",
       "schema:description": "2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17094"
     },
@@ -1045,7 +1045,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48640,
+      "schema:contentSize": "48640",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17095"
     },
@@ -1057,7 +1057,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 48128,
+      "schema:contentSize": "48128",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17098"
     },
@@ -1069,7 +1069,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 39936,
+      "schema:contentSize": "39936",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17096"
     },
@@ -1081,7 +1081,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 44032,
+      "schema:contentSize": "44032",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17097"
     },
@@ -1093,7 +1093,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 30720,
+      "schema:contentSize": "30720",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17092"
     },
@@ -1105,7 +1105,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 1007406,
+      "schema:contentSize": "1007406",
       "schema:description": "1997-1999",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17218"
     },
@@ -1117,7 +1117,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 90624,
+      "schema:contentSize": "90624",
       "schema:description": "1999-2000",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17207"
     },
@@ -1129,7 +1129,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 90112,
+      "schema:contentSize": "90112",
       "schema:description": "2000-2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17217"
     },
@@ -1141,7 +1141,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 279552,
+      "schema:contentSize": "279552",
       "schema:description": "2001-2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17209"
     },
@@ -1153,7 +1153,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 233984,
+      "schema:contentSize": "233984",
       "schema:description": "2002-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17213"
     },
@@ -1165,7 +1165,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 118784,
+      "schema:contentSize": "118784",
       "schema:description": "2003-2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17214"
     },
@@ -1177,7 +1177,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 121856,
+      "schema:contentSize": "121856",
       "schema:description": "2005-2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17210"
     },
@@ -1189,7 +1189,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 163328,
+      "schema:contentSize": "163328",
       "schema:description": "2006-2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17208"
     },
@@ -1201,7 +1201,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 175104,
+      "schema:contentSize": "175104",
       "schema:description": "2007-2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17216"
     },
@@ -1213,7 +1213,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 148480,
+      "schema:contentSize": "148480",
       "schema:description": "2008-2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17215"
     },
@@ -1225,7 +1225,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 143872,
+      "schema:contentSize": "143872",
       "schema:description": "2009-2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17211"
     },
@@ -1237,7 +1237,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 750795,
+      "schema:contentSize": "750795",
       "schema:description": "1995-2000",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17142"
     },
@@ -1249,7 +1249,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 314368,
+      "schema:contentSize": "314368",
       "schema:description": "2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17133"
     },
@@ -1261,7 +1261,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 325632,
+      "schema:contentSize": "325632",
       "schema:description": "2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17135"
     },
@@ -1273,7 +1273,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 220695,
+      "schema:contentSize": "220695",
       "schema:description": "2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17132"
     },
@@ -1285,7 +1285,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 219648,
+      "schema:contentSize": "219648",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17137"
     },
@@ -1297,7 +1297,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 227328,
+      "schema:contentSize": "227328",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17136"
     },
@@ -1309,7 +1309,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 257024,
+      "schema:contentSize": "257024",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17140"
     },
@@ -1321,7 +1321,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 247296,
+      "schema:contentSize": "247296",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17138"
     },
@@ -1333,7 +1333,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 258560,
+      "schema:contentSize": "258560",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17141"
     },
@@ -1345,7 +1345,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 45056,
+      "schema:contentSize": "45056",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17169"
     },
@@ -1357,7 +1357,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 44544,
+      "schema:contentSize": "44544",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17176"
     },
@@ -1369,7 +1369,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 52736,
+      "schema:contentSize": "52736",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17178"
     },
@@ -1381,7 +1381,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 45568,
+      "schema:contentSize": "45568",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17179"
     },
@@ -1393,7 +1393,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 42496,
+      "schema:contentSize": "42496",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17171"
     },
@@ -1405,7 +1405,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 32587,
+      "schema:contentSize": "32587",
       "schema:description": "1995-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17203"
     },
@@ -1417,7 +1417,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 22957,
+      "schema:contentSize": "22957",
       "schema:description": "2000-2004",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17201"
     },
@@ -1429,7 +1429,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 31232,
+      "schema:contentSize": "31232",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17205"
     },
@@ -1441,7 +1441,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 21504,
+      "schema:contentSize": "21504",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17199"
     },
@@ -1453,7 +1453,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 24064,
+      "schema:contentSize": "24064",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17206"
     },
@@ -1465,7 +1465,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 24576,
+      "schema:contentSize": "24576",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17204"
     },
@@ -1477,7 +1477,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 43008,
+      "schema:contentSize": "43008",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17202"
     },
@@ -1489,7 +1489,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 31232,
+      "schema:contentSize": "31232",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17198"
     },
@@ -1501,7 +1501,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 31232,
+      "schema:contentSize": "31232",
       "schema:description": "2011",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17200"
     },
@@ -1513,7 +1513,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 33280,
+      "schema:contentSize": "33280",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17187"
     },
@@ -1525,7 +1525,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 41984,
+      "schema:contentSize": "41984",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17184"
     },
@@ -1537,7 +1537,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 41984,
+      "schema:contentSize": "41984",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17186"
     },
@@ -1549,7 +1549,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 39936,
+      "schema:contentSize": "39936",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17183"
     },
@@ -1561,7 +1561,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 46080,
+      "schema:contentSize": "46080",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17182"
     },
@@ -1573,7 +1573,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 792558,
+      "schema:contentSize": "792558",
       "schema:description": "1995-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17117"
     },
@@ -1585,7 +1585,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 119808,
+      "schema:contentSize": "119808",
       "schema:description": "2005",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17115"
     },
@@ -1597,7 +1597,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 147456,
+      "schema:contentSize": "147456",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17113"
     },
@@ -1609,7 +1609,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 134144,
+      "schema:contentSize": "134144",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17119"
     },
@@ -1621,7 +1621,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 140288,
+      "schema:contentSize": "140288",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17118"
     },
@@ -1633,7 +1633,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 161792,
+      "schema:contentSize": "161792",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17112"
     },
@@ -1645,7 +1645,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 28961,
+      "schema:contentSize": "28961",
       "schema:description": "1995-2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17193"
     },
@@ -1657,7 +1657,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 23808,
+      "schema:contentSize": "23808",
       "schema:description": "1999-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17194"
     },
@@ -1669,7 +1669,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 31744,
+      "schema:contentSize": "31744",
       "schema:description": "2006",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17190"
     },
@@ -1681,7 +1681,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 34304,
+      "schema:contentSize": "34304",
       "schema:description": "2007",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17197"
     },
@@ -1693,7 +1693,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 34816,
+      "schema:contentSize": "34816",
       "schema:description": "2008",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17195"
     },
@@ -1705,7 +1705,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 36864,
+      "schema:contentSize": "36864",
       "schema:description": "2009",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17196"
     },
@@ -1717,7 +1717,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 37376,
+      "schema:contentSize": "37376",
       "schema:description": "2010",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17189"
     },
@@ -1729,7 +1729,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 53248,
+      "schema:contentSize": "53248",
       "schema:description": "Layouts",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17229"
     },
@@ -1741,7 +1741,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 96768,
+      "schema:contentSize": "96768",
       "schema:description": "2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17083"
     },
@@ -1753,7 +1753,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 434176,
+      "schema:contentSize": "434176",
       "schema:description": "1989-2001",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17078"
     },
@@ -1765,7 +1765,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 103936,
+      "schema:contentSize": "103936",
       "schema:description": "1998-2002",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17224"
     },
@@ -1777,7 +1777,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 103424,
+      "schema:contentSize": "103424",
       "schema:description": "1999-2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17228"
     },
@@ -1789,7 +1789,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 69632,
+      "schema:contentSize": "69632",
       "schema:description": "1995-2002: 1",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17153"
     },
@@ -1801,7 +1801,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 83456,
+      "schema:contentSize": "83456",
       "schema:description": "1995-2002: 2",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17147"
     },
@@ -1813,7 +1813,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 76288,
+      "schema:contentSize": "76288",
       "schema:description": "1995-2002: 3",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17143"
     },
@@ -1825,7 +1825,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 61952,
+      "schema:contentSize": "61952",
       "schema:description": "1995-2002: 4",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17151"
     },
@@ -1837,7 +1837,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 368128,
+      "schema:contentSize": "368128",
       "schema:description": "1989-2000",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17089"
     },
@@ -1849,7 +1849,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 105984,
+      "schema:contentSize": "105984",
       "schema:description": "2003",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17093"
     },
@@ -1861,7 +1861,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 64000,
+      "schema:contentSize": "64000",
       "schema:description": "1995-2002:1",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17175"
     },
@@ -1873,7 +1873,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 82944,
+      "schema:contentSize": "82944",
       "schema:description": "1995-2002: 2",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17168"
     },
@@ -1885,7 +1885,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 76288,
+      "schema:contentSize": "76288",
       "schema:description": "1995-2002: 3",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17177"
     },
@@ -1897,7 +1897,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 61952,
+      "schema:contentSize": "61952",
       "schema:description": "1995-2002: 4",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17173"
     },
@@ -1909,7 +1909,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 49152,
+      "schema:contentSize": "49152",
       "schema:description": "1999-2003: 1",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17170"
     },
@@ -1921,7 +1921,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 59904,
+      "schema:contentSize": "59904",
       "schema:description": "1999-2003: 2",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17181"
     },
@@ -1933,7 +1933,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 56320,
+      "schema:contentSize": "56320",
       "schema:description": "1999-2003: 3",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17180"
     },
@@ -1945,7 +1945,7 @@
       "schema:encodingFormat": [
         "application/vnd.ms-excel"
       ],
-      "schema:contentSize": 54784,
+      "schema:contentSize": "54784",
       "schema:description": "1999-2003: 4",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/17174"
     }

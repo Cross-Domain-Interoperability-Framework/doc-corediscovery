@@ -121,7 +121,7 @@
       "schema:encodingFormat": [
         "text/plain"
       ],
-      "schema:contentSize": 9020,
+      "schema:contentSize": "9020",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/129244"
     },
     {
@@ -132,7 +132,7 @@
       "schema:encodingFormat": [
         "application/matlab-mat"
       ],
-      "schema:contentSize": 7105605,
+      "schema:contentSize": "7105605",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/129242"
     }
   ],
