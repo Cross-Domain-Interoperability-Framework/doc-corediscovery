@@ -45,13 +45,13 @@ python FrameAndValidate.py examples/CDIF-aloha-dataset.json -o framed.json
 python FrameAndValidate.py input.jsonld --validate --schema my-schema.json
 ```
 
-The script uses **`CDIFDiscovery-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame, so domain-specific prefixes work without being pre-declared in the frame.
+The script uses **`CDIFDiscoveryDoc-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame, so domain-specific prefixes work without being pre-declared in the frame.
 
 **Requirements:** `pyld`, `jsonschema` (`pip install pyld jsonschema`)
 
 ## SHACL Validation
 
-**`discoveryRules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+**`discoveryDocRules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
 
 Additional validation tools are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
 - `validate_conformance.py` — validates JSON-LD against claimed CDIF profiles
@@ -63,10 +63,10 @@ Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are 
 
 ```
 ├── examples/                       CDIF Discovery profile examples (44 validated JSON-LD files)
-├── CDIFDiscoveryProfileStructuredSchema.json   JSON Schema for validation
-├── CDIFDiscovery-frame.jsonld      JSON-LD frame for document framing
+├── CDIFDiscoveryDocStructuredSchema.json   JSON Schema for validation
+├── CDIFDiscoveryDoc-frame.jsonld      JSON-LD frame for document framing
 ├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
-├── discoveryRules.shacl            Merged SHACL shapes (all composing BBs + profile)
+├── discoveryDocRules.shacl            Merged SHACL shapes (all composing BBs + profile)
 ├── API-discovery/                  API representation guidance
 ├── archive/                        Archived schemas, crosswalks, legacy SHACL shapes
 ├── images/                         Diagrams

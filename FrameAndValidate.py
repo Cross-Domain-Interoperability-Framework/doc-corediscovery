@@ -330,22 +330,22 @@ Examples:
   python FrameAndValidate.py my-metadata.jsonld
 
   # Frame with custom frame and save output
-  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscovery-frame.jsonld -o framed.json
+  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscoveryDoc-frame.jsonld -o framed.json
 
   # Validate against Discovery Profile schema
-  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscovery-frame.jsonld -v --schema CDIFDiscoveryProfileStructuredSchema.json
+  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscoveryDoc-frame.jsonld -v --schema CDIFDiscoveryDocStructuredSchema.json
 
   # Full workflow with Discovery Profile files
-  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscovery-frame.jsonld -o framed.json -v --schema CDIFDiscoveryProfileStructuredSchema.json
+  python FrameAndValidate.py my-metadata.jsonld --frame CDIFDiscoveryDoc-frame.jsonld -o framed.json -v --schema CDIFDiscoveryDocStructuredSchema.json
 """
     )
     parser.add_argument('input', help='Input JSON-LD file to process')
     parser.add_argument('-o', '--output', help='Write framed output to file')
     parser.add_argument('-v', '--validate', action='store_true', help='Validate against JSON Schema')
-    parser.add_argument('--schema', default=str(SCRIPT_DIR / 'CDIFDiscoveryProfileStructuredSchema.json'),
-                        help='Path to JSON Schema (default: CDIFDiscoveryProfileStructuredSchema.json)')
-    parser.add_argument('--frame', default=str(SCRIPT_DIR / 'CDIFDiscovery-frame.jsonld'),
-                        help='Path to JSON-LD frame (default: CDIFDiscovery-frame.jsonld)')
+    parser.add_argument('--schema', default=str(SCRIPT_DIR / 'CDIFDiscoveryDocStructuredSchema.json'),
+                        help='Path to JSON Schema (default: CDIFDiscoveryDocStructuredSchema.json)')
+    parser.add_argument('--frame', default=str(SCRIPT_DIR / 'CDIFDiscoveryDoc-frame.jsonld'),
+                        help='Path to JSON-LD frame (default: CDIFDiscoveryDoc-frame.jsonld)')
 
     args = parser.parse_args()
 
