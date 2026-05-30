@@ -1,78 +1,47 @@
-# CDIF Discovery
+# CDIF Discovery (composite application profile)
 
-This repository contains the specification, examples, validation tools, and documentation for the **Cross-Domain Interoperability Framework (CDIF) Discovery** metadata profile. The Discovery profile defines metadata content requirements for making digital resources (datasets, documents, software, services, etc.) findable, indexable, and cataloguable across domains.
+This repository holds the published artifacts for the **CDIF Discovery application profile** — the composite that combines `cdifCore` and `cdifDiscovery` from the [metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks) source register into a single, self-contained release.
 
-## Specification documents
+> **Scope.** This is the *application profile* (human-facing content requirements for making datasets discoverable). The thin profile modules it composes — `cdifCore` and `cdifDiscovery` — are published in [profile-core](https://github.com/Cross-Domain-Interoperability-Framework/profile-core) and [profile-discovery](https://github.com/Cross-Domain-Interoperability-Framework/profile-discovery).
 
-- **[cdifDiscoveryProfile.md](cdifDiscoveryProfile.md)** — The core specification defining required, conditional, and recommended metadata elements for CDIF discovery.
-- **[discoverability.md](discoverability.md)** — Extended guide on metadata content requirements and implementation approaches.
-- **[CDIF_Data_Classes_and_Properties.md](CDIF_Data_Classes_and_Properties.md)** — DDI-CDI metadata classes and properties for data structure documentation and integration.
+## Specification
 
-## Key metadata elements
+- **[CDIFDiscoveryDocImplementationGuide.md](CDIFDiscoveryDocImplementationGuide.md)** — Implementation guide: required, conditional, and recommended elements; conformance rules; mappings to Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and FDO.
+- **[CDIFDiscoveryDocStructuredSchema.json](CDIFDiscoveryDocStructuredSchema.json)** — Resolved JSON Schema (Draft 2020-12) generated from the source register.
+- **[discoveryDocRules.shacl](discoveryDocRules.shacl)** — Self-contained SHACL shapes, merged from every composing building block plus the profile-level shapes.
+- **[CDIFDiscoveryDoc-frame.jsonld](CDIFDiscoveryDoc-frame.jsonld)** — JSON-LD frame used by `FrameAndValidate.py`.
 
-**Required:** Resource Identifier, Title, Distribution, Rights/License, Metadata Profile Identifier, Resource Type.
+## Conformance
 
-**Conditional:** Variable descriptions (datasets), Temporal Coverage, Geographic Extent.
+A conforming instance declares, in its `dcterms:conformsTo`, both:
 
-**Recommended:** Description, Creator, Modification Date, Keywords, Funding, Related Resources, Version, Provenance, Data Quality.
-
-The profile builds on Dublin Core, schema.org, ISO 19115-1, DCAT, DDI-CDI, and FDO Kernel Attributes.
+- `https://w3id.org/cdif/core/1.0`
+- `https://w3id.org/cdif/discovery/1.0`
 
 ## Examples
 
-The `examples/` directory contains 26+ validated JSON-LD dataset examples that conform to the CDIF Discovery profile. Sources include:
-
-- **GeoCodes** — 10 records harvested from EarthCube GeoCodes (BCO-DMO, PANGAEA, EarthChem, SEANOE, etc.)
-- **NCEI NOAA** — 7 records (GHCN Daily, Global Temperature, Sea Surface Temperature, etc.)
-- **Copernicus CDS** — 3 records (ERA5 reanalysis, sea level, sea ice)
-- **Dataverse** — 13 records from Harvard Dataverse and Borealis (hydrology, ecology, remote sensing, etc.)
-- **Pre-existing CDIF/ESIP/ODIS** — 6 converted reference examples
-
-All examples declare `conformsTo` for both `core/1.0` and `discovery/1.0` and pass CDIFDiscoveryProfile JSON Schema validation. See [examples/README.md](examples/README.md) for details.
-
-## JSON-LD Framing and Validation
-
-**`FrameAndValidate.py`** frames a JSON-LD document against the Discovery profile schema and optionally validates it:
+`examples/` holds JSON-LD discovery records, sourced from production catalogues (GeoCodes, NCEI NOAA, Copernicus CDS, Dataverse, ESIP, ODIS) and synthetic mBB-canonical examples. All declare the required `conformsTo` and pass JSON Schema validation. Validate one with:
 
 ```bash
-# Frame and validate
 python FrameAndValidate.py examples/CDIF-aloha-dataset.json --validate
-
-# Frame and save output
-python FrameAndValidate.py examples/CDIF-aloha-dataset.json -o framed.json
-
-# Use a different schema
-python FrameAndValidate.py input.jsonld --validate --schema my-schema.json
 ```
 
-The script uses **`CDIFDiscoveryDoc-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame, so domain-specific prefixes work without being pre-declared in the frame.
+`FrameAndValidate.py` frames the document against `CDIFDiscoveryDoc-frame.jsonld`, array-wraps the multi-valued properties, then validates against the JSON Schema. Validation is open-world: unknown properties pass.
 
-**Requirements:** `pyld`, `jsonschema` (`pip install pyld jsonschema`)
+## Synced from metadataBuildingBlocks
 
-## SHACL Validation
+These generated artifacts are re-synced when the source register changes:
 
-**`discoveryDocRules.shacl`** contains self-contained SHACL shapes for validating CDIF Discovery profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone without referencing other repositories. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+| file | source command |
+|---|---|
+| `CDIFDiscoveryDocStructuredSchema.json` | `python tools/resolve_schema.py CoreDiscovery -o CDIFDiscoveryDocStructuredSchema.json` |
+| `discoveryDocRules.shacl` | `python tools/validate_shacl.py CoreDiscovery --emit-shapes discoveryDocRules.shacl` |
 
-Additional validation tools are in the [validation repository](https://github.com/Cross-Domain-Interoperability-Framework/validation):
-- `validate_conformance.py` — validates JSON-LD against claimed CDIF profiles
-- `batch_validate.py` — batch validation across file groups
+Source composite: `metadataBuildingBlocks/_sources/profiles/cdifCompositeProfile/CoreDiscovery/`.
 
-Legacy hand-written SHACL shapes (CDIF v0.0.1, SOSO, Google Dataset Search) are preserved in `archive/shapegraphs/`.
+## Development branch
 
-## Repository structure
-
-```
-├── examples/                       CDIF Discovery profile examples (44 validated JSON-LD files)
-├── CDIFDiscoveryDocStructuredSchema.json   JSON Schema for validation
-├── CDIFDiscoveryDoc-frame.jsonld      JSON-LD frame for document framing
-├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
-├── discoveryDocRules.shacl            Merged SHACL shapes (all composing BBs + profile)
-├── API-discovery/                  API representation guidance
-├── archive/                        Archived schemas, crosswalks, legacy SHACL shapes
-├── images/                         Diagrams
-├── CDIF-Discovery-vs-SOSO-comparison.md   Comparison with ESIP Science-on-Schema.org
-└── CDIF-metadata-crosswalks-merged.xlsx   Crosswalk mappings
-```
+Active work for the 2026-06 review revision is on the `reviewRevision202606` branch. `main` reflects the prior release state. New changes should target the review branch; it is merged to main on release.
 
 ## License
 
