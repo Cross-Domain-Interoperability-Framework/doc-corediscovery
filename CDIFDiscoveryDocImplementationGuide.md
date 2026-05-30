@@ -22,39 +22,39 @@ The JSON syntax is defined by the [ECMA JSON specification](https://www.ecma-in
   - [Polymorphism of PropertyValue](#polymorphism-of-propertyvalue)
 - [Namespaces](#namespaces)
 - [Model](#model)
-  - [Action](#sec-action)
-  - [Base class: DataSet](#sec-dataset)
+  - [Action](#action)
+  - [Base class: DataSet](#base-class-dataset)
   - [Classes added by CDIF Discovery profile](#classes-added-by-cdif-discovery-profile)
-  - [ContactPoint](#sec-contactpoint)
-  - [Contributor](#sec-contributor)
-  - [Data Download](#sec-datadownload)
+  - [ContactPoint](#contactpoint)
+  - [Contributor](#contributor)
+  - [Data Download](#data-download)
   - [Data types added by CDIF Discovery profile](#data-types-added-by-cdif-discovery-profile)
   - [Data types used for CDIF Core](#data-types-used-for-cdif-core)
-  - [DataCatalog](#sec-datacatalog)
-  - [Dataset/dcat:CatalogRecord](#sec-catalogrecord)
-  - [Defined Term](#sec-definedterm)
-  - [dqv:QualityMeasurement](#sec-qualitymeasurement)
-  - [EntryPoint](#sec-entrypoint)
-  - [GeoCoordinates](#sec-geocoordinates)
-  - [GeoShape](#sec-geoshape)
-  - [Labeled Link](#sec-labeledlink)
-  - [LinkRole](#sec-linkrole)
-  - [MonetaryGrant](#sec-monetarygrant)
+  - [DataCatalog](#datacatalog)
+  - [Dataset/dcat:CatalogRecord](#datasetdcatcatalogrecord)
+  - [Defined Term](#defined-term)
+  - [dqv:QualityMeasurement](#dqvqualitymeasurement)
+  - [EntryPoint](#entrypoint)
+  - [GeoCoordinates](#geocoordinates)
+  - [GeoShape](#geoshape)
+  - [Labeled Link](#labeled-link)
+  - [LinkRole](#linkrole)
+  - [MonetaryGrant](#monetarygrant)
   - [Optional properties of Dataset from CDIF Core](#optional-properties-of-dataset-from-cdif-core)
-  - [Organization](#sec-organization)
+  - [Organization](#organization)
   - [Other Classes used for CDIF Core](#other-classes-used-for-cdif-core)
-  - [Person](#sec-person)
-  - [Place](#sec-place)
+  - [Person](#person)
+  - [Place](#place)
   - [Properties added on Dataset in Discovery Profile](#properties-added-on-dataset-in-discovery-profile)
-  - [PropertyValue-(identifier)](#sec-propertyvalue-id)
-  - [PropertyValue-(variableMeasured)](#sec-propertyvalue-vm)
-  - [PropertyValueSpecification](#sec-propertyvaluespec)
+  - [PropertyValue-(identifier)](#propertyvalue-identifier)
+  - [PropertyValue-(variableMeasured)](#propertyvalue-variablemeasured)
+  - [PropertyValueSpecification](#propertyvaluespecification)
   - [Required Properties from cdif Core profile](#required-properties-from-cdif-core-profile)
-  - [sf:SimpleFeature](#sec-sfsimplefeature)
-  - [spdx:Checksum](#sec-spdxchecksum)
-  - [time:Proper Interval](#sec-properinterval)
-  - [time:TimePosition](#sec-timeposition)
-  - [Web API](#sec-webapi)
+  - [sf:SimpleFeature](#sfsimplefeature)
+  - [spdx:Checksum](#spdxchecksum)
+  - [time:Proper Interval](#timeproper-interval)
+  - [time:TimePosition](#timetimeposition)
+  - [Web API](#web-api)
 
 # Conformance
 
@@ -200,7 +200,7 @@ Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specifie
 
 # Model
 
-## Action {#sec-action}
+## Action
 
 #### @type
 
@@ -217,13 +217,13 @@ Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specifie
 #### target
 
 - **Cardinality:** Required
-- **Content:** [EntryPoint](#sec-entrypoint)
+- **Content:** [EntryPoint](#entrypoint)
 - **Description:** specifies the request target location and request syntax
 
 #### result
 
 - **Cardinality:** Optional
-- **Content:** [DataDownload](#sec-datadownload)
+- **Content:** [DataDownload](#data-download)
 - **Description:** specifies the serialization scheme (encoding format, information model) for expected representation of the data
 
 #### object
@@ -235,16 +235,16 @@ Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specifie
 #### query-input
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [PropertyValueSpecification](#sec-propertyvaluespec)
+- **Content:** [PropertyValueSpecification](#propertyvaluespecification)
 - **Description:** set of explanations of the parameters in the URL template for the target EntryPoint.
 
-## Base class: DataSet {#sec-dataset}
+## Base class: DataSet
 
 This profile applies to description of resources that can be described using the properties defined in the [CDIF discovery information model]() . For implementation using the schema.org vocabulary, these are typed as schema:Dataset.
 
 ## Classes added by CDIF Discovery profile
 
-## ContactPoint {#sec-contactpoint}
+## ContactPoint
 
 - Information about how to communicate with a person or organization. CDIF only includes e-mail in its schema.
 
@@ -259,7 +259,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** Property is required if a contactPoint property is included. Use missing@example.org if e-mail address is not available. Recommend using position-based contact point because people move around.
 
-## Contributor {#sec-contributor}
+## Contributor
 
 - For more granularity on how an agent contributed to a resource, use schema:Role. The schema.org documentation does not state that the Role type is an expected data type for the contributor property, but that is addressed in this blog post (http://blog.schema.org/2014/06/introducing-role.html). see also [ESIPfed Science on Schema.org roles of people note](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#roles-of-people).
 
@@ -272,15 +272,15 @@ This profile applies to description of resources that can be described using the
 #### roleName
 
 - **Cardinality:** Required
-- **Content:** string, [DefinedTerm](#sec-definedterm)
+- **Content:** string, [DefinedTerm](#defined-term)
 - **Description:** term that specifies the relationship between the contributor and the described resource.
 
 #### contributor
 
 - **Cardinality:** Required
-- **Content:** [object reference](#object-reference), [Person](#sec-person) or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person) or [Organization](#organization)
 
-## Data Download {#sec-datadownload}
+## Data Download
 
 - file-based access to a resource via URL; the DataDownload object provides a link to get the resource content, along with information about the serialization format and conventions used.
 
@@ -323,7 +323,7 @@ This profile applies to description of resources that can be described using the
 #### spdx:checksum
 
 - **Cardinality:** Optional
-- **Content:** [spdx:Checksum](#sec-spdxchecksum)
+- **Content:** [spdx:Checksum](#spdxchecksum)
 - **Description:** Checksum string that is \'footprint\' of the described file to enable testing for file modification. Algorithm used is specified by spdx:algorithm property.
 
 #### dcterms:conformsTo
@@ -335,14 +335,14 @@ This profile applies to description of resources that can be described using the
 #### provider
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 - **Description:** The agent responsible for acces to the described resource. Use contact for this agent to report access problems.
 
 ## Data types added by CDIF Discovery profile
 
 ## Data types used for CDIF Core
 
-## DataCatalog {#sec-datacatalog}
+## DataCatalog
 
 - An accessible collection of data. The data might be metadata (about other resources) or datasets.
 
@@ -372,10 +372,10 @@ This profile applies to description of resources that can be described using the
 #### identifier
 
 - **Cardinality:** Optional
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 - **Description:** Identifier for the data catalog.
 
-## Dataset/dcat:CatalogRecord {#sec-catalogrecord}
+## Dataset/dcat:CatalogRecord
 
 - This is the class used to provide information about the metadata record itself.
 
@@ -416,7 +416,7 @@ This profile applies to description of resources that can be described using the
 #### maintainer
 
 - **Cardinality:** Optional
-- **Content:** [Person](#sec-person) or [Organization](#sec-organization)
+- **Content:** [Person](#person) or [Organization](#organization)
 - **Description:** Identification of the agent that maintains the metadata, with contact information. Should include person name and affiliation, or position name and affiliation, or just organization name. e-mail address is preferred contact information.
 
 #### sdDatePublished
@@ -428,10 +428,10 @@ This profile applies to description of resources that can be described using the
 #### includedInDataCatalog
 
 - **Cardinality:** Optional
-- **Content:** [DataCatalog](#sec-datacatalog)
+- **Content:** [DataCatalog](#datacatalog)
 - **Description:** identify the source for the origin the metadata record
 
-## Defined Term {#sec-definedterm}
+## Defined Term
 
 #### @type
 
@@ -447,7 +447,7 @@ This profile applies to description of resources that can be described using the
 #### @identifier
 
 - **Cardinality:** Required if no name or termCode
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 
 #### termCode
 
@@ -461,7 +461,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** Name for the controlled vocabulary responsible for this keyword.
 
-## dqv:QualityMeasurement {#sec-qualitymeasurement}
+## dqv:QualityMeasurement
 
 #### @type
 
@@ -470,14 +470,14 @@ This profile applies to description of resources that can be described using the
 #### dqv:ismeasurementOf
 
 - **Cardinality:** Required
-- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#sec-definedterm)
+- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
 
 #### dqv:value
 
 - **Cardinality:** Required
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 
-## EntryPoint {#sec-entrypoint}
+## EntryPoint
 
 - Use to document the URL that is the target for invoking an action, or that is the target object of a link relationship.
 
@@ -504,7 +504,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string.url
 - **Description:** Locator that can be used to retrieve the target resource on the Web.
 
-## GeoCoordinates {#sec-geocoordinates}
+## GeoCoordinates
 
 - A point location specified with latitude and longitude in decimal degrees, using the WGS84 spatial reference system.
 
@@ -524,7 +524,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** number
 - **Description:** east-longitude coordinate in decimal degrees. Value must be \>= -180 and \<= 180.
 
-## GeoShape {#sec-geoshape}
+## GeoShape
 
 - CDIF limits schema:GeoShape to a box or line (schema.org includes other options). Point locations are tuples of {latitude east-longitude} (y x). (documentation from [Science on Schema.org](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#spatial-coverage) see details there)
 
@@ -545,7 +545,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** a series of two or more points. Use for extents like a ship track, flight path, or foot traverse.
 
-## Labeled Link {#sec-labeledlink}
+## Labeled Link
 
 #### @type
 
@@ -570,7 +570,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** Text description of the linked resource.
 
-## LinkRole {#sec-linkrole}
+## LinkRole
 
 - This is the type used for links that have an associated semantic conveyed by the linkRelationship.
 
@@ -582,16 +582,16 @@ This profile applies to description of resources that can be described using the
 #### linkRelationship
 
 - **Cardinality:** Required
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** Term that specifies the relationship between the source and target of the link.
 
 #### target
 
 - **Cardinality:** Required
-- **Content:** [EntryPoint](#sec-entrypoint)
+- **Content:** [EntryPoint](#entrypoint)
 - **Description:** URL for link target, along with a label and encoding format for the target resource.
 
-## MonetaryGrant {#sec-monetarygrant}
+## MonetaryGrant
 
 #### @type
 
@@ -603,7 +603,7 @@ This profile applies to description of resources that can be described using the
 #### @identifier
 
 - **Cardinality:** Required if no name or funder
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 - **Description:** identifier for a particular grant
 
 #### name
@@ -615,7 +615,7 @@ This profile applies to description of resources that can be described using the
 #### funder
 
 - **Cardinality:** Required if no identifier or name
-- **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 
 #### description
 
@@ -634,7 +634,7 @@ This profile applies to description of resources that can be described using the
 #### additionalType
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** Use to assert semantics for the JSON object using concepts from other vocabularies. Type assertions here are purely for semantic information, and do not imply presence of properties assigned to a class in some other vocabulary.
 
 #### sameAs
@@ -664,49 +664,49 @@ This profile applies to description of resources that can be described using the
 #### relatedLink
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [LinkRole](#sec-linkrole)
+- **Content:** [LinkRole](#linkrole)
 - **Description:** links to related resources; linkRelationship specifies how the resource is related. Use schema.org LinkRole type for values, with a linkRelationship and target that documents the url and encoding format of the linked content.
 
 #### publishingPrinciples
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
-- **Description:** Policies related to maintenance, update, expected time to live, e.g. FDOF digitalObjectMutability, RDA digitalObjectPolicy, FDOF PersistencyPolicy. If an online resource documents the policies or a URI is used to identify the conditions, recommend using [LabeledLink](#sec-labeledlink), implemented as schema:CreativeWork to provide a label (name) and an identifier (URI or URL).
+- **Content:** string, [object reference](#object-reference), or [LabeledLink](#labeled-link)
+- **Description:** Policies related to maintenance, update, expected time to live, e.g. FDOF digitalObjectMutability, RDA digitalObjectPolicy, FDOF PersistencyPolicy. If an online resource documents the policies or a URI is used to identify the conditions, recommend using [LabeledLink](#labeled-link), implemented as schema:CreativeWork to provide a label (name) and an identifier (URI or URL).
 
 #### keywords
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** Keywords are an array of strings, an array of schema:DefinedTerms, or some combination of these. If you have information about a controlled vocabulary from which keywords come from, use schema:DefinedTerm to descibe that keyword. This allowed variability complicates parsing the metadata record; recommend using DefinedTerm for all keywords if any of them are from a known vocabulary, otherwise an array of strings.
 
 #### creator
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** List of [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** List of [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 - **Description:** Author or orginator of intellectual content of dataset. Use the JSON-LD \@list construct to preserve author order. Use contributor with the Role property to specify other roles related to creation or stewardship of the resource.
 
 #### contributor
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 - **Description:** Other parties who played a role in production of dataset
 
 #### publisher
 
 - **Cardinality:** Optional
-- **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 - **Description:** Identify Party who made the dataset publicly available
 
 #### provider
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
+- **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
 - **Description:** Party who maintains the distribution options for the dataset (i.e. the hosting web server). If there are multiple distributions from different providers, use the provider property on distribution/DataDownload. Contact information for the provider is important if there are malfunctions in the data access workflow.
 
 #### funding
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [MonetaryGrant](#sec-monetarygrant)
+- **Content:** [MonetaryGrant](#monetarygrant)
 - **Description:** Acknowledgement for sources of financial or other material resources important for the creation of the described resource. Allows identification of specific funding instruments (grants, contracts, scholarships...) or institutions providing resources.
 
 #### prov: wasGeneratedBy
@@ -718,10 +718,10 @@ This profile applies to description of resources that can be described using the
 #### prov: wasDerivedFrom
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string, [object reference](#object-reference), [LabeledLink](#sec-labeledlink)
+- **Content:** string, [object reference](#object-reference), [LabeledLink](#labeled-link)
 - **Description:** Brief information about sources of data used in aggregate datasets. String bibliographic citations, URIs as object references, or LabeledLink, implemented as schema:CreativeWork, to provide a title, description and URL.
 
-## Organization {#sec-organization}
+## Organization
 
 #### @id
 
@@ -744,12 +744,12 @@ This profile applies to description of resources that can be described using the
 #### @identifier
 
 - **Cardinality:** Required if no name
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 
 #### additionalType
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 
 #### alternateName
 
@@ -769,7 +769,7 @@ This profile applies to description of resources that can be described using the
 
 ## Other Classes used for CDIF Core
 
-## Person {#sec-person}
+## Person
 
 - Object representing a person.
 
@@ -794,7 +794,7 @@ This profile applies to description of resources that can be described using the
 #### @identifier
 
 - **Cardinality:** Required if no name
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 
 #### description
 
@@ -811,13 +811,13 @@ This profile applies to description of resources that can be described using the
 #### affiliation
 
 - **Cardinality:** Optional
-- **Content:** [Organization](#sec-organization)
+- **Content:** [Organization](#organization)
 - **Description:** Organization that the person is associated with.
 
 #### contactPoint
 
 - **Cardinality:** Optional
-- **Content:** [ContactPoint](#sec-contactpoint)
+- **Content:** [ContactPoint](#contactpoint)
 - **Description:** email is required property if a contactPoint is included. Schema.org allows telephone and postal contacts as well.
 
 #### sameAs
@@ -825,7 +825,7 @@ This profile applies to description of resources that can be described using the
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference)
 
-## Place {#sec-place}
+## Place
 
 #### @type
 
@@ -836,58 +836,58 @@ CHOICE. At least one of the following four is required
 #### additionalType
 
 - **Cardinality:** optional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** Domain-specific type classifications for this place (e.g. facility type, laboratory classification, feature type)
 
 #### name
 
 - **Cardinality:** Conditional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** multiple place names or DefinedTerms that have a place name and URI for the location
 
 #### identifier
 
 - **Cardinality:** Conditional
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 
 #### geo
 
 - **Cardinality:** Conditional
-- **Content:** [GeoCoordinates](#sec-geocoordinates) or [GeoShape](#sec-geoshape)
+- **Content:** [GeoCoordinates](#geocoordinates) or [GeoShape](#geoshape)
 - **Description:** Either a bounding box or a point location. Use WGS 84 latitude and longitude coordinates
 
 #### geosparql:HasGeometry
 
 - **Cardinality:** Conditional
-- **Content:** [sf:SimpleFeature](#sec-sfsimplefeature)
+- **Content:** [sf:SimpleFeature](#sfsimplefeature)
 - **Description:** Optional geographic extent using [wkt geometry](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry), see [Ocean InfoHub](https://book.oceaninfohub.org/thematics/spatial/README.html#simple-geosparql-wkt). Other geometry schemes might be specified in a specific domain profile, e.g. for atmospheric, subsurface data, or local coordinate systems. NOTE that the location specified here should be the same as the schema.org point or contained within the specified bounding box.
 
 #### alternateName
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string, [DefinedTerm](#sec-definedterm)
-- **Description:** multiple place names or [DefinedTerm](#sec-definedterm)s that have a place name and URI for the location
+- **Content:** string, [DefinedTerm](#defined-term)
+- **Description:** multiple place names or [DefinedTerm](#defined-term)s that have a place name and URI for the location
 
 ## Properties added on Dataset in Discovery Profile
 
 #### measurementTechnique
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** The technique, technology, or methodology used for measurement or determination of the dataset values.
 
 #### variableMeasured
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [PropertyValue-(variableMeasured)](#sec-propertyvalue-vm)
+- **Content:** [PropertyValue-(variableMeasured)](#propertyvalue-variablemeasured)
 - **Description:** Use schema:PropertyValue to describe the variables assigned values in the dataset. Provide names, labels used in the data serialization, definitions, propertyID as a link to formal property definitions. Min and max values that occur in numeric data to support search criteria based on observed values.
 
 #### spatialCoverage
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [Place](#sec-place)
-- **Description:** Document spatial extent to which the resource content is relevant. Can be expressed with a simple text place name, a place name from an identified gazeteer (using schema: [DefinedTerm](#sec-definedterm)), a point location, a bounding box (.e.g. for a map extent), a line (e.g. a ship track or foot traverse), or a general geometry. Registered place names from a gazeteer or a simple bounding box are widely recognized and indexed approaches used by spatially aware metadata aggregators.
-- **Example -- multi-country coverage.** When a resource covers several countries, repeat `schema:spatialCoverage` with one [Place](#sec-place) per country. Each `Place` carries the ISO 3166-1 alpha-2 code as `schema:name` and `schema:identifier`, and a `schema:sameAs` link to the EU Publications Office country authority (which keys on the alpha-3 code). A `Place` is valid with any one of `schema:geo`, `schema:name`, or `schema:identifier`; this form uses `name` and `identifier`.
+- **Content:** [Place](#place)
+- **Description:** Document spatial extent to which the resource content is relevant. Can be expressed with a simple text place name, a place name from an identified gazeteer (using schema: [DefinedTerm](#defined-term)), a point location, a bounding box (.e.g. for a map extent), a line (e.g. a ship track or foot traverse), or a general geometry. Registered place names from a gazeteer or a simple bounding box are widely recognized and indexed approaches used by spatially aware metadata aggregators.
+- **Example -- multi-country coverage.** When a resource covers several countries, repeat `schema:spatialCoverage` with one [Place](#place) per country. Each `Place` carries the ISO 3166-1 alpha-2 code as `schema:name` and `schema:identifier`, and a `schema:sameAs` link to the EU Publications Office country authority (which keys on the alpha-3 code). A `Place` is valid with any one of `schema:geo`, `schema:name`, or `schema:identifier`; this form uses `name` and `identifier`.
 
 ```json
 "schema:spatialCoverage": [
@@ -915,17 +915,17 @@ CHOICE. At least one of the following four is required
 #### temporalCoverage
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string or [ProperInterval](#sec-properinterval)
+- **Content:** string or [ProperInterval](#timeproper-interval)
 - **Description:** The time interval during which data was collected or observations were made; or a time period that an activity or collection is linked to intellectually or thematically (for example, 1997 to 1998; the 18th century) (see https://documentation.ardc.edu.au/display/DOC/Temporal+coverage). For documentation of Earth Science, Paleobiology or Paleontology datasets, we are interested in the second case\-- the time period that data are linked to thematically. NOTE---the implementation of temporal intervals uses OWL Time, so the context must include \"time\": [http://www.w3.org/2006/time#](http://www.w3.org/2006/time). Simple ISO8601 time intervals can be represented using the description property with a text string value.
 - **Recommended:** for coverage statements that can be expressed in calendar time, use ISO 8601 interval notation as a plain string value \-- two ISO 8601 dates separated by a `/` (for example, `1997/1998` or `1997-06-01/1998-05-31`); `..` may be used as an open start or end bound. The `time:ProperInterval` form is intended for intervals that cannot be expressed in calendar time, such as those bounded by named ordinal eras or by numeric positions in a non-calendar temporal reference system (e.g. geologic time).
 
 #### dqv:hasQualityMeasurement
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** [dqv:QualityMeasurement](#sec-qualitymeasurement)
-- **Description:** Quality measurements reported to assess the resource. Reported with a measurement type, specified by name, an [object reference](#object-reference) or as a [DefinedTerm](#sec-definedterm), and the reported result of the quality measure, either as a string or a [DefinedTerm](#sec-definedterm) from a vocabulary.
+- **Content:** [dqv:QualityMeasurement](#dqvqualitymeasurement)
+- **Description:** Quality measurements reported to assess the resource. Reported with a measurement type, specified by name, an [object reference](#object-reference) or as a [DefinedTerm](#defined-term), and the reported result of the quality measure, either as a string or a [DefinedTerm](#defined-term) from a vocabulary.
 
-## PropertyValue-(identifier) {#sec-propertyvalue-id}
+## PropertyValue-(identifier)
 
 #### @type
 
@@ -950,7 +950,7 @@ CHOICE. At least one of the following four is required
 - **Content:** string:uri
 - **Description:** In this context for the schema:PropertyValue, this field is an identifier for the identifier schema, e.g. DOI, ARK. Get values from https://registry.identifiers.org/registry/ for interoperability
 
-## PropertyValue-(variableMeasured) {#sec-propertyvalue-vm}
+## PropertyValue-(variableMeasured)
 
 #### @type
 
@@ -983,13 +983,13 @@ CHOICE. At least one of the following four is required
 #### measurementTechnique
 
 - **Cardinality:** Optional
-- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#sec-definedterm)
+- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
 - **Description:** Text description or URI specifying how values for the variable were obtained.
 
 #### propertyID
 
 - **Cardinality:** Optional, Repeatable
-- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#sec-definedterm)
+- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
 - **Description:** identifier or name for the property concept
 
 #### unitText
@@ -1001,7 +1001,7 @@ CHOICE. At least one of the following four is required
 #### unitCode
 
 - **Cardinality:** Optional
-- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#sec-definedterm)
+- **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
 - **Description:** URI or code identifying the unit of measure
 
 #### minValue
@@ -1019,10 +1019,10 @@ CHOICE. At least one of the following four is required
 #### url
 
 - **Cardinality:** Optional
-- **Content:** string or [LabeledLink](#sec-labeledlink)
+- **Content:** string or [LabeledLink](#labeled-link)
 - **Description:** references additional information, and label could be used to indicate type of description -- e.g., I-ADOPT, CDIF, etc.
 
-## PropertyValueSpecification {#sec-propertyvaluespec}
+## PropertyValueSpecification
 
 - Description of the kind of value expected for a parameter value.
 
@@ -1077,7 +1077,7 @@ CHOICE. At least one of the following four is required
 #### @identifier
 
 - **Cardinality:** Required
-- **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue-id)
+- **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
 - **Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namepace \'http://schema.org/\'.
 
 #### dateModified
@@ -1091,14 +1091,14 @@ CHOICE. At least one of the following four is required
 #### conditionsOfAccess
 
 - **Cardinality:** Required if no license, Repeatable
-- **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
+- **Content:** string, [object reference](#object-reference), or [LabeledLink](#labeled-link)
 - **Description:** Text statement of conditions for use and access; if an online resource documents the restrictions or a URI is used to identify the conditions, recommend using the LabeledLink option, implemented as schema:CreativeWork, to provide a label (name) and an identifier (URI or URL).
 
 #### license
 
 - **Cardinality:** Required if no conditionsOfAccess
-- **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
-- **Description:** Legal statement of conditions for use and access; recommend using the [LabeledLink](#sec-labeledlink) option, implemented by schema:CreativeWork to provide a label (name) for the license, and an identifier. Sources of license identifiers: https://opensource.org/licenses/, https://creativecommons.org/about/cclicenses/, https://spdx.org/licenses/, http://cor.esipfed.org/ont/earthcube/swl. If only a string is provided, it should be recognizable name for the license. If resolvable URI is available, use the object reference.
+- **Content:** string, [object reference](#object-reference), or [LabeledLink](#labeled-link)
+- **Description:** Legal statement of conditions for use and access; recommend using the [LabeledLink](#labeled-link) option, implemented by schema:CreativeWork to provide a label (name) for the license, and an identifier. Sources of license identifiers: https://opensource.org/licenses/, https://creativecommons.org/about/cclicenses/, https://spdx.org/licenses/, http://cor.esipfed.org/ont/earthcube/swl. If only a string is provided, it should be recognizable name for the license. If resolvable URI is available, use the object reference.
 
 - **CHOICE at least one of two options:**
 
@@ -1111,18 +1111,18 @@ CHOICE. At least one of the following four is required
 #### distribution
 
 - **Cardinality:** Required if no url
-- **Content:** [DataDownload](#sec-datadownload) or [WebAPI](#sec-webapi)
+- **Content:** [DataDownload](#data-download) or [WebAPI](#web-api)
 - **Description:** specifies how to download the data in a specific format or access via a web API. This property describes where to get the data and in what format by using the schema:DataDownload type. If user must access data through a landing page, provide link to landing page in the \'url\' property for the dataset, not a distribution contentUrl.
 
 #### subjectOf
 
 - **Cardinality:** Required
-- **Content:** [Dataset/dcat:CatalogRecord](#sec-catalogrecord)
+- **Content:** [Dataset/dcat:CatalogRecord](#datasetdcatcatalogrecord)
 - **Description:** This property contains information about the metadata record itself, as opposed to the resource the record describes. See Uses of dcat:CatalogRecord and https://github.com/Cross-Domain-Interoperability-Framework/Discovery/issues/13 for discussion on how to make assertion about the metadata record distinct from statements about the described resource. Use the dcat:CatalogRecord as additionalType to distinguish this schema:Dataset from the schema:Dataset about a described external resource. see <https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#properties-for-metadata-management>. Introduction of this is novel for schema.org implementations.
 
 The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w3id.org/cdif/core/1.0` and `https://w3id.org/cdif/discovery/1.0`. The Discovery profile composes the CDIF Core profile, so the JSON Schema carries the Core conformance constraint in addition to the Discovery one; an instance declaring only the Discovery URI will fail validation. See [conformsTo](#conformsto) under Dataset/dcat:CatalogRecord.
 
-## sf:SimpleFeature {#sec-sfsimplefeature}
+## sf:SimpleFeature
 
 #### @type
 
@@ -1142,7 +1142,7 @@ The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w
 - **Content:** [object reference](#object-reference)
 - **Description:** specify the coordinate reference system for the coordinate numbers in the WKT location description.
 
-## spdx:Checksum {#sec-spdxchecksum}
+## spdx:Checksum
 
 #### spdx:algorithm
 
@@ -1156,7 +1156,7 @@ The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w
 - **Content:** string
 - **Description:** the checksum string.
 
-## time:Proper Interval {#sec-properinterval}
+## time:Proper Interval
 
 - Intervals can be bounded by named ordinal eras (e.g. Jurassic, Tang dynasty, Paleolithic) identified by URI, or by numeric bounds that are time coordinates in a specified reference system (implemented by the TimePosition data type). This implementation is a simplified profile based on the [W3C OWL time specification](https://www.w3.org/TR/owl-time/), using the [http://www.w3.org/2006/time#](http://www.w3.org/2006/time) namespace, which is included in the default context for this profile.
 
@@ -1176,13 +1176,13 @@ Choice:
 #### time:startedBy
 
 - **Cardinality:** Optional
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** identifier for a named time ordinal era that is older bound of time interval, e.g. \'isc:LowerDevonian\'
 
 #### time:finishedBy
 
 - **Cardinality:** Optional
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** identifier for a named time ordinal era that is younger bound of time interval, e.g. \'isc:LowerDevonian\'
 
 OR:
@@ -1190,16 +1190,16 @@ OR:
 #### time:hasBeginning
 
 - **Cardinality:** Optional
-- **Content:** [time:TimePosition](#sec-timeposition)
+- **Content:** [time:TimePosition](#timetimeposition)
 - **Description:** Temporal position for the beginning (older bound) of the interval, located by a numeric value in a temporal reference system
 
 #### time:hasEnd
 
 - **Cardinality:** Optional
-- **Content:** [time:TimePosition](#sec-timeposition)
+- **Content:** [time:TimePosition](#timetimeposition)
 - **Description:** Temporal position for the end (younger bound) of the interval, located by a numeric value in a temporal reference system
 
-## time:TimePosition {#sec-timeposition}
+## time:TimePosition
 
 #### @type
 
@@ -1218,7 +1218,7 @@ OR:
 - **Content:** number
 - **Description:** Number that locates a temporal position in the reference frame defined by the hasTRS property.
 
-## Web API {#sec-webapi}
+## Web API
 
 - Provides information to request data through a web accessible service endpoint. This implementation uses the schema.org Action to document url or url template and parameters. At this point, schema is set up for one action\-- an HTTP Get that requests data. The url template parameters (in curly brackets \'{}\') specify query parameters to filter the source data, request particular output formats or other options offered by the interface.
 
@@ -1231,23 +1231,23 @@ OR:
 #### serviceType
 
 - **Cardinality:** Required
-- **Content:** string or [DefinedTerm](#sec-definedterm)
+- **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** Specify the kind of service. Ideally this should be a resolvable identifier. Currently there is no widely adopted registry for serviceType identifiers. Services might be defined at different levels of granularity, and classifications might focus on function, data formats, thematic content, security, or other aspects of the service definition. For interoperability, there must be an external arrangement between data providers and consumers on the strings that will be used to specify service types.
 
 #### termsOfService
 
 - **Cardinality:** Required, Repeatable
-- **Content:** string or [LabeledLink](#sec-labeledlink)
+- **Content:** string or [LabeledLink](#labeled-link)
 - **Description:** Description of access privileges required to use the API, e.g. registration, licensing, payments. Note that access constraints applying to all distributions of the resource should be specified in the access constraints for the resource description as a whole.
 
 #### documentation
 
 - **Cardinality:** Optional
-- **Content:** string or [LabeledLink](#sec-labeledlink)
+- **Content:** string or [LabeledLink](#labeled-link)
 - **Description:** A machine-actionable description of a service instance. Examples include OpenAPI documents, OGC Capabilities documents. Software designed to utilise a particular service type will typically include functionality to parse such a description document and engage with the service endpoint. If such a document is available for the service instance providing the resource distribution, it should be included in the distribution metadata.
 
 #### potentialAction
 
 - **Cardinality:** Required, Repeatable
-- **Content:** [object reference](#object-reference), [Action](#sec-action)
+- **Content:** [object reference](#object-reference), [Action](#action)
 - **Description:** Description of the operations offered by the interface.
