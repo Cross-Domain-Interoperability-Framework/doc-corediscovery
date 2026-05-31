@@ -1,5 +1,5 @@
 ---
-CDIF Discovery Document Classes and Properties
+title: CDIF Discovery Document Classes and Properties
 date: 2026-05-30
 ---
 
