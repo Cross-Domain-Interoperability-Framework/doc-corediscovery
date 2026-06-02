@@ -144,8 +144,8 @@ clear_and_set_text(paras[70], new_vm)
 new_conformsto = (
     '[Required, Repeatable] (object reference). Identifiers for conformance classes/profiles that the '
     'metadata record follows. For CDIF data description must include '
-    '"https://w3id.org/cdif/discovery/1.0", "https://w3id.org/cdif/core/1.0", and '
-    '"https://w3id.org/cdif/data_description/1.0" because conforms to all three profiles.'
+    '"https://w3id.org/cdif/discovery/1.1", "https://w3id.org/cdif/core/1.1", and '
+    '"https://w3id.org/cdif/data_description/1.1" because conforms to all three profiles.'
 )
 clear_and_set_text(paras[195], new_conformsto)
 
@@ -240,11 +240,11 @@ dd_classes = [
 insert_multiple_after(anchor_269, dd_classes)
 
 # ---- Modification 9: Update conformsTo in example code (paragraph 418) ----
-# Paragraph 418 has: "dcterms:conformsTo":{"@id":"https://w3id.org/cdif/discovery/1.0"}
+# Paragraph 418 has: "dcterms:conformsTo":{"@id":"https://w3id.org/cdif/discovery/1.1"}
 # Update to show data_description conformance
 if 'conformsTo' in paras[418].text:
     clear_and_set_text(paras[418],
-        '"dcterms:conformsTo":[{"@id":"https://w3id.org/cdif/core/1.0"},{"@id":"https://w3id.org/cdif/discovery/1.0"},{"@id":"https://w3id.org/cdif/data_description/1.0"}]'
+        '"dcterms:conformsTo":[{"@id":"https://w3id.org/cdif/core/1.1"},{"@id":"https://w3id.org/cdif/discovery/1.1"},{"@id":"https://w3id.org/cdif/data_description/1.1"}]'
     )
 
 # Save

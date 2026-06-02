@@ -146,6 +146,6 @@ cdifd:CDIFDiscoveryConformsToShape a sh:NodeShape ;
     sh:property [
         a sh:PropertyShape ;
         sh:path dcterms:conformsTo ;
-        sh:hasValue <https://w3id.org/cdif/discovery/1.0/> ;
-        sh:message "Metadata record must declare conformance to the CDIF discovery profile (https://w3id.org/cdif/discovery/1.0/)" ;
+        sh:hasValue <https://w3id.org/cdif/discovery/1.1/> ;
+        sh:message "Metadata record must declare conformance to the CDIF discovery profile (https://w3id.org/cdif/discovery/1.1/)" ;
     ] .

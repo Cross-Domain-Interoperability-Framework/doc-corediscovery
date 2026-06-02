@@ -360,10 +360,10 @@
     },
     "dcterms:conformsTo": [
       {
-        "@id": "https://w3id.org/cdif/core/1.0"
+        "@id": "https://w3id.org/cdif/core/1.1"
       },
       {
-        "@id": "https://w3id.org/cdif/discovery/1.0"
+        "@id": "https://w3id.org/cdif/discovery/1.1"
       }
     ],
     "schema:description": "Converted to CDIF Discovery profile from pre-existing ESIP SOSO example: Property names prefixed with schema: namespace; @context converted to CDIF prefix declarations; @type values normalized to arrays with schema: prefix; schema:dateModified set from datePublished; schema:license wrapped in array; Distributions normalized; schema:creator wrapped in @list; Description HTML typed literal converted to plain text; Funding identifier string converted to PropertyValue; schema:funding wrapped in array; Distribution encodingFormat wrapped in arrays; prov:wasDerivedFrom and prov:wasGeneratedBy wrapped in arrays; spdx:checksum converted from array to single object per CDIF schema; provone:Execution changed to prov:Activity; prov:hadPlan changed to prov:used; redundant prov:used (duplicate of prov:wasDerivedFrom) removed; provone prefix removed from context."

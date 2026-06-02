@@ -80,14 +80,14 @@ cdifd:CDIFCatalogRecordShape a sh:NodeShape ;
             sh:prefixes ( [ sh:namespace "http://schema.org/" ;
                         sh:prefix "schema" ] [ sh:namespace "https://example.org/" ;
                         sh:prefix "ex" ] ) ;
-            sh:select """
-            PREFIX schema: <http://schema.org/>
-            SELECT ?this
-            WHERE {
-            ?this a schema:Dataset ;
-             schema:about ?parent ;
-             schema:additionalType "dcat:CatalogRecord" .
-            }
+            sh:select """\r
+            PREFIX schema: <http://schema.org/>\r
+            SELECT ?this\r
+            WHERE {\r
+            ?this a schema:Dataset ;\r
+             schema:about ?parent ;\r
+             schema:additionalType "dcat:CatalogRecord" .\r
+            }\r
         """ ] .
 
 cdifd:CDIFContactPointShape a sh:NodeShape ;
@@ -136,30 +136,30 @@ cdifd:CDIFDatasetMandatoryShape a sh:NodeShape ;
         cdifd:resourceIdentifierProperty,
         cdifd:rightsProperty ;
     sh:target [ a sh:SPARQLTarget ;
-            sh:select """
-       PREFIX schema: <http://schema.org/>
-       PREFIX ex: <https://example.org/>
-       PREFIX prov: <http://www.w3.org/ns/prov#>
-       PREFIX dcterms: <http://purl.org/dc/terms/>
-            SELECT ?this
-            WHERE {
-              ?this a schema:Dataset .
-              # Exclude catalog-record nodes (they describe a record, not a dataset).
-              MINUS {
-                ?this schema:about ?x .
-                ?this schema:additionalType "dcat:CatalogRecord" .
-              }
-              # Exclude datasets that are only *referenced* as provenance / source /
-              # derived-from / based-on resources rather than the resource being
-              # documented by this record. Such references carry an @id (and maybe a
-              # name/url for readability) but are not held to the full CDIF core
-              # requirements - the documented resource is the SUBJECT of provenance,
-              # never the object, so this never excludes the documented dataset.
-              FILTER NOT EXISTS { ?dpd prov:wasDerivedFrom ?this . }
-              FILTER NOT EXISTS { ?dpu prov:used ?this . }
-              FILTER NOT EXISTS { ?dib schema:isBasedOn ?this . }
-              FILTER NOT EXISTS { ?dsrc dcterms:source ?this . }
-            }
+            sh:select """\r
+       PREFIX schema: <http://schema.org/>\r
+       PREFIX ex: <https://example.org/>\r
+       PREFIX prov: <http://www.w3.org/ns/prov#>\r
+       PREFIX dcterms: <http://purl.org/dc/terms/>\r
+            SELECT ?this\r
+            WHERE {\r
+              ?this a schema:Dataset .\r
+              # Exclude catalog-record nodes (they describe a record, not a dataset).\r
+              MINUS {\r
+                ?this schema:about ?x .\r
+                ?this schema:additionalType "dcat:CatalogRecord" .\r
+              }\r
+              # Exclude datasets that are only *referenced* as provenance / source /\r
+              # derived-from / based-on resources rather than the resource being\r
+              # documented by this record. Such references carry an @id (and maybe a\r
+              # name/url for readability) but are not held to the full CDIF core\r
+              # requirements - the documented resource is the SUBJECT of provenance,\r
+              # never the object, so this never excludes the documented dataset.\r
+              FILTER NOT EXISTS { ?dpd prov:wasDerivedFrom ?this . }\r
+              FILTER NOT EXISTS { ?dpu prov:used ?this . }\r
+              FILTER NOT EXISTS { ?dib schema:isBasedOn ?this . }\r
+              FILTER NOT EXISTS { ?dsrc dcterms:source ?this . }\r
+            }\r
           """ ] .
 
 cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
@@ -182,17 +182,17 @@ cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
             sh:prefixes ( [ sh:namespace "http://schema.org/" ;
                         sh:prefix "schema" ] [ sh:namespace "https://example.org/" ;
                         sh:prefix "ex" ] ) ;
-            sh:select """
-       PREFIX schema: <http://schema.org/>
-       PREFIX ex: <https://example.org/>
-            SELECT ?this
-            WHERE {
-              ?this a schema:Dataset .
-              MINUS {
-                ?this schema:about ?x .
-                ?this schema:additionalType "dcat:CatalogRecord" .
-              }
-            }
+            sh:select """\r
+       PREFIX schema: <http://schema.org/>\r
+       PREFIX ex: <https://example.org/>\r
+            SELECT ?this\r
+            WHERE {\r
+              ?this a schema:Dataset .\r
+              MINUS {\r
+                ?this schema:about ?x .\r
+                ?this schema:additionalType "dcat:CatalogRecord" .\r
+              }\r
+            }\r
           """ ] .
 
 cdifd:CDIFIdentifierShape a sh:NodeShape ;
@@ -712,9 +712,9 @@ cdifd:metadataIdentifierProperty a sh:PropertyShape ;
     sh:severity sh:Warning .
 
 cdifd:metadataProfileProperty a sh:PropertyShape ;
-    sh:hasValue <https://w3id.org/cdif/core/1.0>,
-        <https://w3id.org/cdif/discovery/1.0> ;
-    sh:message "a CDIF Discovery metadata record must declare conformance to both https://w3id.org/cdif/core/1.0 and https://w3id.org/cdif/discovery/1.0" ;
+    sh:hasValue <https://w3id.org/cdif/core/1.1>,
+        <https://w3id.org/cdif/discovery/1.1> ;
+    sh:message "a CDIF Discovery metadata record must declare conformance to both https://w3id.org/cdif/core/1.1 and https://w3id.org/cdif/discovery/1.1" ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRI ;
     sh:path dcterms:conformsTo .

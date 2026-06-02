@@ -189,10 +189,10 @@
     },
     "dcterms:conformsTo": [
       {
-        "@id": "https://w3id.org/cdif/core/1.0"
+        "@id": "https://w3id.org/cdif/core/1.1"
       },
       {
-        "@id": "https://w3id.org/cdif/discovery/1.0"
+        "@id": "https://w3id.org/cdif/discovery/1.1"
       }
     ],
     "schema:description": "Adapted from BCO-DMO schema.org JSON-LD catalog record for Hawaii Ocean Time-series (HOT) Niskin bottle biogeochemistry data at Station ALOHA (DOI: 10.1575/1912/bco-dmo.3773.1). Converted to CDIF discovery profile: property names prefixed with schema: namespace, @context set to CDIF prefix declarations, schema:creator wrapped in @list."

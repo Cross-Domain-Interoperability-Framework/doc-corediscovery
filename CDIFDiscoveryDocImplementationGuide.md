@@ -66,8 +66,8 @@ A resource declares conformand to the CDIF Discovery document specification when
 "schema:subjectOf": {
   "@type": ["schema:CreativeWork", "dcat:CatalogRecord"],
   "dcterms:conformsTo": [
-    "https://w3id.org/cdif/core/1.0",
-    "https://w3id.org/cdif/discovery/1.0"
+    "https://w3id.org/cdif/core/1.1",
+    "https://w3id.org/cdif/discovery/1.1"
   ]
 }
 ```
@@ -166,8 +166,8 @@ Example instance with dcat catalog record content (mapped to schema.org properti
     "about": {"@id": "ex:URIforNode1"},
     "description": "metadata about documentation for ex:URIforDescribedResource",
     "dcterms:conformsTo": [
-      {"@id": "https://w3id.org/cdif/core/1.0"},
-      {"@id": "https://w3id.org/cdif/discovery/1.0"}
+      {"@id": "https://w3id.org/cdif/core/1.1"},
+      {"@id": "https://w3id.org/cdif/discovery/1.1"}
     ]
   }
 }
@@ -447,7 +447,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required, Repeatable
 - **Content:** [object reference](#object-reference)
-- **Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF discovery must include 'https://w3id.org/cdif/discovery/1.0' and 'https://w3id.org/cdif/core/1.0' because conforms to both profiles.
+- **Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF discovery must include 'https://w3id.org/cdif/discovery/1.1' and 'https://w3id.org/cdif/core/1.1' because conforms to both profiles.
 
 #### description
 
@@ -1198,7 +1198,7 @@ CHOICE. At least one of the following four is required
 - **Content:** [Dataset/dcat:CatalogRecord](#datasetdcatcatalogrecord)
 - **Description:** This property contains information about the metadata record itself, as opposed to the resource the record describes. See Uses of dcat:CatalogRecord and https://github.com/Cross-Domain-Interoperability-Framework/Discovery/issues/13 for discussion on how to make assertion about the metadata record distinct from statements about the described resource. Use the dcat:CatalogRecord as additionalType to distinguish this schema:Dataset from the schema:Dataset about a described external resource. see <https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/contentmodel.html#properties-for-metadata-management>. Introduction of this is novel for schema.org implementations.
 
-The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w3id.org/cdif/core/1.0` and `https://w3id.org/cdif/discovery/1.0`. The Discovery profile composes the CDIF Core profile, so the JSON Schema carries the Core conformance constraint in addition to the Discovery one; an instance declaring only the Discovery URI will fail validation. See [conformsTo](#conformsto) under Dataset/dcat:CatalogRecord.
+The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w3id.org/cdif/core/1.1` and `https://w3id.org/cdif/discovery/1.1`. The Discovery profile composes the CDIF Core profile, so the JSON Schema carries the Core conformance constraint in addition to the Discovery one; an instance declaring only the Discovery URI will fail validation. See [conformsTo](#conformsto) under Dataset/dcat:CatalogRecord.
 
 ## sf:SimpleFeature
 
