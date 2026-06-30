@@ -545,9 +545,6 @@
     },
     "dcterms:conformsTo": [
       {
-        "@id": "https://w3id.org/cdif/bbr/metadata/profiles/cdifCompositeProfile/CoreDiscovery"
-      },
-      {
         "@id": "https://w3id.org/cdif/core/1.1"
       },
       {
