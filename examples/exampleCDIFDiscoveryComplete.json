@@ -422,7 +422,10 @@
         "ocean basin"
       ],
       "schema:identifier": "https://www.marineregions.org/mrgid/4287",
-      "schema:alternateName": ["Labrador Sea", "Mer du Labrador"],
+      "schema:alternateName": [
+        "Labrador Sea",
+        "Mer du Labrador"
+      ],
       "schema:geo": {
         "@type": [
           "schema:GeoShape"
