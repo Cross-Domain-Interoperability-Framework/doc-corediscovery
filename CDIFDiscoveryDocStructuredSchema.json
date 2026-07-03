@@ -73,14 +73,7 @@
       "type": "array",
       "minItems": 0,
       "items": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "$ref": "#/$defs/cdifConceptOrTerm"
-          }
-        ]
+        "$ref": "#/$defs/cdifConceptOrTermOrString"
       }
     },
     "schema:sameAs": {
@@ -573,14 +566,7 @@
             "minItems": 1
           },
           "schema:linkRelationship": {
-            "anyOf": [
-              {
-                "$ref": "#/$defs/cdifConceptOrTerm"
-              },
-              {
-                "type": "string"
-              }
-            ]
+            "$ref": "#/$defs/cdifConceptOrTermOrString"
           },
           "schema:target": {
             "type": "object",
@@ -639,14 +625,7 @@
       "description": "Keywords are an array of strings, an array of schema:DefinedTerms, or some combination of these. If you have information about a controlled vocabulary from which keywords come from, use schema:DefinedTerm to descibe that keyword. This allowed variability makes parsing metadata hard; recommend using DefinedTerm for all keywords if any of them are from a known vocabulary, otherwise an array of strings.",
       "type": "array",
       "items": {
-        "anyOf": [
-          {
-            "$ref": "#/$defs/cdifConceptOrTerm"
-          },
-          {
-            "type": "string"
-          }
-        ]
+        "$ref": "#/$defs/cdifConceptOrTermOrString"
       }
     },
     "schema:creator": {
@@ -719,14 +698,7 @@
                 "minItems": 1
               },
               "schema:roleName": {
-                "anyOf": [
-                  {
-                    "type": "string"
-                  },
-                  {
-                    "$ref": "#/$defs/DefinedTerm"
-                  }
-                ]
+                "$ref": "#/$defs/cdifConceptOrTermOrString"
               },
               "schema:contributor": {
                 "anyOf": [
@@ -1071,14 +1043,7 @@
       "description": "The technique, technology, or methodology used for measurement or determination of the dataset values.",
       "type": "array",
       "items": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "$ref": "#/$defs/cdifConceptOrTerm"
-          }
-        ]
+        "$ref": "#/$defs/cdifConceptOrTermOrString"
       }
     },
     "schema:variableMeasured": {
@@ -1752,273 +1717,31 @@
     }
   ],
   "$defs": {
-    "Reference": {
-      "type": "object",
-      "description": "Building block to implement relations to other resources using a URL and some semantics.",
-      "allOf": [
-        {
-          "description": "schema for a labeled link, a profile of schema.org/CreativeWork",
-          "type": "object",
-          "properties": {
-            "@type": {
-              "default": "schema:CreativeWork",
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "contains": {
-                "const": "schema:CreativeWork"
-              },
-              "minItems": 1
-            },
-            "schema:name": {
-              "type": "string"
-            },
-            "schema:description": {
-              "type": "string"
-            },
-            "schema:url": {
-              "type": "string",
-              "format": "uri"
-            }
-          },
-          "required": [
-            "@type",
-            "schema:url"
-          ]
-        },
-        {
-          "type": "object",
-          "description": "DCAT Relationship surface added on top of the schema.org labeled link construct.",
-          "properties": {
-            "@type": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "contains": {
-                "const": "dcat:Relationship"
-              },
-              "minItems": 1
-            },
-            "dcat:hadRole": {
-              "description": "Role of the related resource as a SKOS Concept (DCAT canonical role slot).",
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/cdifConceptOrTerm"
-                }
-              ]
-            },
-            "dcterms:relation": {
-              "type": "string",
-              "format": "uri",
-              "description": "URI of the related resource (DCAT canonical pointer to what is being related to; distinct from schema:url which is the presentation URL inherited from labeledLink)."
-            }
-          }
-        }
-      ]
-    },
-    "cdifConceptOrTerm": {
-      "description": "A SKOS concept identified by URI, a schema:DefinedTerm, or an inline cdif:Concept. Shared shape used wherever a CDIF property carries either a controlled-vocabulary reference or an inline concept definition.",
+    "cdifConceptOrTermOrString": {
+      "title": "CDIF Concept-or-Term-or-String",
+      "description": "Shared shape for a CDIF property that carries either a controlled-vocabulary value or a bare string label. Wraps cdifConceptOrTerm (SKOS-concept @id-ref, schema:DefinedTerm, or inline cdif:Concept) with a plain-string alternative used for legacy or single-word labels not yet bound to a vocabulary.",
       "anyOf": [
         {
-          "type": "object",
-          "properties": {
-            "@id": {
-              "type": "string",
-              "description": "reference to a skos concept for the data type"
-            }
-          }
+          "type": "string"
         },
         {
-          "$ref": "#/$defs/DefinedTerm"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "@context": {
-              "description": "JSON-LD context declaring the skos namespace prefix. May be a single object or an array of strings and objects.",
+          "description": "A SKOS concept identified by URI, a schema:DefinedTerm, or an inline cdif:Concept. Shared shape used wherever a CDIF property carries either a controlled-vocabulary reference or an inline concept definition.",
+          "anyOf": [
+            {
               "type": "object",
               "properties": {
-                "skos": {
-                  "const": "http://www.w3.org/2004/02/skos/core#"
+                "@id": {
+                  "type": "string",
+                  "description": "reference to a skos concept for the data type"
                 }
-              },
-              "required": [
-                "skos"
-              ]
-            },
-            "@id": {
-              "type": "string",
-              "description": "URI identifier for this concept."
-            },
-            "@type": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "contains": {
-                "const": "skos:Concept"
-              },
-              "minItems": 1
-            },
-            "skos:prefLabel": {
-              "description": "Preferred lexical label for this concept. A single string, a single language-tagged value, or an array of language-tagged values. Each language should appear at most once.",
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/LanguageTaggedValue"
-                },
-                {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/$defs/LanguageTaggedValue"
-                  }
-                }
-              ]
-            },
-            "skos:notation": {
-              "description": "Classification code for this concept within a scheme.",
-              "type": "array",
-              "items": {
-                "type": "string"
               }
             },
-            "skos:definition": {
-              "description": "Formal explanation of the meaning of this concept.",
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/LanguageTaggedValue"
-                },
-                {
-                  "type": "array",
-                  "items": {
-                    "anyOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "$ref": "#/$defs/LanguageTaggedValue"
-                      }
-                    ]
-                  }
-                }
-              ]
+            {
+              "$ref": "#/$defs/DefinedTerm"
             },
-            "skos:note": {
-              "description": "General note about this concept.",
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/LanguageTaggedValue"
-                },
-                {
-                  "type": "array",
-                  "items": {
-                    "anyOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "$ref": "#/$defs/LanguageTaggedValue"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "skos:inScheme": {
-              "description": "Concept scheme(s) this concept belongs to.",
-              "anyOf": [
-                {
-                  "type": "object",
-                  "properties": {
-                    "@id": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "@id"
-                  ]
-                },
-                {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "@id": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "@id"
-                    ]
-                  }
-                }
-              ]
-            },
-            "skos:broader": {
-              "description": "Broader (parent) concepts in the hierarchy. Items are inline concept objects or @id references.",
-              "type": "array",
-              "items": {
-                "anyOf": [
-                  {
-                    "type": "object",
-                    "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
-                    "properties": {
-                      "@id": {
-                        "type": "string",
-                        "description": "URI of the referenced concept."
-                      }
-                    },
-                    "required": [
-                      "@id"
-                    ]
-                  },
-                  {
-                    "$comment": "circular-ref"
-                  }
-                ]
-              }
-            },
-            "skos:narrower": {
-              "description": "Narrower (child) concepts in the hierarchy. Items are inline concept objects or @id references.",
-              "type": "array",
-              "items": {
-                "anyOf": [
-                  {
-                    "type": "object",
-                    "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
-                    "properties": {
-                      "@id": {
-                        "type": "string",
-                        "description": "URI of the referenced concept."
-                      }
-                    },
-                    "required": [
-                      "@id"
-                    ]
-                  },
-                  {
-                    "$comment": "circular-ref"
-                  }
-                ]
-              }
+            {
+              "$ref": "#/$defs/cdifConcept"
             }
-          },
-          "required": [
-            "@type",
-            "skos:prefLabel"
           ]
         }
       ]
@@ -2134,6 +1857,68 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    "Reference": {
+      "type": "object",
+      "description": "Building block to implement relations to other resources using a URL and some semantics.",
+      "allOf": [
+        {
+          "description": "schema for a labeled link, a profile of schema.org/CreativeWork",
+          "type": "object",
+          "properties": {
+            "@type": {
+              "default": "schema:CreativeWork",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "contains": {
+                "const": "schema:CreativeWork"
+              },
+              "minItems": 1
+            },
+            "schema:name": {
+              "type": "string"
+            },
+            "schema:description": {
+              "type": "string"
+            },
+            "schema:url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "@type",
+            "schema:url"
+          ]
+        },
+        {
+          "type": "object",
+          "description": "DCAT Relationship surface added on top of the schema.org labeled link construct.",
+          "properties": {
+            "@type": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "contains": {
+                "const": "dcat:Relationship"
+              },
+              "minItems": 1
+            },
+            "dcat:hadRole": {
+              "$ref": "#/$defs/cdifConceptOrTermOrString",
+              "description": "Role of the related resource as a SKOS Concept (DCAT canonical role slot)."
+            },
+            "dcterms:relation": {
+              "type": "string",
+              "format": "uri",
+              "description": "URI of the related resource (DCAT canonical pointer to what is being related to; distinct from schema:url which is the presentation URL inherited from labeledLink)."
+            }
+          }
         }
       ]
     },
@@ -2281,14 +2066,7 @@
         "schema:additionalType": {
           "type": "array",
           "items": {
-            "anyOf": [
-              {
-                "$ref": "#/$defs/DefinedTerm"
-              },
-              {
-                "type": "string"
-              }
-            ]
+            "$ref": "#/$defs/cdifConceptOrTermOrString"
           }
         },
         "schema:name": {
@@ -2353,6 +2131,191 @@
             }
           ]
         }
+      ]
+    },
+    "cdifConcept": {
+      "type": "object",
+      "properties": {
+        "@context": {
+          "description": "JSON-LD context declaring the skos namespace prefix. May be a single object or an array of strings and objects.",
+          "type": "object",
+          "properties": {
+            "skos": {
+              "const": "http://www.w3.org/2004/02/skos/core#"
+            }
+          },
+          "required": [
+            "skos"
+          ]
+        },
+        "@id": {
+          "type": "string",
+          "description": "URI identifier for this concept."
+        },
+        "@type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "contains": {
+            "const": "skos:Concept"
+          },
+          "minItems": 1
+        },
+        "skos:prefLabel": {
+          "description": "Preferred lexical label for this concept. A single string, a single language-tagged value, or an array of language-tagged values. Each language should appear at most once.",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/LanguageTaggedValue"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/LanguageTaggedValue"
+              }
+            }
+          ]
+        },
+        "skos:notation": {
+          "description": "Classification code for this concept within a scheme.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "skos:definition": {
+          "description": "Formal explanation of the meaning of this concept.",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/LanguageTaggedValue"
+            },
+            {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "$ref": "#/$defs/LanguageTaggedValue"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "skos:note": {
+          "description": "General note about this concept.",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/LanguageTaggedValue"
+            },
+            {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "$ref": "#/$defs/LanguageTaggedValue"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "skos:inScheme": {
+          "description": "Concept scheme(s) this concept belongs to.",
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "@id"
+              ]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "@id": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "@id"
+                ]
+              }
+            }
+          ]
+        },
+        "skos:broader": {
+          "description": "Broader (parent) concepts in the hierarchy. Items are inline concept objects or @id references.",
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
+                "properties": {
+                  "@id": {
+                    "type": "string",
+                    "description": "URI of the referenced concept."
+                  }
+                },
+                "required": [
+                  "@id"
+                ]
+              },
+              {
+                "$ref": "#/$defs/cdifConcept"
+              }
+            ]
+          }
+        },
+        "skos:narrower": {
+          "description": "Narrower (child) concepts in the hierarchy. Items are inline concept objects or @id references.",
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
+                "properties": {
+                  "@id": {
+                    "type": "string",
+                    "description": "URI of the referenced concept."
+                  }
+                },
+                "required": [
+                  "@id"
+                ]
+              },
+              {
+                "$ref": "#/$defs/cdifConcept"
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "@type",
+        "skos:prefLabel"
       ]
     },
     "LanguageTaggedValue": {
