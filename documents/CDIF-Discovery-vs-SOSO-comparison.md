@@ -4,33 +4,34 @@ Comparison of the [CDIF Discovery profile](https://cross-domain-interoperability
 
 ### Sources
 
-- **CDIF Discovery JSON Schema**: cdifCore [`schema.yaml`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/schema.yaml) + CDIFDiscoveryProfile [`schema.yaml`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/schema.yaml)
-- **CDIF Specification**: [Schema.org Implementation of CDIF Metadata](https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html)
-- **CDIF SHACL**: cdifCore [`rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) + CDIFDiscoveryProfile [`rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/profiles/cdifProfiles/CDIFDiscoveryProfile/rules.shacl)
+- **CDIF Core (release profile)**: [`cdifCoreStructuredSchema.json`](https://github.com/Cross-Domain-Interoperability-Framework/profile-core) + [`coreRules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/profile-core) — profile URI `https://w3id.org/cdif/core/1.1`
+- **CDIF Discovery (release profile)**: [`cdifDiscoveryStructuredSchema.json`](https://github.com/Cross-Domain-Interoperability-Framework/profile-discovery) + [`discoveryRules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/profile-discovery) — profile URI `https://w3id.org/cdif/discovery/1.1`
+- **Building-block sources**: [`metadataBuildingBlocks/_sources`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) (`cdifProperties/cdifCore`, `profiles/cdifProfiles/CDIFDiscoveryProfile`, and the sub-building blocks they compose)
+- **CDIF Specification**: [Schema.org Implementation of CDIF Metadata](https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html); [Discovery profile](https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/discovery/)
 - **SOSO Guide**: [ESIP Science on Schema.org Dataset.md](https://github.com/ESIPFed/science-on-schema.org/blob/main/guides/Dataset.md)
 - **SOSO SHACL**: [soso_common_v1.3.0.ttl](https://github.com/ESIPFed/science-on-schema.org/blob/v1.3-SHACL/validation/shapegraphs/soso_common_v1.3.0.ttl)
 
-Generated 2026-03-19, updated 2026-04-05 by Claude Code; edited by S.M. Richard.
+Generated 2026-03-19; updated 2026-04-05; **revised 2026-07-20** to track the release profiles (core/discovery **1.1**) and incorporate the ESIP review discussion with Rebecca Ringuette (see the *Discussion* section below). The SOSO columns were cross-checked directly against [`soso_common_v1.3.0.ttl`](https://github.com/ESIPFed/science-on-schema.org/blob/v1.3-SHACL/validation/shapegraphs/soso_common_v1.3.0.ttl) and the current [`main` Dataset guide](https://github.com/ESIPFed/science-on-schema.org/blob/main/guides/Dataset.md), which states that **only `name` and `description` are required**. Prepared with Claude Code; edited by S.M. Richard.
 
 ## Summary
 
-CDIF Discovery and SOSO share a common foundation in schema.org vocabulary but differ in scope and strictness:
+CDIF Discovery and SOSO share a common foundation in schema.org vocabulary but differ in scope and strictness. Both can be understood as **schema.org profiles**; a stated goal of the ongoing SOSO–CDIF conversation is that the *required* fields align closely enough that a minimal record conforms to both.
 
 - **CDIF Discovery** is a formal JSON Schema profile composed from modular building blocks, with machine-enforceable constraints and per-building-block SHACL shapes. Designed for cross-domain interoperability with explicit conformance declaration.
 - **SOSO** is a guidance document with recommendations, focused on Google Dataset Search discoverability. SOSO v1.3 also provides SHACL validation shapes.
-- **CDIF requires more fields** at the core level (identifier, dateModified, subjectOf with conformsTo, conditionsOfAccess/license, url/distribution).
-- **CDIF separates** metadata-about-metadata (CdifCatalogRecord via `schema:subjectOf`) from the resource description.
-- **CDIF extends** with data quality (W3C DQV), measurement technique, structured variables (DDI-CDI), and typed related links.
-- **SOSO SHACL is stricter than SOSO guide** — the SHACL shapes enforce `schema:url` (Violation) and `schema:version` (Violation) as required, while the guide lists them as Recommended.
+- **CDIF requires more fields** at the core level (identifier, dateModified, subjectOf with conformsTo, license/conditionsOfAccess, url/distribution).
+- **CDIF separates** metadata-about-metadata (the catalog record, via `schema:subjectOf`) from the resource description.
+- **CDIF extends** with data quality (W3C DQV), measurement technique, structured/typed variables (dual-typed `schema:PropertyValue` + DDI-CDI `cdi:InstanceVariable` in the Data Description profile), and typed related links.
+- **SOSO SHACL is stricter than the SOSO guide** — the guide names only `schema:name` and `schema:description` as *required*, yet the shapes additionally enforce `schema:url`, `schema:version`, `schema:identifier`, and `schema:license` as Violations. On `version` in particular, CDIF and the reviewers agree it should **not** be required (see Discussion §3).
 
 ## Architecture
 
-The CDIF Discovery profile composes two layers:
+The CDIF Discovery profile composes two release layers:
 
-1. **cdifCore** — base properties required for all CDIF records: `@context`, `@id`, `@type`, `schema:name`, `schema:identifier`, `schema:dateModified`, rights (license or conditionsOfAccess), access (url or distribution), `schema:subjectOf` (CdifCatalogRecord with `dcterms:conformsTo`)
-2. **CDIFDiscoveryProfile** — adds discovery-oriented properties: `schema:spatialCoverage`, `schema:temporalCoverage`, `schema:variableMeasured`, `schema:measurementTechnique`, `dqv:hasQualityMeasurement`
+1. **cdifCore** (`core/1.1`) — base properties required for all CDIF records: `@context`, `@id`, `@type`, `schema:name`, `schema:identifier`, `schema:dateModified`, rights (license **or** conditionsOfAccess), access (url **or** distribution), and `schema:subjectOf` (a catalog record with `dcterms:conformsTo`).
+2. **CDIFDiscoveryProfile** (`discovery/1.1`) — adds discovery-oriented properties: `schema:measurementTechnique`, `schema:variableMeasured`, `schema:spatialCoverage`, `schema:temporalCoverage`, `dqv:hasQualityMeasurement`.
 
-Both layers have their own `rules.shacl`. The composite SHACL shapes are generated by `ShaclValidation/generate_shacl_shapes.py` in the validation repo.
+Each layer ships a StructuredSchema (framed-tree JSON Schema) and a `rules.shacl`. Composite SHACL shapes for the validation tooling are generated by `ShaclValidation/generate_shacl_shapes.py` in the validation repo.
 
 ## Property-by-Property Comparison
 
@@ -38,9 +39,9 @@ Both layers have their own `rules.shacl`. The composite SHACL shapes are generat
 
 | Abbrev | Meaning |
 |--------|---------|
-| **cdifCore** | CDIF Core building block (required for all CDIF records) |
-| **Discovery** | CDIFDiscoveryProfile (adds discovery properties to cdifCore) |
-| **CDIF SHACL** | Enforcement in cdifCore + CDIFDiscoveryProfile rules.shacl (V=Violation, W=Warning, I=Info, —=not checked) |
+| **cdifCore** | CDIF Core building block (`core/1.1`, required for all CDIF records) |
+| **Discovery** | CDIFDiscoveryProfile (`discovery/1.1`, adds discovery properties to cdifCore) |
+| **CDIF SHACL** | Enforcement in coreRules + discoveryRules (V=Violation, W=Warning, I=Info, —=not checked) |
 | **SOSO Guide** | Obligation from Dataset.md (Required, Recommended, Optional) |
 | **SOSO SHACL** | Enforcement in soso_common_v1.3.0.ttl (V=Violation, W=Warning, I=Info, —=not checked) |
 
@@ -50,7 +51,7 @@ Both layers have their own `rules.shacl`. The composite SHACL shapes are generat
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `@context` | Implicit (`http://schema.org/`) | Namespace V (rejects `https:`) | **cdifCore Required** — must declare `schema`, `dcterms`, `dcat`, `prov` | — (JSON-LD, not RDF) | SOSO uses `@vocab`; CDIF requires explicit prefix declarations |
+| `@context` | Implicit (`http://schema.org/`) | Namespace V (rejects `https:`) | **cdifCore Required** — must declare `schema`, `dcterms`, `dcat`, `prov` | Namespace shapes (V) reject `https://schema.org/` | SOSO uses `@vocab`; CDIF requires explicit prefix declarations |
 | `@id` | Not mentioned | **V** (sh:IRI) | **cdifCore Required** | **V** (sh:IRI) | Both require an IRI identifier |
 | `@type` | `schema:Dataset` assumed | — | **cdifCore Required** — must contain `schema:Dataset` | — (via SPARQL target) | CDIF enforces via `contains`; allows additional types |
 | `schema:additionalType` | Not mentioned | — | **cdifCore Optional** | — | CDIF supports typing from external vocabularies |
@@ -60,12 +61,12 @@ Both layers have their own `rules.shacl`. The composite SHACL shapes are generat
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
 | `schema:name` | Required | **V** (minCount 1) | **cdifCore Required** | **V** (minCount 1, minLength 5) | All agree: required |
-| `schema:description` | Required | **V** (minCount 1) | **cdifCore Optional** | **W** (minCount 1) | SOSO requires; CDIF recommends (Warning) |
-| `schema:url` | Recommended | **V** (exactly 1) | **cdifCore Conditional** | **V** (alternativePath with distribution) | SOSO requires exactly 1; CDIF requires url OR distribution |
-| `schema:version` | Recommended | **V** (exactly 1) | **cdifCore Optional** | — | SOSO SHACL enforces as Violation; CDIF treats as optional |
+| `schema:description` | Required | **V** (minCount 1) | **cdifCore Optional** | **W** (minCount 1) | SOSO requires; CDIF currently recommends (Warning). **Under review** — Google Dataset Search needs a description (min ~50 chars) to index; CDIF may strengthen this (Discussion §6) |
+| `schema:url` | Recommended | **V** (exactly 1, IRIOrLiteral) | **cdifCore Conditional** | **V** (`url` OR `distribution`) | Both treat `url` as the **landing page**; SOSO requires exactly 1, CDIF requires url **or** distribution because a landing page cannot be assumed to exist (Discussion §7) |
+| `schema:version` | Recommended | **V** (exactly 1) | **cdifCore Optional** | — | SOSO SHACL enforces as Violation; CDIF and reviewers agree it should stay **optional** (dynamic datasets, e.g. active space missions — Discussion §3) |
 | `schema:inLanguage` | Not mentioned | — | **cdifCore Optional** | — | CDIF only |
-| `schema:dateModified` | Optional | — | **cdifCore Required** | **V** (minCount 1, ISO8601 pattern) | CDIF promotes to required with format enforcement |
-| `schema:datePublished` | Recommended | — | **cdifCore Optional** | **I** (ISO8601 pattern) | CDIF checks format if present |
+| `schema:dateModified` | Optional | — | **cdifCore Required** | **V** (minCount 1, ISO8601 pattern) | CDIF requires it to flag possible content change even without a formal version scheme. Two distinct dates: one on the resource, one on the catalog record (metadata) — Discussion §4 |
+| `schema:datePublished` | Recommended | — | **cdifCore Optional** | — (format checked if present) | CDIF checks ISO8601 format when present |
 | `schema:dateCreated` | Recommended | — | Not included | — | SOSO only |
 | `schema:expires` | Optional | — | Not included | — | SOSO only |
 
@@ -73,63 +74,64 @@ Both layers have their own `rules.shacl`. The composite SHACL shapes are generat
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:identifier` | Recommended | **V** (minCount 1) | **cdifCore Required** | **V** (minCount 1, string or PropertyValue) | Both require; PropertyValue pattern recommended |
-| `schema:sameAs` | Recommended | **W** (minCount 1) | **cdifCore Optional** | **I** (IRIOrLiteral) | SOSO warns if missing; CDIF informational |
+| `schema:identifier` | Recommended | **V** (minCount 1) | **cdifCore Required** | **V** (minCount 1, string or PropertyValue) | Both effectively require; PropertyValue pattern recommended |
+| `schema:sameAs` | Recommended | **W** (minCount 1) | **cdifCore Optional** | **I** (IRI or literal) | SOSO warns if missing; CDIF informational |
 
 ### Rights and Access
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:license` | Recommended | **V** (minCount 1) | **cdifCore Conditional** | **V** (alternativePath with conditionsOfAccess) | SOSO requires; CDIF requires license OR conditionsOfAccess |
-| `schema:conditionsOfAccess` | Not mentioned | — | **cdifCore Conditional** | **V** (alternativePath with license) | CDIF only — alternative to license |
-| `schema:isAccessibleForFree` | Recommended | **W** (boolean) | Not included | — | SOSO only |
-| `schema:publishingPrinciples` | Not mentioned | — | **cdifCore Optional** | **I** (CreativeWork) | CDIF only — maintenance/update policies |
+| `schema:license` | Recommended | **V** (minCount 1) | **cdifCore Conditional** | **V** (`license` OR `conditionsOfAccess`) | SOSO requires; CDIF requires license **or** conditionsOfAccess — see Discussion §5 |
+| `schema:conditionsOfAccess` | Not mentioned | — | **cdifCore Conditional** | **V** (alternative to license) | CDIF only. Covers "public"/access-restriction statements; also the intended home for EU DCAT `accessRights` semantics and (near-term) cost statements (Discussion §5, §8) |
+| `schema:isAccessibleForFree` | Recommended | **W** (boolean) | Not included | — | SOSO only; harmless to include (open-world). Candidate for a future CDIF software-description profile; costs otherwise expressible via conditionsOfAccess (Discussion §8) |
+| `schema:publishingPrinciples` | Not mentioned | — | **cdifCore Optional** | — | CDIF only — maintenance/update policies |
 
 ### Keywords and Subject
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:keywords` | Recommended | **W** (minCount 1) | **cdifCore Optional** | **W** (minCount 1) + **W** (no-comma check) | Both warn if missing; CDIF adds comma-in-keyword check |
-| `schema:measurementTechnique` | Not mentioned | — | **Discovery Optional** | — | CDIF only — array of strings or DefinedTerms |
+| `schema:keywords` | Recommended | **W** (minCount 1) | **cdifCore Optional** | **W** (minCount 1) | Both warn if missing. **Divergence:** the SOSO shape message explicitly permits a *comma-delimited* keyword string (though the current guide's examples use arrays); CDIF prefers an array and its JSON Schema flags embedded commas so multi-term strings are split |
+| `schema:measurementTechnique` | Not mentioned | — | **Discovery Optional** | W/I (DefinedTerm shape) | CDIF only — string(s) or DefinedTerm(s) |
 
 ### Agents (People and Organizations)
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:creator` | Recommended | — | **cdifCore Optional** — `@list` wrapper | **W** (minCount 1) | CDIF uses JSON-LD `@list` for order; both recommend |
-| `schema:contributor` | Optional | — | **cdifCore Optional** — with agentInRole BB | **I** (Role/Person/Org) | CDIF adds agentInRole building block |
-| `schema:publisher` | Recommended | — | **cdifCore Optional** | **I** (via responsibleParty alternativePath) | Match |
+| `schema:creator` | Recommended | — | **cdifCore Optional** — `@list` wrapper | **W** (minCount 1) | CDIF uses JSON-LD `@list` to preserve author order; both groups use `@list` for authors (Discussion §9) |
+| `schema:contributor` | Optional | — | **cdifCore Optional** — with agentInRole/Role | **I** (Role/Person/Org) | SOSO uses `schema:Role` for contributors; CDIF supports roles but does **not** require ordered contributors (Discussion §9) |
+| `schema:publisher` | Recommended | — | **cdifCore Optional** | **I** (via responsible-party check) | Match |
 | `schema:provider` | Recommended | — | **cdifCore Optional** (array) | **I** (Person/Org/IRI) | Match |
-| `schema:funding` | Optional | — | **cdifCore Optional** — MonetaryGrant BB | — | Match |
+| `schema:funding` | Recommended | — | **cdifCore Optional** — MonetaryGrant | W (grant name/identifier) | Guide: providers "should include funding information". Match |
 
 ### Coverage (Spatial and Temporal)
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:spatialCoverage` | Recommended | — | **Discovery Optional** — array of SpatialExtent | **V** (Place must have geo or name) | CDIF adds geosparql:asWKT geometry support |
-| `schema:temporalCoverage` | Recommended | — | **Discovery Optional** — array of TemporalExtent | — (via BB) | CDIF supports structured time objects + string intervals |
+| `schema:spatialCoverage` | Recommended | — | **Discovery Optional** — SpatialExtent array | **V** (Place must have geo or name), geo shape | CDIF adds optional `geosparql:asWKT` geometry (Discussion §10) |
+| `schema:temporalCoverage` | Recommended | — | **Discovery Optional** — TemporalExtent array | temporalExtent shape | Both support the ISO interval string (e.g. `2015-09-01T12:11:00Z/..`); CDIF adds structured time objects for deep-time/prehistoric ranges (Discussion §13) |
 
 ### Variables
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:variableMeasured` | Recommended | **W** (class PropertyValue) | **Discovery Optional** — VariableMeasured or StatisticalVariable | **V** (name required), **W** (propertyID) | CDIF adds StatisticalVariable and DDI-CDI extensions |
+| `schema:variableMeasured` | Recommended | **W** (minCount 1, class PropertyValue); nested PropertyValue **V** (name OR propertyID) | **Discovery Optional** — PropertyValue | **V** (name required), **W** (propertyID) | Both require each variable to carry a name or propertyID (SOSO `SO:PropertyValue-nameOrPropertyID`, Violation; CDIF name V + propertyID W). For richer description CDIF **dual-types** each variable `schema:PropertyValue` + `cdi:InstanceVariable` (DDI-CDI) in the Data Description profile (Discussion §12) |
 
 ### Distribution and Access
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:distribution` | Recommended | — | **cdifCore Conditional** — DataDownload or WebAPI | **V** (alternativePath with url), **I** (class check) | CDIF requires url OR distribution; adds WebAPI type |
-| DataDownload `schema:contentUrl` | — | — | **Required** on DataDownload | **V** (minCount 1) | CDIF enforces via dataDownload BB |
+| `schema:distribution` | Recommended | — | **cdifCore Conditional** — DataDownload or WebAPI | **V** (`url` OR `distribution`), class check | Semantic agreement: SOSO also uses `distribution`/`DataDownload` for direct download and `potentialAction` for service access. CDIF requires url **or** distribution and treats distributions as **machine-actionable** (Discussion §7) |
+| DataDownload `schema:contentUrl` | — | — | **Required** on DataDownload | **V** (minCount 1) | Enforced via the dataDownload building block |
 | DataDownload `spdx:checksum` | Optional | — | Optional on DataDownload | **I** (class spdx:Checksum) | Both support checksums |
-| `schema:potentialAction` | Optional | — | Nested inside WebAPI distribution | — | CDIF handles via WebAPI BB with EntryPoint |
+| WebAPI (`schema:serviceType` + `schema:potentialAction` + `schema:termsOfService`) | — (SOSO uses root `potentialAction`) | — | **Required together** on a WebAPI distribution | V (service shape) | CDIF models parameterized/service access as a `schema:WebAPI` distribution with an `EntryPoint`/`urlTemplate`; `schema:termsOfService` is required |
+| `schema:potentialAction` | Optional | — | Inside a WebAPI distribution | — | See Discussion §7 for the landing-page vs. machine-action split |
 
 ### Provenance
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `prov:wasGeneratedBy` | Optional | — | **cdifCore Optional** — GeneratedBy (prov:Activity) | **W** (prov:used) | CDIF provides structured activity schema |
-| `prov:wasDerivedFrom` | Optional | — | **cdifCore Optional** — DerivedFrom | — | Match |
+| `prov:wasGeneratedBy` | Optional | — | **cdifCore Optional** — Activity (`prov:Activity`) | **W** (prov:used) | CDIF provides a structured activity schema (extended in the Provenance profile) |
+| `prov:wasDerivedFrom` | Optional | — | **cdifCore Optional** — DerivedFrom | derivedFrom shape | Match |
 | `prov:wasRevisionOf` | Optional | — | Not included | — | SOSO only |
 
 ### Data Quality
@@ -142,18 +144,18 @@ Both layers have their own `rules.shacl`. The composite SHACL shapes are generat
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:subjectOf` | Optional | — | **cdifCore Required** — CdifCatalogRecord | **W** (must have IRI) | Major difference: CDIF requires nested catalog record |
-| `schema:additionalType` (on CatalogRecord) | — | — | **Required** `dcat:CatalogRecord` | **V** (hasValue dcat:CatalogRecord) | CDIF only |
-| `schema:about` (on CatalogRecord) | — | — | **Required** (points to root `@id`) | **V** (nodeKind IRI, minCount 1) | CDIF only |
-| `dcterms:conformsTo` (on CatalogRecord) | Not mentioned | — | **Required** — must include `core/1.0` + `discovery/1.0` | **V** (minCount 1, hasValue core/1.0) | CDIF only — profile conformance |
-| `schema:includedInDataCatalog` | Optional | — | Optional on CatalogRecord | — | CDIF nests inside catalog record |
+| `schema:subjectOf` | Recommended (link alt. metadata) | — | **cdifCore Required** — catalog record | catalog-record shapes | Both use `subjectOf`/`about`, but differently: SOSO **recommends** them to link *alternative* metadata records (ISO, EML, …); CDIF **requires** a nested catalog record that declares profile conformance (Discussion §2, §11) |
+| `@type` / `schema:additionalType` (on the record) | — | — | **`schema:Dataset`** + **`dcat:CatalogRecord`** (additionalType, required) | **V** (additionalType hasValue `dcat:CatalogRecord`) | The node is typed `schema:Dataset` (it documents a JSON object we treat as a dataset); `dcat:CatalogRecord` is an **additionalType** signalling intent/semantics, not data structure (Discussion §11) |
+| `schema:about` (on the record) | — | — | **Required** (points to root `@id`) | **V** (nodeKind IRI, minCount 1) | CDIF only |
+| `dcterms:conformsTo` (on the record) | Not mentioned | — | **Required** — must include `core/1.1` (+ `discovery/1.1`) | **V** (minCount 1, hasValue `https://w3id.org/cdif/core/1.1`) | CDIF only — profile conformance declaration (Discussion §2) |
+| `schema:includedInDataCatalog` | Optional | — | Optional on the record | — | CDIF nests inside the catalog record |
 
 ### Related Resources
 
 | Property | SOSO Guide | SOSO SHACL | CDIF Schema | CDIF SHACL | Notes |
 |----------|-----------|------------|-------------|------------|-------|
-| `schema:citation` | Optional | — | Not recommended | **I** (maxCount 0) | CDIF discourages due to semantic ambiguity; recommends `schema:relatedLink` or `dcterms:bibliographicCitation` instead |
-| `schema:relatedLink` | Not mentioned | — | **cdifCore Optional** — LinkRole with target | **I** (class LinkRole) | CDIF only — typed relationships |
+| `schema:citation` | Optional | — | Discouraged (guidance) | — (no longer SHACL-enforced) | CDIF guidance prefers `schema:relatedLink` or `dcterms:bibliographicCitation` due to `citation`'s semantic ambiguity. The earlier `maxCount 0` SHACL shape has been removed from the release core rules |
+| `schema:relatedLink` | Not mentioned | — | **cdifCore Optional** — labeled link | **I/W** (`CDIFRelationShape`, `CDIFLabeledLinkShape`; resolvable `schema:url`) | CDIF only — typed relationships. Now modeled with a `cdif:Relation` / labeled-link pattern in core |
 
 ## Validation Approach Comparison
 
@@ -163,17 +165,17 @@ The SOSO SHACL shapes target `schema:Dataset` nodes and enforce:
 
 | Severity | Properties |
 |----------|-----------|
-| **Violation** | `@id` (must be IRI), `schema:name`, `schema:description`, `schema:identifier`, `schema:url` (exactly 1), `schema:version` (exactly 1), `schema:license` |
-| **Warning** | `schema:isAccessibleForFree`, `schema:keywords`, `schema:sameAs`, `schema:variableMeasured` |
-| **Namespace** | Rejects `https://schema.org/` (must use `http://schema.org/`) |
+| **Violation** | `@id` (must be IRI), `schema:name`, `schema:description`, `schema:identifier`, `schema:url` (exactly 1), `schema:version` (exactly 1), `schema:license`; and, on a nested `SO:PropertyValue`, `name` OR `propertyID` |
+| **Warning** | `schema:isAccessibleForFree` (boolean, minCount/maxCount 1), `schema:keywords`, `schema:sameAs`, `schema:variableMeasured` |
+| **Namespace** | Rejects `http://schema.org` / `https://schema.org/` / `https://schema.org` (must use `http://schema.org/`) |
 
-Notable: the SHACL is **stricter than the guide** — `schema:url`, `schema:version`, and `schema:description` are enforced as Violations even though the guide lists them as Recommended. `schema:url` has `maxCount 1`.
+Notable: the guide names **only `name` and `description` as required** (following Google), but the SHACL additionally enforces `schema:url` (`minCount`/`maxCount 1`, `IRIOrLiteral`), `schema:version`, `schema:identifier`, and `schema:license` as Violations — so the SHACL is **stricter than the guide**. (The `version` shape's message even reads "recommended", yet it carries no `sh:severity`, so it fails as a Violation.) A nested `SO:PropertyValue` must also carry a `schema:name` or `schema:propertyID` (Violation, `SO:PropertyValue-nameOrPropertyID`). `schema:description` has **no minimum-length** constraint in the SHACL — the ~50-character threshold is a Google indexing requirement, not a SOSO rule.
 
-### CDIF SHACL (cdifCore + CDIFDiscoveryProfile rules.shacl)
+### CDIF SHACL (coreRules + discoveryRules)
 
-CDIF uses per-building-block SHACL shapes composed into profiles. The CDIFDiscoveryProfile inherits cdifCore shapes and adds its own.
+CDIF uses per-building-block SHACL shapes composed into profiles. The Discovery profile inherits the core shapes and adds its own. Shape names below are from the release `core/1.1` and `discovery/1.1` rules.
 
-**cdifCore Mandatory Shape (Violations):**
+**cdifCore Mandatory Shape — `CDIFDatasetMandatoryShape` (Violations):**
 
 | Shape | Path | Constraint |
 |-------|------|------------|
@@ -182,7 +184,7 @@ CDIF uses per-building-block SHACL shapes composed into profiles. The CDIFDiscov
 | `rightsProperty` | `schema:license` OR `schema:conditionsOfAccess` | minCount 1 |
 | `dateModifiedProperty` | `schema:dateModified` | minCount 1, ISO8601 pattern |
 | `accessProperty` | `schema:url` OR `schema:distribution` | minCount 1 |
-| `@id` | (node constraint) | sh:nodeKind sh:IRI |
+| (`@id`) | node | sh:nodeKind sh:IRI |
 
 **cdifCore Warning/Info Shapes:**
 
@@ -191,67 +193,96 @@ CDIF uses per-building-block SHACL shapes composed into profiles. The CDIFDiscov
 | `descriptionProperty` | `schema:description` | Warning |
 | `creatorProperty` | `schema:creator` | Warning |
 | `keywordsProperty` | `schema:keywords` | Warning |
-| `responsiblePartyProperty` | `schema:creator` OR `schema:editor` OR `schema:publisher` | Info |
-| `datePublishedProperty` | `schema:datePublished` | Info |
-| `getResourceProperty` | `schema:url` OR `schema:distribution` | Warning |
-| `keywordsNoCommaTest` | `schema:keywords` | Warning (no commas in individual keywords) |
-| `citationProperty` | `schema:citation` | Info (maxCount 0 — discourages use) |
+| `contactPointProperty` / `maintainerOrProviderContactPointShape` | contact point on responsible parties | Info |
+| `affiliationProperty` | `schema:affiliation` | Info |
+| `roleNameProperty` | `schema:roleName` on a Role | Info |
+| `derivedFromProperty` | `prov:wasDerivedFrom` | Info/Warning |
+| `fundingShape` / `grantNameProperty` | `schema:funding` (MonetaryGrant) | Warning |
 
-**CatalogRecord Shape (Violations):**
+*(Removed since earlier drafts: `responsiblePartyProperty`, `datePublishedProperty`, `getResourceProperty`, `keywordsNoCommaTest`, `citationProperty` are no longer present in the release core rules; keyword-comma checking moved to the JSON Schema, and the citation discouragement is now guidance only.)*
+
+**Catalog Record Shape — `CDIFCatalogRecordShape` (Violations):**
 
 | Shape | Path | Constraint |
 |-------|------|------------|
-| `metadataProfileProperty` | `dcterms:conformsTo` | minCount 1, hasValue `core/1.0` |
+| `metadataProfileProperty` | `dcterms:conformsTo` | minCount 1, hasValue `https://w3id.org/cdif/core/1.1` |
 | `metadataSubjectProperty` | `schema:about` | minCount 1, nodeKind IRI |
 | `catalogRecordTypeProperty` | `schema:additionalType` | hasValue `dcat:CatalogRecord` |
 
-**Additional Building Block Shapes** validate nested types:
-- **DataDownload** requires `schema:contentUrl` (Violation)
-- **Person/Organization** require name or identifier via sh:or
-- **DefinedTerm** requires name, identifier, or termCode via sh:or
-- **Action/EntryPoint** requires `schema:target` with `urlTemplate` (Violation)
-- **Instrument** requires `schema:name` (Violation), recommends `schema:category` (Warning)
-- **SpatialExtent** Place must have `schema:geo` or `schema:name` (Violation)
-- **Namespace check** shapes reject `https://schema.org/` variants
+**Additional core building-block shapes** validate nested types: `CDIFDataDownloadShape` (requires `schema:contentUrl`), `CDIFPersonShape` / `CDIFOrganizationShape` (name or identifier via `sh:or`), `CDIFDefinedTermShape` (name, identifier, or termCode), `CDIFActionShape` (EntryPoint with `urlTemplate`; WebAPI requires `serviceType` + `potentialAction` + `termsOfService`), `CDIFRelationShape` / `CDIFLabeledLinkShape` (resolvable `schema:url`), `CDIFContactPointShape`, `CDIFRoleShape`, plus namespace-check shapes rejecting `https://schema.org/`.
+
+**CDIFDiscoveryProfile shapes:** `CDIFVariableMeasuredShape` (variable name required (V), `schema:propertyID` recommended (W)), `spatialExtentProperty` + `geoShape` (Place must have `schema:geo` or `schema:name`), `temporalExtentProperty`, plus `nameRequiredProperty` / `name3Property` term-label checks.
 
 ### Key Differences
 
 | Aspect | SOSO SHACL | CDIF SHACL |
 |--------|-----------|------------|
 | **Scope** | Single shape for Dataset + PropertyValue | Multiple shapes per building block, composed into profiles |
-| **Target** | `sh:targetClass schema:Dataset` | SPARQL-based targets (root Dataset, catalog record, instruments) |
-| **Conformance** | No conformance checking | Required `dcterms:conformsTo` with specific profile URIs |
+| **Target** | `sh:targetClass schema:Dataset` | SPARQL-based targets (root Dataset, catalog record, nested types) |
+| **Conformance** | No conformance checking | Required `dcterms:conformsTo` with specific profile URIs (`core/1.1`, `discovery/1.1`) |
 | **Strictness** | `url` and `version` as Violations | `url` conditional (OR distribution); `version` optional |
 | **Namespace** | Enforces `http://schema.org/` via SHACL | Enforces via `@context` JSON Schema constraint + SHACL namespace shapes |
 | **Composability** | Monolithic | Modular — shapes compose via profile inheritance |
 | **Severity levels** | V + W (two levels) | V + W + I (three levels — Info for nice-to-have) |
 
+## Discussion: SOSO–CDIF alignment (ESIP / Ringuette review, 2026-07)
+
+This section captures the substantive points from the review conversation (R. Ringuette) and the CDIF responses. The shared premise is that **both SOSO and CDIF are schema.org profiles**, and that the *common, required* pieces (how the metadata record is flagged, identifiers, creators/contributors, access) should align so that a minimal record can conform to either.
+
+1. **Alignment goal.** Agreed target: required fields should align so minimal metadata conforms to both profiles. Not every detail must match — only the pieces common to most research objects.
+
+2. **Conformance declaration.** *Reviewer:* a record should declare conformance to a spec, but this need not be *required*. *CDIF:* if conformance is not declared, a consumer cannot tell which spec produced the record — it degrades to an arbitrary schema.org object. CDIF therefore **requires** `subjectOf → dcterms:conformsTo` (at least `core/1.1`). This remains the most visible structural divergence from SOSO.
+
+3. **Dataset `version`.** Agreement that `version` should **not** be required: it does not fit dynamic datasets (publicly available but still accruing, e.g. active space missions). Nuance raised: *what* is versioned — content vs. representation/format. Content updated on a fixed schedule in the same format needs no new version; a re-calibration that regenerates a whole series, or a few anomalous granules needing different treatment, are different cases (series-format, series/sub-series content, and granule-level content are separable version axes). CDIF handling: metadata change → `dateModified`; format-spec change → `subjectOf/conformsTo`; the same pattern can apply at the series level; per-granule content updates remain an open problem (would need per-granule metadata, ideally a diff from the series metadata).
+
+4. **`dateModified`.** Kept **required** (contrary to the "same as version" objection) precisely so a provider can flag that content *might* have changed even without a formal versioning process. Note the two distinct dates: `dateModified` on the described resource, and `dateModified` on the catalog record (`subjectOf`) for the metadata itself.
+
+5. **`license` vs `conditionsOfAccess` (vs `accessRights`).** These are genuinely different (in DCAT, distinct terms; the EU DCAT-AP flavor requires `accessRights`, e.g. `…/access-right/PUBLIC`, and `license` can be problematic to require for restricted data). CDIF keeps it simple: **require at least one** of license *or* conditionsOfAccess (interpreted broadly to include access-rights statements). The longer-term, more machine-actionable direction is ODRL permission protocols — see the [CDIF data-access work](https://cross-domain-interoperability-framework.github.io/cdifbook/data-access/intro/).
+
+6. **`description` required?** SOSO already lists `description` as **required** (with `name`, the only two required fields per the guide) and enforces it in SHACL (Violation) — though neither states a minimum length. The ~50-character threshold raised in review is a Google Dataset Search indexing requirement, not a SOSO rule. CDIF currently treats description as a Warning; strengthening it toward required would improve both Google indexing and SOSO alignment, and is under discussion.
+
+7. **`url` vs `distribution` vs `potentialAction` (the access model).** CDIF interpretation: `schema:url` is the **landing page, if one exists** — it cannot be assumed to exist for every resource, so `url` is not required on its own; the hard requirement is **`url` *or* `distribution`**, i.e. the metadata must give *some* path to the resource. Distributions are meant to be **machine-actionable**: a file archive with a constructible URL template is best modeled as a `schema:WebAPI` (`EntryPoint`/`urlTemplate`); a web application that needs human interaction to build a query is best modeled as a landing page (`url`) or a `relatedLink`, not a distribution. Open questions: must every `distribution` item be machine-actionable? Should `schema:url` be allowed to carry **labeled links** and take **multiple values** (to cover a browsable file-system directory plus a query UI)? The MMS burst-data record ([doi:10.48322/6cfb-rq65](https://doi.org/10.48322/6cfb-rq65)) — a web-accessible year/month/day directory of files plus a HAPI service — is the worked example driving this: browse/landing URLs → `schema:url`; the direct-file `downloadURL` → `DataDownload`; the templated/HAPI access → `WebAPI` + `potentialAction`. This model **aligns with the SOSO guide**, which likewise says `url` points to a landing page, `distribution`/`DataDownload` describes direct download, and `potentialAction` (its "Accessing Data through a Service Endpoint" pattern) covers parameterized service access. The only real divergence is obligation: SOSO requires `url` (exactly 1), whereas CDIF requires `url` *or* `distribution`.
+
+8. **`isAccessibleForFree`.** Not in CDIF, but harmless to include (open world). A future CDIF software-description profile is a natural home (mirroring Google's "offers"/price expectation for software); dataset cost, where relevant, is expected to ride on `conditionsOfAccess`.
+
+9. **Author vs contributor ordering.** Author order must be preserved; roles are not a sufficient substitute (too much variance in role vocabularies). Both profiles use JSON-LD `@list` for authors. CDIF **requires `@list` for authors** but does **not** require ordered contributors — it is waiting for concrete use cases where contributor order carries meaning. (SOSO uses `schema:Role` primarily for contributors.)
+
+10. **GeoSPARQL geometry.** Endorsed as an *optional* addition. CDIF already offers `geosparql:asWKT` as one of the [discovery serialization options](https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/discovery/#other-serialization).
+
+11. **Catalog-record typing.** Rather than typing the `subjectOf` node `DataDownload` (which doesn't fit) or `CreativeWork`, CDIF types it **`schema:Dataset`** (it documents a JSON object we treat as a dataset) and adds **`dcat:CatalogRecord` as `schema:additionalType`**. Rationale: values in `@type` should carry implications for the node's content structure, whereas `additionalType` signals the intent/semantics (this node is a catalog record) without asserting a different data structure.
+
+12. **Variables — `PropertyValue` vs `StatisticalVariable`.** CDIF's view is that schema.org's split between `variableMeasured`/`PropertyValue` and `variableMeasured`/`StatisticalVariable` is unsatisfactory: `PropertyValue` gets overloaded for [semantically heterogeneous content](https://github.com/Cross-Domain-Interoperability-Framework/profile-core/blob/reviewRevision202606/CDIFCoreImplementationGuide.md#polymorphism-of-propertyvalue). CDIF's approach for real data description is to **dual-type** each variable `schema:PropertyValue` + [`cdi:InstanceVariable`](https://cross-domain-interoperability-framework.github.io/cdifbook/data-description/datadescriptionprofile/#sec-cdifinstancevariable) (DDI-CDI) in the Data Description profile, adding a physical mapping to the file/column representation.
+
+13. **Temporal extents.** The plain ISO interval string (e.g. `2015-09-01T12:11:00Z/..`) is fully supported and is the norm in domains like Heliophysics. The structured temporal-extent objects exist to handle deep-time / prehistoric ranges (archaeology, anthropology, paleontology, geology) that ISO date-times cannot express.
+
+**Next steps noted in the review:** DataCite→schema.org mapping examples may serve as discussion starters; a working sketch of SOSO–CDIF alignment to be developed at ESIP.
+
 ## Key Architectural Differences
 
 ### 1. Conformance Declaration
-CDIF requires every record to include a `schema:subjectOf` node (CdifCatalogRecord) that declares which CDIF profiles the record conforms to via `dcterms:conformsTo`. This enables machine agents to determine how to process the record. SOSO has no equivalent mechanism.
+CDIF requires every record to include a `schema:subjectOf` catalog record that declares which CDIF profiles the record conforms to via `dcterms:conformsTo` (`core/1.1`, `discovery/1.1`, …). This lets a machine agent determine how to process the record. SOSO has no equivalent mechanism (Discussion §2).
 
 ### 2. Conditional Requirements
-CDIF uses `anyOf` constraints for conditional requirements:
+CDIF uses `anyOf`/alternative-path constraints for conditional requirements:
 - Must have `schema:license` OR `schema:conditionsOfAccess`
 - Must have `schema:url` OR `schema:distribution`
 
 SOSO lists these as independent recommendations without enforcement.
 
-### 3. Distribution Types
-CDIF supports two distribution types: `DataDownload` (file-based, requires `schema:contentUrl`) and `WebAPI` (service-based, with `potentialAction` for parameterized access). SOSO handles service access via `schema:potentialAction` at the root level.
+### 3. Distribution / Access Types
+CDIF supports `DataDownload` (file-based, requires `schema:contentUrl`) and `WebAPI` (service-based, requires `serviceType` + `potentialAction` + `termsOfService`, with `EntryPoint`/`urlTemplate` for parameterized access). Browse/landing URLs live on `schema:url`; human-interaction query UIs are landing pages or related links (Discussion §7).
 
 ### 4. JSON-LD Structure
-CDIF requires explicit `@context` with namespace prefixes (`schema:`, `dcterms:`, `dcat:`, `prov:`) and uses `schema:` prefixed property names throughout. SOSO examples use the bare `https://schema.org/` context and un-prefixed property names. Note: the canonical schema.org namespace is `http://schema.org/` (not `https://`).
+CDIF requires an explicit `@context` with namespace prefixes (`schema:`, `dcterms:`, `dcat:`, `prov:`) and uses `schema:`-prefixed property names throughout. SOSO examples use the bare schema.org context and un-prefixed names. The canonical namespace is `http://schema.org/` (not `https://`).
 
 ### 5. Author Ordering
-CDIF uses the JSON-LD `@list` construct on `schema:creator` to preserve author order in RDF serialization. SOSO recommends `schema:Role` with `schema:author` for ordered authorship.
+CDIF uses the JSON-LD `@list` construct on `schema:creator` to preserve author order; both profiles use `@list` for authors. CDIF does not require ordered contributors (Discussion §9).
 
 ### 6. Vocabulary-backed Keywords
-CDIF encourages `schema:DefinedTerm` for keywords with vocabulary references (`inDefinedTermSet`, `termCode`). SOSO supports this but emphasizes plain text keywords for Google Dataset Search compatibility. CDIF SHACL warns if individual keyword strings contain commas (suggesting they should be split into an array).
+CDIF encourages `schema:DefinedTerm` keywords with vocabulary references (`inDefinedTermSet`, `termCode`), while keeping plain-text keywords valid for Google Dataset Search. Multi-term keyword strings should be split into an array (JSON Schema pattern check).
 
 ### 7. Building Block Composition
-CDIF Discovery is a profile that composes building blocks — each building block has its own schema, SHACL shapes, examples, and documentation. Higher-level profiles (DataDescription, Complete) extend Discovery with DDI-CDI data structure, archive distribution, and provenance extensions. SOSO is a single flat specification.
+CDIF Discovery is a profile that composes building blocks — each with its own schema, SHACL, examples, and docs. Higher-level profiles (Data Description, Manifest, Provenance, Data Structure, Complete) extend Discovery with DDI-CDI data structure, archive distribution, and provenance. SOSO is a single flat specification.
 
 ## Coverage Summary
 
@@ -262,24 +293,23 @@ CDIF Discovery is a profile that composes building blocks — each building bloc
 | Recommended (SOSO guide) | 16 | 14/16 (88%) | — |
 | Warned (SOSO SHACL) | 4 | 3/4 (75%) | — |
 | Optional (SOSO guide) | 13 | 8/13 (62%) | — |
-| CDIF Required | 8 | 8/8 (100%) | — |
+| CDIF Required (core) | 8 | 8/8 (100%) | — |
 | CDIF-only | — | — | 12 |
 
-**SOSO SHACL Violations not enforced by CDIF:** `schema:url` (CDIF makes conditional), `schema:version` (CDIF optional)
+**SOSO SHACL Violations CDIF does not enforce identically:** `schema:version` (CDIF: optional, by design — Discussion §3), `schema:description` (CDIF: Warning), and `schema:url` (CDIF: conditional — url OR distribution). Of SOSO's seven Dataset-level Violations (`@id`, `name`, `description`, `identifier`, `url`, `version`, `license`), CDIF enforces `@id`, `name`, `identifier`, `license`, and — conditionally — `url`.
 
-**SOSO properties not in CDIF Discovery:** `schema:isAccessibleForFree`, `schema:dateCreated`, `schema:expires`, `prov:wasRevisionOf`
+**SOSO properties not in CDIF Discovery:** `schema:isAccessibleForFree`, `schema:dateCreated`, `schema:expires`, `prov:wasRevisionOf`.
 
-**CDIF properties not in SOSO:** `schema:dateModified` (required), `schema:subjectOf/CdifCatalogRecord` (required), `dcterms:conformsTo`, `schema:conditionsOfAccess`, `schema:additionalType`, `schema:inLanguage`, `schema:relatedLink`, `schema:publishingPrinciples`, `schema:measurementTechnique`, `dqv:hasQualityMeasurement`, `schema:StatisticalVariable`
+**CDIF properties not in SOSO:** `schema:dateModified` (required), `schema:subjectOf`/catalog record (required), `dcterms:conformsTo`, `schema:conditionsOfAccess`, `schema:additionalType`, `schema:inLanguage`, `schema:relatedLink`, `schema:publishingPrinciples`, `schema:measurementTechnique`, `dqv:hasQualityMeasurement`, dual-typed `cdi:InstanceVariable` variables (Data Description profile).
 
 **Properties where SOSO SHACL is stricter than CDIF:**
-- `schema:url` — SOSO SHACL: Violation, exactly 1 required; CDIF: conditional (url OR distribution)
-- `schema:version` — SOSO SHACL: Violation, exactly 1 required; CDIF: optional
-- `schema:description` — SOSO SHACL: Violation, required; CDIF: Warning (recommended)
+- `schema:url` — SOSO SHACL: Violation, exactly 1; CDIF: conditional (url OR distribution).
+- `schema:version` — SOSO SHACL: Violation, exactly 1; CDIF: optional (intentionally — dynamic datasets).
+- `schema:description` — SOSO SHACL: Violation; CDIF: Warning (under review given Google's indexing requirement).
 
 **Properties where CDIF is stricter than SOSO:**
-- `schema:dateModified` — CDIF: required with ISO8601 format; SOSO: optional
-- `schema:identifier` — CDIF: required; SOSO guide: recommended (SHACL: Violation — aligned)
-- `schema:subjectOf` — CDIF: required catalog record with conformance; SOSO: optional metadata links
-- `schema:license/conditionsOfAccess` — CDIF: at least one required; SOSO: license recommended
-- `schema:url/distribution` — CDIF: at least one required; SOSO: each independent recommendation
-- `schema:citation` — CDIF: actively discourages (Info, maxCount 0); SOSO: optional
+- `schema:dateModified` — CDIF: required with ISO8601 format; SOSO: optional.
+- `schema:identifier` — CDIF: required; SOSO guide: recommended (SHACL: Violation — aligned).
+- `schema:subjectOf` — CDIF: required catalog record with conformance; SOSO: optional metadata links.
+- `schema:license`/`conditionsOfAccess` — CDIF: at least one required; SOSO: license recommended.
+- `schema:url`/`distribution` — CDIF: at least one required; SOSO: each independent recommendation.
