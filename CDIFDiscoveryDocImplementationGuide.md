@@ -108,6 +108,40 @@ Does not create a link. Object references are implemented in JSON-LD as object t
 
 Is the correct syntax to implemenat an object reference. Throughout this document, if \'object reference\' is included as a value type for a property, be aware that instance documents might simply have this kind of object as the property value.
 
+## URI-shape values in `propertyID` and `additionalType`
+
+[↑ Back to TOC](#table-of-contents)
+
+Building on the object-reference convention above, CDIF profiles enforce a JSON-LD semantic-clarity rule for two schema.org properties whose values often name external concepts: `schema:propertyID` and `schema:additionalType`. If the value's lexical form matches a URI or CURIE (`scheme:localname`, e.g. `wd:Q3099911`, `dcat:CatalogRecord`, `https://orcid.org/0000-...`), it MUST be serialized as an IRI reference — `{"@id": "..."}` — not as a bare string literal. A URI-shape string serialized as a literal does not participate in RDF entailment as a resource reference, which defeats the interoperability the URI was intended to provide.
+
+Free-label strings (`"temperature"`, `"MaterialSample"`) remain valid as string values. `schema:DefinedTerm` objects (with or without an explicit `@type: schema:DefinedTerm`) also satisfy the rule.
+
+The rule is enforced by two SHACL shapes in the aggregated `*Rules.shacl`:
+
+- `cdifd:PropertyIDUriShouldBeIRIShape` — targets objects of `schema:propertyID`.
+- `cdifd:AdditionalTypeUriShouldBeIRIShape` — targets objects of `schema:additionalType`.
+
+Both fire at `sh:Violation` severity when a URI-shape string literal appears; documents that fail either shape are not conformant.
+
+Correct:
+
+```json
+"schema:additionalType": [
+    { "@id": "dcat:CatalogRecord" },
+    "material-sample"
+],
+"schema:propertyID": [
+    { "@id": "https://qudt.org/vocab/quantitykind/Temperature" }
+]
+```
+
+Incorrect (SHACL will flag):
+
+```json
+"schema:additionalType": ["dcat:CatalogRecord"],
+"schema:propertyID": ["https://qudt.org/vocab/quantitykind/Temperature"]
+```
+
 ## Repeating values
 
 [↑ Back to TOC](#table-of-contents)
