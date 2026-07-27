@@ -1,0 +1,359 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2236",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "40Ar/39Ar geochronology and thermochronology"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "A.Frew@exchange.curtin.edu.au",
+        "schema:identifier": "",
+        "schema:name": ""
+      },
+      "schema:roleName": "Other"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "f.jourdan@curtin.edu.au",
+        "schema:identifier": "https://orcid.org/0000-0001-5626-4521",
+        "schema:name": "Jourdan, Fred"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Argon isotope analyses of a single white particles with Lab ID OREX-803393-0 and with a size of 325 x 223 microns. The data were collected at the Western Australia Argon Isotope Facility, John de Laeter Centre, Curtin University, Western Australia",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#fc501d8ff7ec3e53c90ee7fd15dfca45",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#0824271dfe09644d3a28feba57f21996",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "a zip archive containing various files. Raw Data delivered as a TXT fileRaw Analysis Data product should include: Raw Data delivered as a series of TXT files, one for each temperature step [reporting peak ratios for Ar isotopes?]; 2) Caption Data delivered as a single TXT file  sha256:488a27e30fb6aa52311f57d30924a236cc81d45d2d82c33d8d03a3bc19331125 ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_ARGTCollection_1.zip",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 11036
+            }
+          },
+          "schema:description": "sha256:7c2de8c2cbedfcd193054477d50206f574d09727cfc704efb7aa0bf50060da41 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_ARGTCollection_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 361
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0824271dfe09644d3a28feba57f21996",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "a zip archive containing various files. Raw Data delivered as a TXT fileRaw Analysis Data product should include: Raw Data delivered as a series of TXT files, one for each temperature step [reporting peak ratios for Ar isotopes?]; 2) Caption Data delivered as a single TXT file  sha256:488a27e30fb6aa52311f57d30924a236cc81d45d2d82c33d8d03a3bc19331125 ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_ARGTCollection_1.zip",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 11036
+          }
+        },
+        {
+          "@id": "http://example.org/base/#3588c51feaeddc74021c1d2a2a6fff2c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Text description of the methodology and analysis conditions sha256:1e95e1bff4acbb334cbeae73e49e6aed21cdff60adb870371f2562ceab61338c ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_methodDescription_2073.pdf",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 89042
+          }
+        },
+        {
+          "@id": "http://example.org/base/#ea754bf9b7ecca9789e0293e97f04491",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#3588c51feaeddc74021c1d2a2a6fff2c",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Text description of the methodology and analysis conditions sha256:1e95e1bff4acbb334cbeae73e49e6aed21cdff60adb870371f2562ceab61338c ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_methodDescription_2073.pdf",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 89042
+            }
+          },
+          "schema:description": "sha256:eef36b842cf498377fa96c35d6c1e75c31b97d92a0812c6a36449b6bb43882f0 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_methodDescription_2073.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 272
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6cf9e28e90688f448ab678a691f1a16d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "CSV file with raw data sha256:d39183d3ef6847e591d2cd9a93a9b204e2c9921b1bae71d2a7dceb1a343bc748 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_report_1.csv",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 283664
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f62f2cb52897760a36c1d0a10c781cd9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#6cf9e28e90688f448ab678a691f1a16d",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "CSV file with raw data sha256:d39183d3ef6847e591d2cd9a93a9b204e2c9921b1bae71d2a7dceb1a343bc748 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_report_1.csv",
+            "schema:size": {
+              "@id": "_:b6",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 283664
+            }
+          },
+          "schema:description": "sha256:a156208750429bbcf5ad9d38102725eca12bbc81b42a6cde32982eb6ee2aa148 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250124_ARGT_CUWA_OREX-803393-0_1_report_1.yaml",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 150
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b9",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/c39r-0r37",
+    "schema:value": "10.60707/c39r-0r37"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "40Ar/39Ar geochronology and thermochronology",
+      "schema:termCode": "ARGT"
+    }
+  ],
+  "schema:name": "40Ar/39Ar geochronology and thermochronology",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2236",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:collection"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:report"
+      },
+      {
+        "@id": "ada:ARGTCollection"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2236"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-02-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/c39r-0r37",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b11",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20250124_argt_cuwa_orex-803393-0_1",
+      "schema:location": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CUWA"
+        ],
+        "schema:identifier": "https://ror.org/02n415q13",
+        "schema:name": "Curtin University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b13",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803393-0"
+      },
+      "schema:startDate": "2025-01-24T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

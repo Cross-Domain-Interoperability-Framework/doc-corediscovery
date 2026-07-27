@@ -1,0 +1,1030 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2432",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Inductively coupled plasma - optical emission spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "kcwelten@berkeley.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-8577-6753",
+        "schema:name": "Welten, Kees"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This dataset shows the chemical composition of Bennu aggregate sample OREX-803047-0 and Orgueil CI chondrite that were dissolved for cosmogenic radionuclide analysis. A small aliquot (~5%) of each of the dissolved samples was taken for chemical analysis by ICP-OES.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#a9ac307b0e9fb8237a31453eaed68724",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Processed ICP-OES Data for procedural blank (ORX-8) and dissolved sample (ORX-9, ORX-10) sha256:26d8da1697d2371a38c0b838a46b9da647e3b4b7b36a42bd8979e3c03f01817a ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_ICPOESProcessedTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1023
+          }
+        },
+        {
+          "@id": "http://example.org/base/#055eaab3c020fb3c95c286ddcce94301",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a9ac307b0e9fb8237a31453eaed68724",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Processed ICP-OES Data for procedural blank (ORX-8) and dissolved sample (ORX-9, ORX-10) sha256:26d8da1697d2371a38c0b838a46b9da647e3b4b7b36a42bd8979e3c03f01817a ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_ICPOESProcessedTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1023
+            }
+          },
+          "schema:description": "sha256:9c9c758c37a7d6ca05c9a78eb1b5cde7fa453a85d60e048817484a6dc45e0b69 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_ICPOESProcessedTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 6482
+          }
+        },
+        {
+          "@id": "http://example.org/base/#352745d8902d61a10252f8951ce1e4c9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description, part 1. This section describes dissolution of the samples in HF/HNO3, the addition of Be, Al and Cl carrier solutions and the procedure for taking aliquots of the dissolved sample for ICP-OES analysis. sha256:e79725d724db01f515e5067b93c8e682dc150b3bbc4eebdc84d078009eca99f2 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 90044
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0b3520b92549d8504b3669f73fc2114c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#352745d8902d61a10252f8951ce1e4c9",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description, part 1. This section describes dissolution of the samples in HF/HNO3, the addition of Be, Al and Cl carrier solutions and the procedure for taking aliquots of the dissolved sample for ICP-OES analysis. sha256:e79725d724db01f515e5067b93c8e682dc150b3bbc4eebdc84d078009eca99f2 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 90044
+            }
+          },
+          "schema:description": "sha256:cefe6c2d0c06fc1896240deb995db69a0fae4d528ad9781ba328828d8c4a35bc ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 512
+          }
+        },
+        {
+          "@id": "http://example.org/base/#16c7b6f4e3c0bc78e40482212d55b882",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description, part 2; This section includes details of the ICP-OES analysis, including a description of the standards and elemental lines used for each element. sha256:f9cae41ccde51fe527a57b56a2f629f5ed59c61cc8a9eef917533a13bc8d1cab ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_2.pdf",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 74682
+          }
+        },
+        {
+          "@id": "http://example.org/base/#2ed45f7a97192930ff318a8a2599dbdb",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#16c7b6f4e3c0bc78e40482212d55b882",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description, part 2; This section includes details of the ICP-OES analysis, including a description of the standards and elemental lines used for each element. sha256:f9cae41ccde51fe527a57b56a2f629f5ed59c61cc8a9eef917533a13bc8d1cab ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_2.pdf",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 74682
+            }
+          },
+          "schema:description": "sha256:cebcf1a930903b817c9997be425988ab73c4c93edfd0a84c7f19a95cb4c80c9a ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_2.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 457
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0c38e3cb241154bc98bbd98a911b05d4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description, part 3. This section describes how the processed ICP data of Fe, Co are used to calculate the concentrations in the dissolved samples. sha256:a4d03daeec289914a857c2aad2158e29b0a8f356e5d41f250cff290c9e6d1ffc ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_3.pdf",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 86728
+          }
+        },
+        {
+          "@id": "http://example.org/base/#37e8f08c168a630d911da39ebd1779ef",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#0c38e3cb241154bc98bbd98a911b05d4",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description, part 3. This section describes how the processed ICP data of Fe, Co are used to calculate the concentrations in the dissolved samples. sha256:a4d03daeec289914a857c2aad2158e29b0a8f356e5d41f250cff290c9e6d1ffc ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_3.pdf",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 86728
+            }
+          },
+          "schema:description": "sha256:7adac5618802391bca2100911803fcd46ecf1be496e9bc5de3c5d3f07a629ba7 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_3.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 424
+          }
+        },
+        {
+          "@id": "http://example.org/base/#63f47ba09ee5c4fcfb88dd91dbc54409",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description, part 4. The associated csv file contains sample preparation information for the procedural blank (ORX-8) and dissolved samples (ORX-9 and ORX-10), including sample mass (in mg), total solution mass (DIL-0 = Gross-0 - EMT-0, all in gram) and Dilution factors (DilFactor-1, DilFactor-2) of aliquot-1 and aliquot-2 sha256:ae0d706683ce9116039eeeff1dfe357e4a10e3b338d0f5dbc963d55515f2ba26 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_4.pdf",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 62958
+          }
+        },
+        {
+          "@id": "http://example.org/base/#935953fb47bf431bf100435360aefcc5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#63f47ba09ee5c4fcfb88dd91dbc54409",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description, part 4. The associated csv file contains sample preparation information for the procedural blank (ORX-8) and dissolved samples (ORX-9 and ORX-10), including sample mass (in mg), total solution mass (DIL-0 = Gross-0 - EMT-0, all in gram) and Dilution factors (DilFactor-1, DilFactor-2) of aliquot-1 and aliquot-2 sha256:ae0d706683ce9116039eeeff1dfe357e4a10e3b338d0f5dbc963d55515f2ba26 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_4.pdf",
+            "schema:size": {
+              "@id": "_:b9",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 62958
+            }
+          },
+          "schema:description": "sha256:9ce59b196f2b4d4af9f1e87ba34454dd3f5e4e38ed77d311d55c1afff3742e59 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_4.yaml",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 584
+          }
+        },
+        {
+          "@id": "http://example.org/base/#45a4d83ee09328ca6555169cb55e37e5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description, part 5. This section contains a Table of the chemical composition of Orgueil CI chondrite and Bennu aggregate sample, OREX-803047-0, analyzed by ICP-OES on 1/25/2024. sha256:2175722cd84b55e4e83d220645a8085b2ddc8d12f6d06b5183ddc05f1898d4e5 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_5.pdf",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 60342
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e2075144d97f6cec0f76d650d25d9e10",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#45a4d83ee09328ca6555169cb55e37e5",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description, part 5. This section contains a Table of the chemical composition of Orgueil CI chondrite and Bennu aggregate sample, OREX-803047-0, analyzed by ICP-OES on 1/25/2024. sha256:2175722cd84b55e4e83d220645a8085b2ddc8d12f6d06b5183ddc05f1898d4e5 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_5.pdf",
+            "schema:size": {
+              "@id": "_:b11",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 60342
+            }
+          },
+          "schema:description": "sha256:63c54de2b808ef815ab8ade0e233ceb840782daeba3ab6503b6d47c54714200c ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240125_ICP-OES_UCB_multiSample_1_methodDescription_5.yaml",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 435
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b13",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program. This study is supported by NASA grant 80NSSC22K1693 through the OREX Participating Scientist Program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b14",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/rm08-bg04",
+    "schema:value": "10.60707/rm08-bg04"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b15",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Inductively coupled plasma - optical emission spectrometry",
+      "schema:termCode": "ICP-OES"
+    }
+  ],
+  "schema:name": "Chemical composition of Bennu samples",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2432",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:ICPOESProcessedTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2432"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-16",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/rm08-bg04",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#sample_id",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Short name of sample (e.g., ORX-xx, ORX-yy)",
+      "schema:name": "Sample_ID",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplename",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Full name of sample (e.g. blank, OREX-xxxxxx-yyy)",
+      "schema:name": "Sample Name",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplemass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mass of dissolved sample",
+      "schema:name": "Sample mass",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#sampledescription",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Type of dissolved sample (bulk, powder, aggregate, particle)",
+      "schema:name": "Sample Description",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#dil0",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mass of dissolved sample solution",
+      "schema:name": "Dil-0",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#dilfactor1",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "DilutionFactor for aliquot-1",
+      "schema:name": "DilFactor-1",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#dilfactor2",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "DilutionFactor for aliquot-2 (equal to DilFactor-1 if only 1 aliquot was taken)",
+      "schema:name": "DilFactor-2",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#becarrier",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Amount of 9Be carrier added",
+      "schema:name": "Be-carrier",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpbeppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Be concentration measured by ICP",
+      "schema:name": "ICP-Be-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqbe",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Be measurement",
+      "schema:name": "aliq-Be",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpbemg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Amount of Be as determined by ICP",
+      "schema:name": "ICP-Be-mg",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpbeyield",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Be yield measured by ICP",
+      "schema:name": "ICP-Be-yield",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpnappm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Na concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Na-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqna",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Na measurement",
+      "schema:name": "aliq-Na",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#na",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Na concentration of sample",
+      "schema:name": "Na (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpmgppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mg concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Mg-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqmg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Mg measurement",
+      "schema:name": "aliq-Mg",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#mg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mg concentration of sample",
+      "schema:name": "Mg (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpalppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Al concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Al-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqal",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Al measurement",
+      "schema:name": "aliq-Al",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#al",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Al concentration of sample",
+      "schema:name": "Al (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpkppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "K concentration in aliquot measured by ICP",
+      "schema:name": "ICP-K-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqk",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP K measurement",
+      "schema:name": "aliq-K",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#kppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "K concentration of sample",
+      "schema:name": "K (ppm)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpcappm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ca concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Ca-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqca",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Ca measurement",
+      "schema:name": "aliq-Ca",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#ca",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ca concentration of sample",
+      "schema:name": "Ca (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icptippm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ti concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Ti-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqti",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Ti measurement",
+      "schema:name": "aliq-Ti",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#tippm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ti concentration of sample",
+      "schema:name": "Ti (ppm)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpmnppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mn concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Mn-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqmn",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Mn measurement",
+      "schema:name": "aliq-Mn",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#mn",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mn concentration of sample",
+      "schema:name": "Mn (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpfeppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Fe concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Fe-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqfe",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Fe measurement",
+      "schema:name": "aliq-Fe",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#fe",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Fe concentration of sample",
+      "schema:name": "Fe (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpcoppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Co concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Co-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqco",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Co measurement",
+      "schema:name": "aliq-Co",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#coppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Co concentration of sample",
+      "schema:name": "Co (ppm)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpnippm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ni concentration in aliquot measured by ICP",
+      "schema:name": "ICP-Ni-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqni",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP Ni measurement",
+      "schema:name": "aliq-Ni",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#ni",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ni concentration of sample",
+      "schema:name": "Ni (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#icpsppm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "S concentration in aliquot measured by ICP",
+      "schema:name": "ICP-S-ppm",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#aliqs",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Aliquot number used for ICP S measurement",
+      "schema:name": "aliq-S",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#s",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "S concentration of sample",
+      "schema:name": "S (%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b16",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240125_icp-oes_ucb_multisample_1",
+      "schema:location": {
+        "@id": "_:b17",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UCB"
+        ],
+        "schema:identifier": "https://ror.org/01an7q238",
+        "schema:name": "University of California, Berkeley"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b18",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803047-101"
+      },
+      "schema:startDate": "2024-01-25T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

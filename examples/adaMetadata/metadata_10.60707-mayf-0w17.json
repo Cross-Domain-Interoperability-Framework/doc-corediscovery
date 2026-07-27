@@ -1,0 +1,340 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_1339",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Raman vibrational spectroscopy"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "philippe.schmitt-kopplin@helmholtz-munich.de",
+        "schema:identifier": "",
+        "schema:name": ""
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "michael.liss@helmholtz-munich.de",
+        "schema:identifier": "https://orcid.org/0009-0005-5228-3908",
+        "schema:name": "Liss, Michael"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Raman analysis of a 250 %C2%B5m particle of Bennu (OREX-803141-0). The bundle includes four raw data files from the amorphous carbon, calcite, magnetite and the aliphatic CH carbon.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#ec43558b19524c2c2e2308a1b3aef819",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raman spectroscopy measurements of the amorphous carbon (red shift) of OREX-803141-0. sha256:7857294e18e47805de27df944c40da4bf7cef19da96f250979737a1ab3bbe342 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_RAMANRawTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 47152
+          }
+        },
+        {
+          "@id": "http://example.org/base/#9c9f01710980870bd2a49bca6b449d19",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#ec43558b19524c2c2e2308a1b3aef819",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raman spectroscopy measurements of the amorphous carbon (red shift) of OREX-803141-0. sha256:7857294e18e47805de27df944c40da4bf7cef19da96f250979737a1ab3bbe342 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_RAMANRawTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 47152
+            }
+          },
+          "schema:description": "sha256:396ffe912aeb5081b28f583d8d859d2708b735a916e761b0f68ec8074b8dbe14 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_RAMANRawTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 585
+          }
+        },
+        {
+          "@id": "http://example.org/base/#d8fe3d12b17251577c2fea1184847975",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Spectrum of the amorphous carbon (red shift) of OREX-803141-0. sha256:367d5e6eb50a2188479332b2b27f46ab8dd4931ae1453e1bfd6d8ac1a6645888 ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_plot_1.png",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 82395
+          }
+        },
+        {
+          "@id": "http://example.org/base/#5744bd9c52675d1b7b8a0a553d790fca",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#d8fe3d12b17251577c2fea1184847975",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Spectrum of the amorphous carbon (red shift) of OREX-803141-0. sha256:367d5e6eb50a2188479332b2b27f46ab8dd4931ae1453e1bfd6d8ac1a6645888 ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_plot_1.png",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 82395
+            }
+          },
+          "schema:description": "sha256:cc976fe591f717c777004a07d7d62d7a1d8079face352e6b4429ae35e5591ee8 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240823_RAMAN_HMGU_OREX-803141-0_1_plot_1.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 286
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program. Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) Project-ID 364653263%E2%80%94TRR 235 (CRC 235).",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b7",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/mayf-0w17",
+    "schema:value": "10.60707/mayf-0w17"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Raman vibrational spectroscopy",
+      "schema:termCode": "RAMAN"
+    }
+  ],
+  "schema:name": "Raman spectroscopy of a 250 \u00b5m particle of Bennu (OREX-803141-0)",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_1339",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:RAMANRawTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_1339"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/mayf-0w17",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#pointnumber",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Point Number",
+      "schema:name": "Point Number",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#ramanshift",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Raman shift",
+      "schema:name": "Raman shift",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#intensity",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Intensity",
+      "schema:name": "Intensity",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240823_raman_hmgu_orex-803141-0_1",
+      "schema:location": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "HMGU"
+        ],
+        "schema:identifier": "https://ror.org/034rhsb33",
+        "schema:name": "Helmholtz University (Helmholtz Zentrum Munchen)"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803141-0"
+      },
+      "schema:startDate": "2024-08-23T12:28:57.182349Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

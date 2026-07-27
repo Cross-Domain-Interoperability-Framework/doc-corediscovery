@@ -1,0 +1,254 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_351",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Quantitative Reflectance Imaging System"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "dgolish@orex.lpl.arizona.edu",
+          "ref1@arizona.edu"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-6159-539X",
+          ""
+        ],
+        "schema:name": [
+          "Golish, Dathon",
+          "Fulford, Ruby"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "dgolish@orex.lpl.arizona.edu",
+          "ref1@arizona.edu"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-6159-539X",
+          ""
+        ],
+        "schema:name": [
+          "Golish, Dathon",
+          "Fulford, Ruby"
+        ]
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This document provides detailed explanation of the QRIS data collection procedure, the calibration pipeline, and the data products that will be delivered.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#98b42dea858450d0456483a6fd08b110",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "This file describes in depth the process of image acquisition and data calibration for the Quantitative Reflectance Imaging System. The manuscript also discusses the challenges encountered during PE imaging. sha256:b67e1eef25836ce9d1d8db73997c736ebbc13cbbeb63dce2e80d8e9a0a3e80a6 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20231024_QRIS_JSC-ARES_multiSample_1_QRISCalibrationFile_2.pdf",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 36242062
+          }
+        },
+        {
+          "@id": "http://example.org/base/#82e1335f0b3678b9242d7927f1b2ef1a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#98b42dea858450d0456483a6fd08b110",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "This file describes in depth the process of image acquisition and data calibration for the Quantitative Reflectance Imaging System. The manuscript also discusses the challenges encountered during PE imaging. sha256:b67e1eef25836ce9d1d8db73997c736ebbc13cbbeb63dce2e80d8e9a0a3e80a6 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20231024_QRIS_JSC-ARES_multiSample_1_QRISCalibrationFile_2.pdf",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 36242062
+            }
+          },
+          "schema:description": "sha256:9e2ba359f2595195472e15ff636da3d54a3e7dbf5db8f1950d0fc0722bcf530d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231024_QRIS_JSC-ARES_multiSample_1_QRISCalibrationFile_2.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 387
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b3",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "None, besides OSIRIS-REx grant.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b4",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/h0dk-6y68",
+    "schema:value": "10.60707/h0dk-6y68"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Quantitative Reflectance Imaging System",
+      "schema:termCode": "QRIS"
+    }
+  ],
+  "schema:name": "QRIS Calibration Document",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_351",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:QRISCalibrationFile"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_351"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-06-05",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/h0dk-6y68",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231024_qris_jsc-ares_multisample_1",
+      "schema:location": {
+        "@id": "_:b7",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800013-0"
+      },
+      "schema:startDate": "2024-04-11T23:23:16.956544Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

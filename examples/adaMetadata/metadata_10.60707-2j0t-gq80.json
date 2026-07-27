@@ -1,0 +1,364 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_44",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "X-ray diffraction"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "a.king@nhm.ac.uk",
+        "schema:identifier": "https://orcid.org/0000-0001-6113-5417",
+        "schema:name": "King, Ashley"
+      }
+    ]
+  },
+  "schema:datePublished": "2024-06-20",
+  "schema:description": "JSC-ARES Panalytical XRD data for sample OREX-500005-0",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#45cdecbbbf9f72f25aa8bdad035680b4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Panalytical XRD data for sample OREX-500005-0 sha256:7f98ff5f2ce5078a6820725580280d742d020eb4cb99bcad296ffea565bdf4fa ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_XRDTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 311630
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f4f6382d0c78fa623d6262d357ed43ce",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#45cdecbbbf9f72f25aa8bdad035680b4",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Panalytical XRD data for sample OREX-500005-0 sha256:7f98ff5f2ce5078a6820725580280d742d020eb4cb99bcad296ffea565bdf4fa ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_XRDTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 311630
+            }
+          },
+          "schema:description": "sha256:37be2186d5fcd22e6695aca0d3fe903fce95b580c558b0d4e957751b062f2221 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_XRDTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 765
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c7e1fba9edcb558853eae3ab879b0c92",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Metadata for Panalytical XRD analysis of sample OREX-500005-0 sha256:255c055e7e7937f318e0db6a2847319618538f7caa40ac4e598173669955ab7d ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_instrumentMetadata_1.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 232
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f2aec1be3078bdacf5e68570a5af7690",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c7e1fba9edcb558853eae3ab879b0c92",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Metadata for Panalytical XRD analysis of sample OREX-500005-0 sha256:255c055e7e7937f318e0db6a2847319618538f7caa40ac4e598173669955ab7d ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_instrumentMetadata_1.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 232
+            }
+          },
+          "schema:description": "sha256:f2092bb9336d1dc718ce56d7c92912038d8556c17d814a978a8351898567af23 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_instrumentMetadata_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 200
+          }
+        },
+        {
+          "@id": "http://example.org/base/#18d65475a618cf414ee568fc801c164b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Image of Panalytical XRD data for sample OREX-500005-0 sha256:6f86127a8542aed46f664e66d52b384a571a88474a37af8189f72d3b6b5632d2 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_plot_1.jpg",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 244385
+          }
+        },
+        {
+          "@id": "http://example.org/base/#ea1b4bca7e1d1b01b466b7c8aa377a79",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#18d65475a618cf414ee568fc801c164b",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Image of Panalytical XRD data for sample OREX-500005-0 sha256:6f86127a8542aed46f664e66d52b384a571a88474a37af8189f72d3b6b5632d2 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_plot_1.jpg",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 244385
+            }
+          },
+          "schema:description": "sha256:e669b4a4aee3488e635b94a0a790f42f5b04aaca21679e429e005a2f403f4605 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20230928_XRD_JSC-ARES_OREX-500005-0_1_plot_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 213
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/2j0t-gq80",
+    "schema:value": "10.60707/2j0t-gq80"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-ray diffraction",
+      "schema:termCode": "XRD"
+    }
+  ],
+  "schema:name": "JSC-ARES Panalytical XRD data for sample OREX-500005-0",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_44",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      },
+      {
+        "@id": "ada:XRDTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_44"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-06-20",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/2j0t-gq80",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#angle",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Angle of the detector in 2theta",
+      "schema:name": "Angle",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#intensity",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Intensity of diffracted X-rays in counts",
+      "schema:name": "Intensity",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20230928_xrd_jsc-ares_orex-500005-0_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-500005-0"
+      },
+      "schema:startDate": "2024-01-28T14:06:04.101222Z"
+    }
+  ],
+  "schema:dateModified": "2024-06-20"
+}

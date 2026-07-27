@@ -1,0 +1,332 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_158",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Advanced Imaging &amp; Visualization of Astromaterials"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "christopher.j.snead@nasa.gov",
+          "erika.h.blumenfeld@nasa.gov",
+          "joseph.e.aebersold@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7433-3030",
+          ""
+        ],
+        "schema:name": [
+          "Snead, Christopher",
+          "Blumenfeld, Erika",
+          "Aebersold, Joseph"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "christopher.j.snead@nasa.gov",
+          "erika.h.blumenfeld@nasa.gov",
+          "joseph.e.aebersold@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7433-3030",
+          ""
+        ],
+        "schema:name": [
+          "Snead, Christopher",
+          "Blumenfeld, Erika",
+          "Aebersold, Joseph"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "christopher.j.snead@nasa.gov",
+          "erika.h.blumenfeld@nasa.gov",
+          "joseph.e.aebersold@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7433-3030",
+          ""
+        ],
+        "schema:name": [
+          "Snead, Christopher",
+          "Blumenfeld, Erika",
+          "Aebersold, Joseph"
+        ]
+      }
+    ]
+  },
+  "schema:datePublished": "2024-06-20",
+  "schema:description": "AIVA image of four deep trays with Bennu sample removed from the OSIRIS-REx TAGSAM head before the bulk pour. The image shows samples OREX-800010-0 through OREX-800013-0.Advanced Imaging &amp; Visualization of Astromaterials (AIVA) team members are Erika Blumenfeld (Creative Lead), Joseph Aebersold (Project Lead), and Christopher Snead (Civil Servant Lead). Blumenfeld is a Transdisciplinary Artist, Photographer, and Researcher as well as a Conservation &amp; Imaging Specialist. Aebersold is an Image Scientist and 3D Imagery Analyst. Snead is the Deputy Sample Curator of OSIRIS-REx, as well as the Hayabusa2 Sample Curator and the Small Particle Lead.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#69f9888eec69ace23b4cf5db56364e89",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "High resolution AIVA image of the bulk Bennu sample in four trays. Imaging acquired before the complete bulk pour. This image was previously named O-REx_PE_I-1_20231020.tif. sha256:066fc828cc5532c42d76b11d0dd8440a7777a025b9d7a957da1a5f159cff2164 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_AIVAImage_1.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 588486120
+          }
+        },
+        {
+          "@id": "http://example.org/base/#19e275929b76872fcd297d0e3beb3429",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#69f9888eec69ace23b4cf5db56364e89",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "High resolution AIVA image of the bulk Bennu sample in four trays. Imaging acquired before the complete bulk pour. This image was previously named O-REx_PE_I-1_20231020.tif. sha256:066fc828cc5532c42d76b11d0dd8440a7777a025b9d7a957da1a5f159cff2164 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_AIVAImage_1.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 588486120
+            }
+          },
+          "schema:description": "sha256:5b6a2df0c8edc27dbe753eeeee5871c0ea9390e574b195d158b16c276117e2f5 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_AIVAImage_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 289
+          }
+        },
+        {
+          "@id": "http://example.org/base/#ba83cd8e317d45f3c84836eaab301e90",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Low resolution AIVA image of the bulk Bennu sample in four trays. Imaging acquired before the complete bulk pour. sha256:004c330a171d506028e82f5f0cf49342a8d7813440287c711ad25016ef22ae80 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_quickLook_1.jpeg",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 11644592
+          }
+        },
+        {
+          "@id": "http://example.org/base/#09d77ff7497fd26793bb3115e43bf6fd",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#ba83cd8e317d45f3c84836eaab301e90",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Low resolution AIVA image of the bulk Bennu sample in four trays. Imaging acquired before the complete bulk pour. sha256:004c330a171d506028e82f5f0cf49342a8d7813440287c711ad25016ef22ae80 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_quickLook_1.jpeg",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 11644592
+            }
+          },
+          "schema:description": "sha256:4a8baeba7e47878a7271d1c6b1b0080961908ab1f34c3d533a43aaa8343daae2 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231020_AIVA_JSC-ARES_multiSample_1_quickLook_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 348
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/ek2k-3171",
+    "schema:value": "10.60707/ek2k-3171"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Advanced Imaging &amp; Visualization of Astromaterials",
+      "schema:termCode": "AIVA"
+    }
+  ],
+  "schema:name": "AIVA image of four deep trays with Bennu bulk sample",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_158",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:quickLook"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:AIVAImage"
+      },
+      {
+        "@id": "ada:metadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_158"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-06-20",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/ek2k-3171",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231020_aiva_jsc-ares_multisample_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800013-0"
+      },
+      "schema:startDate": "2024-04-05T22:00:15.802580Z"
+    }
+  ],
+  "schema:dateModified": "2024-06-20"
+}

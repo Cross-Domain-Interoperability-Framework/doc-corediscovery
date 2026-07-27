@@ -1,0 +1,515 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2405",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Lock-In Thermography"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "ishizaki.takuya@jaxa.jp",
+        "schema:identifier": "https://orcid.org/0000-0002-3094-6716",
+        "schema:name": "Ishizaki, Takuya"
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "al.asli.abdulkareem.m6@f.mail.nagoya-u.ac.jp",
+        "schema:identifier": "https://orcid.org/0000-0002-1681-0492",
+        "schema:name": "ALASLI, Abdulkareem"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This bundle contains the results of thermal diffusivity measurements conducted on nine different regions of OREX-800118-0_1 using the Lock-In Thermography (LIT) technique. The dataset includes the polar distribution of thermal diffusivity, detailed measurement conditions, and the lock-in thermal response with corresponding infrared images.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#1cb7cde760d869779ef9f8ec3e26798e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Images converted to maps of amplitude form lock-in thermography measurements on OREX-800118-0 sample location 1 at a modulation frequency of 2.0 Hz. sha256:016d91a2cbb75da43b30fbe54a121e70c79804a18248dcecb724c659592fc832 ; ",
+          "schema:encodingFormat": "image/bmp",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_LITImage_1_a.bmp",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1458230
+          }
+        },
+        {
+          "@id": "http://example.org/base/#40b9669ac6f559a01bcf7e126743bcea",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1cb7cde760d869779ef9f8ec3e26798e",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Images converted to maps of amplitude form lock-in thermography measurements on OREX-800118-0 sample location 1 at a modulation frequency of 2.0 Hz. sha256:016d91a2cbb75da43b30fbe54a121e70c79804a18248dcecb724c659592fc832 ; ",
+            "schema:encodingFormat": "image/bmp",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_LITImage_1_a.bmp",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1458230
+            }
+          },
+          "schema:description": "sha256:e5233ca40ecb8bceb7d9de35160e47106ce7b9f298cdeb1f201d24822f3f51e4 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_LITImage_1_a.yaml",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 268
+          }
+        },
+        {
+          "@id": "http://example.org/base/#bcc513a81ffe36d492896a7e2051d83b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Image including the analysis location 1 on the OREX-800118-0 Sample. sha256:163c65ec830a947367a38d504ff2e9536ef01106ccf8e4f2225a9e32d145ac17 ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_analysisLocation_1.png",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 53562
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e15176e1c1dfbcb1ed49dd3703bf0cea",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#bcc513a81ffe36d492896a7e2051d83b",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Image including the analysis location 1 on the OREX-800118-0 Sample. sha256:163c65ec830a947367a38d504ff2e9536ef01106ccf8e4f2225a9e32d145ac17 ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_analysisLocation_1.png",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 53562
+            }
+          },
+          "schema:description": "sha256:f221f1abf66ccf303b7056f0fe7e1b45c0d7440eecdc6f1c03e3e0282e45c028 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_analysisLocation_1.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 357
+          }
+        },
+        {
+          "@id": "http://example.org/base/#5cb8e8fdbaccbc6799834931b58b669e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "LIT instruments generated text for OREX-800118-0 sample measurements. sha256:8bafa9888b98a963379b1849db040ca006f7cdaa0ef22093bd1995ce8f93f39b ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_instrumentMetadata_1.txt",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 962
+          }
+        },
+        {
+          "@id": "http://example.org/base/#383abb9dfdb634bb700733eedb99a5d9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#5cb8e8fdbaccbc6799834931b58b669e",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "LIT instruments generated text for OREX-800118-0 sample measurements. sha256:8bafa9888b98a963379b1849db040ca006f7cdaa0ef22093bd1995ce8f93f39b ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_instrumentMetadata_1.txt",
+            "schema:size": {
+              "@id": "_:b6",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 962
+            }
+          },
+          "schema:description": "sha256:cab160e135ef343e9045e8419385a1919cb353d4ee3a371b7e0a66702e9e1eab ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_instrumentMetadata_1.yaml",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1273
+          }
+        },
+        {
+          "@id": "http://example.org/base/#43951815399d0e77740b2005628a7b2a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Description of the data processing, sample preparation, instrument methodologies, and analytical methods for OREX-800118-0 sample at four different locations. sha256:f99a02c0b614d26124ef1f5ec3e8b1fc43c2848176187a2c15dd6fb0f19edfd4 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2377
+          }
+        },
+        {
+          "@id": "http://example.org/base/#07b60e3ba4501436d4fc8fab25df6dac",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#43951815399d0e77740b2005628a7b2a",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Description of the data processing, sample preparation, instrument methodologies, and analytical methods for OREX-800118-0 sample at four different locations. sha256:f99a02c0b614d26124ef1f5ec3e8b1fc43c2848176187a2c15dd6fb0f19edfd4 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b8",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2377
+            }
+          },
+          "schema:description": "sha256:9ff67d8d865b66c3c5473869c04f1b2311e12f2979d6b667963e2f0126013048 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1363
+          }
+        },
+        {
+          "@id": "http://example.org/base/#184f7b3a483a52916e8253603c3fb5b6",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Files describing laser intensity, spot size, and frequency setting for OREX-800118-0 sample location 1 measurements. sha256:7262151badebfba7b536454139cd2ea8a255ba534458d3b1e47b5543371c25c3 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1.csv",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 66
+          }
+        },
+        {
+          "@id": "http://example.org/base/#02060265add79fbb76c38347496bda39",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#184f7b3a483a52916e8253603c3fb5b6",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Files describing laser intensity, spot size, and frequency setting for OREX-800118-0 sample location 1 measurements. sha256:7262151badebfba7b536454139cd2ea8a255ba534458d3b1e47b5543371c25c3 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1.csv",
+            "schema:size": {
+              "@id": "_:b10",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 66
+            }
+          },
+          "schema:description": "sha256:ac0bc4b2d41c8d1b0ca9f9203deb31960f7718191b782be12903dd08392cb390 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1.yaml",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 430
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1d7daac1db55e4edf3b46b8c09cad225",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#9579aac1470cbb2c9364e7d4aa16564e",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Ascii files for the amplitude, phase, and topography for the lock-in thermography measurements on OREX-800118-0 sample location 1 at a modulation frequency of 2.0 Hz. sha256:526a1846488fdf968a2a390b179d9bc8a7803ce6f383737f059febeea16efdae ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1_a.zip",
+            "schema:size": {
+              "@id": "_:b13",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3164602
+            }
+          },
+          "schema:description": "sha256:74438c7ba953a3ca40e17e8b4c0263f1c0cd659efd76df183c5a1f84df9aca43 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1_a.yaml",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 415
+          }
+        },
+        {
+          "@id": "http://example.org/base/#9579aac1470cbb2c9364e7d4aa16564e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Ascii files for the amplitude, phase, and topography for the lock-in thermography measurements on OREX-800118-0 sample location 1 at a modulation frequency of 2.0 Hz. sha256:526a1846488fdf968a2a390b179d9bc8a7803ce6f383737f059febeea16efdae ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20241022_LIT_NU_OREX-800118-0_1_other_1_a.zip",
+          "schema:size": {
+            "@id": "_:b13",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3164602
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b14",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b15",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/by2q-ts31",
+    "schema:value": "10.60707/by2q-ts31"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b16",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Lock-In Thermography",
+      "schema:termCode": "LIT"
+    }
+  ],
+  "schema:name": "Thermal diffusivity measuremnts by Lock-in thermography technique of particle of interest OREX-800118-0_1 (Polar Distribution Data)",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2405",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:LITImage"
+      },
+      {
+        "@id": "ada:analysisLocation"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2405"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-11",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/by2q-ts31",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b17",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241022_lit_nu_orex-800118-0_1",
+      "schema:location": {
+        "@id": "_:b18",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "NU"
+        ],
+        "schema:identifier": "https://ror.org/04chrp450",
+        "schema:name": "Nagoya University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b19",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800118-0"
+      },
+      "schema:startDate": "2024-10-22T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

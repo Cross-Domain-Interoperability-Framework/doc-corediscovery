@@ -1,0 +1,227 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_1089",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Scanning electron microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "sara.russell@nhm.ac.uk",
+        "schema:identifier": "https://orcid.org/0000-0001-5531-7847",
+        "schema:name": "Russell, Sara"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-01-27",
+  "schema:description": "SEM imaging and element mapping of section",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#9e6b9224c8c5a7fa66cbe4b6a241771f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#cb3139961f0f2ae3e4ea6bd79dbfe97a",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "a zip archive containing various files. Element maps and composite maps of OREX-803070-0 sha256:3b43023d561f707d48f5660d1daaf9fd35af141fa5842352b5626644142e27dd ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20240423_SEM_NHM_OREX-803070-0_1_SEMEDSElementalMaps_341.zip",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 231229578
+            }
+          },
+          "schema:description": "sha256:38853d6bb35eb8d873a4cbe7c9508e17a5d1708eeeaf829aec866df257288721 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240423_SEM_NHM_OREX-803070-0_1_SEMEDSElementalMaps_341.yaml",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 198
+          }
+        },
+        {
+          "@id": "http://example.org/base/#cb3139961f0f2ae3e4ea6bd79dbfe97a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "a zip archive containing various files. Element maps and composite maps of OREX-803070-0 sha256:3b43023d561f707d48f5660d1daaf9fd35af141fa5842352b5626644142e27dd ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20240423_SEM_NHM_OREX-803070-0_1_SEMEDSElementalMaps_341.zip",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 231229578
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b3",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b4",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/gy8c-9d52",
+    "schema:value": "10.60707/gy8c-9d52"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Scanning electron microscopy",
+      "schema:termCode": "SEM"
+    }
+  ],
+  "schema:name": "SEM imaging and element mapping of section",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_1089",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:SEMEDSElementalMaps"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:collection"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_1089"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/gy8c-9d52",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240423_sem_nhm_orex-803070-0_1",
+      "schema:location": {
+        "@id": "_:b7",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "NHM"
+        ],
+        "schema:identifier": "https://ror.org/039zvsn29",
+        "schema:name": "Natural History Museum"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803070-0"
+      },
+      "schema:startDate": "2024-04-23T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-01-27"
+}

@@ -1,0 +1,288 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2353",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Secondary ion mass spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "kawasaki@ep.sci.hokudai.ac.jp",
+        "schema:identifier": "https://orcid.org/0000-0001-6502-6488",
+        "schema:name": "Kawasaki, Noriyuki"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "O-isotope and chemical compositions of olivine and pyroxene in Bennu measured in Hokkaido University",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#e33c861f26933556628c05ce2c571a99",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "O-isotope and chemical compositions of olivine and pyroxene in Bennu measured in Hokkaido University sha256:7ea29d8f618736ce64ca1dcb50815b6b280d878022ae7b89a393308ffe1a2564 ; ",
+          "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_SIMSTabular_1.xlsx",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 21426
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e8183b90de6e2b4c213b0eda74f6caf4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e33c861f26933556628c05ce2c571a99",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "O-isotope and chemical compositions of olivine and pyroxene in Bennu measured in Hokkaido University sha256:7ea29d8f618736ce64ca1dcb50815b6b280d878022ae7b89a393308ffe1a2564 ; ",
+            "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_SIMSTabular_1.xlsx",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 21426
+            }
+          },
+          "schema:description": "sha256:6e93ce209a7652d4e962bdd90d60c019531138c716eef8eb29e4d97319c1856a ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_SIMSTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 365
+          }
+        },
+        {
+          "@id": "http://example.org/base/#8220c94640fafb25ef88262f8c447152",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "description of the methods used for measuring oxygen isotopes with the IMS 1280 sha256:8729b3cbb00b34f665f3aa8bb6056dd1bd6f1fa6b836f6aae4126b2656bd9596 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 152362
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4f481371b8b60aec81e14188976f10e0",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#8220c94640fafb25ef88262f8c447152",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "description of the methods used for measuring oxygen isotopes with the IMS 1280 sha256:8729b3cbb00b34f665f3aa8bb6056dd1bd6f1fa6b836f6aae4126b2656bd9596 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 152362
+            }
+          },
+          "schema:description": "sha256:ef8f979681d692b668ec940edfcfda60fdbe536dd90f5a8cf345c85acffc1596 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240229_SIMS_HU_OREX-803114-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 215
+          }
+        }
+      ]
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b5",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/c7rk-nk69",
+    "schema:value": "10.60707/c7rk-nk69"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Secondary ion mass spectrometry",
+      "schema:termCode": "SIMS"
+    }
+  ],
+  "schema:name": "O-isotope and chemical compositions of olivine and pyroxene in Bennu measured in Hokkaido University",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2353",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:SIMSTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2353"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-11",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/c7rk-nk69",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#analysisname",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Give the name of the analysis",
+      "schema:name": "Analysis Name",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240229_sims_hu_orex-803114-0_1",
+      "schema:location": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "HU"
+        ],
+        "schema:identifier": "https://ror.org/04xt43068",
+        "schema:name": "Hokkaido University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803114-0"
+      },
+      "schema:startDate": "2024-02-29T01:42:37.400743Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

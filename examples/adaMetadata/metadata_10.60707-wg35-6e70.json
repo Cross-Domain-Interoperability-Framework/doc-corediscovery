@@ -1,0 +1,348 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_3",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Elemental analysis - isotope ratio mass spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "dfoustoukos@carnegiescience.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-8402-3717",
+        "schema:name": "Foustoukos, Dionysis"
+      }
+    ]
+  },
+  "schema:datePublished": "2024-06-20",
+  "schema:description": "QuickLook Samples",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#d58cf4d4c078234596d4acab81b0c5ce",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#032e1e17b5305a3c349a4310bf4a94c3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "EA-IRMS Analysis, H for the sample OREX-501033-0 - Quicklook samples sha256:e58fe6a66ea10615b6f819e14f3b75006be7aaf9003d091003c097e9df0b0726 ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_EAIRMSCollection_1.zip",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 189549
+            }
+          },
+          "schema:description": "sha256:57dbc92a43b5ea4c0a4ae0934e3e84726882a0cfae690300041729b81d77a45b ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_EAIRMSCollection_1.yaml",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1063
+          }
+        },
+        {
+          "@id": "http://example.org/base/#032e1e17b5305a3c349a4310bf4a94c3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "EA-IRMS Analysis, H for the sample OREX-501033-0 - Quicklook samples sha256:e58fe6a66ea10615b6f819e14f3b75006be7aaf9003d091003c097e9df0b0726 ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_EAIRMSCollection_1.zip",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 189549
+          }
+        },
+        {
+          "@id": "http://example.org/base/#859420360e58913d2139bd03a9603284",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Method Description sha256:72f162c38bbebf9540cec61294ad0eda16a35cf32781a0dad5cb8861d29b5e73 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2575
+          }
+        },
+        {
+          "@id": "http://example.org/base/#37c630351078009d973996c32920787f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#859420360e58913d2139bd03a9603284",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Method Description sha256:72f162c38bbebf9540cec61294ad0eda16a35cf32781a0dad5cb8861d29b5e73 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2575
+            }
+          },
+          "schema:description": "sha256:cd9c59ba0d2308689608538d6d1ebc4645d1f564dbf0b2a7cd8d718c02554766 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231005_EA-IRMS_CIS_OREX-501033-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 161
+          }
+        }
+      ]
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b5",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/wg35-6e70",
+    "schema:value": "10.60707/wg35-6e70"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Elemental analysis - isotope ratio mass spectrometry",
+      "schema:termCode": "EA-IRMS"
+    }
+  ],
+  "schema:name": "EA-IRMS Analysis, H for the sample OREX-501033-0",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_3",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:EAIRMSCollection"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_3"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-06-20",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/wg35-6e70",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#sampleid",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Sample ID",
+      "schema:name": "Sample ID",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#amountmg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "amount(mg)",
+      "schema:name": "amount (mg)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#wth",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "wt% H",
+      "schema:name": "wt% H",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#stdev",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "stdev on wt% H",
+      "schema:name": "stdev",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#dd",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "delta 2H values",
+      "schema:name": "dD",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#error",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "error on dD",
+      "schema:name": "error",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231005_ea-irms_cis_orex-501033-0_1",
+      "schema:location": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CIS"
+        ],
+        "schema:identifier": "https://ror.org/04jr01610",
+        "schema:name": "Carnegie Institution for Science"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501033-0"
+      },
+      "schema:startDate": "2023-10-05T10:41:09.594238Z"
+    }
+  ],
+  "schema:dateModified": "2024-06-20"
+}

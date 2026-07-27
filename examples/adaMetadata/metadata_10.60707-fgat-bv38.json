@@ -1,0 +1,284 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2696",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Transmission Electron Microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "beauprince@arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-6217-4290",
+        "schema:name": "Prince, Beau"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Finding that ever-elusive zone axis and taking SAED patterns of a pyrrhotite grain in orex-501044-104camera constant is 578 A*px",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#604aaad9502cbfc1a0ec1747cc8996cb",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-104 OneView 500X 200kV 0017.dm4 sha256:5bb61852e3aebb6f505aaee15f8618ca50c7b66df1759f64684446f1c8fa7fa2",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_TEMPatternsImage_926.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 16778198
+          }
+        },
+        {
+          "@id": "http://example.org/base/#b97620499deaf09f747116c5041f1f2f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#604aaad9502cbfc1a0ec1747cc8996cb",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-104 OneView 500X 200kV 0017.dm4 sha256:5bb61852e3aebb6f505aaee15f8618ca50c7b66df1759f64684446f1c8fa7fa2",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_TEMPatternsImage_926.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 16778198
+            }
+          },
+          "schema:description": "sha256:d369dc2e5e91fed8061877cf36c234164b06f9c7d92c7fcbb09eb42361647224 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_TEMPatternsImage_926.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 177
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0482ae26b26aef5ed4156725b3234ec0",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-104 OneView 500X 200kV 0017.dm4 sha256:18d1d2e3e7cbb9dfb2a555bea421ac3f3a6bd605d79349f35031e9aa232b19aa ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2431.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1185
+          }
+        },
+        {
+          "@id": "http://example.org/base/#81e5547f86a27ed78df99fc8f511af44",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#0482ae26b26aef5ed4156725b3234ec0",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-104 OneView 500X 200kV 0017.dm4 sha256:18d1d2e3e7cbb9dfb2a555bea421ac3f3a6bd605d79349f35031e9aa232b19aa ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2431.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1185
+            }
+          },
+          "schema:description": "sha256:972a44d4ce9cd1a72c5714f0f355e3393ef699904e0be140d397d6199ff09d31 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241114_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2431.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 271
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "NASA contract NNM10AA11C ",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/fgat-bv38",
+    "schema:value": "10.60707/fgat-bv38"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Transmission Electron Microscopy",
+      "schema:termCode": "TEM"
+    }
+  ],
+  "schema:name": "SAED of pyrrhotite in OREX-501044-104",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2696",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:TEMPatternsImage"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2696"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-04-02",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/fgat-bv38",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241114_tem_uaz_orex-501044-104_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501044-104"
+      },
+      "schema:startDate": "2024-11-14T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

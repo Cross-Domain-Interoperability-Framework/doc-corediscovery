@@ -1,0 +1,338 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2067",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Scanning electron microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "marc.portail@crhea.cnrs.fr",
+        "schema:identifier": "https://orcid.org/0000-0002-2305-6758",
+        "schema:name": "Portail, Marc"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "HRCL image of a carbonate, dolomite, from sample OREX800045-103. The image reveals zonation during the growth of the crystal. Embedded in the dolomite there is also a brunnerite, that appears dark in CL. Showing simultaneous growth of dolomite and breunnerite in a complex system.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#c4748aa261c7b9c49ea06ee1ce18b8b4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Panchromatic image of 20231214_SEM_CNRS-CRHEA_OREX-800045-106_3_SEMHRCLMap_1_, perfomed at 5kV, magnification of 1.8kx and an integration time of 800%C2%B5s. sha256:325fdf13ed9c559f7abe6a867455892ba0b2e83aae69360a27ae942fb8c3396f",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_SEMHRCLMap_1.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3156243
+          }
+        },
+        {
+          "@id": "http://example.org/base/#ba5bd71e150a68d99b7f478bd1a7c811",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c4748aa261c7b9c49ea06ee1ce18b8b4",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Panchromatic image of 20231214_SEM_CNRS-CRHEA_OREX-800045-106_3_SEMHRCLMap_1_, perfomed at 5kV, magnification of 1.8kx and an integration time of 800%C2%B5s. sha256:325fdf13ed9c559f7abe6a867455892ba0b2e83aae69360a27ae942fb8c3396f",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_SEMHRCLMap_1.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3156243
+            }
+          },
+          "schema:description": "sha256:f8ea1b4f2a2c09b83d68b67278122dc5395f7ee528533975c48ae0cf62e08237 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_SEMHRCLMap_1.yml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 612
+          }
+        },
+        {
+          "@id": "http://example.org/base/#d11559d00a43b6adf1e4dffa18757af5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scaled SEM image sha256:5578fc96ac35963c97602300d40b4b004bf73b75518e301daa3ceb48bd62f330 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_annotatedProduct_1.tif",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3156243
+          }
+        },
+        {
+          "@id": "http://example.org/base/#d104d640e3d94b862cb25f678f2c377d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#d11559d00a43b6adf1e4dffa18757af5",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scaled SEM image sha256:5578fc96ac35963c97602300d40b4b004bf73b75518e301daa3ceb48bd62f330 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_annotatedProduct_1.tif",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3156243
+            }
+          },
+          "schema:description": "sha256:3d7d38095ca7ec6976f6b9d7352a59761b9a8ac2d01e230a72229da3a29948b5 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_annotatedProduct_1.yml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 191
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a93443183d86b72acb906de1caf64d3d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Instrument metadata of measurements sha256:ba22a5124aee6f792555e3930a64bb660ddc94f3a3623a74ceb50c4a29bdfcf5 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_instrumentMetadata_1.txt",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 327
+          }
+        },
+        {
+          "@id": "http://example.org/base/#937488774a2a7a1bbaea09d0a8ded3dc",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a93443183d86b72acb906de1caf64d3d",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Instrument metadata of measurements sha256:ba22a5124aee6f792555e3930a64bb660ddc94f3a3623a74ceb50c4a29bdfcf5 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_instrumentMetadata_1.txt",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 327
+            }
+          },
+          "schema:description": "sha256:8cba3d7c9c7ca49eebab3bc90a9c68a198206865dac5b76177ab0659890ec6a2 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231214_SEM_CNRS-CRHEA_OREX-800045-103_1_instrumentMetadata_1.yml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 178
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/epbg-vr71",
+    "schema:value": "10.60707/epbg-vr71"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Scanning electron microscopy",
+      "schema:termCode": "SEM"
+    }
+  ],
+  "schema:name": "HR-CL on carbonate dolomite of OREX-800045-103",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2067",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:annotatedProduct"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:SEMHRCLMap"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2067"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-29",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/epbg-vr71",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231214_sem_cnrs-crhea_orex-800045-103_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CNRS-CRHEA"
+        ],
+        "schema:identifier": "https://ror.org/02feahw73",
+        "schema:name": "CNRS - Centre de Recherche sur l&#x27;Hetero-Epitaxie et ses Applications"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800045-103"
+      },
+      "schema:startDate": "2023-12-14T06:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

@@ -1,0 +1,310 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2463",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Transmission Electron Microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "lindsay.p.keller@nasa.gov",
+        "schema:identifier": "https://orcid.org/0000-0003-1560-2939",
+        "schema:name": "Keller, Lindsay"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "We obtained energy-dispersive X-ray analyses from a FIB section extracted from aggregate sample OREX-501017-0 and measured the bulk composition of the melt deposit.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#df536011e6ff985a0bf1699bfae1b8a9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Energy-dispersive X-ray analyses from a FIB section extracted from aggregate sample OREX-501017-0 and measured the bulk composition of the melt deposit. sha256:c9c95521d12b338e606564f941bc98d4815e54dfd97aa5fa53ccae7f8068ecc9 ; ",
+          "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_STEMEDSTabular_1.xlsx",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 10939
+          }
+        },
+        {
+          "@id": "http://example.org/base/#19aa83bdc1d5d2044ac5a55b6027c1ac",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#df536011e6ff985a0bf1699bfae1b8a9",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Energy-dispersive X-ray analyses from a FIB section extracted from aggregate sample OREX-501017-0 and measured the bulk composition of the melt deposit. sha256:c9c95521d12b338e606564f941bc98d4815e54dfd97aa5fa53ccae7f8068ecc9 ; ",
+            "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_STEMEDSTabular_1.xlsx",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 10939
+            }
+          },
+          "schema:description": "sha256:5a0667771ba20460a4d6167ac965bf4f628ca9e4aca6f46c2fcc1eff9152c445 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_STEMEDSTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 567
+          }
+        },
+        {
+          "@id": "http://example.org/base/#18997ea90386b1414a5d9f35bd769010",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Comparison of 20240219_TEM_JSC-ARES_OREX-501017-100_1 and 20240219_TEM_JSC-ARES_OREX-501017-101_1 data products: energy-dispersive X-ray analyses from a FIB section extracted from aggregate sample OREX-501017-0 and measured the bulk composition of the melt deposit. sha256:e02c1e702fba38f2e7e9f6ce833045c6fd3c2f28eec7e7624bf549259be1c96e ; ",
+          "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_other_1.xlsx",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 11081
+          }
+        },
+        {
+          "@id": "http://example.org/base/#48eac93ffc22070a1a81d9cebeafcb3e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#18997ea90386b1414a5d9f35bd769010",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Comparison of 20240219_TEM_JSC-ARES_OREX-501017-100_1 and 20240219_TEM_JSC-ARES_OREX-501017-101_1 data products: energy-dispersive X-ray analyses from a FIB section extracted from aggregate sample OREX-501017-0 and measured the bulk composition of the melt deposit. sha256:e02c1e702fba38f2e7e9f6ce833045c6fd3c2f28eec7e7624bf549259be1c96e ; ",
+            "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_other_1.xlsx",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 11081
+            }
+          },
+          "schema:description": "sha256:bb18fd7113aed211c4fb8b1d7a75ba6b272b253a121927201a350385db8258de ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240220_TEM_JSC-ARES_OREX-501017-101_1_other_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 403
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/j6f9-tp89",
+    "schema:value": "10.60707/j6f9-tp89"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Transmission Electron Microscopy",
+      "schema:termCode": "TEM"
+    }
+  ],
+  "schema:name": "Quantitative Analyses of OREX-501017-101 melt deposit bulk composition.",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2463",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:STEMEDSTabular"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2463"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-20",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/j6f9-tp89",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#element",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "element name",
+      "schema:name": "Element",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#at",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "atomic percentage",
+      "schema:name": "At.%",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240220_tem_jsc-ares_orex-501017-101_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501017-101"
+      },
+      "schema:startDate": "2024-02-20T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

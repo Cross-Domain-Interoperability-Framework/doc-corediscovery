@@ -1,0 +1,227 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2608",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "X-ray absorption near edge structure (XANES) spectroscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "zackg@ssl.berkeley.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-8180-3507",
+        "schema:name": "Gainsforth, Zack"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "XANES was done immediately after FIBing to preserve spectroscopy as best as possible.  Data was taken as linescans to reduce beam damage, and two line scans of carbon were done sequentially to monitor sample modification due to X-ray irradiation.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#4d372ded45e96d2d7b5a7c66f374eb67",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#55a2bc2d9b97bb669ce582df7ed3c323",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "a zip archive containing various files. default descriptionshould include: 3D Spectral Map, Methods Description, Indexed Overview Image, and Instrument Generated Metadata. Spectral map is a collection of TIFF image stacks. The collection should consist of multilayer TIFFs (the image stacks), a representative PNG for each stack, and a metadata file for each stack. This collection could contain a single image file. sha256:eb68f67f103b35f8ab49f6343d27250f3c269452a87dddff932e6802f404fc94 ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20241027_XANES_ALS_OREX-800055-125_1_XANESCollection_241026023.zip",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 62716
+            }
+          },
+          "schema:description": "sha256:bff6bcf4c5ba05fa0b7a21f362f10367df173a70e4042c3417a48f6adc1b2e92 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241027_XANES_ALS_OREX-800055-125_1_XANESCollection_241026023.yaml",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 92
+          }
+        },
+        {
+          "@id": "http://example.org/base/#55a2bc2d9b97bb669ce582df7ed3c323",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "a zip archive containing various files. default descriptionshould include: 3D Spectral Map, Methods Description, Indexed Overview Image, and Instrument Generated Metadata. Spectral map is a collection of TIFF image stacks. The collection should consist of multilayer TIFFs (the image stacks), a representative PNG for each stack, and a metadata file for each stack. This collection could contain a single image file. sha256:eb68f67f103b35f8ab49f6343d27250f3c269452a87dddff932e6802f404fc94 ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20241027_XANES_ALS_OREX-800055-125_1_XANESCollection_241026023.zip",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 62716
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b3",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "NASA",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b4",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/2arx-b516",
+    "schema:value": "10.60707/2arx-b516"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-ray absorption near edge structure (XANES) spectroscopy",
+      "schema:termCode": "XANES"
+    }
+  ],
+  "schema:name": "C-K, N-K, O-K XANES of N-rich sample from the angular lithology",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2608",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:XANESCollection"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:collection"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2608"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-28",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/2arx-b516",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241027_xanes_als_orex-800055-125_1",
+      "schema:location": {
+        "@id": "_:b7",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "ALS"
+        ],
+        "schema:identifier": "https://ror.org/00319zh75",
+        "schema:name": "Advanced Light Source at Lawrence Berkeley National Laboratory"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800055-125"
+      },
+      "schema:startDate": "2024-10-27T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

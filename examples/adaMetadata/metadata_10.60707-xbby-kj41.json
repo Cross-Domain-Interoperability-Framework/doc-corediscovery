@@ -1,0 +1,376 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2628",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Visible, near-, and mid-infrared spectroscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "takahiro_hiroi@brown.edu",
+        "schema:identifier": "https://orcid.org/0000-0003-2866-9091",
+        "schema:name": "Hiroi, Takahiro"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Bidiectional VNIR reflectance spectrum of both sides of a angular rock sample OREX-800098-0 of asteroid Bennu was measured using RELAB Bidirectional Spectrometer at the standard viewing geometry of 30-degree incidence and 0-degree emergence angles.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#e0fee3cccca4292d76dcb5238224e677",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Bidirectional visible and near-infrared reflectance spectrum of asteroid Bennu sample OREX-800098-0 angular rock Face A. The sample was loaded in a 9-mm black Teflon dish with a 4.8-mm field of view. RELAB sample ID is BN-REM-010, and spectral file name is CABN10. Wavelength range was 300-2600 nm, and the data were collected at every 5 nm. Reflectance is measured one wavelength channel at a time relative to Spectralon from Labsphere while both Spectralon and each sample were spun at a speed of 1.5 seconds per rotation during the measurements. Effects of Spectralon absorption features were corrected. Each measurement at each wavelength consists of a single scan with a dwell time that varies as a function of the albedo of the material at each wavelength. Minimum dwell time is 4.5 seconds, and the maximum dwell time is 34.5 seconds. Connection point between detectors is between 860%E2%80%93880 nm. Overlap region is averaged. A quartz depolarizer was used over 300-420 nm and 2050-2600 nm, and a calcite depolarizer was used over the wavelength range of 400-2070 nm. Albedo was adjusted to the visible range. sha256:7274d9ee22585b334e71f116bb31ce052a4b16651c9908c6d11de29d1f16486b ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_VNMIRSpectralPoint_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 10860
+          }
+        },
+        {
+          "@id": "http://example.org/base/#fd37a9cca82fcdc849b5ae7d24f669da",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e0fee3cccca4292d76dcb5238224e677",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Bidirectional visible and near-infrared reflectance spectrum of asteroid Bennu sample OREX-800098-0 angular rock Face A. The sample was loaded in a 9-mm black Teflon dish with a 4.8-mm field of view. RELAB sample ID is BN-REM-010, and spectral file name is CABN10. Wavelength range was 300-2600 nm, and the data were collected at every 5 nm. Reflectance is measured one wavelength channel at a time relative to Spectralon from Labsphere while both Spectralon and each sample were spun at a speed of 1.5 seconds per rotation during the measurements. Effects of Spectralon absorption features were corrected. Each measurement at each wavelength consists of a single scan with a dwell time that varies as a function of the albedo of the material at each wavelength. Minimum dwell time is 4.5 seconds, and the maximum dwell time is 34.5 seconds. Connection point between detectors is between 860%E2%80%93880 nm. Overlap region is averaged. A quartz depolarizer was used over 300-420 nm and 2050-2600 nm, and a calcite depolarizer was used over the wavelength range of 400-2070 nm. Albedo was adjusted to the visible range. sha256:7274d9ee22585b334e71f116bb31ce052a4b16651c9908c6d11de29d1f16486b ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_VNMIRSpectralPoint_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 10860
+            }
+          },
+          "schema:description": "sha256:418ddd6d612ad611419f81108ecb70de4aec7f97adbcf98ab57c4658497db991 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_VNMIRSpectralPoint_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2652
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1543040782537a8909af6d78c0144a88",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "The analyzed spot is indicated with a red circle of 4.8 mm in diameter of OREX-800098-0 angular rock Face A mounted on a 9-mm diameter black Teflon dish. sha256:e1e7cb4663a3e41a7277083a2373a7c7acb735fb9e3462f0a9a84f946bbb79c6 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_analysisLocation_1.jpg",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 110045
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4509d6d5c3b8e937e6326f54de60b9b2",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1543040782537a8909af6d78c0144a88",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "The analyzed spot is indicated with a red circle of 4.8 mm in diameter of OREX-800098-0 angular rock Face A mounted on a 9-mm diameter black Teflon dish. sha256:e1e7cb4663a3e41a7277083a2373a7c7acb735fb9e3462f0a9a84f946bbb79c6 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_analysisLocation_1.jpg",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 110045
+            }
+          },
+          "schema:description": "sha256:38117bec1e873e17d2bc49ef603480990c6c508a0fdfc2b2764fc4b4d133ee5c ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_analysisLocation_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 332
+          }
+        },
+        {
+          "@id": "http://example.org/base/#2932d8086cb626fa20e0d8d708c58f10",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "A plot of bidirectional VNIR reflectance spectrum of OREX-800098-0 angular rock Face A. sha256:54e02424c187c6757a87f1fefe509e09627f6fb325a2fe91ac87eff45be72231 ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_plot_1.png",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 6562
+          }
+        },
+        {
+          "@id": "http://example.org/base/#21aa7279fd266c60002e32b663e9f8f8",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#2932d8086cb626fa20e0d8d708c58f10",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "A plot of bidirectional VNIR reflectance spectrum of OREX-800098-0 angular rock Face A. sha256:54e02424c187c6757a87f1fefe509e09627f6fb325a2fe91ac87eff45be72231 ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_plot_1.png",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 6562
+            }
+          },
+          "schema:description": "sha256:4ec505b14c092bd129b031b5d7cb77eb40db9f52704f8b397e0eb6aae783842d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250225_VNMIR_BROWN_OREX-800098-0_1_plot_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 253
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program and NASA Planetary Science Enabling Facilities program 80NSSC23K0198.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/xbby-kj41",
+    "schema:value": "10.60707/xbby-kj41"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Visible, near-, and mid-infrared spectroscopy",
+      "schema:termCode": "VNMIR"
+    }
+  ],
+  "schema:name": "Bidirectional visible to near-infrared reflectance spectrum of angular rock OREX-800098-0.",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2628",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "ada:VNMIRSpectralPoint"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:analysisLocation"
+      },
+      {
+        "@id": "ada:metadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2628"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-28",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/xbby-kj41",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#wavelengthnm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Wavelength values",
+      "schema:name": "Wavelength (nm)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#reflectance",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Reflectance at corresponding wavelength",
+      "schema:name": "Reflectance",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#standarddeviation",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Standard deviation in reflectance over entire dwell time at that wavelength",
+      "schema:name": "Standard Deviation",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20250225_vnmir_brown_orex-800098-0_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "BROWN"
+        ],
+        "schema:identifier": "https://ror.org/05gq02987",
+        "schema:name": "Brown University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800098-0"
+      },
+      "schema:startDate": "2025-02-25T15:56:35.319735Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

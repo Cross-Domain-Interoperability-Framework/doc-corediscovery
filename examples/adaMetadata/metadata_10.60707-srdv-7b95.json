@@ -1,0 +1,335 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_473",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Microprobe Two-Step Laser Mass Spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "simon.j.clemett@nasa.gov",
+        "schema:identifier": "https://orcid.org/0000-0002-5187-1653",
+        "schema:name": "Clemett, Simon"
+      }
+    ]
+  },
+  "schema:datePublished": "2024-11-21",
+  "schema:description": "uL2MS mass spectrum of particle group 5 on OREX-501006-0",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#a6bf8ccda28d8a7d0d0a7f3eb1f0a477",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "uL2MS mass spectrum of particle group 5 on OREX-501006-0 sha256:93e81e04f6b564583406877b4841a762ec0979c0f68692be6875fe71c3b40451 ; ",
+          "schema:encodingFormat": "application/x-hdf5",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_L2MSCube_11.h5",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3212864
+          }
+        },
+        {
+          "@id": "http://example.org/base/#26e4670ea44c3b30088045156c222ebb",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a6bf8ccda28d8a7d0d0a7f3eb1f0a477",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "uL2MS mass spectrum of particle group 5 on OREX-501006-0 sha256:93e81e04f6b564583406877b4841a762ec0979c0f68692be6875fe71c3b40451 ; ",
+            "schema:encodingFormat": "application/x-hdf5",
+            "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_L2MSCube_11.h5",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3212864
+            }
+          },
+          "schema:description": "sha256:0e50ba27a73a40c968a3fbc649746cebc34529017f2006e7055dc5ae0ed98ae6 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_L2MSCube_11.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 505
+          }
+        },
+        {
+          "@id": "http://example.org/base/#56f8f50f7d009bc25862d231c4e690df",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Mass Calibration Constants sha256:0aab091fb8f0a831dd3e12ae17ec4d275677f9d90e13f46d7ec14754c65b5c20 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_1.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 29
+          }
+        },
+        {
+          "@id": "http://example.org/base/#abe5e16c45f06ba4b8a45bd9f26542d2",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#56f8f50f7d009bc25862d231c4e690df",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Mass Calibration Constants sha256:0aab091fb8f0a831dd3e12ae17ec4d275677f9d90e13f46d7ec14754c65b5c20 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_1.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 29
+            }
+          },
+          "schema:description": "sha256:f9cd6710f5c8cbae94ef96b3a0181f692ab1401e3e5c2cec04626d7b78cad3dd ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 312
+          }
+        },
+        {
+          "@id": "http://example.org/base/#666d11da0da74b54ced7b24dd8ef201b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Map Descriptor sha256:b484eb81018bbe4852c7cd430376afb5bc473367eca05431f8cfa1ff888f293d ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_2.txt",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 20
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0bdd9f9df2b8aae4c3d53b7d74854e97",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#666d11da0da74b54ced7b24dd8ef201b",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Map Descriptor sha256:b484eb81018bbe4852c7cd430376afb5bc473367eca05431f8cfa1ff888f293d ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_2.txt",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 20
+            }
+          },
+          "schema:description": "sha256:caba390d6935b422e2a4c4c67237819094a0daf84041bc8f499be81efa8b9828 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231127_uL2MS_JSC-ARES_OREX-501006-0_1_other_2.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 300
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/srdv-7b95",
+    "schema:value": "10.60707/srdv-7b95"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Microprobe Two-Step Laser Mass Spectrometry",
+      "schema:termCode": "uL2MS"
+    }
+  ],
+  "schema:name": "uL2MS Summed Mass Spectrum OREX-501006-0 PG5",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_473",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:L2MSCube"
+      },
+      {
+        "@id": "ada:dataCube"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_473"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-11-21",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/srdv-7b95",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231127_ul2ms_jsc-ares_orex-501006-0_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501006-0"
+      },
+      "schema:startDate": "2024-05-24T18:49:44.145534Z"
+    }
+  ],
+  "schema:dateModified": "2024-11-21"
+}

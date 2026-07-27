@@ -1,0 +1,2626 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2243",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Quadrupole Inductively Coupled Plasma Mass Spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "piers.koefoed@wustl.edu",
+        "schema:identifier": "https://orcid.org/0000-0002-4036-6088",
+        "schema:name": "Koefoed, Piers"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "The major and trace elemental analyses of the Bennu samples OREX-800117-107 (SEIWG bulk aggregate), OREX-800107-101 (SOAWG bulk aggregate), OREX-800055-103 (angular lithology), OREX-803231-101 (hummocky lithology), and OREX-800023-113 (mottled lithology). All samples, excluding the hummocky lithology, show simialr compositions which are close to the average CI chondrite composition. The SOAWG bulk aggregate does however show contamination of the elements W, La, Ce, and Mo. As for the hummocky lithology, it shows a distinct elemental composition, likely due to its disticnt mineralogic differences.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#ae658595157f0d7ecf830a013c7c357e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw iCAPQ ICP-MS data sha256:15dae93d3b61d9ac8178040cff8a08a0b35711aa6cbfacd64ad2e96f93d1805e ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_QICPMSRawTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 241348
+          }
+        },
+        {
+          "@id": "http://example.org/base/#b484550aaaa064556e7318d2a816db75",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#ae658595157f0d7ecf830a013c7c357e",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw iCAPQ ICP-MS data sha256:15dae93d3b61d9ac8178040cff8a08a0b35711aa6cbfacd64ad2e96f93d1805e ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_QICPMSRawTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 241348
+            }
+          },
+          "schema:description": "sha256:eb325a7727f6731901efcddf5307bcba63b5d77d120438e720f272f0db0c528f ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_QICPMSRawTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 26771
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e650f96d64a3d9dd229a35f1aa3633a3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "method and data processing description sha256:672b6eb87cc9fb4f25659590544f44ca560fb5d68e9f56b437ada2de555ecca2 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 83011
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a5586044d453d2d93e49be77d71ee6d4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e650f96d64a3d9dd229a35f1aa3633a3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "method and data processing description sha256:672b6eb87cc9fb4f25659590544f44ca560fb5d68e9f56b437ada2de555ecca2 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 83011
+            }
+          },
+          "schema:description": "sha256:6075756ccfcd7daa6b72423830869c110e8e84475c8c947852c07ccec6ea9cb7 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250128_Q-ICP-MS_WUSTL_multiSample_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 203
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/fzjk-kt84",
+    "schema:value": "10.60707/fzjk-kt84"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Quadrupole Inductively Coupled Plasma Mass Spectrometry",
+      "schema:termCode": "Q-ICP-MS"
+    }
+  ],
+  "schema:name": "Q-ICP-MS Bulk elemental analyses of the three Bennu lithologies and the SEIWG and SOAWG bulk aggregates",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2243",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:QICPMSRawTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2243"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-04",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/fzjk-kt84",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#samplelist",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "List of samples analysed",
+      "schema:name": "SampleList",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplename",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "user defined sample name",
+      "schema:name": "SampleName",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage7liked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 7Li data measured in KED mode",
+      "schema:name": "Raw.Average 7Li (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage23naked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 23Na data measured in KED mode",
+      "schema:name": "Raw.Average 23Na (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage24mgked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 24Mg data measured in KED mode",
+      "schema:name": "Raw.Average 24Mg (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage27alked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 27Al data measured in KED mode",
+      "schema:name": "Raw.Average 27Al (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage31pked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 31P data measured in KED mode",
+      "schema:name": "Raw.Average 31P (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage39kked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 39K data measured in KED mode",
+      "schema:name": "Raw.Average 39K (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage43caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 43Ca data measured in KED mode",
+      "schema:name": "Raw.Average 43Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage44caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 44Ca data measured in KED mode",
+      "schema:name": "Raw.Average 44Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage45scked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 45Sc data measured in KED mode",
+      "schema:name": "Raw.Average 45Sc (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage47tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 47Ti data measured in KED mode",
+      "schema:name": "Raw.Average 47Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage48tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 48Ti data measured in KED mode",
+      "schema:name": "Raw.Average 48Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage51vked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 51V data measured in KED mode",
+      "schema:name": "Raw.Average 51V (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage52crked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 52Cr data measured in KED mode",
+      "schema:name": "Raw.Average 52Cr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage55mnked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 55Mn data measured in KED mode",
+      "schema:name": "Raw.Average 55Mn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage56feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 56Fe data measured in KED mode",
+      "schema:name": "Raw.Average 56Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage57feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 57Fe data measured in KED mode",
+      "schema:name": "Raw.Average 57Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage59coked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 59Co data measured in KED mode",
+      "schema:name": "Raw.Average 59Co (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage60niked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 60Ni data measured in KED mode",
+      "schema:name": "Raw.Average 60Ni (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage63cuked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 63Cu data measured in KED mode",
+      "schema:name": "Raw.Average 63Cu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage66znked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 66Zn data measured in KED mode",
+      "schema:name": "Raw.Average 66Zn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage71gaked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 71Ga data measured in KED mode",
+      "schema:name": "Raw.Average 71Ga (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage75asked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 75As data measured in KED mode",
+      "schema:name": "Raw.Average 75As (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage77seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 77Se data measured in KED mode",
+      "schema:name": "Raw.Average 77Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage82seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 82Se data measured in KED mode",
+      "schema:name": "Raw.Average 82Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage85rbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 85Rb data measured in KED mode",
+      "schema:name": "Raw.Average 85Rb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage88srked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 88Sr data measured in KED mode",
+      "schema:name": "Raw.Average 88Sr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage89yked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 89Y data measured in KED mode",
+      "schema:name": "Raw.Average 89Y (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage90zrked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 90Zr data measured in KED mode",
+      "schema:name": "Raw.Average 90Zr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage93nbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 93Nb data measured in KED mode",
+      "schema:name": "Raw.Average 93Nb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage95moked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 95Mo data measured in KED mode",
+      "schema:name": "Raw.Average 95Mo (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage103rhked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 103Rh data measured in KED mode",
+      "schema:name": "Raw.Average 103Rh (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage107agked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 107Ag data measured in KED mode",
+      "schema:name": "Raw.Average 107Ag (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage111cdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 111Cd data measured in KED mode",
+      "schema:name": "Raw.Average 111Cd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage115inked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 115In data measured in KED mode",
+      "schema:name": "Raw.Average 115In (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage121sbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 121Sb data measured in KED mode",
+      "schema:name": "Raw.Average 121Sb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage125teked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 125Te data measured in KED mode",
+      "schema:name": "Raw.Average 125Te (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage133csked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 133Cs data measured in KED mode",
+      "schema:name": "Raw.Average 133Cs (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage137baked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 137Ba data measured in KED mode",
+      "schema:name": "Raw.Average 137Ba (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage139laked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 139La data measured in KED mode",
+      "schema:name": "Raw.Average 139La (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage140ceked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 140Ce data measured in KED mode",
+      "schema:name": "Raw.Average 140Ce (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage141prked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 141Pr data measured in KED mode",
+      "schema:name": "Raw.Average 141Pr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage146ndked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 146Nd data measured in KED mode",
+      "schema:name": "Raw.Average 146Nd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage147smked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 147Sm data measured in KED mode",
+      "schema:name": "Raw.Average 147Sm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage153euked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 153Eu data measured in KED mode",
+      "schema:name": "Raw.Average 153Eu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage157gdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 157Gd data measured in KED mode",
+      "schema:name": "Raw.Average 157Gd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage159tbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 159Tb data measured in KED mode",
+      "schema:name": "Raw.Average 159Tb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage163dyked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 163Dy data measured in KED mode",
+      "schema:name": "Raw.Average 163Dy (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage165hoked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 165Ho data measured in KED mode",
+      "schema:name": "Raw.Average 165Ho (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage166erked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 166Er data measured in KED mode",
+      "schema:name": "Raw.Average 166Er (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage169tmked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 169Tm data measured in KED mode",
+      "schema:name": "Raw.Average 169Tm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage172ybked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 172Yb data measured in KED mode",
+      "schema:name": "Raw.Average 172Yb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage175luked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 175Lu data measured in KED mode",
+      "schema:name": "Raw.Average 175Lu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage178hfked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 178Hf data measured in KED mode",
+      "schema:name": "Raw.Average 178Hf (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage181taked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 181Ta data measured in KED mode",
+      "schema:name": "Raw.Average 181Ta (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage182wked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 182W data measured in KED mode",
+      "schema:name": "Raw.Average 182W (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage185reked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 185Re data measured in KED mode",
+      "schema:name": "Raw.Average 185Re (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage193irked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 193Ir data measured in KED mode",
+      "schema:name": "Raw.Average 193Ir (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage195ptked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 195Pt data measured in KED mode",
+      "schema:name": "Raw.Average 195Pt (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage205tlked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 205Tl data measured in KED mode",
+      "schema:name": "Raw.Average 205Tl (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage206pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 206Pb data measured in KED mode",
+      "schema:name": "Raw.Average 206Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage207pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 207Pb data measured in KED mode",
+      "schema:name": "Raw.Average 207Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage208pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 208Pb data measured in KED mode",
+      "schema:name": "Raw.Average 208Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage209biked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 209Bi data measured in KED mode",
+      "schema:name": "Raw.Average 209Bi (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage232thked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 232Th data measured in KED mode",
+      "schema:name": "Raw.Average 232Th (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawaverage238uked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "raw 238U data measured in KED mode",
+      "schema:name": "Raw.Average 238U (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd7liked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 7Li",
+      "schema:name": "Raw.RSD 7Li (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd23naked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 23Na",
+      "schema:name": "Raw.RSD 23Na (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd24mgked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 24Mg",
+      "schema:name": "Raw.RSD 24Mg (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd27alked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 27Al",
+      "schema:name": "Raw.RSD 27Al (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd31pked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 31P",
+      "schema:name": "Raw.RSD 31P (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd39kked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 39K",
+      "schema:name": "Raw.RSD 39K (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd43caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 43Ca",
+      "schema:name": "Raw.RSD 43Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd44caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 44Ca",
+      "schema:name": "Raw.RSD 44Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd45scked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 45Sc",
+      "schema:name": "Raw.RSD 45Sc (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd47tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 47Ti",
+      "schema:name": "Raw.RSD 47Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd48tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 48Ti",
+      "schema:name": "Raw.RSD 48Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd51vked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 51V",
+      "schema:name": "Raw.RSD 51V (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd52crked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 52Cr",
+      "schema:name": "Raw.RSD 52Cr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd52mnked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 52Mn",
+      "schema:name": "Raw.RSD 52Mn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd56feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 56Fe",
+      "schema:name": "Raw.RSD 56Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd57feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 57Fe",
+      "schema:name": "Raw.RSD 57Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd59coked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 59Co",
+      "schema:name": "Raw.RSD 59Co (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd60niked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 60Ni",
+      "schema:name": "Raw.RSD 60Ni (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd63cuked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 63Cu",
+      "schema:name": "Raw.RSD 63Cu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd66znked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 66Zn",
+      "schema:name": "Raw.RSD 66Zn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd71gaked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 71Ga",
+      "schema:name": "Raw.RSD 71Ga (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd75asked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 75As",
+      "schema:name": "Raw.RSD 75As (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd77seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 77Se",
+      "schema:name": "Raw.RSD 77Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd82seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 82Se",
+      "schema:name": "Raw.RSD 82Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd85rbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 85Rb",
+      "schema:name": "Raw.RSD 85Rb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd88srked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 88Sr",
+      "schema:name": "Raw.RSD 88Sr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd89yked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 89Y",
+      "schema:name": "Raw.RSD 89Y (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd90zrked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 90Zr",
+      "schema:name": "Raw.RSD 90Zr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd93nbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 93Nb",
+      "schema:name": "Raw.RSD 93Nb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd95moked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 95Mo",
+      "schema:name": "Raw.RSD 95Mo (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd103rhked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 103Rh",
+      "schema:name": "Raw.RSD 103Rh (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd107agked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 107Ag",
+      "schema:name": "Raw.RSD 107Ag (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd111cdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 111Cd",
+      "schema:name": "Raw.RSD 111Cd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd115inked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 115In",
+      "schema:name": "Raw.RSD 115In (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd121sbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 121Sb",
+      "schema:name": "Raw.RSD 121Sb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd125teked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 125Te",
+      "schema:name": "Raw.RSD 125Te (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd133csked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 133Cs",
+      "schema:name": "Raw.RSD 133Cs (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd137baked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 137Ba",
+      "schema:name": "Raw.RSD 137Ba (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd139laked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 139La",
+      "schema:name": "Raw.RSD 139La (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd140ceked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 140Ce",
+      "schema:name": "Raw.RSD 140Ce (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd141prked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 141Pr",
+      "schema:name": "Raw.RSD 141Pr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd146ndked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 146Nd",
+      "schema:name": "Raw.RSD 146Nd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd147smked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 147Sm",
+      "schema:name": "Raw.RSD 147Sm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd153euked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 153Eu",
+      "schema:name": "Raw.RSD 153Eu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd157gdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 157Gd",
+      "schema:name": "Raw.RSD 157Gd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd159tbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 159Tb",
+      "schema:name": "Raw.RSD 159Tb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd163dyked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 163Dy",
+      "schema:name": "Raw.RSD 163Dy (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd165hoked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 165Ho",
+      "schema:name": "Raw.RSD 165Ho (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd166erked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 166Er",
+      "schema:name": "Raw.RSD 166Er (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd169tmked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 169Tm",
+      "schema:name": "Raw.RSD 169Tm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd172ybked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 172Yb",
+      "schema:name": "Raw.RSD 172Yb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd175luked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 175Lu",
+      "schema:name": "Raw.RSD 175Lu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd178hfked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 178Hf",
+      "schema:name": "Raw.RSD 178Hf (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd181taked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 181Ta",
+      "schema:name": "Raw.RSD 181Ta (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd182wked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 182W",
+      "schema:name": "Raw.RSD 182W (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd185reked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 185Re",
+      "schema:name": "Raw.RSD 185Re (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd193irked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 193Ir",
+      "schema:name": "Raw.RSD 193Ir (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd195ptked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 195Pt",
+      "schema:name": "Raw.RSD 195Pt (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd205tlked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 205Tl",
+      "schema:name": "Raw.RSD 205Tl (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd206pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 206Pb",
+      "schema:name": "Raw.RSD 206Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd207pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 207Pb",
+      "schema:name": "Raw.RSD 207Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd208pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 208Pb",
+      "schema:name": "Raw.RSD 208Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd209biked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 209Bi",
+      "schema:name": "Raw.RSD 209Bi (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd232thked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 232Th",
+      "schema:name": "Raw.RSD 232Th (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#rawrsd238uked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "instrament calculated error (RSD) for 238U",
+      "schema:name": "Raw.RSD 238U (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage7liked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 7Li in ppm",
+      "schema:name": "ExtCal.Average 7Li (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage23naked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 23Na in ppm",
+      "schema:name": "ExtCal.Average 23Na (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage24mgked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 24Mg in ppm",
+      "schema:name": "ExtCal.Average 24Mg (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage27alked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 27Al in ppm",
+      "schema:name": "ExtCal.Average 27Al (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage31pked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 31P in ppm",
+      "schema:name": "ExtCal.Average 31P (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage39kked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 39K in ppm",
+      "schema:name": "ExtCal.Average 39K (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage43caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 43Ca in ppm",
+      "schema:name": "ExtCal.Average 43Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage44caked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 44Ca in ppm",
+      "schema:name": "ExtCal.Average 44Ca (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage45scked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 45Sc in ppm",
+      "schema:name": "ExtCal.Average 45Sc (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage47tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 47Ti in ppm",
+      "schema:name": "ExtCal.Average 47Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage48tiked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 48Ti in ppm",
+      "schema:name": "ExtCal.Average 48Ti (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage51vked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 51V in ppm",
+      "schema:name": "ExtCal.Average 51V (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage52crked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 52Cr in ppm",
+      "schema:name": "ExtCal.Average 52Cr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage55mnked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 55Mn in ppm",
+      "schema:name": "ExtCal.Average 55Mn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage56feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 56Fe in ppm",
+      "schema:name": "ExtCal.Average 56Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage57feked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 57Fe in ppm",
+      "schema:name": "ExtCal.Average 57Fe (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage59coked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 59Co in ppm",
+      "schema:name": "ExtCal.Average 59Co (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage60niked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 60Ni in ppm",
+      "schema:name": "ExtCal.Average 60Ni (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage63cuked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 63Cu in ppm",
+      "schema:name": "ExtCal.Average 63Cu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage66znked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 66Zn in ppm",
+      "schema:name": "ExtCal.Average 66Zn (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage71gaked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 71Ga in ppm",
+      "schema:name": "ExtCal.Average 71Ga (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage75asked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 75As in ppm",
+      "schema:name": "ExtCal.Average 75As (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage77seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 77Se in ppm",
+      "schema:name": "ExtCal.Average 77Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage82seked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 82Se in ppm",
+      "schema:name": "ExtCal.Average 82Se (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage85rbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 85Rb in ppm",
+      "schema:name": "ExtCal.Average 85Rb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage88srked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 88Sr in ppm",
+      "schema:name": "ExtCal.Average 88Sr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage89yked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 89Y in ppm",
+      "schema:name": "ExtCal.Average 89Y (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage90zrked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 90Zr in ppm",
+      "schema:name": "ExtCal.Average 90Zr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage93nbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 93Nb in ppm",
+      "schema:name": "ExtCal.Average 93Nb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage95moked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 95Mo in ppm",
+      "schema:name": "ExtCal.Average 95Mo (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage103rhked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 103Rh in ppm",
+      "schema:name": "ExtCal.Average 103Rh (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage107agked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 107Ag in ppm",
+      "schema:name": "ExtCal.Average 107Ag (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage111cdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 111Cd in ppm",
+      "schema:name": "ExtCal.Average 111Cd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage115inked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 115In in ppm",
+      "schema:name": "ExtCal.Average 115In (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage121sbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 121Sb in ppm",
+      "schema:name": "ExtCal.Average 121Sb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage125teked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 125Te in ppm",
+      "schema:name": "ExtCal.Average 125Te (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage133csked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 133Cs in ppm",
+      "schema:name": "ExtCal.Average 133Cs (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage137baked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 137Ba in ppm",
+      "schema:name": "ExtCal.Average 137Ba (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage139laked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 139La in ppm",
+      "schema:name": "ExtCal.Average 139La (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage140ceked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 140Ca in ppm",
+      "schema:name": "ExtCal.Average 140Ce (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage141prked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 141Pr in ppm",
+      "schema:name": "ExtCal.Average 141Pr (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage146ndked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 146Nd in ppm",
+      "schema:name": "ExtCal.Average 146Nd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage147smked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 147Sm in ppm",
+      "schema:name": "ExtCal.Average 147Sm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage153euked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 153Eu in ppm",
+      "schema:name": "ExtCal.Average 153Eu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage157gdked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 157Gd in ppm",
+      "schema:name": "ExtCal.Average 157Gd (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage159tbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 159Tb in ppm",
+      "schema:name": "ExtCal.Average 159Tb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage163dyked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 163Dy in ppm",
+      "schema:name": "ExtCal.Average 163Dy (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage165hoked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 165Ho in ppm",
+      "schema:name": "ExtCal.Average 165Ho (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage166erked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 166Er in ppm",
+      "schema:name": "ExtCal.Average 166Er (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage169tmked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 169Tm in ppm",
+      "schema:name": "ExtCal.Average 169Tm (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage172ybked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 172Yb in ppm",
+      "schema:name": "ExtCal.Average 172Yb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage175luked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 175Lu in ppm",
+      "schema:name": "ExtCal.Average 175Lu (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage178hfked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 178Hf in ppm",
+      "schema:name": "ExtCal.Average 178Hf (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage181taked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 181Ta in ppm",
+      "schema:name": "ExtCal.Average 181Ta (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage182wked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 182W in ppm",
+      "schema:name": "ExtCal.Average 182W (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage185reked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 185Re in ppm",
+      "schema:name": "ExtCal.Average 185Re (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage193irked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 193Ir in ppm",
+      "schema:name": "ExtCal.Average 193Ir (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage195ptked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 195Pt in ppm",
+      "schema:name": "ExtCal.Average 195Pt (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage205tlked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 205Tl in ppm",
+      "schema:name": "ExtCal.Average 205Tl (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage208pbked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 208Pb in ppm",
+      "schema:name": "ExtCal.Average 208Pb (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage209biked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 209Bi in ppm",
+      "schema:name": "ExtCal.Average 209Bi (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage232thked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 232Th in ppm",
+      "schema:name": "ExtCal.Average 232Th (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#extcalaverage238uked",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "calculated concentraions of 238U in ppm",
+      "schema:name": "ExtCal.Average 238U (KED)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20250128_q-icp-ms_wustl_multisample_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "WUSTL"
+        ],
+        "schema:identifier": "https://ror.org/01yc7t268",
+        "schema:name": "Washington University in St. Louis"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803231-101"
+      },
+      "schema:startDate": "2025-01-28T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

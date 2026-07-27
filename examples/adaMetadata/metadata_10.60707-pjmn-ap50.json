@@ -1,0 +1,494 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2065",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Scanning electron microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "N.Timms@curtin.edu.au",
+        "schema:identifier": "https://orcid.org/0000-0003-2997-4303",
+        "schema:name": "Timms, Nicholas"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Backscattered electron images, secondary electron images, panchromatic cathodoluminescence images, electron backscatter diffraction and energy dispersive spectroscopy mapping and data from particles in OREX-803077-0.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#4ce17e219bb8ea158f6b8fc74793e1a3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1, 16.26 x 26.98 %C2%B5m map, step size = 60 nm, EBSD map, crystallographic orientation, IPFx colours, grain boundaries, all phases. sha256:d590ab67a51ce35c870cb43ae1b08a6ab331628935326b08726386f8f0a7e460",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_SEMEBSDGrainImageMap_10.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2359240
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a07f188fcc14afe7ecaeb402e98dabb5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#4ce17e219bb8ea158f6b8fc74793e1a3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1, 16.26 x 26.98 %C2%B5m map, step size = 60 nm, EBSD map, crystallographic orientation, IPFx colours, grain boundaries, all phases. sha256:d590ab67a51ce35c870cb43ae1b08a6ab331628935326b08726386f8f0a7e460",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_SEMEBSDGrainImageMap_10.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2359240
+            }
+          },
+          "schema:description": "sha256:41671f8fd13445dae68c0b7f72219899524e12710caedc5f6fcb81ebd0126bd6 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_SEMEBSDGrainImageMap_10.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2083
+          }
+        },
+        {
+          "@id": "http://example.org/base/#dff3e25ed3b4663633984c21da16f8f3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3, Nicholas Timms, data collected 2024/11/15 to 2024/11-18  method description for scanning electron microscopy (SEM) sha256:c6a593e965928f53ee979af67dcec4d163d62f0961ddbf2dadc574b9e31e2d91 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 5598810
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6631bd23428dcea0a4db83bd2f39559c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#dff3e25ed3b4663633984c21da16f8f3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3, Nicholas Timms, data collected 2024/11/15 to 2024/11-18  method description for scanning electron microscopy (SEM) sha256:c6a593e965928f53ee979af67dcec4d163d62f0961ddbf2dadc574b9e31e2d91 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 5598810
+            }
+          },
+          "schema:description": "sha256:7db299918eaa97c83bb64ac0d93642c2d8fda75057117fe8631abc958eae0ae5 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3720
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6dffcc59f17b62fde916afd261a35029",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, 60 nm step map, pole figures, magnetite, {100}{010}{001}, all Euler colours, lower hem., sample R.F. sha256:1f639c08517493137768afad8d6af4078da00f3ab6c8f50d7ff2fe6e9fa501c6 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_22.tif",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 192634
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4656c4c79b7870a877b82ccba541b8dd",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#6dffcc59f17b62fde916afd261a35029",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, 60 nm step map, pole figures, magnetite, {100}{010}{001}, all Euler colours, lower hem., sample R.F. sha256:1f639c08517493137768afad8d6af4078da00f3ab6c8f50d7ff2fe6e9fa501c6 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_22.tif",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 192634
+            }
+          },
+          "schema:description": "sha256:cd9d5b69b8ac3b7c36771107378c20509f5efc27157db60ccef183a303b99c97 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_22.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 567
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a29ceff9b88df3aa3dd7e2ba7dac4610",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, 60 nm step map, pole figures, magnetite, {100}{010}{001}, IPFz colours, lower hem., sample R.F. sha256:181f6017b7e64506b7ba291b21fecfe4739794f882b1aaa00dbe9b8f0ebfd1c5 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_23.tif",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 194224
+          }
+        },
+        {
+          "@id": "http://example.org/base/#52bd82110cce43be4f8f697555384d9a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a29ceff9b88df3aa3dd7e2ba7dac4610",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, 60 nm step map, pole figures, magnetite, {100}{010}{001}, IPFz colours, lower hem., sample R.F. sha256:181f6017b7e64506b7ba291b21fecfe4739794f882b1aaa00dbe9b8f0ebfd1c5 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_23.tif",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 194224
+            }
+          },
+          "schema:description": "sha256:d31980c4ed37812dc45f77e8bd3dd5a7c904c6ec145dbe1331d62bbef0620922 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_23.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 562
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c75978e891b1da3af0c5820505adfbff",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1, all data, 60 nm step map, pole figures, magnetite, {100}{010}{001}, IPFz colours, lower hem., sample R.F. sha256:d9239b3dfd051129d38be2da49ae54ec21bc5618b359e8504f6f3a3d61749a9b ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_24.tif",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 204918
+          }
+        },
+        {
+          "@id": "http://example.org/base/#7f58f246ea6438be5b878ea520cad5a3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c75978e891b1da3af0c5820505adfbff",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1, all data, 60 nm step map, pole figures, magnetite, {100}{010}{001}, IPFz colours, lower hem., sample R.F. sha256:d9239b3dfd051129d38be2da49ae54ec21bc5618b359e8504f6f3a3d61749a9b ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_24.tif",
+            "schema:size": {
+              "@id": "_:b9",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 204918
+            }
+          },
+          "schema:description": "sha256:642b6317e98bf39c20e83a640f2688f7078dab4499407afc745cea39e90351f4 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_24.yaml",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 565
+          }
+        },
+        {
+          "@id": "http://example.org/base/#23bd31524cbfede6bf8002f1e884ee9a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, disorientation angle distribution plot, magnetite. sha256:75ca3bc3caf6af3111558631df38686997b46730a41f64049c8bad1f3792fd67 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_25.tif",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 128000
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4f8daafd96c4cfd669d7272a6c99b7cc",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#23bd31524cbfede6bf8002f1e884ee9a",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "20241115_SEM_CUWA_OREX-803077-0_1, Curtin University, Western Australia, Tescan MIRA3 SEM, Nicholas Timms, data collected 2024/11/15 to 2024/11/18  magnetite plaquette 1 subset, disorientation angle distribution plot, magnetite. sha256:75ca3bc3caf6af3111558631df38686997b46730a41f64049c8bad1f3792fd67 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_25.tif",
+            "schema:size": {
+              "@id": "_:b11",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 128000
+            }
+          },
+          "schema:description": "sha256:7ceb18e7c88722d3917c56b0a5705d1832c8523ebb8f20b2e0aa49ed8dc4a454 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241115_SEM_CUWA_OREX-803077-0_1_plot_25.yaml",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 511
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b13",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "Instrument funded by Australian Research Council LIEF program (ARC LE130100053); Analyses funded by Space Science and Technology Centre at Curtin University.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b14",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/pjmn-ap50",
+    "schema:value": "10.60707/pjmn-ap50"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b15",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Scanning electron microscopy",
+      "schema:termCode": "SEM"
+    }
+  ],
+  "schema:name": "Analysis of particle of OREX-803077-0 by scanning electron microscopy (SEM) at Curtin University, Western Australia, including SE, BSE, and CL imaging, EDS element maps, and EBSD maps and data.",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2065",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:SEMEBSDGrainImageMap"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2065"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/pjmn-ap50",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b16",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241115_sem_cuwa_orex-803077-0_1",
+      "schema:location": {
+        "@id": "_:b17",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CUWA"
+        ],
+        "schema:identifier": "https://ror.org/02n415q13",
+        "schema:name": "Curtin University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b18",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803077-0"
+      },
+      "schema:startDate": "2024-11-15T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

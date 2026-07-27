@@ -1,0 +1,370 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_159",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Visible Light Microscopy Basemap"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "haenecour@arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-5671-5388",
+        "schema:name": "Haenecour, Pierre"
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "carinaj@arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0002-0972-6321",
+        "schema:name": "Bennett, Carina"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This is a basemap bundle for sample OREX-500003-100 and includes the basemap in reflected and coaxial illuminations. The basemap shows the three etched fiducial marks (N, E, W) and the entirety of the sample.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#b314a982f389ac588c0d852069877df9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "A basemap for sample OREX-500003-100, one of the quicklook samples allocated to the OSIRIS-REx sample analysis team. This basemap was acquired after another analysis of the sample which is why it shows damage to the sample. sha256:ef85c14383496d1af4bf9aeb28473d3d18ee1c0233eb794dbf3799eff9f8a82e",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_basemap_1.tfw",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 29
+          }
+        },
+        {
+          "@id": "http://example.org/base/#83ee8beeab994e895e63c2567f81b370",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "A basemap for sample OREX-500003-100, one of the quicklook samples allocated to the OSIRIS-REx sample analysis team. This basemap was acquired after another analysis of the sample which is why it shows damage to the sample. sha256:83b36f7d955b1e0cbcecd1d5fd42c6a5d87943da961d8a30db170fb679faba8a",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_basemap_1.tif",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 150515756
+          }
+        },
+        {
+          "@id": "http://example.org/base/#196c77353c4c2bfe9a8c55d70a83d047",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#b314a982f389ac588c0d852069877df9",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "A basemap for sample OREX-500003-100, one of the quicklook samples allocated to the OSIRIS-REx sample analysis team. This basemap was acquired after another analysis of the sample which is why it shows damage to the sample. sha256:ef85c14383496d1af4bf9aeb28473d3d18ee1c0233eb794dbf3799eff9f8a82e",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_basemap_1.tfw",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 29
+            }
+          },
+          "schema:description": "sha256:1c56ba0ba55b435095e14e6e8eca8afc6e0d0f6b0423bbb8f5ef1405fe4d79cc ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_basemap_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 443
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1c74bb360b20fa4870e427b156590e7c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Optical microscope image mosaic of sample OREX-500003-100. This image was taken in the same conditions as the basemap, but with less reflected light and a darker resulting image. sha256:89db37f1f8eac819d2fd3f9d54a4ecef839a7fa48e568e430f3a4cd4c82850b0 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_1.tif",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 150510372
+          }
+        },
+        {
+          "@id": "http://example.org/base/#dbb35dea35fb07c832fac2b949949b9a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1c74bb360b20fa4870e427b156590e7c",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Optical microscope image mosaic of sample OREX-500003-100. This image was taken in the same conditions as the basemap, but with less reflected light and a darker resulting image. sha256:89db37f1f8eac819d2fd3f9d54a4ecef839a7fa48e568e430f3a4cd4c82850b0 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_1.tif",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 150510372
+            }
+          },
+          "schema:description": "sha256:61ab927c2ad0763201b9f59f125bf401788782fd59d061253164e86d6b84a0d9 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 343
+          }
+        },
+        {
+          "@id": "http://example.org/base/#514f03ebf4312cab6dbca1dd45122ae1",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Optical microscope image mosaic of sample OREX-500003-100. This image was taken in the same conditions as the basemap, but using coaxial (brightfield) illumination. sha256:819f7c3d4fc506a9883c09bcc2b7c6f1a1737441ee99a116fdf1e2254e333030 ; ",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_2.tif",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 150491692
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4bf6b111c2f86665d99af0382b5be8d9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#514f03ebf4312cab6dbca1dd45122ae1",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Optical microscope image mosaic of sample OREX-500003-100. This image was taken in the same conditions as the basemap, but using coaxial (brightfield) illumination. sha256:819f7c3d4fc506a9883c09bcc2b7c6f1a1737441ee99a116fdf1e2254e333030 ; ",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_2.tif",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 150491692
+            }
+          },
+          "schema:description": "sha256:86fc981d1e0e094e7b02044af078c1d0e8df6599821c8e22cd090df6da412393 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240328_VLMBasemap_UAZ_OREX-500003-100_1_other_2.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 329
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b10",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/4v1z-b208",
+    "schema:value": "10.60707/4v1z-b208"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b11",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Visible Light Microscopy Basemap",
+      "schema:termCode": "VLMBasemap"
+    }
+  ],
+  "schema:name": "Basemap bundle for sample OREX-500003-100 with etched fiducial marks.",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_159",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:basemap"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_159"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-06-05",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/4v1z-b208",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b12",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240328_vlmbasemap_uaz_orex-500003-100_1",
+      "schema:location": {
+        "@id": "_:b13",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b14",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-500003-100"
+      },
+      "schema:startDate": "2024-04-08T23:44:06.535636Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

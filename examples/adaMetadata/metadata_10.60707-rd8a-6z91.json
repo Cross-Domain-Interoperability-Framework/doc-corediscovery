@@ -1,0 +1,817 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2277",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Differential Scanning Calorimetry"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "Jens.Biele@dlr.de",
+        "schema:identifier": "https://orcid.org/0000-0002-7414-829X",
+        "schema:name": "Biele, Jens"
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "al.asli.abdulkareem.m6@f.mail.nagoya-u.ac.jp",
+        "schema:identifier": "https://orcid.org/0000-0002-1681-0492",
+        "schema:name": "ALASLI, Abdulkareem"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This dataset contains specific heat measurements of the OSIRIS-REx sample OREX-803224-0, acquired through Differential Scanning Calorimetry (DSC) over a temperature range of 223 K to 402 K. It includes heat capacity versus temperature data, raw and processed heat flow measurements, and a comprehensive description of the measurement methodology.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#7354f0399b5f646bc0e30fa5490ca3f3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Specific Heat Analysis Results of OSIRIS-REx Sample OREX-803224-0 by Differential Scanning Calorimetry in the 223-402 K Temperature Range sha256:068f1dccf7df831059ffb079d85756a4b1bbfdf36e261b4df4d27922bd1bf85f ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_DSCResultsTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 529
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6ba9b609da87a922eff7fe27c4b0e4f9",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#7354f0399b5f646bc0e30fa5490ca3f3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Specific Heat Analysis Results of OSIRIS-REx Sample OREX-803224-0 by Differential Scanning Calorimetry in the 223-402 K Temperature Range sha256:068f1dccf7df831059ffb079d85756a4b1bbfdf36e261b4df4d27922bd1bf85f ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_DSCResultsTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 529
+            }
+          },
+          "schema:description": "sha256:d175702b77fe2ca9e13e12911fd67fd009c814d6ecd15a61dbba783d041e1735 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_DSCResultsTabular_1.yml",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1376
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1a4053c260fbdcfbf09f729faaaf66b0",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Description of the calibration data, data processing, sample preparation, instrument methodologies, and analytical methods for Specific Heat Measurements of OSIRIS-REx Sample OREX-803224-0 by Differential Scanning Calorimetry (223 to 402 K). sha256:7f13a1ba02240b738109fdad9da53893f77671694d905382561ae57a5feb5c83 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 7409
+          }
+        },
+        {
+          "@id": "http://example.org/base/#49a4a18ed5ae0fdccdd39df2849f4ba7",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1a4053c260fbdcfbf09f729faaaf66b0",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Description of the calibration data, data processing, sample preparation, instrument methodologies, and analytical methods for Specific Heat Measurements of OSIRIS-REx Sample OREX-803224-0 by Differential Scanning Calorimetry (223 to 402 K). sha256:7f13a1ba02240b738109fdad9da53893f77671694d905382561ae57a5feb5c83 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 7409
+            }
+          },
+          "schema:description": "sha256:0f8c036397219a8cc21bf13982074cc8f588a275be8bb26c80968a7beff0af64 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 407
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4c430f3717c074e1e364e2ed72958027",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 1. sha256:3069dd8739febd56b199d33f7101e6c581421b955a5a70379f115f3ed9b8f1a8 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_1.csv",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 772690
+          }
+        },
+        {
+          "@id": "http://example.org/base/#13e9095d8fd2fb28780afbea8ad7499b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#4c430f3717c074e1e364e2ed72958027",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 1. sha256:3069dd8739febd56b199d33f7101e6c581421b955a5a70379f115f3ed9b8f1a8 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_1.csv",
+            "schema:size": {
+              "@id": "_:b6",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 772690
+            }
+          },
+          "schema:description": "sha256:be5520faffda2a2d6c2fe78b0e1d925d965c7a2c36c4653a687f627ed5251ae4 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_1.yml",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 221
+          }
+        },
+        {
+          "@id": "http://example.org/base/#47a66df1ea44117c5e23ebf4c0b01115",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 2. sha256:852e9d5f0388c4f4f047ed28f94c914e9e5f1375840731a3eee869f3ef395f5b ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_2.csv",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 849027
+          }
+        },
+        {
+          "@id": "http://example.org/base/#040107d017513d7674b151911d0d860d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#47a66df1ea44117c5e23ebf4c0b01115",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 2. sha256:852e9d5f0388c4f4f047ed28f94c914e9e5f1375840731a3eee869f3ef395f5b ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_2.csv",
+            "schema:size": {
+              "@id": "_:b8",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 849027
+            }
+          },
+          "schema:description": "sha256:d7f497fd1195522f1b1d45c8dfa13c8bf2d68827e363f7f54a04132d3aae0bea ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_2.yml",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 221
+          }
+        },
+        {
+          "@id": "http://example.org/base/#00593fc05960882642086f20f02151a3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 3. sha256:d4b3d442aecde93ee5a45b4121fbca45528a9106229405e0f3bc7a62854ab3e9 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_3.csv",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 845529
+          }
+        },
+        {
+          "@id": "http://example.org/base/#06b26b9dc54c25f64552dc7fd772d177",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#00593fc05960882642086f20f02151a3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans for step scan run 3. sha256:d4b3d442aecde93ee5a45b4121fbca45528a9106229405e0f3bc7a62854ab3e9 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_3.csv",
+            "schema:size": {
+              "@id": "_:b10",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 845529
+            }
+          },
+          "schema:description": "sha256:fadebb0c336658fbc31d6aaeffc4670722ae0c106d0a28c8ea2296aae691cde5 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_3.yml",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 221
+          }
+        },
+        {
+          "@id": "http://example.org/base/#643d0723cb79fe5c72554bafb1e3ba63",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 1. sha256:7137c1a127d1f99ba41d0327e43d3a963874c5f88f47162842a8c01af4256c2a ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_4.csv",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 773631
+          }
+        },
+        {
+          "@id": "http://example.org/base/#409d46cade8f162c2cffb9e155e53325",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#643d0723cb79fe5c72554bafb1e3ba63",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 1. sha256:7137c1a127d1f99ba41d0327e43d3a963874c5f88f47162842a8c01af4256c2a ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_4.csv",
+            "schema:size": {
+              "@id": "_:b12",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 773631
+            }
+          },
+          "schema:description": "sha256:8220db13986210437ea15e118e6ec677be09f7fe5894b5411a0004bf13cf1e82 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_4.yml",
+          "schema:size": {
+            "@id": "_:b13",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 247
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c3ff06b30a52c786487d26d9a87c6124",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 2. sha256:c8cf5ce0e533091874820b4bb7f88742632c7698cb10f900978cfababa7433a1 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_5.csv",
+          "schema:size": {
+            "@id": "_:b14",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 850870
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e154903512e398207cdf72ab09e175db",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c3ff06b30a52c786487d26d9a87c6124",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 2. sha256:c8cf5ce0e533091874820b4bb7f88742632c7698cb10f900978cfababa7433a1 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_5.csv",
+            "schema:size": {
+              "@id": "_:b14",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 850870
+            }
+          },
+          "schema:description": "sha256:ff9fe5479a709a40cc77b0d2e982922a98d11b486493e876d03779eb1c29b1ea ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_5.yml",
+          "schema:size": {
+            "@id": "_:b15",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 247
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a07cf913ab89b9383bd844dd7f1af523",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 3. sha256:84af4b030463068196b2c75eb85469c96438b61cedbc277ead5413e6886fbdda ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_6.csv",
+          "schema:size": {
+            "@id": "_:b16",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 845295
+          }
+        },
+        {
+          "@id": "http://example.org/base/#9fe9a74197520aff08c8f5b4f500921b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a07cf913ab89b9383bd844dd7f1af523",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding refrence material for step scan run 3. sha256:84af4b030463068196b2c75eb85469c96438b61cedbc277ead5413e6886fbdda ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_6.csv",
+            "schema:size": {
+              "@id": "_:b16",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 845295
+            }
+          },
+          "schema:description": "sha256:2ca7a711d5612c6719f119fb0157ff70a3ea5c21a30bf3f899740a332122cb1b ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_6.yml",
+          "schema:size": {
+            "@id": "_:b17",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 247
+          }
+        },
+        {
+          "@id": "http://example.org/base/#81727e7c72d0e27daec6d22690013586",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 1. sha256:bac26c819144baeb62ba30170e9c2c70619fdbbca9ebb747d787ec444e6a22b7 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_7.csv",
+          "schema:size": {
+            "@id": "_:b18",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 771635
+          }
+        },
+        {
+          "@id": "http://example.org/base/#556dc8dba2231650ffb262eb165a66c4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#81727e7c72d0e27daec6d22690013586",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 1. sha256:bac26c819144baeb62ba30170e9c2c70619fdbbca9ebb747d787ec444e6a22b7 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_7.csv",
+            "schema:size": {
+              "@id": "_:b18",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 771635
+            }
+          },
+          "schema:description": "sha256:6f5b52576c6cfae276d424d217d21084f9dba39a1ee04f2fc0c00c03d271df87 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_7.yml",
+          "schema:size": {
+            "@id": "_:b19",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 245
+          }
+        },
+        {
+          "@id": "http://example.org/base/#45c6682d0a6645f3fa2f0267bb6c05c3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 2. sha256:772ebd4f810c9ef6b5d05bb84f61ce4dacd6af46119e7dccb310fa13129ded7a ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_8.csv",
+          "schema:size": {
+            "@id": "_:b20",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 845706
+          }
+        },
+        {
+          "@id": "http://example.org/base/#8a2fcea1f77d1269bed54e0e711659c4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#45c6682d0a6645f3fa2f0267bb6c05c3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 2. sha256:772ebd4f810c9ef6b5d05bb84f61ce4dacd6af46119e7dccb310fa13129ded7a ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_8.csv",
+            "schema:size": {
+              "@id": "_:b20",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 845706
+            }
+          },
+          "schema:description": "sha256:c8691e88cc9c7162e467da3d41b632abb9f8e88720ec0d1842a3a6d64d66e141 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_8.yml",
+          "schema:size": {
+            "@id": "_:b21",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 245
+          }
+        },
+        {
+          "@id": "http://example.org/base/#56241b33ad43e2a945805fd8c0527cb8",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 3. sha256:df88387ed64958c62d6c6c95f06593e74b1d3ee405e07d6617eb3eba8599ccb9 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_9.csv",
+          "schema:size": {
+            "@id": "_:b22",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 849839
+          }
+        },
+        {
+          "@id": "http://example.org/base/#b0c172051fdf5abe6819b9d956293e7d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#56241b33ad43e2a945805fd8c0527cb8",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Raw and Calibrated heat flow values for empty pans holding sample material for step scan run 3. sha256:df88387ed64958c62d6c6c95f06593e74b1d3ee405e07d6617eb3eba8599ccb9 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_9.csv",
+            "schema:size": {
+              "@id": "_:b22",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 849839
+            }
+          },
+          "schema:description": "sha256:a9ab4cf8a45174f11db112c6a22dd62ce845f355c224b371d036c717ba7fca89 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241111_DSC_NU_OREX-803224-0_1_other_9.yml",
+          "schema:size": {
+            "@id": "_:b23",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 245
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b24",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b25",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/rd8a-6z91",
+    "schema:value": "10.60707/rd8a-6z91"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b26",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Differential Scanning Calorimetry",
+      "schema:termCode": "DSC"
+    }
+  ],
+  "schema:name": "Specific Heat Measurements of OSIRIS-REx Sample OREX-803224-0 by Differential Scanning Calorimetry (223 to 402 K)",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2277",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:DSCResultsTabular"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2277"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-07",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/rd8a-6z91",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#tk",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Temperature in Kelvin",
+      "schema:name": "T (K)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#tc",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Temperature in Celsius",
+      "schema:name": "T (C)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#cp",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Specific heat capacity",
+      "schema:name": "Cp",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#standarddeviation",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Standard deviation of specific heat measurements",
+      "schema:name": "Standard Deviation",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b27",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241111_dsc_nu_orex-803224-0_1",
+      "schema:location": {
+        "@id": "_:b28",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "NU"
+        ],
+        "schema:identifier": "https://ror.org/04chrp450",
+        "schema:name": "Nagoya University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b29",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803224-0"
+      },
+      "schema:startDate": "2024-11-11T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

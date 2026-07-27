@@ -1,0 +1,493 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_901",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "High-resolution inductively coupled plasma mass spectrometry"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "wimpenny1@llnl.gov",
+          "brennecka2@llnl.gov",
+          "render1@llnl.gov",
+          "shollenberger@llnl.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7637-0978",
+          "https://orcid.org/0000-0002-0852-5595",
+          "https://orcid.org/0000-0002-6534-9129",
+          "https://orcid.org/0000-0001-6435-2177"
+        ],
+        "schema:name": [
+          "Wimpenny, Josh",
+          "Brennecka, Greg",
+          "Render, Jan",
+          "Shollenberger, Quinn"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "wimpenny1@llnl.gov",
+          "brennecka2@llnl.gov",
+          "render1@llnl.gov",
+          "shollenberger@llnl.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7637-0978",
+          "https://orcid.org/0000-0002-0852-5595",
+          "https://orcid.org/0000-0002-6534-9129",
+          "https://orcid.org/0000-0001-6435-2177"
+        ],
+        "schema:name": [
+          "Wimpenny, Josh",
+          "Brennecka, Greg",
+          "Render, Jan",
+          "Shollenberger, Quinn"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "wimpenny1@llnl.gov",
+          "brennecka2@llnl.gov",
+          "render1@llnl.gov",
+          "shollenberger@llnl.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7637-0978",
+          "https://orcid.org/0000-0002-0852-5595",
+          "https://orcid.org/0000-0002-6534-9129",
+          "https://orcid.org/0000-0001-6435-2177"
+        ],
+        "schema:name": [
+          "Wimpenny, Josh",
+          "Brennecka, Greg",
+          "Render, Jan",
+          "Shollenberger, Quinn"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "wimpenny1@llnl.gov",
+          "brennecka2@llnl.gov",
+          "render1@llnl.gov",
+          "shollenberger@llnl.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-7637-0978",
+          "https://orcid.org/0000-0002-0852-5595",
+          "https://orcid.org/0000-0002-6534-9129",
+          "https://orcid.org/0000-0001-6435-2177"
+        ],
+        "schema:name": [
+          "Wimpenny, Josh",
+          "Brennecka, Greg",
+          "Render, Jan",
+          "Shollenberger, Quinn"
+        ]
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Data for major and trace elemental abundances",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#029a8607f7b0f8638a3df444eeefe336",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "The processed HR-ICP-MS data. sha256:177313e0802890e193c440fe781485809f8fe69f905ec058dff1d8882c505649 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_HRICPMSProcessed_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 5468
+          }
+        },
+        {
+          "@id": "http://example.org/base/#289cda39da82f2130997bff07bd2efef",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#029a8607f7b0f8638a3df444eeefe336",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "The processed HR-ICP-MS data. sha256:177313e0802890e193c440fe781485809f8fe69f905ec058dff1d8882c505649 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_HRICPMSProcessed_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 5468
+            }
+          },
+          "schema:description": "sha256:b1d31f971d374f097f6068525560161566b62fa9ec9b57efdbd14711fd119270 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_HRICPMSProcessed_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3294
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c68aac2bc328822f0e51ec5929e82b94",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Description of sample preparation, analytical method and data processing. sha256:92c4b5e84b58620c11fcf0a5964e515c81613b6387b4e61c681ef95d4a2ea3f4 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1153
+          }
+        },
+        {
+          "@id": "http://example.org/base/#2ac17f98578f662006f0948acd41fab5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c68aac2bc328822f0e51ec5929e82b94",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Description of sample preparation, analytical method and data processing. sha256:92c4b5e84b58620c11fcf0a5964e515c81613b6387b4e61c681ef95d4a2ea3f4 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1153
+            }
+          },
+          "schema:description": "sha256:3fdfaedad4bc1f1cfa884cfdf02b80d971583f6044571121577598ee4b944503 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240206_HR-ICP-MS_LLNL_OREX-803015-101_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 242
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "NASA OSIRIS-REx",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/q4b0-v203",
+    "schema:value": "10.60707/q4b0-v203"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "High-resolution inductively coupled plasma mass spectrometry",
+      "schema:termCode": "HR-ICP-MS"
+    }
+  ],
+  "schema:name": "Concentration data",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_901",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:HRICPMSProcessed"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_901"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-07-16",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/q4b0-v203",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#isotope",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Isotopes for which concentrations and resolution mode are given  (LR = Low Resolution, MR = Medium Resolution, HR = High Resolution)",
+      "schema:name": "Isotope",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#gsp1",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample GSP1",
+      "schema:name": "GSP1",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#2sd",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "The measurement uncertainty of the run for the previous column, represented by two times the standard deviation.",
+      "schema:name": "2sd",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#sdc1",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample SDC1",
+      "schema:name": "SDC1",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#tpb",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample TPB",
+      "schema:name": "TPB",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#allende",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample Allende",
+      "schema:name": "Allende",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#murchison",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample Murchison",
+      "schema:name": "Murchison",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#bennu",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample Bennu",
+      "schema:name": "Bennu",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#bhvo2",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample BHVO-2",
+      "schema:name": "BHVO-2",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#bhvo2drift",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Calculated concentrations for sample BHVO-2 drift",
+      "schema:name": "BHVO-2 drift",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240206_hr-icp-ms_llnl_orex-803015-101_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "LLNL"
+        ],
+        "schema:identifier": "https://ror.org/041nk4h53",
+        "schema:name": "Lawrence Livermore National Laboratory/Dept of Energy"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803015-101"
+      },
+      "schema:startDate": "2024-06-11T15:57:29.233199Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

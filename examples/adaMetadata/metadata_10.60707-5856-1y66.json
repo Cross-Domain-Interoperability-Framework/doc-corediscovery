@@ -1,0 +1,274 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2694",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Transmission Electron Microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "beauprince@arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-6217-4290",
+        "schema:name": "Prince, Beau"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Continuing to look at volatile-rich vesicles in pyrrhotite with EELS. STEM imaging along the way.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#732bf955b226714f311c277c645bc885",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-104 200kV ADF 70kX 0024.dm4 sha256:d75df16569cfabc967a65c5eacf373b43e1efd5fcbac48577cd355c7b618f227",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_STEMImage_925.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 16778234
+          }
+        },
+        {
+          "@id": "http://example.org/base/#56dc57c15beb18be6e76a150d59fc0e5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#732bf955b226714f311c277c645bc885",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-104 200kV ADF 70kX 0024.dm4 sha256:d75df16569cfabc967a65c5eacf373b43e1efd5fcbac48577cd355c7b618f227",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_STEMImage_925.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 16778234
+            }
+          },
+          "schema:description": "sha256:7f7ec601b9777efd859baf974d6e68026e50aa9d9f535f413db7b7858f4cfa3d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_STEMImage_925.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 205
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4033fd212f8d168f46d67216581540ac",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-104 200kV ADF 70kX 0024.dm4 sha256:f92b99f401d4b762d47b35e67ac623c0ea81f47d8a748711456bdfb9251965cb ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2430.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1228
+          }
+        },
+        {
+          "@id": "http://example.org/base/#bd8d88ea67adb6cfdf1e717c7f4ea8e6",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#4033fd212f8d168f46d67216581540ac",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-104 200kV ADF 70kX 0024.dm4 sha256:f92b99f401d4b762d47b35e67ac623c0ea81f47d8a748711456bdfb9251965cb ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2430.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1228
+            }
+          },
+          "schema:description": "sha256:d45462a74ef1fafc30e10fc56738815af284a03bb9cff4b915b80fe82b2fc6bb ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240522_TEM_UAZ_OREX-501044-104_1_instrumentMetadata_2430.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 260
+          }
+        }
+      ]
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b5",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/5856-1y66",
+    "schema:value": "10.60707/5856-1y66"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Transmission Electron Microscopy",
+      "schema:termCode": "TEM"
+    }
+  ],
+  "schema:name": "STEM imaging and EELS, focusing on vesicles in pyrrhotite in OREX-501044-104",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2694",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      },
+      {
+        "@id": "ada:STEMImage"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2694"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-04-02",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/5856-1y66",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240522_tem_uaz_orex-501044-104_1",
+      "schema:location": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501044-104"
+      },
+      "schema:startDate": "2024-05-22T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

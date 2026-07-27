@@ -1,0 +1,284 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_1754",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Electron microprobe analysis"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "domanik@lpl.arizona.edu",
+        "schema:identifier": "https://orcid.org/0009-0002-0184-1816",
+        "schema:name": "Domanik, Kenneth"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "WDS analyses run performed and a x-ray made on a intergrown Cubanite-Pyrrhotite grain. Survey analyses of magnetite grains and matrix areas were also performed.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#ed580b9c67afd336e04eaed6d1b0fba2",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#49c152ae71897e2a01b1dd7f15f674d6",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "BSE, SE and X-ray maps for EPMA session 20241102_EMPA_UAZ_OREX-800055-16_1 sha256:8cc1f242cc17f4d946a3a3fd441e19f1ae1a11b03369eec3c8de685d5251c2b2",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_EMPAImageCollection_1.zip",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 11420166
+            }
+          },
+          "schema:description": "sha256:49f57abb37c0f8efe1a51b8476b1099397c50979a4981cf83e18cbe67237a9d0 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_EMPAImageCollection_1.yaml",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1091
+          }
+        },
+        {
+          "@id": "http://example.org/base/#49c152ae71897e2a01b1dd7f15f674d6",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "BSE, SE and X-ray maps for EPMA session 20241102_EMPA_UAZ_OREX-800055-16_1 sha256:8cc1f242cc17f4d946a3a3fd441e19f1ae1a11b03369eec3c8de685d5251c2b2",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_EMPAImageCollection_1.zip",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 11420166
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e03f320d69c691bdc9ca9e4388cd801c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Zip file of collected X-ray map images and text metadata for microprobe session:20241102_EMPA_UAZ_OREX-800055-16_1 sha256:8bb0820d6cdbb0956d447d85ad65b6945d70ff6d4ec2e733f43edadb3dcdd1ee ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 760
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0caef3f6ac6ec75296a5c1da2f7b43e1",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e03f320d69c691bdc9ca9e4388cd801c",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Zip file of collected X-ray map images and text metadata for microprobe session:20241102_EMPA_UAZ_OREX-800055-16_1 sha256:8bb0820d6cdbb0956d447d85ad65b6945d70ff6d4ec2e733f43edadb3dcdd1ee ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 760
+            }
+          },
+          "schema:description": "sha256:7cb3a4ae03aa51a55403619987b47eb391b7d8bdd19893cf061ba3e14e4c7ac6 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241102_EMPA_UAZ_OREX-800055-16_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 260
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b5",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b6",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/vjcy-by10",
+    "schema:value": "10.60707/vjcy-by10"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Electron microprobe analysis",
+      "schema:termCode": "EMPA"
+    }
+  ],
+  "schema:name": "WDS analyses of intergrown Cubanite-Pyrrhotite, magnetite, and matrix in sample OREX-800055-16.",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_1754",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:EMPAImageCollection"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_1754"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/vjcy-by10",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241102_empa_uaz_orex-800055-16_1",
+      "schema:location": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800055-16"
+      },
+      "schema:startDate": "2024-11-02T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

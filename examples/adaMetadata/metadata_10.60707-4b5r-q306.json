@@ -1,0 +1,304 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_544",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "X-ray computed tomography"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "scott.a.eckley@nasa.gov",
+          "ryan.a.zeigler@nasa.gov",
+          "juliane.gross@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-2692-2164",
+          "https://orcid.org/0000-0002-1139-7571",
+          "https://orcid.org/0000-0002-5288-0981"
+        ],
+        "schema:name": [
+          "Eckley, Scott",
+          "Zeigler, Ryan",
+          "Gross, Juliane"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "scott.a.eckley@nasa.gov",
+          "ryan.a.zeigler@nasa.gov",
+          "juliane.gross@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-2692-2164",
+          "https://orcid.org/0000-0002-1139-7571",
+          "https://orcid.org/0000-0002-5288-0981"
+        ],
+        "schema:name": [
+          "Eckley, Scott",
+          "Zeigler, Ryan",
+          "Gross, Juliane"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "scott.a.eckley@nasa.gov",
+          "ryan.a.zeigler@nasa.gov",
+          "juliane.gross@nasa.gov"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-2692-2164",
+          "https://orcid.org/0000-0002-1139-7571",
+          "https://orcid.org/0000-0002-5288-0981"
+        ],
+        "schema:name": [
+          "Eckley, Scott",
+          "Zeigler, Ryan",
+          "Gross, Juliane"
+        ]
+      }
+    ]
+  },
+  "schema:datePublished": "2025-01-13",
+  "schema:description": "This dataset contains X-ray computed tomography data for an individual clast removed from Apollo drive tube 73001.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#9bad2408d440501cd53ad1af068aca60",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#cbe540ff4b720fde08f90ad3a324366f",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "a zip archive containing various files. XCT scan metadataX-ray computed tomography image collection; TIFF Stacks of CT Slices. Raw TIFF images are consolidated and treated as a single data product.  sha256:rpADh4vpBcMailk9NZa/l70aPlb16NaonYWKjijJ9ac= ; original fileName, not PDS4 compliant: 16-bit TIFF.zip",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "16-bit_TIFF.zip",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1965858202
+            }
+          },
+          "schema:description": "sha256:j9+ta8BrlTQGV8h9Tdbw7Bmehq2XIf1sD+fXDEcdAaM= ; original fileName, not PDS4 compliant: 73001,1005_contents.docx",
+          "schema:encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "schema:name": "73001_1005_contents.docx",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 12073
+          }
+        },
+        {
+          "@id": "http://example.org/base/#dbe8d78941f1e340d54d6ad67c2fb68a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "XCT scan metadata sha256:RFf3u69Fc2fBcWz5LXaAfjo3DrJFbLmdQeWk9AIJgqs= ; original fileName, not PDS4 compliant: 73001,1005_TIFF video.m4v",
+          "schema:encodingFormat": "video/x-m4v",
+          "schema:name": "73001_1005_TIFF_video.m4v",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 33314248
+          }
+        },
+        {
+          "@id": "http://example.org/base/#cbe540ff4b720fde08f90ad3a324366f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "a zip archive containing various files. XCT scan metadataX-ray computed tomography image collection; TIFF Stacks of CT Slices. Raw TIFF images are consolidated and treated as a single data product.  sha256:rpADh4vpBcMailk9NZa/l70aPlb16NaonYWKjijJ9ac= ; original fileName, not PDS4 compliant: 16-bit TIFF.zip",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "16-bit_TIFF.zip",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1965858202
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b4",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "Astromaterials Curation",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b5",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/4b5r-q306",
+    "schema:value": "10.60707/4b5r-q306"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-ray computed tomography",
+      "schema:termCode": "XCT"
+    }
+  ],
+  "schema:name": "73001,1005",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_544",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:otherFileType"
+      },
+      {
+        "@id": "ada:XCTImageCollection"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:contextVideo"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:collection"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_544"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-13",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/4b5r-q306",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "ada_10.60707_4b5r-q306",
+      "schema:location": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "X-FaCT at NASA JSC"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "Astromaterials X-ray Fluorescence and Computed Tomography (X-FaCT) Lab at NASA JSC"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "73001,1005"
+      },
+      "schema:startDate": "2022-05-24T04:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-01-13"
+}

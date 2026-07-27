@@ -1,0 +1,727 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2077",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Seismic Velocities and Rock Ultrasonic Elastic Constants"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "ahildebr@ucalgary.ca",
+          "ltjhanto@ucalgary.ca"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0001-9926-2059",
+          "https://orcid.org/0000-0001-5497-4554"
+        ],
+        "schema:name": [
+          "Hildebrand, Alan",
+          "Hanton, Lincoln"
+        ]
+      },
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "ahildebr@ucalgary.ca",
+          "ltjhanto@ucalgary.ca"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0001-9926-2059",
+          "https://orcid.org/0000-0001-5497-4554"
+        ],
+        "schema:name": [
+          "Hildebrand, Alan",
+          "Hanton, Lincoln"
+        ]
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "The data bundle contains methods description, seismic velocity measurements, as well as supplementary sample reference images, seismic waveform data, and seismic waveform data plots of Bennu particle OREX-800123-0, which has been cut into a parallel-sided slab. Additionally, the dataset will be used to derive dynamic elastic constants of an angular Bennu particle. The sample measurements went nominally without the slab breaking along known XCT-imaged fractures. The seismic velocities were slightly faster than expected.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#1cce7a00141af4dc6e239292306476e8",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "p and s wave seismic results for PVC standard and Bennu particle OREX-800123-0, which has been cut into a 3.58 mm thick, parallel-sided slab. sha256:4180836253881c0795c5e7bd203110832e38af2eb05f0b09b891624695243d09 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_SVRUECTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1491
+          }
+        },
+        {
+          "@id": "http://example.org/base/#77b860ad9e073f2fafc0f5f47ad2ae3d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1cce7a00141af4dc6e239292306476e8",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "p and s wave seismic results for PVC standard and Bennu particle OREX-800123-0, which has been cut into a 3.58 mm thick, parallel-sided slab. sha256:4180836253881c0795c5e7bd203110832e38af2eb05f0b09b891624695243d09 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_SVRUECTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1491
+            }
+          },
+          "schema:description": "sha256:d6a1f9db3a2f137a94ece78d4a7e5e95080b5cc7c5cb7f77b8f3ec3079fccb25 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_SVRUECTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1845
+          }
+        },
+        {
+          "@id": "http://example.org/base/#096365ef15087cf7dff1c3b7b39d40ea",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Photograph of planar side 1 of measured Bennu particle OREX-800123-0. The sample slab is 3.58 mm thick. sha256:4161d4f2fbb717b0a2a3333507c7ec5bd40cf754c01c433e1ed5b35655e4de77 ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_1.png",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 22532405
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0cf6c9e0744a1e9b8f4e66becadcf9ae",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#096365ef15087cf7dff1c3b7b39d40ea",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Photograph of planar side 1 of measured Bennu particle OREX-800123-0. The sample slab is 3.58 mm thick. sha256:4161d4f2fbb717b0a2a3333507c7ec5bd40cf754c01c433e1ed5b35655e4de77 ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_1.png",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 22532405
+            }
+          },
+          "schema:description": "sha256:71eb4ebacfec2e2fc9e9c569eabfec190c7c5dcb7b2e29cf006cb84f5bb21e85 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 280
+          }
+        },
+        {
+          "@id": "http://example.org/base/#5657b7ddb3374b21d9a09a7616713cc3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Photograph of planar side 2 of measured Bennu particle OREX-800123-0. The sample slab is 3.58 mm thick. sha256:b4966d1ad7ca8deb06aa945e798ef553d8e982f95bb615f040949e4b2cba631f ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_2.png",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 26515420
+          }
+        },
+        {
+          "@id": "http://example.org/base/#edc02182e652ae25ef46dd87000dc6b1",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#5657b7ddb3374b21d9a09a7616713cc3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Photograph of planar side 2 of measured Bennu particle OREX-800123-0. The sample slab is 3.58 mm thick. sha256:b4966d1ad7ca8deb06aa945e798ef553d8e982f95bb615f040949e4b2cba631f ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_2.png",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 26515420
+            }
+          },
+          "schema:description": "sha256:088836202053d878bd78a236dbc488cc0154cf5351be00f23a54e332c4a9fdf3 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_contextPhotography_2.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 280
+          }
+        },
+        {
+          "@id": "http://example.org/base/#b971e5eb465a735dac6ec92a096cf939",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods description for seismic velocity measurements, including sample preparation techniques and conditions, instrument settings and setup, and general measurement procedure. sha256:c5dfc6469404d9818d00a800c8618e6c43cdda3bd59aacabf821b5fd9a9e09da ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_methodDescription_1.txt",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3167
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6461bcafaf191f27525a3b08396fb22d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#b971e5eb465a735dac6ec92a096cf939",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods description for seismic velocity measurements, including sample preparation techniques and conditions, instrument settings and setup, and general measurement procedure. sha256:c5dfc6469404d9818d00a800c8618e6c43cdda3bd59aacabf821b5fd9a9e09da ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_methodDescription_1.txt",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3167
+            }
+          },
+          "schema:description": "sha256:5af6e2d8a2a6b5c73e4f747ed008ecdc6616e45d7f256202177aab59e1193c78 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 320
+          }
+        },
+        {
+          "@id": "http://example.org/base/#04c0a4b7f7d119e07f0df951ff783180",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Olympus V103-RM transducer output data used to generate the compression waveform (p wave) plot for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (210 ns) has not been removed. sha256:493d0054a1660b2ba1335406bc8ef3af28a7eee1b831b4d99bb440d5f1f3a885 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_1.csv",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1877270
+          }
+        },
+        {
+          "@id": "http://example.org/base/#fb4f77e46b0be1035e002efe6dbeac0f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#04c0a4b7f7d119e07f0df951ff783180",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Olympus V103-RM transducer output data used to generate the compression waveform (p wave) plot for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (210 ns) has not been removed. sha256:493d0054a1660b2ba1335406bc8ef3af28a7eee1b831b4d99bb440d5f1f3a885 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_1.csv",
+            "schema:size": {
+              "@id": "_:b9",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1877270
+            }
+          },
+          "schema:description": "sha256:26b2c4d5fdfc2811d265857c0b4be4ab18c07d6a2274148a0c2f66e870c8fcc9 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_1.yaml",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 336
+          }
+        },
+        {
+          "@id": "http://example.org/base/#3019db945eafb7f9d26ca652b3f9268c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Olympus V153-RM transducer output data used to generate the shear waveform (s wave) plot for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (270.8 ns) has not been removed. sha256:db1ce827c2d926e2f6a9a28d3167c73a68620a234fa8f1f679e693bbdad139c0 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_2.csv",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1574447
+          }
+        },
+        {
+          "@id": "http://example.org/base/#89ea0e691c5d842935b39fe8e0df7f7f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#3019db945eafb7f9d26ca652b3f9268c",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Olympus V153-RM transducer output data used to generate the shear waveform (s wave) plot for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (270.8 ns) has not been removed. sha256:db1ce827c2d926e2f6a9a28d3167c73a68620a234fa8f1f679e693bbdad139c0 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_2.csv",
+            "schema:size": {
+              "@id": "_:b11",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1574447
+            }
+          },
+          "schema:description": "sha256:cca156d99d6d6c3c4b05bc6eda826293b5ff5ecf1d0c9246861afd37b496acff ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_other_2.yaml",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 332
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c46669b3e0d793225fd96bea2080310c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Plot of compression waveform data for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (210 ns) has not been removed. sha256:739d8d6f28a84592bc1b8ab029334cdf7185a42be86034ecb2c15315c2d24390 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_1.jpg",
+          "schema:size": {
+            "@id": "_:b13",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 144150
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c8967090a79f05cb4ed355fbbb515455",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c46669b3e0d793225fd96bea2080310c",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Plot of compression waveform data for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (210 ns) has not been removed. sha256:739d8d6f28a84592bc1b8ab029334cdf7185a42be86034ecb2c15315c2d24390 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_1.jpg",
+            "schema:size": {
+              "@id": "_:b13",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 144150
+            }
+          },
+          "schema:description": "sha256:89e8a0b4dd8ace8a74d0a30eb4e3b04aec338e5a623fbd0c06c28603504682e4 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_1.yaml",
+          "schema:size": {
+            "@id": "_:b14",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 305
+          }
+        },
+        {
+          "@id": "http://example.org/base/#2d4deefac27b4ff5ee6aa09936debdaa",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Plot of shear waveform data for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (270.8 ns) has not been removed. sha256:de5ae5b42831338b6e6667bba0169bc7dd315e6e68bba8f40b5cb6e0e7f3176b ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_2.jpg",
+          "schema:size": {
+            "@id": "_:b15",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 101081
+          }
+        },
+        {
+          "@id": "http://example.org/base/#88195b30afdee29d24832370dce86c65",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#2d4deefac27b4ff5ee6aa09936debdaa",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Plot of shear waveform data for Bennu particle OREX-800123-0 measurement. Internal delay of the transducer (270.8 ns) has not been removed. sha256:de5ae5b42831338b6e6667bba0169bc7dd315e6e68bba8f40b5cb6e0e7f3176b ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_2.jpg",
+            "schema:size": {
+              "@id": "_:b15",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 101081
+            }
+          },
+          "schema:description": "sha256:e727864ab31a336de99aac22ab5472a986d6406e6e80d5e90bfca285b8a98224 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241216_SV-RUEC_UCa_OREX-800123-0_1_plot_2.yaml",
+          "schema:size": {
+            "@id": "_:b16",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 301
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b17",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "Grant 22EXPOSICA from Planetary Exploration, Space Exploration, Canadian Space Agency. This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b18",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/esk8-v556",
+    "schema:value": "10.60707/esk8-v556"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b19",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Seismic Velocities and Rock Ultrasonic Elastic Constants",
+      "schema:termCode": "SV-RUEC"
+    }
+  ],
+  "schema:name": "P and S Wave Seismic Velocity Measurement Data Bundle for Bennu Particle OREX-800123-0",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2077",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:SVRUECTabular"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:contextPhotography"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2077"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-30",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/esk8-v556",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#sampleid",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Sample identification.",
+      "schema:name": "Sample ID",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#massg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Mass of sample.",
+      "schema:name": "Mass (g)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#dimensionmm",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Dimension of sample for seismic velocity measurement.",
+      "schema:name": "Dimension (mm)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#appliedforcen",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Force applied on sample by transducers. The PVC standard was measured holding the transducers on its planar surfaces by hand.",
+      "schema:name": "Applied Force (N)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#pwavefirstarrivalmicros",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Time of p wave arrival, taken as the first break of the waveform. This value has internal transducer delay removed.",
+      "schema:name": "P Wave First Arrival (micro-s)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#pwavevelocityms",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Velocity of p wave through the sample. Calculated by dividing the sample dimension (column 3) by the p wave first arrival time (column 5).",
+      "schema:name": "P Wave Velocity (m/s)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#swavefirstarrivalmicros",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Time of s wave arrival, taken as the first waveform peak just before the large trough. This value has internal transducer delay removed.",
+      "schema:name": "S Wave First Arrival (micro-s)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#swavevelocityms",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Velocity of s wave through the sample. Calculated by dividing the sample dimension (column 3) by the s wave first arrival time (column 7).",
+      "schema:name": "S Wave Velocity (m/s)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b20",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241216_sv-ruec_uca_orex-800123-0_1",
+      "schema:location": {
+        "@id": "_:b21",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UCa"
+        ],
+        "schema:identifier": "https://ror.org/03yjb2x39",
+        "schema:name": "University of Calgary"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b22",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800123-0"
+      },
+      "schema:startDate": "2024-12-16T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

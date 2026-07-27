@@ -1,0 +1,415 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_897",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Ion Chromatography"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "tanya.peretyazhko@nasa.gov",
+        "schema:identifier": "https://orcid.org/0000-0001-5533-6490",
+        "schema:name": "Peretyazhko, Tanya"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "The dataset contains ion chromatography measurements of phosphate in acid hydrolyzed washes from Bennu, Murchison, fused silica samples, and procedural blank.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#a5b2ba6b06fa3bfb1bcdcd65fc94e3e8",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "IC anion analysis of acid hydrolyzed washes sha256:19e6212ec68a717db4eb07bc1b290fc744f84066d54910914b23528c84037e2c ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_ICTabular_93.csv",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1177
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4b9c4efe0a0651f81d6bf49deca1e7e5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a5b2ba6b06fa3bfb1bcdcd65fc94e3e8",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "IC anion analysis of acid hydrolyzed washes sha256:19e6212ec68a717db4eb07bc1b290fc744f84066d54910914b23528c84037e2c ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_ICTabular_93.csv",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1177
+            }
+          },
+          "schema:description": "sha256:f1d6e1a8494b134608df0fddd898d1e47a11b90ef142ce86b6304e9c143ab51d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_ICTabular_93.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 763
+          }
+        },
+        {
+          "@id": "http://example.org/base/#5f7df58af9c233a9c91f57491229b99f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "method description sha256:bae55502b3df4694f9dc2408ef5285a5fbbb9a275efeec7ed8fc403fa3274796 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_methodDescription_410.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1190
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a5d1cd4cd6832577c69f64f84258774d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#5f7df58af9c233a9c91f57491229b99f",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "method description sha256:bae55502b3df4694f9dc2408ef5285a5fbbb9a275efeec7ed8fc403fa3274796 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_methodDescription_410.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1190
+            }
+          },
+          "schema:description": "sha256:8268ac200222ca96cc4319cce29a90ee4860029f4882b0cc963a1a266d20573c ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_methodDescription_410.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 234
+          }
+        },
+        {
+          "@id": "http://example.org/base/#a80b2b5decdfa83b51e03d5e2bf4657a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "sample preparation and data description sha256:fd832ee3c24c4e5d5a763b48c97cdd181109e0c4356733d35845c515468aea58 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_report_409.pdf",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 69148
+          }
+        },
+        {
+          "@id": "http://example.org/base/#941e5f429ca9e489f093617ec8f7d471",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#a80b2b5decdfa83b51e03d5e2bf4657a",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "sample preparation and data description sha256:fd832ee3c24c4e5d5a763b48c97cdd181109e0c4356733d35845c515468aea58 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_report_409.pdf",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 69148
+            }
+          },
+          "schema:description": "sha256:e46727073e97abbe243181a1f3a630a25a782306769bb3010f391eac7ce96456 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240215_IC_JSC-ARES_OREX-803001-111_1_report_409.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 392
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/1k0j-p360",
+    "schema:value": "10.60707/1k0j-p360"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Ion Chromatography",
+      "schema:termCode": "IC"
+    }
+  ],
+  "schema:name": "IC anion analysis of acid hydrolyzed washes",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_897",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:ICTabular"
+      },
+      {
+        "@id": "ada:report"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_897"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-07-04",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/1k0j-p360",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#samplenumber",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "sample number as measured in the sequence analysis",
+      "schema:name": "sample number",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplename",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "sample name",
+      "schema:name": "sample name",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#retentiontime",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "anion retention time",
+      "schema:name": "retention time",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#area",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "peak integrated area",
+      "schema:name": "area",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#height",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "peak height",
+      "schema:name": "height",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#amount",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "anion concentration",
+      "schema:name": "Amount",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240215_ic_jsc-ares_orex-803001-111_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803001-111"
+      },
+      "schema:startDate": "2024-03-19T15:54:41.210236Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

@@ -1,0 +1,443 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_5",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Structured Light Scanning"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "ajryan@orex.lpl.arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0002-7535-8416",
+        "schema:name": "Ryan, Andy"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Scanned the large ~2mm quick-look particle that was also CT scanned and shown in the press release. Scanned in Tucson under ambient conditions with multiple scanner look-angles to get difficult edges. I had to do a smoothed merge instead of the usual precise merge of particle scans in order to create a good complete model, because the particle was quite small and challenging to measure.",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#f81cfea1eb4f296281d2a95cbe9444e4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Processed merged shape model (no holes) of a quick look sample OREX-500003-100_1. sha256:078de0147a3cb5f15a07b20a41bd3ab1edacd93eb3565e6f077c9a8f884897fc ; ",
+          "schema:encodingFormat": "model/obj",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_SLSShapeModel_2.obj",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2486516
+          }
+        },
+        {
+          "@id": "http://example.org/base/#07c91ad4eec5a04e3a91d4893d5d1eed",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#f81cfea1eb4f296281d2a95cbe9444e4",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Processed merged shape model (no holes) of a quick look sample OREX-500003-100_1. sha256:078de0147a3cb5f15a07b20a41bd3ab1edacd93eb3565e6f077c9a8f884897fc ; ",
+            "schema:encodingFormat": "model/obj",
+            "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_SLSShapeModel_2.obj",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2486516
+            }
+          },
+          "schema:description": "sha256:c70e59d3f66a91a459622ed18457d564947ad5c409c64674c3f065546061ceed ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_SLSShapeModel_2.yml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 328
+          }
+        },
+        {
+          "@id": "http://example.org/base/#14c85f53da9d70da8a7a9f6c7b0dfc83",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Screenshot of FlexScan3D desktop during scan. The SLS was positioned at a very low angle (almost horizontal) at the time. sha256:445511b57a45687844de901828de710e27a3e9846ab46f3fbcbd7c81aab0a789 ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_1.png",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 753615
+          }
+        },
+        {
+          "@id": "http://example.org/base/#748c4a2e7d56b0bcbe39787e2b40daf6",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#14c85f53da9d70da8a7a9f6c7b0dfc83",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Screenshot of FlexScan3D desktop during scan. The SLS was positioned at a very low angle (almost horizontal) at the time. sha256:445511b57a45687844de901828de710e27a3e9846ab46f3fbcbd7c81aab0a789 ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_1.png",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 753615
+            }
+          },
+          "schema:description": "sha256:320baa3d1e3a4494325e9970bea8750fa06d14faa75c95f1b9dcc9fb9b674bf1 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_1.yml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 283
+          }
+        },
+        {
+          "@id": "http://example.org/base/#cad7977d837689a1c37608feba60c140",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Photo of SLS instrument with sample particle sitting on teflon film (taped to stainless steel plate on lab jack). sha256:ca1cad45050be1fe5657a7eb1a6abdb1605d15f17ba3b407c7f7940f89fa0395 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_2.jpeg",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2412336
+          }
+        },
+        {
+          "@id": "http://example.org/base/#3154421fbd78159053054717d55dc2a2",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#cad7977d837689a1c37608feba60c140",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Photo of SLS instrument with sample particle sitting on teflon film (taped to stainless steel plate on lab jack). sha256:ca1cad45050be1fe5657a7eb1a6abdb1605d15f17ba3b407c7f7940f89fa0395 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_2.jpeg",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2412336
+            }
+          },
+          "schema:description": "sha256:0034c076ef798de1be7670f2724821794416ee33ca58d3c44d7f00e93cbccbcd ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_contextPhotography_2.yml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 275
+          }
+        },
+        {
+          "@id": "http://example.org/base/#3cacbbd8aaec3909e71bdd8835d7b954",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "stl copy of obj file (filled merged sample scan) sha256:f87155bb25c08cdf9fd7b0da9bd0bcc348b22866796dbfbc6b977e9289f6f4fb ; ",
+          "schema:encodingFormat": "model/stl",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_other_2.stl",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 3545984
+          }
+        },
+        {
+          "@id": "http://example.org/base/#59f73165e021bbd2d0fe3395a937d0ae",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#3cacbbd8aaec3909e71bdd8835d7b954",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "stl copy of obj file (filled merged sample scan) sha256:f87155bb25c08cdf9fd7b0da9bd0bcc348b22866796dbfbc6b977e9289f6f4fb ; ",
+            "schema:encodingFormat": "model/stl",
+            "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_other_2.stl",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 3545984
+            }
+          },
+          "schema:description": "sha256:c627e5eec050494d2e02920425199579ee38c039caa5288a1b7bfc2849b7065d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_other_2.yml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 174
+          }
+        },
+        {
+          "@id": "http://example.org/base/#04682ac26b1dec6a84427601b4d76cad",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Quick look image water-tight final shape model of sample OREX-500003-100 sha256:9416076c9b97e78287d6692d3871336341c30477e26da6c2d49d010ca3a5dc5b ; ",
+          "schema:encodingFormat": "image/png",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_quickLook_1.png",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 45739
+          }
+        },
+        {
+          "@id": "http://example.org/base/#4c15e0ed51ac88e43dd10ce0403b55bf",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#04682ac26b1dec6a84427601b4d76cad",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Quick look image water-tight final shape model of sample OREX-500003-100 sha256:9416076c9b97e78287d6692d3871336341c30477e26da6c2d49d010ca3a5dc5b ; ",
+            "schema:encodingFormat": "image/png",
+            "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_quickLook_1.png",
+            "schema:size": {
+              "@id": "_:b9",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 45739
+            }
+          },
+          "schema:description": "sha256:7ea41b352228c9a683c599007a0da88be30733f8c9d903f51664fb50160e441b ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20231013_SLS_UAZ_OREX-500003-100_1_quickLook_1.yml",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 223
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b11",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "N/A",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b12",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/papb-7t64",
+    "schema:value": "10.60707/papb-7t64"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b13",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Structured Light Scanning",
+      "schema:termCode": "SLS"
+    }
+  ],
+  "schema:name": "3d scan of large quick-look particle",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_5",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:quickLook"
+      },
+      {
+        "@id": "ada:otherFileType"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:other"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:contextPhotography"
+      },
+      {
+        "@id": "ada:SLSShapeModel"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_5"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-01-31",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/papb-7t64",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b14",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20231013_sls_uaz_orex-500003-100_1",
+      "schema:location": {
+        "@id": "_:b15",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b16",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-500003-100"
+      },
+      "schema:startDate": "2023-10-13T21:57:23.658194Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

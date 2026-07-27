@@ -1,0 +1,1091 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_922",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Electron microprobe analysis"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "yvesm@crpg.cnrs-nancy.fr",
+          "johan.villeneuve@univ-lorraine.fr"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0001-7075-3698",
+          "https://orcid.org/0000-0002-9892-8530"
+        ],
+        "schema:name": [
+          "Marrocchi, Yves",
+          "Villeneuve, Johan"
+        ]
+      },
+      "schema:roleName": "Researcher"
+    },
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "yvesm@crpg.cnrs-nancy.fr",
+          "johan.villeneuve@univ-lorraine.fr"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0001-7075-3698",
+          "https://orcid.org/0000-0002-9892-8530"
+        ],
+        "schema:name": [
+          "Marrocchi, Yves",
+          "Villeneuve, Johan"
+        ]
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "laurette.piani@univ-lorraine.fr",
+        "schema:identifier": "https://orcid.org/0000-0003-0854-7468",
+        "schema:name": "Piani, Laurette"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Here we report the major element composition of olivine and carbonate grains that have been measured at CRPG for their oxygen isotopic composition in the fine-grained material of three particles of OREX-800045-103.",
+  "schema:distribution": [
+    {
+      "@id": "_:b2",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#edb45efcca198a0e1b4c2510614e33f4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "EMPA analyses of the olivine and carbonate grains of OREX-800045-103 (raw data) sha256:5cf92da129c777b03eefad6b3648042be61a45b6c6eca900c757f2996450b65c ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_EMPAQEATabular_1.csv",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 9906
+          }
+        },
+        {
+          "@id": "http://example.org/base/#78d4e21ae704bd6bdb59c77bd40a8b1b",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#edb45efcca198a0e1b4c2510614e33f4",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "EMPA analyses of the olivine and carbonate grains of OREX-800045-103 (raw data) sha256:5cf92da129c777b03eefad6b3648042be61a45b6c6eca900c757f2996450b65c ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_EMPAQEATabular_1.csv",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 9906
+            }
+          },
+          "schema:description": "sha256:af655b7d5afa2d92ab8eb755494dd4e71958bd966c3723cc4333a27f282d8d40 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_EMPAQEATabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2056
+          }
+        },
+        {
+          "@id": "http://example.org/base/#64341bb5a71100970153cb5851cef8b8",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:48940c10625d8ddf962b851add67ea96c745df0f1000d3f5c79dc59302cfa123 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_1.jpeg",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 826271
+          }
+        },
+        {
+          "@id": "http://example.org/base/#334a4eb8b8d948998510542dc85b751f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#64341bb5a71100970153cb5851cef8b8",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:48940c10625d8ddf962b851add67ea96c745df0f1000d3f5c79dc59302cfa123 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_1.jpeg",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 826271
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#46fd99db477feabb2177932eadbbee19",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:e9db19664693581b88c37e03b134c18182037cd2a44aa8c0a261676ae09399d7 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_10.jpeg",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 854197
+          }
+        },
+        {
+          "@id": "http://example.org/base/#50ccde3d59ab78c551ece19257b42abc",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#46fd99db477feabb2177932eadbbee19",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:e9db19664693581b88c37e03b134c18182037cd2a44aa8c0a261676ae09399d7 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_10.jpeg",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 854197
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_10.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#fd6006b3849e564cd01df58baab26aed",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:0bdda706a9a6b935c5ae62041bf401dd7a2feb185af726dc812bdc2626447ae7 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_11.jpeg",
+          "schema:size": {
+            "@id": "_:b9",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 870229
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f8240fa17fac5c2dec3e1aa2dc492fdf",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#fd6006b3849e564cd01df58baab26aed",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:0bdda706a9a6b935c5ae62041bf401dd7a2feb185af726dc812bdc2626447ae7 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_11.jpeg",
+            "schema:size": {
+              "@id": "_:b9",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 870229
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_11.yaml",
+          "schema:size": {
+            "@id": "_:b10",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#0cf044bb65d985151a5407a876bf5216",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:a2ef6534ee30f8b595d439d55f0ee96671e31b270887db6fc8827abb3a6e9d0e ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_2.jpeg",
+          "schema:size": {
+            "@id": "_:b11",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 856319
+          }
+        },
+        {
+          "@id": "http://example.org/base/#64621d3ab6f7b544c5a08482a3da091d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#0cf044bb65d985151a5407a876bf5216",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:a2ef6534ee30f8b595d439d55f0ee96671e31b270887db6fc8827abb3a6e9d0e ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_2.jpeg",
+            "schema:size": {
+              "@id": "_:b11",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 856319
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_2.yaml",
+          "schema:size": {
+            "@id": "_:b12",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#db508d56e511a53e27d51d28ca7f8b10",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:38338e5594cec209d1c5194c3aa1fcb6dd04770808052f14f6bf1f9b5d0abe5d ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_3.jpeg",
+          "schema:size": {
+            "@id": "_:b13",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1187538
+          }
+        },
+        {
+          "@id": "http://example.org/base/#445c7cac32bd7b2df90f96008d55f859",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#db508d56e511a53e27d51d28ca7f8b10",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:38338e5594cec209d1c5194c3aa1fcb6dd04770808052f14f6bf1f9b5d0abe5d ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_3.jpeg",
+            "schema:size": {
+              "@id": "_:b13",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1187538
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_3.yaml",
+          "schema:size": {
+            "@id": "_:b14",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#60476e4355d9b748571362dc87a25bc5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:ba5004999968a9e837d9ef1f9f26cc4a0d92757e81ad203c5eea2032318b53a9 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_4.jpeg",
+          "schema:size": {
+            "@id": "_:b15",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1918356
+          }
+        },
+        {
+          "@id": "http://example.org/base/#c8586aa2b4d56a513c29dd185a7ba185",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#60476e4355d9b748571362dc87a25bc5",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:ba5004999968a9e837d9ef1f9f26cc4a0d92757e81ad203c5eea2032318b53a9 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_4.jpeg",
+            "schema:size": {
+              "@id": "_:b15",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1918356
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_4.yaml",
+          "schema:size": {
+            "@id": "_:b16",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1cd7b5734c01d0d7d3c3c3a5f96e49eb",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:38b728e6a21bb52b8685f23e31a0ab2903f905d7690a27c6e566ced33e495724 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_5.jpeg",
+          "schema:size": {
+            "@id": "_:b17",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 641408
+          }
+        },
+        {
+          "@id": "http://example.org/base/#164240610d6fbbc2aa53e4ab431cf845",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#1cd7b5734c01d0d7d3c3c3a5f96e49eb",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:38b728e6a21bb52b8685f23e31a0ab2903f905d7690a27c6e566ced33e495724 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_5.jpeg",
+            "schema:size": {
+              "@id": "_:b17",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 641408
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_5.yaml",
+          "schema:size": {
+            "@id": "_:b18",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#d8d1989579f8c55acb23d2cb1c0206cd",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:e3c98a1acf2b53e37fd82ee7ca17257d384a0966c896033113d6fe12cd380996 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_6.jpeg",
+          "schema:size": {
+            "@id": "_:b19",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 691764
+          }
+        },
+        {
+          "@id": "http://example.org/base/#99c2936ab938cc94a13d7a8e1952ebaa",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#d8d1989579f8c55acb23d2cb1c0206cd",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:e3c98a1acf2b53e37fd82ee7ca17257d384a0966c896033113d6fe12cd380996 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_6.jpeg",
+            "schema:size": {
+              "@id": "_:b19",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 691764
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_6.yaml",
+          "schema:size": {
+            "@id": "_:b20",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#feea63cc5e44cea486984668edb47db5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:8b2087632d996e06ba515acef416dedfb20062309a9418aff7a85a56d9051e85 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_7.jpeg",
+          "schema:size": {
+            "@id": "_:b21",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 644111
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6151a7948ffe9c123ae463a2769697c2",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#feea63cc5e44cea486984668edb47db5",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:8b2087632d996e06ba515acef416dedfb20062309a9418aff7a85a56d9051e85 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_7.jpeg",
+            "schema:size": {
+              "@id": "_:b21",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 644111
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_7.yaml",
+          "schema:size": {
+            "@id": "_:b22",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#424920211f0f95fa42b0151874e8bdc3",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:9ab61948642feea1d17d893b65dd74a58902a8ad8807e40253640b51a2c6e493 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_8.jpeg",
+          "schema:size": {
+            "@id": "_:b23",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1149723
+          }
+        },
+        {
+          "@id": "http://example.org/base/#73c4d9afcdafaa2d1a2c261e083b1f51",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#424920211f0f95fa42b0151874e8bdc3",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:9ab61948642feea1d17d893b65dd74a58902a8ad8807e40253640b51a2c6e493 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_8.jpeg",
+            "schema:size": {
+              "@id": "_:b23",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1149723
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_8.yaml",
+          "schema:size": {
+            "@id": "_:b24",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#77aaa8700efb854be8480a3efcaa06cd",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:a67adaefdef7f0e5c762b392bf774bfca1d4724aef9ad61ce324f95460215379 ; ",
+          "schema:encodingFormat": "image/jpeg",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_9.jpeg",
+          "schema:size": {
+            "@id": "_:b25",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1025671
+          }
+        },
+        {
+          "@id": "http://example.org/base/#545aa1cd78ca8ca17ac76530f6e7ba4e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#77aaa8700efb854be8480a3efcaa06cd",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Scanning electron microscope images showing the location of the analyses of 20240603_EMPA_CNRS-CRPG_OREX-800045-103_1 (EMPA) sha256:a67adaefdef7f0e5c762b392bf774bfca1d4724aef9ad61ce324f95460215379 ; ",
+            "schema:encodingFormat": "image/jpeg",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_9.jpeg",
+            "schema:size": {
+              "@id": "_:b25",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1025671
+            }
+          },
+          "schema:description": "sha256:c87e63e94f6e65af8604b8f44328bc9fb7d2472351049c24a4b26c828659010e ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_analysisLocation_9.yaml",
+          "schema:size": {
+            "@id": "_:b26",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 471
+          }
+        },
+        {
+          "@id": "http://example.org/base/#13b449148f6a6ff923f3b0b52281caf0",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "calibration file for EMPA analysis sha256:2fca1445ebde0a23bdb1a22694bd9363c28daa70c3db40d8d84382becbc817c8 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_calibrationFile_1.txt",
+          "schema:size": {
+            "@id": "_:b27",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 2500
+          }
+        },
+        {
+          "@id": "http://example.org/base/#eee5bf21033819766471c87fd049a17e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#13b449148f6a6ff923f3b0b52281caf0",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "calibration file for EMPA analysis sha256:2fca1445ebde0a23bdb1a22694bd9363c28daa70c3db40d8d84382becbc817c8 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_calibrationFile_1.txt",
+            "schema:size": {
+              "@id": "_:b27",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 2500
+            }
+          },
+          "schema:description": "sha256:b6bb56f28ec553783c665bbe61a4f72e9d5704396f8cb768bd914f1343873d82 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_calibrationFile_1.yaml",
+          "schema:size": {
+            "@id": "_:b28",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 178
+          }
+        },
+        {
+          "@id": "http://example.org/base/#999bb3d686b2fd308906a4490cb57ce1",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "description of the method for EMPA analysis sha256:29c873f4354aba9b870093c04ed4036adc837dd5dc71822c7c9eef5bbc5632de ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b29",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 53619
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e5f4a3615d1d02d0069e68930d98fe7f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#999bb3d686b2fd308906a4490cb57ce1",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "description of the method for EMPA analysis sha256:29c873f4354aba9b870093c04ed4036adc837dd5dc71822c7c9eef5bbc5632de ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b29",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 53619
+            }
+          },
+          "schema:description": "sha256:9466a242d2dea4cce4c59945a003ec928c79687311c0126a662e87a85fe2163f ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240603_EMPA_CNRS-CRPG_OREX-800045-103_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b30",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 189
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b31",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program and by the French Centre national d&#x27;%C3%A9tudes spatiales (CNES).",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b32",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/j16b-6288",
+    "schema:value": "10.60707/j16b-6288"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b33",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Electron microprobe analysis",
+      "schema:termCode": "EMPA"
+    }
+  ],
+  "schema:name": "Major element composition of olivine and carbonates measured for oxygen isotopic compositions by SIMS in OREX-800045-103",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_922",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:analysisLocation"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:calibrationFile"
+      },
+      {
+        "@id": "ada:EMPAQEATabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_922"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/j16b-6288",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#analysis",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Name of the analysis",
+      "schema:name": "Analysis",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#sio2mass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of SiO2 in wt%",
+      "schema:name": "SiO2(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#al2o3mass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of Al2O3 in wt%",
+      "schema:name": "Al2O3(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#caomass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of CaO in wt%",
+      "schema:name": "CaO(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#cr2o3mass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of Cr2O3 in wt%",
+      "schema:name": "Cr2O3(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#mgomass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of MgO in wt%",
+      "schema:name": "MgO(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#feomass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of FeO in wt%",
+      "schema:name": "FeO(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#mnomass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of MnO in wt%",
+      "schema:name": "MnO(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#tio2mass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Abundance of TiO2 in wt%",
+      "schema:name": "TiO2(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#totalmass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Total in wt%",
+      "schema:name": "Total(Mass%)",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#comments",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "comments on the analysis location",
+      "schema:name": "Comments",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b34",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240603_empa_cnrs-crpg_orex-800045-103_1",
+      "schema:location": {
+        "@id": "_:b35",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CNRS-CRPG"
+        ],
+        "schema:identifier": "https://ror.org/011nqat45",
+        "schema:name": "Centre de Recherches Petrographiques et Geochimiques (Nancy, France)"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b36",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800045-103"
+      },
+      "schema:startDate": "2024-06-03T08:33:44.581522Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

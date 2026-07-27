@@ -1,0 +1,524 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2435",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Accelerator Mass Spectrometry"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "mcaffee@purdue.edu",
+          "woodruft@purdue.edu"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-6846-8967",
+          ""
+        ],
+        "schema:name": [
+          "Caffee, Marc",
+          "Thomas Woodruff"
+        ]
+      },
+      "schema:roleName": "Researcher"
+    },
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": [
+          "mcaffee@purdue.edu",
+          "woodruft@purdue.edu"
+        ],
+        "schema:identifier": [
+          "https://orcid.org/0000-0002-6846-8967",
+          ""
+        ],
+        "schema:name": [
+          "Caffee, Marc",
+          "Thomas Woodruff"
+        ]
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "kcwelten@berkeley.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-8577-6753",
+        "schema:name": "Welten, Kees"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Accelerator mass spectrometry analysis of 10Be concentrations in splits of stones of interest, OREX-800055-11, OREX-803228-0, and of aggregate sample OREX-800117-103. The samples were dissolved in HF/HNO3 and a small aliquot of the dissolved sample was taken for chemical analysis by ICP-OES. The 10Be concentrations in the samples range from 6.5 to 9.0 dpm/kg, compared to a concentration of ~8 dpm/kg in the aggregate sample. The results constrain the cosmic-ray exposure age of the sample to at least a few Myr near the sufrace of asteroid Bennu.",
+  "schema:distribution": [
+    {
+      "@id": "_:b2",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#e12e4b7e4c71ce498ff9c3e7ce1d41c5",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "This file contains the raw AMS 10Be data for multiple samples analyzed in the same AMS run, including normalized 10Be/Be ratios of each sample, along with the maximum, minimum and average 9Be current of each sample and the total number of 10Be ions counted in the detector. sha256:e8e5809365488e53f5ae2dcd133f7c9663c6b0c6c669ed39c894e454109c8379 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20241206_AMS_PU_multiSample_1_AMSRawData_1.csv",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 801
+          }
+        },
+        {
+          "@id": "http://example.org/base/#6847add77f559c53da03db504aa1c62a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e12e4b7e4c71ce498ff9c3e7ce1d41c5",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "This file contains the raw AMS 10Be data for multiple samples analyzed in the same AMS run, including normalized 10Be/Be ratios of each sample, along with the maximum, minimum and average 9Be current of each sample and the total number of 10Be ions counted in the detector. sha256:e8e5809365488e53f5ae2dcd133f7c9663c6b0c6c669ed39c894e454109c8379 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20241206_AMS_PU_multiSample_1_AMSRawData_1.csv",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 801
+            }
+          },
+          "schema:description": "sha256:d0651bc69c1af69a8d534eb25fd4a97f6150a290b143a29f4cd86be1499d3dcf ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241206_AMS_PU_multiSample_1_AMSRawData_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1952
+          }
+        },
+        {
+          "@id": "http://example.org/base/#bf0db7de135912b0d088e6ce39c85b4f",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Methods and Sample processing description sha256:b70e739d899a7c964a9558d43ffbbbae2fadf2035baef7d4b76de70bf6db41f4 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20241206_AMS_PU_multiSample_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 113493
+          }
+        },
+        {
+          "@id": "http://example.org/base/#e337439895dfa8882d689538d58219af",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#bf0db7de135912b0d088e6ce39c85b4f",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Methods and Sample processing description sha256:b70e739d899a7c964a9558d43ffbbbae2fadf2035baef7d4b76de70bf6db41f4 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20241206_AMS_PU_multiSample_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 113493
+            }
+          },
+          "schema:description": "sha256:f80371f33bec399347b6bcc1c88a18b879833605aa27898d6f2d509fb34e5417 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241206_AMS_PU_multiSample_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 262
+          }
+        },
+        {
+          "@id": "http://example.org/base/#2d1eaa900c6e1ee44e5345d6e6017b20",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Description of data processing, including calculations to convert measured 10Be/9Be ratio to 10Be concentration sha256:e9046c67e2b0db3988f7dea5641893262475f0334d42e97b3371d0d267cc6681 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20241206_AMS_PU_multiSample_1_processingDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 102587
+          }
+        },
+        {
+          "@id": "http://example.org/base/#9cc8ff6a73f55bd7b9645875c040a92a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#2d1eaa900c6e1ee44e5345d6e6017b20",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Description of data processing, including calculations to convert measured 10Be/9Be ratio to 10Be concentration sha256:e9046c67e2b0db3988f7dea5641893262475f0334d42e97b3371d0d267cc6681 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20241206_AMS_PU_multiSample_1_processingDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b7",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 102587
+            }
+          },
+          "schema:description": "sha256:720621d592f20eefd072886ae4866c1aa2d102af92a4b846958a7f716ad692e7 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20241206_AMS_PU_multiSample_1_processingDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b8",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 268
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program. This study is supported by NASA grant 80NSSC22K1693 through the OREX-PSP.",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b10",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/t0gq-7t37",
+    "schema:value": "10.60707/t0gq-7t37"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b11",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Accelerator Mass Spectrometry",
+      "schema:termCode": "AMS"
+    }
+  ],
+  "schema:name": "AMS, 10Be, stones of interest and aggregate sample",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2435",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:processingDescription"
+      },
+      {
+        "@id": "ada:AMSRawData"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2435"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-18",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/t0gq-7t37",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#prime_id",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "ID number of sample analyzed at PRIME lab",
+      "schema:name": "PRIME_ID",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#sampleholder",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "ID Number of cathode (sample holder)",
+      "schema:name": "Sample Holder",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplename",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "UC Berkeley sample ID",
+      "schema:name": "Sample Name",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#10be9beratio",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Normalized 10Be/9Be ratio (10^-15)",
+      "schema:name": "10Be/9Be ratio",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#10be9beerror",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "1-sigma uncertainty in 10Be/9Be ratio (10^-15)",
+      "schema:name": "10Be/9Be error",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#reluncertainty",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "1-sigma uncertainty in 10Be/9Be ratio (%)",
+      "schema:name": "Rel. Uncertainty",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#max9becurrent",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Maximum 9Be current of the sample during the run (in nano-Ampere)",
+      "schema:name": "Max 9Be current",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#min9becurrent",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Minimum 9Be current of the sample during the run (in nano-Ampere)",
+      "schema:name": "Min 9Be current",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#avg9becurrent",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Average 9Be current of the sample during the run (in nano-Ampere)",
+      "schema:name": "Avg 9Be current",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#fractionofstandardcurrent",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Ratio of 9Be current of sample relative to that of standard",
+      "schema:name": "Fraction of standard current",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#total10becounts",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "total number of 10Be ion counts in gas ionization detector",
+      "schema:name": "Total 10Be counts",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b12",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20241206_ams_pu_multisample_1",
+      "schema:location": {
+        "@id": "_:b13",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "PU"
+        ],
+        "schema:identifier": "https://ror.org/05p8z3f47",
+        "schema:name": "Purdue University"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b14",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800117-103"
+      },
+      "schema:startDate": "2024-12-06T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

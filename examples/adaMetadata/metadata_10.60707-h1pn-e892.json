@@ -1,0 +1,341 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2252",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "X-ray computed tomography"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "scott.a.eckley@nasa.gov",
+        "schema:identifier": "https://orcid.org/0000-0002-2692-2164",
+        "schema:name": "Eckley, Scott"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "This dataset contains X-ray computed tomography images, videos, and metadata for Bennu particle OREX-800151-0 as part of the OSIRIS-REx mission",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#cfaa2b6a6d71ffb2327692bcb29f82ff",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#d084e5f7f6ecfd2c2c30e5bc44fe2e4a",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "a zip archive containing various files. Stack of 16 bit grayscale TIFF images oriented orthogonally to the XCT scan rotation axisX-ray computed tomography image collection; TIFF Stacks of CT Slices. Raw TIFF images are consolidated and treated as a single data product.  sha256:abef913338ec37f60aaf0cd825b53c141d00d47ec6ee686d2562c20fe954ebac ; ",
+            "schema:encodingFormat": "application/zip",
+            "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_XCTImageCollection_1.zip",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1993688440
+            }
+          },
+          "schema:description": "sha256:99478d1303830ea08f4e7a1e6a9fcf86a2b1fefbf8e10cf1ebf648a50554bfcf ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_XCTImageCollection_1.yaml",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1015
+          }
+        },
+        {
+          "@id": "http://example.org/base/#d084e5f7f6ecfd2c2c30e5bc44fe2e4a",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "a zip archive containing various files. Stack of 16 bit grayscale TIFF images oriented orthogonally to the XCT scan rotation axisX-ray computed tomography image collection; TIFF Stacks of CT Slices. Raw TIFF images are consolidated and treated as a single data product.  sha256:abef913338ec37f60aaf0cd825b53c141d00d47ec6ee686d2562c20fe954ebac ; ",
+          "schema:encodingFormat": "application/zip",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_XCTImageCollection_1.zip",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1993688440
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f6aef363a549d7d0b8711d2d75db7b09",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "mp4 video of XCT TIFF stack sha256:7c1e6c3821e9fbff9bed73471ff5b1921872856a8838ab11f62d78830b2dc9f6 ; ",
+          "schema:encodingFormat": "video/mp4",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_contextVideo_1.mp4",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 78081479
+          }
+        },
+        {
+          "@id": "http://example.org/base/#9643a8112bc3f697714d5a0148291bff",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#f6aef363a549d7d0b8711d2d75db7b09",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "mp4 video of XCT TIFF stack sha256:7c1e6c3821e9fbff9bed73471ff5b1921872856a8838ab11f62d78830b2dc9f6 ; ",
+            "schema:encodingFormat": "video/mp4",
+            "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_contextVideo_1.mp4",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 78081479
+            }
+          },
+          "schema:description": "sha256:1d4309bac944d2ee3be3859809ba7d2eaba30a54177167c3585d7ff43428a70d ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_contextVideo_1.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 168
+          }
+        },
+        {
+          "@id": "http://example.org/base/#f62f563ad6bb2ea581e49f65cb868fbc",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "XCT scan metadata sha256:36b9c1b580418be361f79e97838d62159afe2b49d8c2282f76414b6310e74a13 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_instrumentMetadata_1.pdf",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 144045
+          }
+        },
+        {
+          "@id": "http://example.org/base/#bdf22d8826f6a8bed5572bf41de21110",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#f62f563ad6bb2ea581e49f65cb868fbc",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "XCT scan metadata sha256:36b9c1b580418be361f79e97838d62159afe2b49d8c2282f76414b6310e74a13 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_instrumentMetadata_1.pdf",
+            "schema:size": {
+              "@id": "_:b5",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 144045
+            }
+          },
+          "schema:description": "sha256:a80a953e932974ada8d970a48f3eeb412b9c17f49fe9121bdbe04164934b928f ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20250107_XCT_JSC-ARES_OREX-800151-0_1_instrumentMetadata_1.yaml",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 164
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "Astromaterials Curation",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b8",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/h1pn-e892",
+    "schema:value": "10.60707/h1pn-e892"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-ray computed tomography",
+      "schema:termCode": "XCT"
+    }
+  ],
+  "schema:name": "X-ray CT data for Bennu particle OREX-800151-0",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2252",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:XCTImageCollection"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:contextVideo"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:collection"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2252"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-03-05",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/h1pn-e892",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20250107_xct_jsc-ares_orex-800151-0_1",
+      "schema:location": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "JSC-ARES"
+        ],
+        "schema:identifier": "https://ror.org/04xx4z452",
+        "schema:name": "NASA Johnson Space Center"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800151-0"
+      },
+      "schema:startDate": "2025-01-07T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

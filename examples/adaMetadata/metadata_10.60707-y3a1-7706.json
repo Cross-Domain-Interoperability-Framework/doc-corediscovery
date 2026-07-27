@@ -1,0 +1,436 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_1086",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Noble gas and Nitrogen Static Mass Spectrometry"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "Laurent.zimmermann@@univ-lorraine.fr",
+        "schema:identifier": "",
+        "schema:name": "Zimmermann, Laurent"
+      },
+      "schema:roleName": "Researcher"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "bernard.marty@univ-lorraine.fr",
+        "schema:identifier": "https://orcid.org/0000-0001-7936-1519",
+        "schema:name": "Marty, Bernard"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "We report the all noble gas (He, Ne, Ar, Kr, Xe) analysis of single grain OREX-800032-105 by static mass spectrometry done in the noble gas laboratory of CRPG-CNRS, Nancy France. The grain was sequentially heated under static vacuum using a CO2 laser and evolved noble gases were analyzed with our Helix MC (Thermo) static mass spectrometer. For each incremental heating step, gases are purified over Ti sponge getter, cryogenically separated and sequentially analyzed for abundances and isotopic ratios. Results show carbonaceous chondrite type noble gases of the CI type. Computed cosmogenic ages are a few Ma.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#e1520064f9d4f502892271840a945dfb",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "The table reports raw data and processed for helium elemental and isotopic analysis of sample OREX-800032-105 that was analyzed in a single 5 month session together with 7 OREX aggregates. The table contains, for all OREX samples, the standard runs, the blank runs, the raw data and the processed data. sha256:bba43cdffaa70191ef0822b3761c26deae2d96bb2630327cd1b7b1ec588eebd2 ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_NGNSMSProcessed_1.csv",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 8669
+          }
+        },
+        {
+          "@id": "http://example.org/base/#1459c66a995aea4ecf671225e86d72d4",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#e1520064f9d4f502892271840a945dfb",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "The table reports raw data and processed for helium elemental and isotopic analysis of sample OREX-800032-105 that was analyzed in a single 5 month session together with 7 OREX aggregates. The table contains, for all OREX samples, the standard runs, the blank runs, the raw data and the processed data. sha256:bba43cdffaa70191ef0822b3761c26deae2d96bb2630327cd1b7b1ec588eebd2 ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_NGNSMSProcessed_1.csv",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 8669
+            }
+          },
+          "schema:description": "sha256:7bfbe7b06e6fa9e664b8d87cb458399874a1bc0425d63df2f6b5570f5c9b1920 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_NGNSMSProcessed_1.yaml",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1966
+          }
+        },
+        {
+          "@id": "http://example.org/base/#8c5e697e26a14bc0742528c23bf36eee",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "data and method description associated with He isotopes obtained on OREX-8000032-105 sha256:bcbd6bf89a086a76e97b0ac422d6b22d4e652f1fba4f9c94d97090b8958bb542 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 48902
+          }
+        },
+        {
+          "@id": "http://example.org/base/#8581ff930ec3b93e13ab8f296b7e17bd",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#8c5e697e26a14bc0742528c23bf36eee",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "data and method description associated with He isotopes obtained on OREX-8000032-105 sha256:bcbd6bf89a086a76e97b0ac422d6b22d4e652f1fba4f9c94d97090b8958bb542 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 48902
+            }
+          },
+          "schema:description": "sha256:7cc7da1c9dadf40c1cd9b7daa9490e997e300cc48877cd9700110c5ba122ed7f ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240607_NG-NS-MS_CNRS-CRPG_OREX-800032-105_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 235
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program and by the Centre National d&#x27;Etudes Spatiales (CNES)",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b7",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/y3a1-7706",
+    "schema:value": "10.60707/y3a1-7706"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Noble gas and Nitrogen Static Mass Spectrometry",
+      "schema:termCode": "NG-NS-MS"
+    }
+  ],
+  "schema:name": "Noble gas He, Ne, Ar, Kr, Xe  elemental and isotopic analysis of aggregate sample OREX-800032-105",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_1086",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:NGNSMSProcessed"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_1086"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-01-27",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/y3a1-7706",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#linenumber",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "number of row (see method description)",
+      "schema:name": "line number",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#label",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "type of run",
+      "schema:name": "label",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#samplename",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Name of sample",
+      "schema:name": "Sample name",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#4he",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "4He signal (lines 1-81),  4He concentration (lines 85-125)",
+      "schema:name": "4He",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#1sigma",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "standard deviation",
+      "schema:name": "1 sigma",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#3he",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "signal of 3He signal (lines 1-81),  3He concentration (lines 85-125)",
+      "schema:name": "3He",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#3he4he",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "ratio of 3He over 4He signals",
+      "schema:name": "3He/4He",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#blank",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "fraction of blank over sample",
+      "schema:name": "% blank",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#massg",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "mass of the sample",
+      "schema:name": "% Mass g",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#laser",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "fraction of laser power",
+      "schema:name": "Laser %",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#laserw",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "power of the laser",
+      "schema:name": "Laser W",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b9",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240607_ng-ns-ms_cnrs-crpg_orex-800032-105_1",
+      "schema:location": {
+        "@id": "_:b10",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "CNRS-CRPG"
+        ],
+        "schema:identifier": "https://ror.org/011nqat45",
+        "schema:name": "Centre de Recherches Petrographiques et Geochimiques (Nancy, France)"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b11",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-800032-105"
+      },
+      "schema:startDate": "2024-06-07T09:51:43.162587Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

@@ -1,0 +1,274 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_2697",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Transmission Electron Microscopy"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "beauprince@arizona.edu",
+        "schema:identifier": "https://orcid.org/0000-0001-6217-4290",
+        "schema:name": "Prince, Beau"
+      }
+    ]
+  },
+  "schema:datePublished": "2025-12-31",
+  "schema:description": "Some STEM images of a section of pyrrhotite and phyllosilicates",
+  "schema:distribution": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#c104c3e77d4d4dca5c065f5b30bb8e94",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-0-100 200kV ADF(H) 1600X 0063.dm4 sha256:c5f44ad393ec202e66e2f7711d4dc9c1f2a1818113872dd3212a582f46503e7b",
+          "schema:encodingFormat": "image/tiff",
+          "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_TEMImage_927.tif",
+          "schema:size": {
+            "@id": "_:b1",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 16778236
+          }
+        },
+        {
+          "@id": "http://example.org/base/#82a7d23687eb068f22178cddb75f016e",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#c104c3e77d4d4dca5c065f5b30bb8e94",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-0-100 200kV ADF(H) 1600X 0063.dm4 sha256:c5f44ad393ec202e66e2f7711d4dc9c1f2a1818113872dd3212a582f46503e7b",
+            "schema:encodingFormat": "image/tiff",
+            "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_TEMImage_927.tif",
+            "schema:size": {
+              "@id": "_:b1",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 16778236
+            }
+          },
+          "schema:description": "sha256:fbdb9cf27a7a4ad43c495fae6ed92eda3fd54e0098559324b9fc91403a08c897 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_TEMImage_927.yaml",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 213
+          }
+        },
+        {
+          "@id": "http://example.org/base/#53a206e67d1164582fd8226a50699a01",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "OREX-501044-0-100 200kV ADF(H) 1600X 0063.dm4 sha256:07110bff52b3532d85b21f440aa49ff00ca6f3f9d8284bc7275d38097dae47c9 ; ",
+          "schema:encodingFormat": "text/plain",
+          "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_instrumentMetadata_2432.txt",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 1250
+          }
+        },
+        {
+          "@id": "http://example.org/base/#8a78244b9cee1a016bee596078c0708c",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#53a206e67d1164582fd8226a50699a01",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "OREX-501044-0-100 200kV ADF(H) 1600X 0063.dm4 sha256:07110bff52b3532d85b21f440aa49ff00ca6f3f9d8284bc7275d38097dae47c9 ; ",
+            "schema:encodingFormat": "text/plain",
+            "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_instrumentMetadata_2432.txt",
+            "schema:size": {
+              "@id": "_:b3",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 1250
+            }
+          },
+          "schema:description": "sha256:c2fa236c98e9cea34f40b59bf1c638ae23334aa645fdc8cb4f21264af9d26a96 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240116_TEM_UAZ_OREX-501044-100_1_instrumentMetadata_2432.yaml",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 265
+          }
+        }
+      ]
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b5",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/dzcq-ym02",
+    "schema:value": "10.60707/dzcq-ym02"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b6",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Transmission Electron Microscopy",
+      "schema:termCode": "TEM"
+    }
+  ],
+  "schema:name": "STEM analysis of orex-501044-100",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_2697",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:TEMImage"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:imageMap"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:instrumentMetadata"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_2697"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2025-04-02",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/dzcq-ym02",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b7",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240116_tem_uaz_orex-501044-100_1",
+      "schema:location": {
+        "@id": "_:b8",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "UAZ"
+        ],
+        "schema:identifier": "https://ror.org/03m2x1q45",
+        "schema:name": "University of Arizona"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b9",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-501044-100"
+      },
+      "schema:startDate": "2024-01-16T12:00:00Z"
+    }
+  ],
+  "schema:dateModified": "2025-12-31"
+}

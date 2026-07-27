@@ -1,0 +1,397 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "time": "http://www.w3.org/2006/time#",
+    "sf": "http://www.opengis.net/ont/sf#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "cdif": "https://cdif.org/0.1/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ada": "https://ada.astromat.org/metadata/",
+    "xas": "https://ada.astromat.org/metadata/xas/",
+    "nxs": "https://manual.nexusformat.org/classes/"
+  },
+  "@id": "ada:record_492",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:additionalType": [
+    "Fourier Transform Ion Cyclotron Resonance Mass Spectrometry"
+  ],
+  "schema:contributor": [
+    {
+      "@id": "_:b0",
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:contributor": {
+        "@id": "https://ada.org/person/437",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "philippe.schmitt-kopplin@helmholtz-munich.de",
+        "schema:identifier": "",
+        "schema:name": ""
+      },
+      "schema:roleName": "Other"
+    }
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@id": "https://ada.org/person/5489",
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:email": "michael.liss@helmholtz-munich.de",
+        "schema:identifier": "https://orcid.org/0009-0005-5228-3908",
+        "schema:name": "Liss, Michael"
+      }
+    ]
+  },
+  "schema:datePublished": "2024-11-21",
+  "schema:description": "This is a bundle for a 3.3 mg sample of Bennu (OREX-803006-0_1). The bundle contains data from the DI-FTICR-MS analysis measured with ESI in negative and positive ion mode as well as APPI in positive ion mode. Prior extraction, the surface of the OREX-803006-0_1 sample was gently washed with MeOH (OREX-803006-0_1 MeOH Wash). After washing, the OREX-803006-0_1 sample was crushed in an agate mortar and exctracted in methanol (OREX-803006-0_1 MeOH Extract). Additionally, a Murchison sample was equally crushed and extracted (Murchison MeOH Extract). Each analysis produced a mass spectrum (.mzml), leading to 8 total raw data files. The bundle also includes corresponding tabular files (.csv) and data plots (.pdf) as well as information on sample preparation and analytical methods. The purpose of this dataset was to analyze the nontargeted chemical profiling of C-, H-, O-, N-, and S-bearing soluble organic molecules in the Bennu asteroid using FTICR-MS.",
+  "schema:distribution": [
+    {
+      "@id": "_:b1",
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "",
+      "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
+      "schema:encodingFormat": [
+        "application/zip"
+      ],
+      "schema:hasPart": [
+        {
+          "@id": "http://example.org/base/#5d8fabdc1858691149d0dc863009e650",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Processed data of the Murchison APPI extract measured in pos ion mode. - Murchison APPI pos sha256:a0e330a14f605d51c216b3d5c2c9cdbe6b9dd79260dc93fc7e609434c37e58ce ; ",
+          "schema:encodingFormat": "text/csv",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_FTICRMSTabular_1.csv",
+          "schema:size": {
+            "@id": "_:b2",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 106433
+          }
+        },
+        {
+          "@id": "http://example.org/base/#dd301b7aaf563e0428c1bff811dc4235",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#5d8fabdc1858691149d0dc863009e650",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Processed data of the Murchison APPI extract measured in pos ion mode. - Murchison APPI pos sha256:a0e330a14f605d51c216b3d5c2c9cdbe6b9dd79260dc93fc7e609434c37e58ce ; ",
+            "schema:encodingFormat": "text/csv",
+            "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_FTICRMSTabular_1.csv",
+            "schema:size": {
+              "@id": "_:b2",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 106433
+            }
+          },
+          "schema:description": "sha256:554004208d4fc59012ac6040c3cc4082e874c1686c31afc568621cc5d65fdb9a ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_FTICRMSTabular_1.yaml",
+          "schema:size": {
+            "@id": "_:b3",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 672
+          }
+        },
+        {
+          "@id": "http://example.org/base/#259b26932cc2d691b4a2663a7e0c7016",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Standards and reagents used for the sample preparation, the extraction and purification procedures and the instrument methodologies. sha256:772c97cb4ac890661c3959b6328a445cb090799a29a97d49bb381efddcc27a78 ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_methodDescription_1.pdf",
+          "schema:size": {
+            "@id": "_:b4",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 63409
+          }
+        },
+        {
+          "@id": "http://example.org/base/#fbd7d60f080fc930e3e6d97fa1f8b21d",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#259b26932cc2d691b4a2663a7e0c7016",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Standards and reagents used for the sample preparation, the extraction and purification procedures and the instrument methodologies. sha256:772c97cb4ac890661c3959b6328a445cb090799a29a97d49bb381efddcc27a78 ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_methodDescription_1.pdf",
+            "schema:size": {
+              "@id": "_:b4",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 63409
+            }
+          },
+          "schema:description": "sha256:0e73159b99c6528e13c70027cd89eb6cd67a658b5d80eec96801e17991d87e5b ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_methodDescription_1.yaml",
+          "schema:size": {
+            "@id": "_:b5",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 752
+          }
+        },
+        {
+          "@id": "http://example.org/base/#fdade1f3aa39e8f8879993d719256213",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:description": "Collection of different figures (Van Krevelen diagrams, Bar plots, Pie charts) representing the nontargeted features of the Murchison APPI extract measured in pos ion mode. - Murchison APPI pos sha256:1d67d0133c84bb2fd95f0e82363092168f5ecc9d40fa9877a748dbcbb880277e ; ",
+          "schema:encodingFormat": "application/pdf",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_plot_1.pdf",
+          "schema:size": {
+            "@id": "_:b6",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 4171697
+          }
+        },
+        {
+          "@id": "http://example.org/base/#21bed8bda3a9b27d83c1bc1eea51da27",
+          "@type": [
+            "schema:Dataset"
+          ],
+          "schema:about": {
+            "@id": "http://example.org/base/#fdade1f3aa39e8f8879993d719256213",
+            "@type": [
+              "schema:Dataset"
+            ],
+            "schema:description": "Collection of different figures (Van Krevelen diagrams, Bar plots, Pie charts) representing the nontargeted features of the Murchison APPI extract measured in pos ion mode. - Murchison APPI pos sha256:1d67d0133c84bb2fd95f0e82363092168f5ecc9d40fa9877a748dbcbb880277e ; ",
+            "schema:encodingFormat": "application/pdf",
+            "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_plot_1.pdf",
+            "schema:size": {
+              "@id": "_:b6",
+              "@type": [
+                "schema:QuantitativeValue"
+              ],
+              "schema:unitText": "byte",
+              "schema:value": 4171697
+            }
+          },
+          "schema:description": "sha256:edfa8634561c517b2fe182be2906069ef93d908fb2fbd4b75eac2d9a3b205e38 ; ",
+          "schema:encodingFormat": "application/yaml",
+          "schema:name": "20240530_FTICR-MS_HMGU_OREX-803006-0_1_plot_1.yaml",
+          "schema:size": {
+            "@id": "_:b7",
+            "@type": [
+              "schema:QuantitativeValue"
+            ],
+            "schema:unitText": "byte",
+            "schema:value": 348
+          }
+        }
+      ]
+    }
+  ],
+  "schema:funding": [
+    {
+      "@id": "_:b8",
+      "@type": [
+        "schema:MonetaryGrant"
+      ],
+      "schema:description": "This material is supported by NASA under contract NNM10AA11C issued through the New Frontiers program. Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) Project-ID 364653263%E2%80%94TRR 235 (CRC 235)",
+      "schema:name": "Missing"
+    }
+  ],
+  "schema:identifier": {
+    "@id": "_:b9",
+    "@type": [
+      "schema:PropertyValue"
+    ],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:url": "https://doi.org/10.60707/r8hy-7y50",
+    "schema:value": "10.60707/r8hy-7y50"
+  },
+  "schema:license": [
+    "missing"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@id": "_:b10",
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Fourier Transform Ion Cyclotron Resonance Mass Spectrometry",
+      "schema:termCode": "FTICR-MS"
+    }
+  ],
+  "schema:name": "Bennu SOM analysis using FTICR-MS (ESIneg, ESIpos and APPIpos)",
+  "schema:subjectOf": {
+    "@id": "ada:metadata_492",
+    "@type": [
+      "schema:Dataset"
+    ],
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.1"
+      },
+      {
+        "@id": "https://w3id.org/cdif/manifest/1.1"
+      },
+      {
+        "@id": "ada:image"
+      },
+      {
+        "@id": "ada:tabularData"
+      },
+      {
+        "@id": "ada:plot"
+      },
+      {
+        "@id": "http://example.org/base/CDIF_basic_1.0"
+      },
+      {
+        "@id": "ada:methodDescription"
+      },
+      {
+        "@id": "ada:metadata"
+      },
+      {
+        "@id": "ada:document"
+      },
+      {
+        "@id": "ada:FTICRMSTabular"
+      }
+    ],
+    "schema:about": {
+      "@id": "ada:record_492"
+    },
+    "schema:additionalType": [
+      {
+        "@id": "dcat:CatalogRecord"
+      }
+    ],
+    "schema:dateModified": "2024-11-21",
+    "schema:description": "metadata about documentation for https://doi.org/10.60707/r8hy-7y50",
+    "schema:maintainer": {
+      "@id": "https://ada.org/person/3479",
+      "@type": [
+        "schema:Person"
+      ],
+      "schema:email": "smrTucson@email.org",
+      "schema:identifier": "https://orcid.org/0000-0002-7933-2154",
+      "schema:name": "Richard, Stephen M."
+    }
+  },
+  "schema:url": "",
+  "schema:variableMeasured": [
+    {
+      "@id": "http://example.org/base/#neutralmass",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Neutral mass of each feature",
+      "schema:name": "Neutral mass",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#intensity",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Unitless measure of intensity of the mass peak",
+      "schema:name": "Intensity",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    },
+    {
+      "@id": "http://example.org/base/#composition",
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "schema:description": "Chemical composition.",
+      "schema:name": "Composition",
+      "schema:propertyID": [
+        "missing"
+      ],
+      "schema:unitText": "missing"
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@id": "_:b11",
+      "@type": [
+        "schema:Event",
+        "xas:AnalysisEvent",
+        "prov:Activity"
+      ],
+      "schema:identifier": "20240530_fticr-ms_hmgu_orex-803006-0_1",
+      "schema:location": {
+        "@id": "_:b12",
+        "@type": [
+          "schema:Place",
+          "nxs:BaseClass/NXsource"
+        ],
+        "schema:alternateName": [
+          "HMGU"
+        ],
+        "schema:identifier": "https://ror.org/034rhsb33",
+        "schema:name": "Helmholtz University (Helmholtz Zentrum Munchen)"
+      },
+      "schema:mainEntity": {
+        "@id": "_:b13",
+        "@type": [
+          "schema:Thing",
+          "https://w3id.org/isample/vocabulary/materialsampleobjecttype/materialsample"
+        ],
+        "schema:additionalType": [
+          "MaterialSample"
+        ],
+        "schema:identifier": "OREX-803006-0"
+      },
+      "schema:startDate": "2024-05-30T13:40:03.050572Z"
+    }
+  ],
+  "schema:dateModified": "2024-11-21"
+}
