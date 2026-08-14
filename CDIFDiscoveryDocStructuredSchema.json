@@ -87,6 +87,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "@id"
+            ],
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -130,6 +134,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "@id"
+            ],
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -154,6 +162,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "@id"
+            ],
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -248,6 +260,10 @@
                 "minItems": 1,
                 "items": {
                   "type": "object",
+                  "required": [
+                    "@id"
+                  ],
+                  "additionalProperties": false,
                   "properties": {
                     "@id": {
                       "type": "string",
@@ -263,6 +279,7 @@
                   "anyOf": [
                     {
                       "type": "object",
+                      "additionalProperties": false,
                       "properties": {
                         "@id": {
                           "type": "string",
@@ -465,6 +482,10 @@
                           "description": "identifier(s) for a standard or specification the response conforms to.",
                           "items": {
                             "type": "object",
+                            "required": [
+                              "@id"
+                            ],
+                            "additionalProperties": false,
                             "properties": {
                               "@id": {
                                 "type": "string"
@@ -608,6 +629,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "@id"
+            ],
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -638,6 +663,7 @@
             "anyOf": [
               {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string",
@@ -666,6 +692,7 @@
         "anyOf": [
           {
             "type": "object",
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -704,6 +731,7 @@
                 "anyOf": [
                   {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                       "@id": {
                         "type": "string",
@@ -737,6 +765,7 @@
       "anyOf": [
         {
           "type": "object",
+          "additionalProperties": false,
           "properties": {
             "@id": {
               "type": "string",
@@ -762,6 +791,7 @@
         "anyOf": [
           {
             "type": "object",
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -818,6 +848,7 @@
             "anyOf": [
               {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string",
@@ -878,7 +909,7 @@
           },
           "prov:used": {
             "type": "array",
-            "description": "Entities the activity used. Per PROV-O each value denotes a prov:Entity. An item may be (1) a string URI or free-text reference, (2) an {@id} reference, or (3) an inline entity object. Inline entities SHOULD carry an @type that includes prov:Entity plus a schema.org type for the kind of thing used, e.g. [\"prov:Entity\",\"schema:Thing\"] (instrument), [\"prov:Entity\",\"schema:CreativeWork\"] (method/protocol), or [\"prov:Entity\",\"schema:SoftwareApplication\"] (software).",
+            "description": "Entities the activity used. Per PROV-O each value denotes a prov:Entity. An item may be (1) a string URI or free-text reference, (2) an {@id} reference, (3) an inline entity object carrying an @type that includes prov:Entity plus a schema.org type for the kind of thing used, e.g. [\"prov:Entity\",\"schema:Thing\"] (instrument), [\"prov:Entity\",\"schema:CreativeWork\"] (method/protocol), or [\"prov:Entity\",\"schema:SoftwareApplication\"] (software), or (4) a role-keyed wrapper naming what was used through one of the recognized \"used\" relations (schema:instrument, bios:computationalTool, prov:reagent). Base leaves the wrapped value loose; profiles/extensions (e.g. cdifProvActivity, adaProduct) pin its shape (Instrument, ComputationalTool, Reagent, ...).",
             "items": {
               "anyOf": [
                 {
@@ -886,6 +917,10 @@
                 },
                 {
                   "type": "object",
+                  "required": [
+                    "@id"
+                  ],
+                  "additionalProperties": false,
                   "properties": {
                     "@id": {
                       "type": "string",
@@ -911,6 +946,27 @@
                   "required": [
                     "@type"
                   ]
+                },
+                {
+                  "type": "object",
+                  "description": "a role-keyed wrapper naming an instrument used by the activity; the extension layer pins the value to an Instrument description.",
+                  "required": [
+                    "schema:instrument"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "description": "a role-keyed wrapper naming a computational tool (software) used; the extension layer pins the value to a ComputationalTool description.",
+                  "required": [
+                    "bios:computationalTool"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "description": "a role-keyed wrapper naming a reagent / material used; the extension layer pins the value to a Reagent description.",
+                  "required": [
+                    "prov:reagent"
+                  ]
                 }
               ]
             }
@@ -929,6 +985,10 @@
           },
           {
             "type": "object",
+            "required": [
+              "@id"
+            ],
+            "additionalProperties": false,
             "properties": {
               "@id": {
                 "type": "string",
@@ -966,6 +1026,7 @@
               },
               {
                 "type": "object",
+                "additionalProperties": false,
                 "required": [
                   "@id"
                 ],
@@ -979,6 +1040,7 @@
           },
           "contains": {
             "type": "object",
+            "additionalProperties": false,
             "required": [
               "@id"
             ],
@@ -996,6 +1058,10 @@
         },
         "schema:about": {
           "type": "object",
+          "required": [
+            "@id"
+          ],
+          "additionalProperties": false,
           "properties": {
             "@id": {
               "type": "string",
@@ -1008,6 +1074,10 @@
             {
               "contains": {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "const": "https://w3id.org/cdif/core/1.1"
@@ -1018,6 +1088,10 @@
             {
               "contains": {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "const": "https://w3id.org/cdif/discovery/1.1"
@@ -1134,6 +1208,10 @@
               },
               {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string",
@@ -1156,6 +1234,10 @@
                 },
                 {
                   "type": "object",
+                  "required": [
+                    "@id"
+                  ],
+                  "additionalProperties": false,
                   "properties": {
                     "@id": {
                       "type": "string"
@@ -1180,6 +1262,10 @@
               },
               {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string"
@@ -1435,6 +1521,10 @@
               },
               "geosparql:crs": {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string",
@@ -1690,6 +1780,10 @@
               },
               {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string",
@@ -1775,6 +1869,10 @@
           "anyOf": [
             {
               "type": "object",
+              "required": [
+                "@id"
+              ],
+              "additionalProperties": false,
               "properties": {
                 "@id": {
                   "type": "string",
@@ -1877,6 +1975,7 @@
             },
             {
               "type": "object",
+              "additionalProperties": false,
               "required": [
                 "@id"
               ],
@@ -2060,6 +2159,10 @@
               },
               {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string"
@@ -2163,6 +2266,10 @@
               },
               {
                 "type": "object",
+                "required": [
+                  "@id"
+                ],
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string"
@@ -2301,6 +2408,7 @@
           "anyOf": [
             {
               "type": "object",
+              "additionalProperties": false,
               "properties": {
                 "@id": {
                   "type": "string"
@@ -2314,6 +2422,7 @@
               "type": "array",
               "items": {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                   "@id": {
                     "type": "string"
@@ -2333,6 +2442,7 @@
             "anyOf": [
               {
                 "type": "object",
+                "additionalProperties": false,
                 "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
                 "properties": {
                   "@id": {
@@ -2357,6 +2467,7 @@
             "anyOf": [
               {
                 "type": "object",
+                "additionalProperties": false,
                 "description": "Reference (by URI) to a skos:Concept defined elsewhere. Used inside skos:broader / skos:narrower as the @id-reference alternative to an inline Concept.",
                 "properties": {
                   "@id": {

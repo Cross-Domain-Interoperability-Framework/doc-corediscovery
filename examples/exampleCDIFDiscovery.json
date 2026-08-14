@@ -79,11 +79,7 @@
   ],
   "schema:publishingPrinciples": [
     {
-      "@type": [
-        "schema:CreativeWork"
-      ],
-      "schema:name": "Data retention and update policy",
-      "schema:url": "https://example.org/policies/data-retention"
+      "@id": "https://example.org/policies/data-retention"
     }
   ],
   "schema:keywords": [
