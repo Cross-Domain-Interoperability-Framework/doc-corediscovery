@@ -53,7 +53,7 @@
         "schema:LinkRole"
       ],
       "schema:linkRelationship": "lfCzUaoftdtTPAhMnpC",
-      "target": {
+      "schema:target": {
         "@type": [
           "schema:EntryPoint"
         ],
@@ -67,7 +67,7 @@
         "schema:LinkRole"
       ],
       "schema:linkRelationship": "BOoRREnpDEUrdNaV",
-      "target": {
+      "schema:target": {
         "@type": [
           "schema:EntryPoint"
         ],

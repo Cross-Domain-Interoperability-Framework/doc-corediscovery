@@ -800,8 +800,8 @@ cdifd:resourceIdentifierProperty a sh:PropertyShape ;
                                     sh:path schema:url ] ] [ sh:property [ sh:datatype xsd:string ;
                                     sh:message "The identifer string; include applicable prefix (e.g. doi:, ark:, http:, isbn:)" ;
                                     sh:path schema:value ] ] ) ;
-                sh:property [ sh:datatype xsd:string ;
-                        sh:message "If specifying an identifier via the PropertyValue, the scheme (authority, domain) within which the identifier is assigned and unique must be identifed, either by name or preferably using a URI. See https://registry.identifiers.org/registry" ;
+                sh:property [ sh:message "If specifying an identifier via the PropertyValue, the scheme (authority, domain) within which the identifier is assigned and unique must be identifed, either by name or preferably using a URI. See https://registry.identifiers.org/registry" ;
+                        sh:or ( [ sh:datatype xsd:string ] [ sh:nodeKind sh:IRI ] ) ;
                         sh:path schema:propertyID ;
                         sh:severity sh:Warning ] ] ) ;
     sh:path schema:identifier .
