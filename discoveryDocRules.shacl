@@ -322,6 +322,21 @@ cdifd:CDIFRoleShape a sh:NodeShape ;
         cdifd:roleNameProperty ;
     sh:targetClass schema:Role .
 
+cdifd:CDIFSubjectOfPlacementShape a sh:NodeShape ;
+    sh:property [ sh:message "schema:subjectOf must not be attached to a catalog record: the catalog record is what subjectOf points AT, not a resource that has one." ;
+            sh:not [ sh:in ( dcat:CatalogRecord ) ] ;
+            sh:path schema:additionalType ],
+        [ sh:message "schema:subjectOf may only be attached to the resource being documented: a node typed with one of the classes the CDIF core @type enum allows (schema:Dataset, schema:CreativeWork, schema:SoftwareApplication, schema:SoftwareSourceCode, schema:Product, schema:WebAPI, schema:DigitalDocument, schema:Collection, schema:ImageObject, schema:DataCatalog, schema:DefinedTermSet, schema:MediaObject). A structure fragment or other non-resource node must not carry one." ;
+            sh:path rdf:type ;
+            sh:qualifiedMinCount 1 ;
+            sh:qualifiedValueShape [ sh:in ( schema:CreativeWork schema:SoftwareApplication schema:SoftwareSourceCode schema:Product schema:WebAPI schema:Dataset schema:DigitalDocument schema:Collection schema:ImageObject schema:DataCatalog schema:DefinedTermSet schema:MediaObject ) ] ] ;
+    sh:target [ a sh:SPARQLTarget ;
+            sh:select """
+        PREFIX schema: <http://schema.org/>
+        SELECT ?this
+        WHERE { ?this schema:subjectOf ?record . }
+      """ ] .
+
 cdifd:CDIFVariableMeasuredShape a sh:NodeShape ;
     sh:property [ sh:message "a propertID must be a uri reference, a name string, or a schema:DefinedTerm" ;
             sh:minCount 1 ;
