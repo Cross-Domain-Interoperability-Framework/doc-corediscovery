@@ -168,7 +168,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://portal.opentopography.org/lidarDataset?opentopoID=OTLAS.022013.26910.2#metadata",
     "schema:name": "GeoCodes metadata record for: PG&E Diablo Canyon Power Plant (DCPP): Diablo Canyon, CA Central Coast",

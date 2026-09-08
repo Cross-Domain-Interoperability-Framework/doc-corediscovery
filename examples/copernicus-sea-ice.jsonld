@@ -97,7 +97,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-ice-concentration#metadata",
     "schema:name": "GeoCodes metadata record for: Sea ice concentration from 1978 to present derived from satellite observations",

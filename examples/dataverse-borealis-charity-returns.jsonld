@@ -928,7 +928,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP2/QXWUAZ#metadata",
     "schema:name": "GeoCodes metadata record for: T3010 Canadian Charity Returns Master Dataset [2003-2022]",

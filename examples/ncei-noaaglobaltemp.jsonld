@@ -241,7 +241,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.25921/9qth-2p70#metadata",
     "schema:name": "GeoCodes metadata record for: NOAA Global Surface Temperature Dataset (NOAAGlobalTemp), Version 5.0 (Version Superseded)",

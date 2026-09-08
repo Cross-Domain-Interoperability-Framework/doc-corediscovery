@@ -356,7 +356,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.1594/PANGAEA.122251#metadata",
     "schema:name": "Metadata record for: Nutrients measured on water bottle samples at station TT011_2-CTD24",

@@ -328,7 +328,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.7289/jwpf-y430#metadata",
     "schema:name": "GeoCodes metadata record for: Global Summary of the Year (GSOY), Version 1",

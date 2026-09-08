@@ -162,7 +162,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP/VXAAPS#metadata",
     "schema:name": "GeoCodes metadata record for: Soil moisture and temperature calibration data: Kenaston, Saskatchewan [Canada] 2013 to 2016",

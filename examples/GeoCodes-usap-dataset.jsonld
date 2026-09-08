@@ -165,7 +165,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "doi:10.7265/N5542KJK#metadata",
     "schema:name": "GeoCodes metadata record for: Atmospheric CO2 and Climate: Taylor Dome Ice Core, Antarctica",

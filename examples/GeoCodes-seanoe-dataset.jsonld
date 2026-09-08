@@ -2133,7 +2133,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "schema:name": "GeoCodes metadata record for: Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)",
     "schema:about": {

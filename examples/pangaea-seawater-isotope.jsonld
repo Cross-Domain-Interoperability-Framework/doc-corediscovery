@@ -588,7 +588,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.1594/PANGAEA.967156#metadata",
     "schema:name": "Metadata record for: Middle Miocene seawater isotope evolution at IODP Site 307-U1318",

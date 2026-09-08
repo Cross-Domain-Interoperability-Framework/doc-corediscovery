@@ -146,7 +146,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5061/dryad.dk1j0#metadata",
     "schema:name": "GeoCodes metadata record for: Gridded global datasets for Gross Domestic Product and Human Development Index over 1990-2015",

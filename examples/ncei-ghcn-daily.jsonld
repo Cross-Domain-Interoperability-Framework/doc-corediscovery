@@ -320,7 +320,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.7289/v5d21vhz#metadata",
     "schema:name": "GeoCodes metadata record for: Global Historical Climatology Network - Daily (GHCN-Daily), Version 3",

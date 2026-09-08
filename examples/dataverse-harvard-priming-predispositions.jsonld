@@ -232,7 +232,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.7910/DVN/26721#metadata",
     "schema:name": "GeoCodes metadata record for: Replication data for: Priming Predispositions and Changing Policy Positions",

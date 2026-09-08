@@ -53365,7 +53365,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://www.ncei.noaa.gov/archive/accession/GHRSST-MUR-JPL-L4-GLOB#metadata",
     "schema:name": "GeoCodes metadata record for: GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis (v4.1) (GDS versions 1 and 2)",

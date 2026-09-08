@@ -1955,7 +1955,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP3/VPLJTK#metadata",
     "schema:name": "GeoCodes metadata record for: Small Area and Administrative Data, 1989-2011 [Canada] [Excel]",

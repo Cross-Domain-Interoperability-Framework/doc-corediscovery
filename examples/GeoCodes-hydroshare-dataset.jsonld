@@ -167,7 +167,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.4211/hs.01135480279340cd8e457a22e7b9208b#schemaorg#metadata",
     "schema:name": "GeoCodes metadata record for: Chlorophyll-a data from Konza prairie (KS, USA) stream synoptic (AIMS_GP_approach3_CHLA)",

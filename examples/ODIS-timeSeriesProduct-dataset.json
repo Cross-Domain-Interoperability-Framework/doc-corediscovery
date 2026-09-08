@@ -250,7 +250,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "#metadata",
     "schema:name": "Metadata record for: Time-Series Data Synthesis Product",

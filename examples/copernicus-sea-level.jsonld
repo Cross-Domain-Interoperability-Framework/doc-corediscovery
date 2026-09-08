@@ -97,7 +97,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/satellite-sea-level-global#metadata",
     "schema:name": "GeoCodes metadata record for: Sea level gridded data from satellite observations for the global ocean from 1993 to present",

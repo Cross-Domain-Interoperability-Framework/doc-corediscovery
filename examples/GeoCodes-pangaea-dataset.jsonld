@@ -171,7 +171,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "schema:name": "GeoCodes metadata record for: Historical global map of NH4+ and NO3- application in synthetic nitrogen fertilizer, link to NetCDF files",
     "schema:about": {

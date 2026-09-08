@@ -141,7 +141,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP2/C8MJOA#metadata",
     "schema:name": "GeoCodes metadata record for: Salish Sea surface drifter dataset (2015-2018)",

@@ -234,7 +234,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.7910/DVN/DJH4FQ#metadata",
     "schema:name": "GeoCodes metadata record for: Chagos eDNA metabarcoding",

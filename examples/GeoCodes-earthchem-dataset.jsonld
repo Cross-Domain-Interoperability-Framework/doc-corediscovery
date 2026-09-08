@@ -83,7 +83,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "schema:name": "GeoCodes metadata record for: Precision and accuracy of glass analyses by electron microprobe (EMP) at Uppsala University",
     "schema:about": {

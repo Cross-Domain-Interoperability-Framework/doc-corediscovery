@@ -485,7 +485,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.1594/PANGAEA.855653#metadata",
     "schema:name": "Metadata record for: Chlorophyll fluorescence lifetimes and variable fluorescence parameters from phytoplankton in the global ocean",

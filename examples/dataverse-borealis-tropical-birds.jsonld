@@ -180,7 +180,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP2/SX9D6Y#metadata",
     "schema:name": "GeoCodes metadata record for: Data from: Basal metabolism in tropical birds: latitude, altitude, and the “pace of life”",

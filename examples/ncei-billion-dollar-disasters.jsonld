@@ -537,7 +537,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.25921/stkw-7w73#metadata",
     "schema:name": "GeoCodes metadata record for: U.S. Billion-dollar Weather and Climate Disasters, 1980 - present (NCEI Accession 0209268)",

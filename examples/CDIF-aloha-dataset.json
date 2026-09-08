@@ -180,7 +180,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://www.bco-dmo.org/dataset/3773#metadata",
     "schema:name": "Metadata record for: HOT: Niskin bottle samples",

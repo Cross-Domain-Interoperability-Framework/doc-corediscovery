@@ -200,7 +200,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP/TPB5ID#metadata",
     "schema:name": "GeoCodes metadata record for: Gold Standard Snapshot Serengeti Bounding Box Coordinates",

@@ -97,7 +97,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels#metadata",
     "schema:name": "GeoCodes metadata record for: ERA5 hourly data on single levels from 1940 to present",

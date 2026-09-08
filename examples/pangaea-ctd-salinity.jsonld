@@ -319,7 +319,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.1594/PANGAEA.361329#metadata",
     "schema:name": "Metadata record for: Water temperature and salinity CTD profiles from cruise 1CGBS90 (SCQC)",

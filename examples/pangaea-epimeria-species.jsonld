@@ -447,7 +447,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.1594/PANGAEA.815864#metadata",
     "schema:name": "Metadata record for: (Table 1) Occurrences of Epimeria georgiana species complex (Amphipoda) in the Weddel and Scotia Sea",

@@ -108,7 +108,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce#metadata",
     "schema:name": "Metadata record for: MIRC NAVFAC MISTCS Vessel Surveys Jan-Apr 2007",

@@ -190,7 +190,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://doi.org/10.5683/SP/OQDRJG#metadata",
     "schema:name": "GeoCodes metadata record for: Hydrometeorological measurements in peatland-dominated, discontinuous permafrost at Scotty Creek, Northwest Territories,",

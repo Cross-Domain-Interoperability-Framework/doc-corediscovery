@@ -143,7 +143,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://www.bco-dmo.org/dataset/875920#metadata",
     "schema:name": "GeoCodes metadata record for: Organisms collected on oyster reefs in the Mission Aransas National Estuarine Research Reserve, TX, USA from 2016 to 202",

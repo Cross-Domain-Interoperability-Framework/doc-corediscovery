@@ -263,7 +263,9 @@
       "schema:Dataset"
     ],
     "schema:additionalType": [
-      "dcat:CatalogRecord"
+      {
+        "@id": "dcat:CatalogRecord"
+      }
     ],
     "@id": "https://urlToThisJsonLD.org/#metadata",
     "schema:name": "Metadata record for: Florida Quays National Marine Sanctuary data bundle",
