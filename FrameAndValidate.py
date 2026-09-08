@@ -3,7 +3,7 @@
 # GENERATED FILE -- DO NOT EDIT.
 # Synced from CDIF/validation/tools/FrameAndValidate.py (the normative source).
 # Edit there, then run:  python tools/sync_frameandvalidate.py --apply
-# src-sha256: a5a514618131a79a016aa6068aabec0e50ac6ce8ce195eecae7311cdb2d22316
+# src-sha256: 868e73dbf607d25b054e4ed12c9a32dcdd5c07d93b214e137c20ef98f4180bf9
 # <<< CDIF-SYNC GENERATED <<<
 
 """
@@ -57,6 +57,12 @@ ARRAY_PROPERTIES = [
     'schema:query-input',
     'schema:participant',
     'schema:additionalProperty',
+    # An activity commonly uses several instruments in one role, so the
+    # profiles pin prov:used's schema:instrument wrapper to an array.
+    # Framing collapses a one-instrument list back to a bare object and
+    # the document then fails a schema it actually satisfies -- every
+    # XAS release example failed this way while being correct on disk.
+    'schema:instrument',
     # PROV properties
     'prov:wasGeneratedBy',
     'prov:wasDerivedFrom',
