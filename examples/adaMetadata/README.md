@@ -48,5 +48,5 @@ CatalogRecord additionalType patch, `schema:dateModified` back-fill
 from `schema:datePublished`, and `schema:MonetaryGrant` funding sentinel
 (`schema:name = "Missing"`) all applied automatically. See the batch
 audit report at
-`profile-datastructure@reviewRevision202606:archive/exampleMetadata/batch_audit_report.{txt,csv,json}`
+`profile-datastructure@main:archive/exampleMetadata/batch_audit_report.{txt,csv,json}`
 for full provenance.
