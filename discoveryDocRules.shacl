@@ -198,6 +198,27 @@ cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
             }
           """ ] .
 
+cdifd:CDIFDiscoveryConformsToShape a sh:NodeShape ;
+    sh:property [ a sh:PropertyShape ;
+            sh:hasValue <https://w3id.org/cdif/discovery/1.1> ;
+            sh:message "A catalog record on a dataset using CDIF discovery properties should include dcterms:conformsTo <https://w3id.org/cdif/discovery/1.1>." ;
+            sh:minCount 1 ;
+            sh:path dcterms:conformsTo ;
+            sh:severity sh:Warning ] ;
+    sh:target [ a sh:SPARQLTarget ;
+            sh:prefixes cdifd: ;
+            sh:select """
+    		PREFIX schema: <http://schema.org/>
+    		PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    		PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    		SELECT ?this WHERE {
+    			?subject schema:subjectOf ?this .
+    			?subject a schema:Dataset .
+    			?this schema:additionalType ?at .
+    			FILTER( ?at = dcat:CatalogRecord || STR(?at) = "dcat:CatalogRecord" )
+    		}
+    	""" ] .
+
 cdifd:CDIFIdentifierShape a sh:NodeShape ;
     sh:message "identifier rules. for an identifier, the property ID is expected to specify an identifier scheme.Get values from https://registry.identifiers.org/registry/ for interoperability",
         "identifier rules. the context of an identifier, the PropertyValue provides the identifier value string-- either as a schema:value or a url. The value can be either a full URI or identifier token part of URI if a url is provided. url value must be a resolvable URI that identifies the resource." ;
@@ -570,6 +591,29 @@ cdifd:webAPINode a sh:NodeShape ;
             sh:severity sh:Info ] ;
     sh:targetClass schema:WebAPI .
 
+<https://cdif.org/validation/0.1/skos#ConceptShape> a sh:NodeShape ;
+    sh:message "A SKOS Concept must have at least a prefLabel." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:property <https://cdif.org/validation/0.1/skos#conceptPrefLabelProperty> ;
+    sh:targetClass skos:Concept .
+
+<https://cdif.org/validation/0.1/skos#conceptBroaderNotSelfShape> a sh:NodeShape ;
+    sh:sparql [ sh:message "A Concept must not declare itself as skos:broader (reflexive hierarchy)." ;
+            sh:select """
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            SELECT $this
+            WHERE {
+                $this skos:broader $this .
+            }
+        """ ] ;
+    sh:targetClass skos:Concept .
+
+<https://cdif.org/validation/0.1/skos#prefLabelUniqueLangShape> a sh:NodeShape ;
+    sh:property [ sh:message "A Concept should have at most one skos:prefLabel per language tag (SKOS integrity condition S14)." ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ] ;
+    sh:targetClass skos:Concept .
+
 <https://www.ogc.org/rules/template/#ConformsToInfo> a sh:NodeShape ;
     sh:property [ sh:message "Recommended: include dcterms:conformsTo to identify the standard or specification this distribution conforms to." ;
             sh:minCount 1 ;
@@ -866,6 +910,11 @@ cdifd:termLabelProperty a sh:PropertyShape ;
     sh:minCount 1 ;
     sh:minLength 3 ;
     sh:path schema:name .
+
+<https://cdif.org/validation/0.1/skos#conceptPrefLabelProperty> a sh:PropertyShape ;
+    sh:message "Every skos:Concept must have at least one skos:prefLabel." ;
+    sh:minCount 1 ;
+    sh:path skos:prefLabel .
 
 cdifd:creatorProperty a sh:PropertyShape ;
     sh:message "At least one creator (author/originator) is recommended" ;
