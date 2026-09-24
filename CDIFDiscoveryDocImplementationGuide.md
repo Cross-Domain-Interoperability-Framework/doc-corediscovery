@@ -547,7 +547,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required -- \'dqv:QualityMeasurement\', repeatable
 
-#### dqv:ismeasurementOf
+#### dqv:isMeasurementOf
 
 - **Cardinality:** Required
 - **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
@@ -1291,13 +1291,13 @@ The embedded catalog record's `dcterms:conformsTo` MUST list **both** `https://w
 
 Choice:
 
-#### time:startedBy
+#### time:intervalStartedBy
 
 - **Cardinality:** Optional
 - **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** identifier for a named time ordinal era that is older bound of time interval, e.g. \'isc:LowerDevonian\'
 
-#### time:finishedBy
+#### time:intervalFinishedBy
 
 - **Cardinality:** Optional
 - **Content:** string or [DefinedTerm](#defined-term)
