@@ -522,7 +522,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** label for the term
 
-#### @identifier
+#### identifier
 
 - **Cardinality:** Required if no name or termCode
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
@@ -692,7 +692,7 @@ This profile applies to description of resources that can be described using the
 
 - **CHOICE (at least one of identifier, name, or funder**
 
-#### @identifier
+#### identifier
 
 - **Cardinality:** Required if no name or funder
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
@@ -837,7 +837,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** Label for the Organization
 
-#### @identifier
+#### identifier
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
@@ -891,7 +891,7 @@ This profile applies to description of resources that can be described using the
 - **Content:** string
 - **Description:** Label for person that is meaningful for human users, should format consistently. Recommend \'Family Name, Given Name\' format.
 
-#### @identifier
+#### identifier
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
@@ -958,7 +958,7 @@ CHOICE. At least one of the following four is required
 - **Content:** [GeoCoordinates](#geocoordinates) or [GeoShape](#geoshape)
 - **Description:** Either a bounding box or a point location. Use WGS 84 latitude and longitude coordinates
 
-#### geosparql:HasGeometry
+#### geosparql:hasGeometry
 
 - **Cardinality:** Conditional
 - **Content:** [sf:SimpleFeature](#sfsimplefeature)
@@ -1186,7 +1186,7 @@ CHOICE. At least one of the following four is required
 - **Content:** string
 - **Description:** A descriptive name of a dataset (e.g., \'Snow depth in Northern Hemisphere\'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namepace \'http://schema.org/\'.
 
-#### @identifier
+#### identifier
 
 - **Cardinality:** Required
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
