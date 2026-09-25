@@ -27,52 +27,44 @@
   ],
   "schema:contributor": [
     {
-      "@id": "_:b0",
+      "@id": "ex:b0",
       "@type": [
         "schema:Role"
       ],
       "schema:contributor": {
-        "@id": "https://ada.org/person/437",
+        "@id": "https://orcid.org/0000-0001-7075-3698",
         "@type": [
           "schema:Person"
         ],
-        "schema:email": [
-          "yvesm@crpg.cnrs-nancy.fr",
-          "johan.villeneuve@univ-lorraine.fr"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0001-7075-3698",
-          "https://orcid.org/0000-0002-9892-8530"
-        ],
-        "schema:name": [
-          "Marrocchi, Yves",
-          "Villeneuve, Johan"
-        ]
+        "schema:identifier": "https://orcid.org/0000-0001-7075-3698",
+        "schema:name": "Marrocchi, Yves",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "yvesm@crpg.cnrs-nancy.fr"
+        }
       },
       "schema:roleName": "Researcher"
     },
     {
-      "@id": "_:b1",
+      "@id": "ex:b1aa",
       "@type": [
         "schema:Role"
       ],
       "schema:contributor": {
-        "@id": "https://ada.org/person/437",
+        "@id": "https://orcid.org/0000-0002-9892-8530",
         "@type": [
           "schema:Person"
         ],
-        "schema:email": [
-          "yvesm@crpg.cnrs-nancy.fr",
-          "johan.villeneuve@univ-lorraine.fr"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0001-7075-3698",
-          "https://orcid.org/0000-0002-9892-8530"
-        ],
-        "schema:name": [
-          "Marrocchi, Yves",
-          "Villeneuve, Johan"
-        ]
+        "schema:identifier": "https://orcid.org/0000-0002-9892-8530",
+        "schema:name": "Villeneuve, Johan",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "johan.villeneuve@univ-lorraine.fr"
+        }
       },
       "schema:roleName": "Researcher"
     }

@@ -27,52 +27,31 @@
   ],
   "schema:contributor": [
     {
-      "@id": "_:b0",
-      "@type": [
-        "schema:Role"
-      ],
+      "@id": "ex:b0",
+      "@type": ["schema:Role"],
       "schema:contributor": {
-        "@id": "https://ada.org/person/437",
-        "@type": [
-          "schema:Person"
-        ],
-        "schema:email": [
-          "mcaffee@purdue.edu",
-          "woodruft@purdue.edu"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0002-6846-8967",
-          ""
-        ],
-        "schema:name": [
-          "Caffee, Marc",
-          "Thomas Woodruff"
-        ]
+        "@id": "https://orcid.org/0000-0002-6846-8967",
+        "@type": ["schema:Person"],
+        "schema:identifier": "https://orcid.org/0000-0002-6846-8967",
+        "schema:name": "Caffee, Marc",
+        "schema:contactPoint": {
+          "@type": ["schema:ContactPoint"],
+          "schema:email": "mcaffee@purdue.edu"
+        }
       },
       "schema:roleName": "Researcher"
     },
     {
-      "@id": "_:b1",
-      "@type": [
-        "schema:Role"
-      ],
+      "@id": "ex:b1aa",
+      "@type": ["schema:Role"],
       "schema:contributor": {
-        "@id": "https://ada.org/person/437",
-        "@type": [
-          "schema:Person"
-        ],
-        "schema:email": [
-          "mcaffee@purdue.edu",
-          "woodruft@purdue.edu"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0002-6846-8967",
-          ""
-        ],
-        "schema:name": [
-          "Caffee, Marc",
-          "Thomas Woodruff"
-        ]
+        "@id": "https://ada.org/person/438",
+        "@type": ["schema:Person"],
+        "schema:name": "Woodruff, Thomas",
+        "schema:contactPoint": {
+          "@type": ["schema:ContactPoint"],
+          "schema:email": "woodruft@purdue.edu"
+        }
       },
       "schema:roleName": "Researcher"
     }
@@ -94,11 +73,11 @@
   "schema:description": "Accelerator mass spectrometry analysis of 10Be concentrations in splits of stones of interest, OREX-800055-11, OREX-803228-0, and of aggregate sample OREX-800117-103. The samples were dissolved in HF/HNO3 and a small aliquot of the dissolved sample was taken for chemical analysis by ICP-OES. The 10Be concentrations in the samples range from 6.5 to 9.0 dpm/kg, compared to a concentration of ~8 dpm/kg in the aggregate sample. The results constrain the cosmic-ray exposure age of the sample to at least a few Myr near the sufrace of asteroid Bennu.",
   "schema:distribution": [
     {
-      "@id": "_:b2",
+      "@id": "ex:b2ff",
       "@type": [
         "schema:DataDownload"
       ],
-      "schema:contentUrl": "",
+      "schema:contentUrl": "https://example.org/ziparchive/missing",
       "schema:description": "this data product is distributed in zip archive; contents of the archive are listed as parts. The component files are not individually accessible",
       "schema:encodingFormat": [
         "application/zip"
@@ -271,7 +250,7 @@
     }
   ],
   "schema:identifier": {
-    "@id": "_:b10",
+    "@id": "ex:b10",
     "@type": [
       "schema:PropertyValue"
     ],
@@ -350,7 +329,7 @@
       "schema:name": "Richard, Stephen M."
     }
   },
-  "schema:url": "",
+  "schema:url": "https://example.org/missing",
   "schema:variableMeasured": [
     {
       "@id": "http://example.org/base/#samplename",

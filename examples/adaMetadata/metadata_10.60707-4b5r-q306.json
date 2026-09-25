@@ -28,67 +28,46 @@
   "schema:creator": {
     "@list": [
       {
-        "@id": "https://ada.org/person/5489",
+        "@id": "https://orcid.org/0000-0002-2692-2164",
         "@type": [
           "schema:Person"
         ],
-        "schema:email": [
-          "scott.a.eckley@nasa.gov",
-          "ryan.a.zeigler@nasa.gov",
-          "juliane.gross@nasa.gov"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0002-2692-2164",
-          "https://orcid.org/0000-0002-1139-7571",
-          "https://orcid.org/0000-0002-5288-0981"
-        ],
-        "schema:name": [
-          "Eckley, Scott",
-          "Zeigler, Ryan",
-          "Gross, Juliane"
-        ]
+        "schema:identifier": "https://orcid.org/0000-0002-2692-2164",
+        "schema:name": "Eckley, Scott",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "scott.a.eckley@nasa.gov"
+        }
       },
       {
-        "@id": "https://ada.org/person/5489",
+        "@id": "https://orcid.org/0000-0002-1139-7571",
         "@type": [
           "schema:Person"
         ],
-        "schema:email": [
-          "scott.a.eckley@nasa.gov",
-          "ryan.a.zeigler@nasa.gov",
-          "juliane.gross@nasa.gov"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0002-2692-2164",
-          "https://orcid.org/0000-0002-1139-7571",
-          "https://orcid.org/0000-0002-5288-0981"
-        ],
-        "schema:name": [
-          "Eckley, Scott",
-          "Zeigler, Ryan",
-          "Gross, Juliane"
-        ]
+        "schema:identifier": "https://orcid.org/0000-0002-1139-7571",
+        "schema:name": "Zeigler, Ryan",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "ryan.a.zeigler@nasa.gov"
+        }
       },
       {
-        "@id": "https://ada.org/person/5489",
+        "@id": "https://orcid.org/0000-0002-5288-0981",
         "@type": [
           "schema:Person"
         ],
-        "schema:email": [
-          "scott.a.eckley@nasa.gov",
-          "ryan.a.zeigler@nasa.gov",
-          "juliane.gross@nasa.gov"
-        ],
-        "schema:identifier": [
-          "https://orcid.org/0000-0002-2692-2164",
-          "https://orcid.org/0000-0002-1139-7571",
-          "https://orcid.org/0000-0002-5288-0981"
-        ],
-        "schema:name": [
-          "Eckley, Scott",
-          "Zeigler, Ryan",
-          "Gross, Juliane"
-        ]
+        "schema:identifier": "https://orcid.org/0000-0002-5288-0981",
+        "schema:name": "Gross, Juliane",
+        "schema:contactPoint": {
+          "@type": [
+            "schema:ContactPoint"
+          ],
+          "schema:email": "juliane.gross@nasa.gov"
+        }
       }
     ]
   },
