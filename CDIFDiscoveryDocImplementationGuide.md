@@ -841,6 +841,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
+- **Description:** identifier for organization
 
 #### additionalType
 
@@ -862,6 +863,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference)
+- **Description:** other identifiers for the organization
 
 ## Other Classes used for CDIF Core
 
@@ -895,6 +897,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
+- **Description:** identifier for person, recommend ORCID
 
 #### description
 
@@ -924,6 +927,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference)
+- **Description:** other identifiers for the person
 
 ## Place
 
