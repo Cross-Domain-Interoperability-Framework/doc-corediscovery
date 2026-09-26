@@ -282,7 +282,7 @@ Namespace prefixes use in CDIF Discovery schema.org JSON-LD objects are specifie
 
 - **Cardinality:** Optional
 - **Content:** [DataDownload](#data-download)
-- **Description:** specifies the serialization scheme (encoding format, information model) for expected representation of the data
+- **Description:** specifies the serialization scheme (encoding format, information model) for the expected representation of the API response. The result describes the *bytes* the service produces; the WebAPI distribution itself describes the *service*. At the Data Description level, when the result is additionally typed `cdi:PhysicalDataSet`, it may carry the physical-realization properties.
 
 #### object
 
