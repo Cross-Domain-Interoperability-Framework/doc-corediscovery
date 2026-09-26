@@ -1003,7 +1003,7 @@ CHOICE. At least one of the following four is required
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [Place](#place)
-- **Description:** Document spatial extent to which the resource content is relevant. Can be expressed with a simple text place name, a place name from an identified gazeteer (using schema: [DefinedTerm](#defined-term)), a point location, a bounding box (.e.g. for a map extent), a line (e.g. a ship track or foot traverse), or a general geometry. Registered place names from a gazeteer or a simple bounding box are widely recognized and indexed approaches used by spatially aware metadata aggregators.
+- **Description:** specifies the spatial extent to which the resource content is relevant. Can be expressed with a simple text place name, a place name from an identified gazetteer (using schema: [DefinedTerm](#defined-term)), a point location, a bounding box (.e.g. for a map extent), a line (e.g. a ship track or foot traverse), or a general geometry. Registered place names from a gazetteer or a simple bounding box are widely recognized and indexed approaches used by spatially aware metadata aggregators.
 - **Example -- multi-country coverage.** When a resource covers several countries, repeat `schema:spatialCoverage` with one [Place](#place) per country. Each `Place` carries the ISO 3166-1 alpha-2 code as `schema:name` and `schema:identifier`, and a `schema:sameAs` link to the EU Publications Office country authority (which keys on the alpha-3 code). A `Place` is valid with any one of `schema:geo`, `schema:name`, or `schema:identifier`; this form uses `name` and `identifier`.
 
 ```json
