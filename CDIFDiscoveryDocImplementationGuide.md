@@ -345,6 +345,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required
 - **Content:** [object reference](#object-reference), [Person](#person) or [Organization](#organization)
+- **Description:** a person or organization that has contributed in some way to the creation, publication or maintenance of the described resource; optionally with an assigned role.
 
 ## Data Download
 
@@ -526,6 +527,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required if no name or termCode
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
+- **Description:** an identifier string or PropertyValue object specifying the identifier for a term
 
 #### termCode
 
@@ -551,11 +553,13 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required
 - **Content:** string, [object reference](#object-reference), or [DefinedTerm](#defined-term)
+- **Description:** specifies the quality measure type whose value is specified in this QualityMeasurement
 
 #### dqv:value
 
 - **Cardinality:** Required
 - **Content:** string or [DefinedTerm](#defined-term)
+- **Description:** specifies the value of the measure specified
 
 ## EntryPoint
 
@@ -708,6 +712,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Required if no identifier or name
 - **Content:** [object reference](#object-reference), [Person](#person), or [Organization](#organization)
+- **Description:** the person or organization that sponsors or grants the acknowledged funding.
 
 #### description
 
@@ -847,6 +852,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string or [DefinedTerm](#defined-term)
+- **Description:** other type names or identifiers to classify an organization in more detail
 
 #### alternateName
 
@@ -858,6 +864,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional
 - **Content:** string
+- **Description:** Free text description providing additional information about an organization
 
 #### sameAs
 
@@ -955,6 +962,7 @@ CHOICE. At least one of the following four is required
 
 - **Cardinality:** Conditional
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
+- **Description:** a string or PropertyValue object that specifies an identifier, ideally a resolvable URI for the place that is the subject of the described resource.
 
 #### geo
 
