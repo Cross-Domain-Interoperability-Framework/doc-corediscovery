@@ -470,6 +470,7 @@ This profile applies to description of resources that can be described using the
 #### additionalType
 
 - **Cardinality:** Required -- \"dcat:CatalogRecord\", Repeatable
+- **Description:** The subjectOf/Dataset with information about the metadata record must have an additional type `dcat:CatalogRecord` declared, to distinguish it from other possible schema:subjectOf or schema:Dataset instances.
 - **Content:** string
 
 #### about
@@ -576,7 +577,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional
 - **Content:** string**,** MIME TYPE**
-- **Description:** **
+- **Description:** MIME type / media type identifier for the representation of a linked object.
 
 #### name
 
@@ -1305,13 +1306,13 @@ Choice:
 
 #### time:intervalStartedBy
 
-- **Cardinality:** Optional
+- **Cardinality:** Choice-at least one of time:intervalFinishedBy, time:intervalStartedBy is required
 - **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** identifier for a named time ordinal era that is older bound of time interval, e.g. \'isc:LowerDevonian\'
 
 #### time:intervalFinishedBy
 
-- **Cardinality:** Optional
+- **Cardinality:** Choice-at least one of time:intervalFinishedBy, time:intervalStartedBy is required
 - **Content:** string or [DefinedTerm](#defined-term)
 - **Description:** identifier for a named time ordinal era that is younger bound of time interval, e.g. \'isc:LowerDevonian\'
 
@@ -1319,13 +1320,13 @@ OR:
 
 #### time:hasBeginning
 
-- **Cardinality:** Optional
+- **Cardinality:** Choice-at least one of time:hasBeginning, time:hasEnd is required
 - **Content:** [time:TimePosition](#timetimeposition)
 - **Description:** Temporal position for the beginning (older bound) of the interval, located by a numeric value in a temporal reference system
 
 #### time:hasEnd
 
-- **Cardinality:** Optional
+- **Cardinality:** Choice-at least one of time:hasBeginning, time:hasEnd is required
 - **Content:** [time:TimePosition](#timetimeposition)
 - **Description:** Temporal position for the end (younger bound) of the interval, located by a numeric value in a temporal reference system
 
