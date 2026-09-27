@@ -442,7 +442,7 @@ This profile applies to description of resources that can be described using the
 
 - **Cardinality:** Optional
 - **Content:** string.url
-- **Description:** Url to access catalog landing page.
+- **Description:** Web Location of a page describing the resource (landing page), might provide links or instructions to get resource content; analogous to dcat:landingPage.
 
 #### identifier
 
@@ -997,7 +997,7 @@ CHOICE. At least one of the following four is required
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [PropertyValue-(variableMeasured)](#propertyvalue-variablemeasured)
-- **Description:** Use schema:PropertyValue to describe the variables assigned values in the dataset. Provide names, labels used in the data serialization, definitions, propertyID as a link to formal property definitions. Min and max values that occur in numeric data to support search criteria based on observed values.
+- **Description:** Each variableMeasured item is a CDIF profile of the DDI-CDI InstanceVariable or RepresentedVariable classes. The item is typed as both `schema:PropertyValue` and `cdi:InstanceVariable`, MUST carry `schema:name`, and extends the basic Discovery `variableMeasured` shape with properties describing the variable's data type, role, source, value domain, weighting, and summary statistics. See [PropertyValue-(variableMeasured)](#propertyvalue-variablemeasured) for the schema.org base properties and [CdifInstanceVariable](#cdifinstancevariable) for the CDIF extensions.
 
 #### spatialCoverage
 
@@ -1231,7 +1231,7 @@ CHOICE. At least one of the following four is required
 
 - **Cardinality:** Required if no distribution
 - **Content:** string.uri
-- **Description:** Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:accessURL. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl
+- **Description:** Web Location of a page describing the resource (landing page), might provide links or instructions to get resource content; analogous to dcat:landingPage.
 
 #### distribution
 
