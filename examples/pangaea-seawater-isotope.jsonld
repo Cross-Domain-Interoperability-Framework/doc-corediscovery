@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "unk": "https://ex.org/unknown/"
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://doi.org/10.1594/PANGAEA.967156",
   "@type": [
@@ -97,7 +96,7 @@
       "@id": "https://doi.org/10.1029/2024PA004852",
       "@type": [
         "schema:CreativeWork",
-        "unk:ScholarlyArticle"
+        "schema:ScholarlyArticle"
       ],
       "schema:identifier": "https://doi.org/10.1029/2024PA004852",
       "schema:url": "https://doi.org/10.1029/2024PA004852",
@@ -147,13 +146,13 @@
       ],
       "schema:name": "Stable Middle Miocene Seawater Isotopes in the Eastern North Atlantic Ocean",
       "schema:datePublished": "2024",
-      "unk:pagination": "e2024PA004852",
+      "schema:pagination": "e2024PA004852",
       "schema:isPartOf": {
         "@type": [
-          "unk:Periodical",
-          "unk:PublicationVolume"
+          "schema:Periodical",
+          "schema:PublicationVolume"
         ],
-        "unk:volumeNumber": "39(10)",
+        "schema:volumeNumber": "39(10)",
         "schema:name": "Paleoceanography and Paleoclimatology"
       },
       "schema:additionalType": "journal article"
@@ -224,45 +223,41 @@
       ],
       "schema:name": "DEPTH, sediment/rock",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "sediment",
-            "schema:url": "http://purl.obolibrary.org/obo/ENVO_00002007"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "rock"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "sediment",
+          "schema:identifier": "http://purl.obolibrary.org/obo/ENVO_00002007",
+          "schema:url": "http://purl.obolibrary.org/obo/ENVO_00002007"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "rock"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -270,32 +265,27 @@
       ],
       "schema:name": "Depth, composite",
       "schema:unitText": "mcd",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "schema:name": "Luminous Intensity",
-            "schema:alternateName": "J",
-            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "schema:name": "Luminous Intensity",
+          "schema:alternateName": "J",
+          "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+        }
+      ]
     },
     {
       "@type": [
@@ -305,11 +295,8 @@
       "schema:unitText": "Ma",
       "schema:measurementTechnique": "According to Sangiorgi (2021)",
       "schema:description": "doi:10.1594/PANGAEA.926325",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "urn:obo:pato:term:0000011",
           "@type": [
             "schema:DefinedTerm"
@@ -318,7 +305,7 @@
           "schema:name": "age",
           "schema:url": "http://purl.obolibrary.org/obo/PATO_0000011"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -335,19 +322,17 @@
       "schema:name": "Alkenone C37:2, δD, standard deviation",
       "schema:unitText": "±",
       "schema:measurementTechnique": "Isotope Ratio Mass Spectrometer (IRMS), Thermo Fisher Scientific, Delta V",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@type": [
             "schema:DefinedTerm"
           ],
           "schema:name": "standard deviation",
           "schema:alternateName": "std dev",
+          "schema:identifier": "https://en.wikipedia.org/wiki/Standard_deviation",
           "schema:url": "https://en.wikipedia.org/wiki/Standard_deviation"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -355,17 +340,14 @@
       ],
       "schema:name": "Replicates",
       "schema:unitText": "#",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@type": [
             "schema:DefinedTerm"
           ],
           "schema:name": "Abundance or Count"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -376,11 +358,8 @@
       "schema:url": "https://en.wikipedia.org/wiki/Deuterium",
       "schema:measurementTechnique": "Calculated according to Gould et al. (2019)",
       "schema:description": "VSOMW",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
           "@type": [
             "schema:DefinedTerm"
@@ -389,7 +368,7 @@
           "schema:name": "water",
           "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -399,32 +378,27 @@
       "schema:unitText": "mcd",
       "schema:measurementTechnique": "According to Sangiorgi (2021)",
       "schema:description": "Depth of neighbour sample for TEX86H subT (doi:10.1594/PANGAEA.926325)",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "schema:name": "Luminous Intensity",
-            "schema:alternateName": "J",
-            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "schema:name": "Luminous Intensity",
+          "schema:alternateName": "J",
+          "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+        }
+      ]
     },
     {
       "@type": [
@@ -434,11 +408,8 @@
       "schema:unitText": "°C",
       "schema:measurementTechnique": "Calculated from TEX86L (Kim et al., 2012)",
       "schema:description": "0-200 m calibration",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
           "@type": [
             "schema:DefinedTerm"
@@ -448,7 +419,7 @@
           "schema:alternateName": "Θ",
           "schema:url": "http://dbpedia.org/resource/Temperature"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -458,32 +429,27 @@
       "schema:unitText": "mcd",
       "schema:measurementTechnique": "Calculated according to Willemijn et al. (2018)",
       "schema:description": "Depth of δ18O benthic",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
-            "schema:name": "Luminous Intensity",
-            "schema:alternateName": "J",
-            "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#LuminousIntensity",
+          "schema:name": "Luminous Intensity",
+          "schema:alternateName": "J",
+          "schema:url": "http://dbpedia.org/resource/Luminous_intensity"
+        }
+      ]
     },
     {
       "@type": [
@@ -492,31 +458,26 @@
       "schema:name": "Foraminifera, benthic δ18O",
       "schema:unitText": "‰ PDB",
       "schema:measurementTechnique": "Calculated according to Willemijn et al. (2018)",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:lsid:marinespecies.org:taxname:1410",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:lsid:marinespecies.org:taxname:1410",
-            "schema:name": "Foraminifera",
-            "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1410"
-          },
-          {
-            "@id": "urn:lsid:marinespecies.org:taxname:22528",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:lsid:marinespecies.org:taxname:22528",
-            "schema:name": "Foraminiferida",
-            "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=22528"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:lsid:marinespecies.org:taxname:1410",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:lsid:marinespecies.org:taxname:1410",
+          "schema:name": "Foraminifera",
+          "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=1410"
+        },
+        {
+          "@id": "urn:lsid:marinespecies.org:taxname:22528",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:lsid:marinespecies.org:taxname:22528",
+          "schema:name": "Foraminiferida",
+          "schema:url": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=22528"
+        }
+      ]
     },
     {
       "@type": [
@@ -526,29 +487,25 @@
       "schema:unitText": "‰ SMOW",
       "schema:measurementTechnique": "Calculated according to Cramer et al. (2011)",
       "schema:description": "BSW",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "δ18O",
-            "schema:url": "http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "δ18O",
+          "schema:identifier": "http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes",
+          "schema:url": "http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        }
+      ]
     }
   ],
   "schema:keywords": [

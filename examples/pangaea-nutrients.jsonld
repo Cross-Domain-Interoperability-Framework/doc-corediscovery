@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "unk": "https://ex.org/unknown/"
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://doi.org/10.1594/PANGAEA.122251",
   "@type": [
@@ -61,7 +60,7 @@
       },
       "schema:name": "Nutrients from bottle casts",
       "schema:datePublished": "2003",
-      "unk:sourceOrganization": {
+      "schema:sourceOrganization": {
         "@type": [
           "schema:Organization"
         ],
@@ -85,7 +84,7 @@
       },
       "schema:name": "Notes about equatorial pacific process study (nutrients)",
       "schema:datePublished": "1992",
-      "unk:sourceOrganization": {
+      "schema:sourceOrganization": {
         "@type": [
           "schema:Organization"
         ],
@@ -125,41 +124,36 @@
       ],
       "schema:name": "DEPTH, water",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -167,48 +161,43 @@
       ],
       "schema:name": "Pressure, water",
       "schema:unitText": "dbar",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Pressure",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Pressure",
-            "schema:name": "Pressure",
-            "schema:url": "http://dbpedia.org/resource/Pressure"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#EnergyDensity",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#EnergyDensity",
-            "schema:name": "Energy Density",
-            "schema:url": "http://dbpedia.org/resource/Energy_density"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#ForcePerArea",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#ForcePerArea",
-            "schema:name": "Force Per Area"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Pressure",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Pressure",
+          "schema:name": "Pressure",
+          "schema:url": "http://dbpedia.org/resource/Pressure"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#EnergyDensity",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#EnergyDensity",
+          "schema:name": "Energy Density",
+          "schema:url": "http://dbpedia.org/resource/Energy_density"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#ForcePerArea",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#ForcePerArea",
+          "schema:name": "Force Per Area"
+        }
+      ]
     },
     {
       "@type": [
@@ -216,28 +205,23 @@
       ],
       "schema:name": "Nitrate",
       "schema:unitText": "µmol/l",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_17632",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_17632",
-            "schema:name": "nitrate",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_17632"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "Molar Concentration"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_17632",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_17632",
+          "schema:name": "nitrate",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_17632"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "Molar Concentration"
+        }
+      ]
     },
     {
       "@type": [
@@ -245,28 +229,23 @@
       ],
       "schema:name": "Nitrite",
       "schema:unitText": "µmol/l",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_16301",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_16301",
-            "schema:name": "nitrite",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_16301"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "Molar Concentration"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_16301",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_16301",
+          "schema:name": "nitrite",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_16301"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "Molar Concentration"
+        }
+      ]
     },
     {
       "@type": [
@@ -274,28 +253,23 @@
       ],
       "schema:name": "Phosphate",
       "schema:unitText": "µmol/l",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_26020",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_26020",
-            "schema:name": "phosphate",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_26020"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "Molar Concentration"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_26020",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_26020",
+          "schema:name": "phosphate",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_26020"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "Molar Concentration"
+        }
+      ]
     },
     {
       "@type": [
@@ -303,17 +277,14 @@
       ],
       "schema:name": "Silicate",
       "schema:unitText": "µmol/l",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@type": [
             "schema:DefinedTerm"
           ],
           "schema:name": "Molar Concentration"
         }
-      }
+      ]
     },
     {
       "@type": [

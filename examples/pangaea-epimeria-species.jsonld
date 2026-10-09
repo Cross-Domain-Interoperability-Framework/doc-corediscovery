@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "unk": "https://ex.org/unknown/"
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://doi.org/10.1594/PANGAEA.815864",
   "@type": [
@@ -84,7 +83,7 @@
       "@id": "https://doi.org/10.1007/s12526-011-0098-8",
       "@type": [
         "schema:CreativeWork",
-        "unk:ScholarlyArticle"
+        "schema:ScholarlyArticle"
       ],
       "schema:identifier": "https://doi.org/10.1007/s12526-011-0098-8",
       "schema:url": "https://doi.org/10.1007/s12526-011-0098-8",
@@ -132,13 +131,13 @@
       ],
       "schema:name": "High genetic diversity within Epimeria georgiana (Amphipoda) from the southern Scotia Arc",
       "schema:datePublished": "2012",
-      "unk:pagination": "137-159",
+      "schema:pagination": "137-159",
       "schema:isPartOf": {
         "@type": [
-          "unk:Periodical",
-          "unk:PublicationVolume"
+          "schema:Periodical",
+          "schema:PublicationVolume"
         ],
-        "unk:volumeNumber": "42(2)",
+        "schema:volumeNumber": "42(2)",
         "schema:name": "Marine Biodiversity"
       },
       "schema:additionalType": "journal article"
@@ -192,17 +191,14 @@
       ],
       "schema:name": "Species",
       "schema:url": "https://en.wikipedia.org/wiki/Species",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@type": [
             "schema:DefinedTerm"
           ],
           "schema:name": "species"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -223,17 +219,14 @@
       ],
       "schema:name": "Sample amount",
       "schema:unitText": "#",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@type": [
             "schema:DefinedTerm"
           ],
           "schema:name": "Abundance or Count"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -254,41 +247,36 @@
       ],
       "schema:name": "DEPTH, water",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -296,32 +284,27 @@
       ],
       "schema:name": "Depth, top/min",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -329,39 +312,34 @@
       ],
       "schema:name": "Depth, bottom/max",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "maximal",
-            "schema:alternateName": "max"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "maximal",
+          "schema:alternateName": "max"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -369,11 +347,8 @@
       ],
       "schema:name": "DATE/TIME",
       "schema:url": "http://en.wikipedia.org/wiki/ISO_8601",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#Time",
           "@type": [
             "schema:DefinedTerm"
@@ -383,7 +358,7 @@
           "schema:alternateName": "T",
           "schema:url": "http://dbpedia.org/resource/Time"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -396,11 +371,8 @@
         "schema:PropertyValue"
       ],
       "schema:name": "Area/locality",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#Area",
           "@type": [
             "schema:DefinedTerm"
@@ -409,7 +381,7 @@
           "schema:name": "Area",
           "schema:url": "http://dbpedia.org/resource/Area"
         }
-      }
+      ]
     }
   ],
   "schema:comment": "Data extracted in the frame of a joint ICSTI/PANGAEA IPY effort, see http://doi.pangaea.de/10.1594/PANGAEA.150150",

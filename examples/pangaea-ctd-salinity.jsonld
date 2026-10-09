@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "unk": "https://ex.org/unknown/"
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://doi.org/10.1594/PANGAEA.361329",
   "@type": [
@@ -42,7 +41,7 @@
     "schema:url": "https://www.pangaea.de/"
   },
   "schema:datePublished": "2006-02-07",
-  "unk:sourceOrganization": {
+  "schema:sourceOrganization": {
     "@type": [
       "schema:Organization"
     ],
@@ -56,9 +55,9 @@
     {
       "@type": [
         "schema:CreativeWork",
-        "unk:Report"
+        "schema:Report"
       ],
-      "unk:reportNumber": "180/02",
+      "schema:reportNumber": "180/02",
       "schema:creator": {
         "@type": [
           "schema:Organization"
@@ -67,10 +66,10 @@
       },
       "schema:name": "World Ocean Circulation Experiment, Global Data, Version 3.0",
       "schema:datePublished": "2002",
-      "unk:pagination": "DVD-ROM",
+      "schema:pagination": "DVD-ROM",
       "schema:isPartOf": {
         "@type": [
-          "unk:CreativeWorkSeries"
+          "schema:CreativeWorkSeries"
         ],
         "schema:name": "WOCE International Project Office, WOCE Report, Southampton, UK; published by U.S. National Oceanographic Data Center, Silver Spring"
       },
@@ -117,11 +116,8 @@
       ],
       "schema:name": "DATE/TIME",
       "schema:url": "http://en.wikipedia.org/wiki/ISO_8601",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#Time",
           "@type": [
             "schema:DefinedTerm"
@@ -131,7 +127,7 @@
           "schema:alternateName": "T",
           "schema:url": "http://dbpedia.org/resource/Time"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -153,41 +149,36 @@
       ],
       "schema:name": "DEPTH, water",
       "schema:unitText": "m",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0001595",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0001595",
-            "schema:name": "depth",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          },
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Length",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
-            "schema:name": "Length",
-            "schema:alternateName": "L",
-            "schema:url": "http://dbpedia.org/resource/Length"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0001595",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0001595",
+          "schema:name": "depth",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0001595"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Length",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Length",
+          "schema:name": "Length",
+          "schema:alternateName": "L",
+          "schema:url": "http://dbpedia.org/resource/Length"
+        }
+      ]
     },
     {
       "@type": [
@@ -196,47 +187,42 @@
       "schema:name": "Temperature, water",
       "schema:unitText": "°C",
       "schema:measurementTechnique": "CTD",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
-            "schema:name": "Temperature",
-            "schema:alternateName": "Θ",
-            "schema:url": "http://dbpedia.org/resource/Temperature"
-          },
-          {
-            "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
-            "schema:name": "water",
-            "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
-          },
-          {
-            "@id": "SDN:L05::130",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "SDN:L05::130",
-            "schema:name": "CTD",
-            "schema:url": "http://vocab.nerc.ac.uk/collection/L05/current/130/"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "CTD & XBT"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#ThermodynamicTemperature",
+          "schema:name": "Temperature",
+          "schema:alternateName": "Θ",
+          "schema:url": "http://dbpedia.org/resource/Temperature"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://purl.obolibrary.org/obo/CHEBI_15377",
+          "schema:name": "water",
+          "schema:url": "http://purl.obolibrary.org/obo/CHEBI_15377"
+        },
+        {
+          "@id": "SDN:L05::130",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "SDN:L05::130",
+          "schema:name": "CTD",
+          "schema:url": "http://vocab.nerc.ac.uk/collection/L05/current/130/"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "CTD & XBT"
+        }
+      ]
     },
     {
       "@type": [
@@ -244,37 +230,32 @@
       ],
       "schema:name": "Salinity",
       "schema:measurementTechnique": "CTD",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0085001",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0085001",
-            "schema:name": "salinity",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0085001"
-          },
-          {
-            "@id": "SDN:L05::130",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "SDN:L05::130",
-            "schema:name": "CTD",
-            "schema:url": "http://vocab.nerc.ac.uk/collection/L05/current/130/"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "CTD & XBT"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0085001",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0085001",
+          "schema:name": "salinity",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0085001"
+        },
+        {
+          "@id": "SDN:L05::130",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "SDN:L05::130",
+          "schema:name": "CTD",
+          "schema:url": "http://vocab.nerc.ac.uk/collection/L05/current/130/"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "CTD & XBT"
+        }
+      ]
     },
     {
       "@type": [

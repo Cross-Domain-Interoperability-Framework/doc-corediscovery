@@ -3,8 +3,7 @@
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "unk": "https://ex.org/unknown/"
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://doi.org/10.1594/PANGAEA.855653",
   "@type": [
@@ -99,7 +98,7 @@
       "@id": "https://doi.org/10.1126/science.aab2213",
       "@type": [
         "schema:CreativeWork",
-        "unk:ScholarlyArticle"
+        "schema:ScholarlyArticle"
       ],
       "schema:identifier": "https://doi.org/10.1126/science.aab2213",
       "schema:url": "https://doi.org/10.1126/science.aab2213",
@@ -162,13 +161,13 @@
       ],
       "schema:name": "The fate of photons absorbed by phytoplankton in the global ocean",
       "schema:datePublished": "2016",
-      "unk:pagination": "264-267",
+      "schema:pagination": "264-267",
       "schema:isPartOf": {
         "@type": [
-          "unk:Periodical",
-          "unk:PublicationVolume"
+          "schema:Periodical",
+          "schema:PublicationVolume"
         ],
-        "unk:volumeNumber": "351(6270)",
+        "schema:volumeNumber": "351(6270)",
         "schema:name": "Science"
       },
       "schema:additionalType": "journal article"
@@ -204,11 +203,8 @@
       ],
       "schema:name": "Number",
       "schema:description": "date in YYYYMMDD",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "urn:pangaea:obo:pato:syn:5_0001555",
           "@type": [
             "schema:DefinedTerm"
@@ -216,7 +212,7 @@
           "schema:identifier": "urn:pangaea:obo:pato:syn:5_0001555",
           "schema:name": "number"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -224,11 +220,8 @@
       ],
       "schema:name": "Number",
       "schema:description": "Local Time in date number format",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "urn:pangaea:obo:pato:syn:5_0001555",
           "@type": [
             "schema:DefinedTerm"
@@ -236,7 +229,7 @@
           "schema:identifier": "urn:pangaea:obo:pato:syn:5_0001555",
           "schema:name": "number"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -244,11 +237,8 @@
       ],
       "schema:name": "DATE/TIME",
       "schema:url": "http://en.wikipedia.org/wiki/ISO_8601",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#Time",
           "@type": [
             "schema:DefinedTerm"
@@ -258,7 +248,7 @@
           "schema:alternateName": "T",
           "schema:url": "http://dbpedia.org/resource/Time"
         }
-      }
+      ]
     },
     {
       "@type": [
@@ -280,29 +270,24 @@
       ],
       "schema:name": "Time of day",
       "schema:description": "0 = night, 1 = day",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "http://qudt.org/1.1/vocab/quantity#Time",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Time",
-            "schema:name": "Time",
-            "schema:alternateName": "T",
-            "schema:url": "http://dbpedia.org/resource/Time"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "day"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "http://qudt.org/1.1/vocab/quantity#Time",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "http://qudt.org/1.1/vocab/quantity#Time",
+          "schema:name": "Time",
+          "schema:alternateName": "T",
+          "schema:url": "http://dbpedia.org/resource/Time"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "day"
+        }
+      ]
     },
     {
       "@type": [
@@ -310,11 +295,8 @@
       ],
       "schema:name": "Fluorescence lifetime",
       "schema:unitText": "ns",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": {
+      "schema:propertyID": [
+        {
           "@id": "http://qudt.org/1.1/vocab/quantity#Time",
           "@type": [
             "schema:DefinedTerm"
@@ -324,63 +306,53 @@
           "schema:alternateName": "T",
           "schema:url": "http://dbpedia.org/resource/Time"
         }
-      }
+      ]
     },
     {
       "@type": [
         "schema:PropertyValue"
       ],
       "schema:name": "Fluorescence, minimum",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0000018",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0000018",
-            "schema:name": "fluorescence",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "minimum"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0000018",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0000018",
+          "schema:name": "fluorescence",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "minimum"
+        }
+      ]
     },
     {
       "@type": [
         "schema:PropertyValue"
       ],
       "schema:name": "Fluorescence, maximum",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0000018",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0000018",
-            "schema:name": "fluorescence",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "maximum"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0000018",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0000018",
+          "schema:name": "fluorescence",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "maximum"
+        }
+      ]
     },
     {
       "@type": [
@@ -393,56 +365,46 @@
         "schema:PropertyValue"
       ],
       "schema:name": "Fluorescence, minimum, without dark adaptation",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0000018",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0000018",
-            "schema:name": "fluorescence",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "minimum"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0000018",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0000018",
+          "schema:name": "fluorescence",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "minimum"
+        }
+      ]
     },
     {
       "@type": [
         "schema:PropertyValue"
       ],
       "schema:name": "Fluorescence, maximum, without dark adaptation",
-      "schema:subjectOf": {
-        "@type": [
-          "schema:DefinedTermSet"
-        ],
-        "unk:hasDefinedTerm": [
-          {
-            "@id": "urn:obo:pato:term:0000018",
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:identifier": "urn:obo:pato:term:0000018",
-            "schema:name": "fluorescence",
-            "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
-          },
-          {
-            "@type": [
-              "schema:DefinedTerm"
-            ],
-            "schema:name": "maximum"
-          }
-        ]
-      }
+      "schema:propertyID": [
+        {
+          "@id": "urn:obo:pato:term:0000018",
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:identifier": "urn:obo:pato:term:0000018",
+          "schema:name": "fluorescence",
+          "schema:url": "http://purl.obolibrary.org/obo/PATO_0000018"
+        },
+        {
+          "@type": [
+            "schema:DefinedTerm"
+          ],
+          "schema:name": "maximum"
+        }
+      ]
     },
     {
       "@type": [
