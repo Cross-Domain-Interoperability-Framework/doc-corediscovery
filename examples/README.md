@@ -62,4 +62,4 @@ WHERE {
 }
 ```
 
-with `Accept: application/ld+json` to get JSON-LD output. See `geocodes_harvester.py` in the validation repo for automated harvesting and CDIF conversion.
+with `Accept: application/ld+json` to get JSON-LD output. See `harvesters/geocodes_harvester.py` in the [converters](https://github.com/Cross-Domain-Interoperability-Framework/converters) repo for automated harvesting and CDIF conversion.
