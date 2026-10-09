@@ -43,7 +43,9 @@
           "schema:MediaObject"
         ]
       },
-      "default": "schema:Dataset",
+      "default": [
+        "schema:Dataset"
+      ],
       "minItems": 1,
       "contains": {
         "const": "schema:Dataset"
@@ -225,9 +227,64 @@
                   "type": "string"
                 }
               },
+              "schema:additionalType": {
+                "type": "array",
+                "description": "Domain-specific type classification for this distribution: what KIND of thing the file is, beyond its MIME type. schema:encodingFormat says how to parse the bytes; this says what they are. A plain string is accepted, but a schema:DefinedTerm carrying schema:inDefinedTermSet is preferred where the value comes from a controlled vocabulary, so the vocabulary travels with the data rather than being asserted only in a profile.",
+                "items": {
+                  "$ref": "#/$defs/cdifConceptOrTermOrString"
+                }
+              },
               "schema:contentSize": {
                 "type": "string",
                 "description": "File size of this distribution, e.g. '2.5 MB' or a byte count. Per schema.org/contentSize."
+              },
+              "schema:width": {
+                "type": "object",
+                "description": "Pixel width of this distribution when it is a single raster file, as a QuantitativeValue. schema:width has schema:MediaObject in its domain. A QuantitativeValue rather than a bare number because the same property carries physical dimensions elsewhere, so the unit has to be stated. (schema:contentSize above is a plain string for historical reasons; that inconsistency is left alone rather than widened.)",
+                "properties": {
+                  "@type": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "contains": {
+                      "const": "schema:QuantitativeValue"
+                    },
+                    "minItems": 1
+                  },
+                  "schema:value": {
+                    "type": "number",
+                    "description": "Width in pixels."
+                  },
+                  "schema:unitText": {
+                    "type": "string",
+                    "description": "Unit of measure, e.g. 'pixel'."
+                  }
+                }
+              },
+              "schema:height": {
+                "type": "object",
+                "description": "Pixel height of this distribution when it is a single raster file, as a QuantitativeValue. schema:height has schema:MediaObject in its domain. A QuantitativeValue rather than a bare number because the same property carries physical dimensions elsewhere, so the unit has to be stated. (schema:contentSize above is a plain string for historical reasons; that inconsistency is left alone rather than widened.)",
+                "properties": {
+                  "@type": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "contains": {
+                      "const": "schema:QuantitativeValue"
+                    },
+                    "minItems": 1
+                  },
+                  "schema:value": {
+                    "type": "number",
+                    "description": "Height in pixels."
+                  },
+                  "schema:unitText": {
+                    "type": "string",
+                    "description": "Unit of measure, e.g. 'pixel'."
+                  }
+                }
               },
               "spdx:checksum": {
                 "type": "object",
@@ -251,7 +308,9 @@
                   }
                 },
                 "required": [
-                  "@type"
+                  "@type",
+                  "spdx:algorithm",
+                  "spdx:checksumValue"
                 ]
               },
               "dcterms:conformsTo": {
@@ -393,7 +452,9 @@
                   "properties": {
                     "@type": {
                       "description": "The type of action. Must be schema:Action or one of its subtypes.",
-                      "default": "schema:Action",
+                      "default": [
+                        "schema:Action"
+                      ],
                       "type": "array",
                       "items": {
                         "type": "string"
@@ -426,7 +487,9 @@
                       "description": "specifies the request target location and request syntax. Documentation of the URL end point and syntax to invoke the service. This schema doesn't handle post requests.",
                       "properties": {
                         "@type": {
-                          "default": "schema:EntryPoint",
+                          "default": [
+                            "schema:EntryPoint"
+                          ],
                           "type": "array",
                           "items": {
                             "type": "string"
@@ -529,7 +592,9 @@
                       "description": "The entity upon which the action is carried out, whose state is kept intact or changed. This is an open ended class for general description of Actions. When schema:Action (or a subclass) is used to describe operations for a WebAPI distribution, the object is implicitly the resource that is the subject of the containing metadata record, so this property would be superfluous.",
                       "properties": {
                         "@type": {
-                          "default": "schema:Thing",
+                          "default": [
+                            "schema:Thing"
+                          ],
                           "type": "array",
                           "items": {
                             "type": "string"
@@ -551,7 +616,9 @@
                             "type": "string"
                           },
                           "@type": {
-                            "default": "schema:PropertyValueSpecification",
+                            "default": [
+                              "schema:PropertyValueSpecification"
+                            ],
                             "type": "array",
                             "items": {
                               "type": "string"
@@ -607,7 +674,9 @@
         "type": "object",
         "properties": {
           "@type": {
-            "default": "schema:LinkRole",
+            "default": [
+              "schema:LinkRole"
+            ],
             "type": "array",
             "items": {
               "type": "string"
@@ -619,14 +688,17 @@
           },
           "schema:linkRelationship": {
             "$ref": "#/$defs/cdifConceptOrTermOrString",
-            "description": "How the target relates to the subject, as a controlled-vocabulary value or a plain string label."
+            "description": "How the target relates to the subject, as a controlled-vocabulary value or a plain string label. Required: a typed link whose relationship is unstated carries no more information than a bare URL, which is what schemaorgProperties/labeledLink is for.",
+            "default": "missing"
           },
           "schema:target": {
             "type": "object",
             "description": "The entry point being linked to. Deliberately not sealed: real targets also carry schema:httpMethod, schema:urlTemplate, schema:contentType and domain-specific properties, and JSON-LD is open-world.",
             "properties": {
               "@type": {
-                "default": "schema:EntryPoint",
+                "default": [
+                  "schema:EntryPoint"
+                ],
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -651,7 +723,8 @@
           }
         },
         "required": [
-          "@type"
+          "@type",
+          "schema:linkRelationship"
         ]
       }
     },
@@ -751,7 +824,9 @@
             "type": "object",
             "properties": {
               "@type": {
-                "default": "schema:Role",
+                "default": [
+                  "schema:Role"
+                ],
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -859,7 +934,9 @@
             "description": "URI identifier for this funding record"
           },
           "@type": {
-            "default": "schema:MonetaryGrant",
+            "default": [
+              "schema:MonetaryGrant"
+            ],
             "type": "array",
             "items": {
               "type": "string"
@@ -1057,23 +1134,7 @@
           "type": "array",
           "description": "additional type assertions for the catalog record node. dcat:CatalogRecord is required.",
           "items": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "@id"
-                ],
-                "properties": {
-                  "@id": {
-                    "type": "string"
-                  }
-                }
-              }
-            ]
+            "$ref": "#/$defs/cdifConceptOrTermOrString"
           },
           "contains": {
             "type": "object",
@@ -1163,7 +1224,9 @@
               "description": "identifier for the graph node."
             },
             "@type": {
-              "default": "schema:DataCatalog",
+              "default": [
+                "schema:DataCatalog"
+              ],
               "type": "array",
               "items": {
                 "type": "string"
@@ -1358,7 +1421,9 @@
         "type": "object",
         "properties": {
           "@type": {
-            "default": "schema:Place",
+            "default": [
+              "schema:Place"
+            ],
             "type": "array",
             "items": {
               "type": "string"
@@ -1372,27 +1437,7 @@
             "description": "Domain-specific type classifications for this place (e.g. facility type,laboratory classification, feature type).",
             "type": "array",
             "items": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/DefinedTerm"
-                },
-                {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "required": [
-                    "@id"
-                  ],
-                  "properties": {
-                    "@id": {
-                      "type": "string",
-                      "description": "reference to a term defined elsewhere"
-                    }
-                  }
-                }
-              ]
+              "$ref": "#/$defs/cdifConceptOrTermOrString"
             }
           },
           "schema:name": {
@@ -1439,7 +1484,9 @@
                 "description": "A point location. Point locations are recommended for data that is associated with specific sample locations, particularly if these are widely spaced such that an enclosing bounding box would be a misleading representation of the spatial location. Be aware that some client applications might only index or display bounding box extents or a single point location.",
                 "properties": {
                   "@type": {
-                    "default": "schema:GeoCoordinates",
+                    "default": [
+                      "schema:GeoCoordinates"
+                    ],
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -1471,7 +1518,9 @@
                 "description": "A schema:GeoShape bounding box. The geometry is described with a set of latitude/longitude pairs (in that order).The documentation for schema:GeoShape states 'Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.'",
                 "properties": {
                   "@type": {
-                    "default": "schema:GeoShape",
+                    "default": [
+                      "schema:GeoShape"
+                    ],
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -1496,7 +1545,9 @@
                 "description": "A schema:GeoShape curvilinear trace, for resource related to a linear trace like a ship track or airplane flight line",
                 "properties": {
                   "@type": {
-                    "default": "schema:GeoShape",
+                    "default": [
+                      "schema:GeoShape"
+                    ],
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -1562,7 +1613,10 @@
                   }
                 }
               }
-            }
+            },
+            "required": [
+              "geosparql:asWKT"
+            ]
           }
         },
         "anyOf": [
@@ -1600,7 +1654,9 @@
             "description": "a w3c time proper interval with bounds that are named time ordinal eras with identifier, e.g. geologic age. This is a SOSO schema.org extension",
             "properties": {
               "@type": {
-                "default": "time:ProperInterval",
+                "default": [
+                  "time:ProperInterval"
+                ],
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -1662,7 +1718,9 @@
                 "description": "Must exactly match the specified @context object."
               },
               "@type": {
-                "default": "time:ProperInterval",
+                "default": [
+                  "time:ProperInterval"
+                ],
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -1693,7 +1751,9 @@
                     "type": "object",
                     "properties": {
                       "@type": {
-                        "default": "time:TimePosition",
+                        "default": [
+                          "time:TimePosition"
+                        ],
                         "type": "array",
                         "items": {
                           "type": "string"
@@ -1737,7 +1797,9 @@
                     "type": "object",
                     "properties": {
                       "@type": {
-                        "default": "time:TimePosition",
+                        "default": [
+                          "time:TimePosition"
+                        ],
                         "type": "array",
                         "items": {
                           "type": "string"
@@ -2111,15 +2173,27 @@
       "type": "object",
       "properties": {
         "@type": {
-          "default": "schema:CreativeWork",
+          "description": "Either construct, or both. A labeled link is a schema:CreativeWork at a URL; a dcat:Relationship is DCAT's association class for a typed relation to another resource. A node may declare both -- CDIF's own relation examples do -- but NEITHER IS REQUIRED TO ACCOMPANY THE OTHER.\nThat is the whole point of the anyOf. Until 2026-09-08 this block's Relation half required contains: dcat:Relationship while the labeled-link half required contains: schema:CreativeWork, and under allOf both applied to every instance, so an ordinary labeled link was unsatisfiable. Of profile-core's licenses the 29 plain strings and 1 @id-reference passed while the 10 that followed schema.org's own recommendation -- \"use schema:CreativeWork to provide a label (name) for the license\" -- failed. 412782113 fixed that by deleting the dcat:Relationship mandate outright, which left the JSON Schema with no notion of dcat:Relationship at all while rules.shacl went on targeting it as a class. A pure DCAT relation then met a SHACL requirement with no schema counterpart. This anyOf restores the type to the schema WITHOUT restoring the conjunction.",
+          "default": [
+            "schema:CreativeWork"
+          ],
           "type": "array",
           "items": {
             "type": "string"
           },
-          "contains": {
-            "const": "schema:CreativeWork"
-          },
-          "minItems": 1
+          "minItems": 1,
+          "anyOf": [
+            {
+              "contains": {
+                "const": "schema:CreativeWork"
+              }
+            },
+            {
+              "contains": {
+                "const": "dcat:Relationship"
+              }
+            }
+          ]
         },
         "schema:name": {
           "type": "string"
@@ -2132,18 +2206,84 @@
           "format": "uri"
         },
         "dcat:hadRole": {
-          "$ref": "#/$defs/cdifConceptOrTermOrString",
-          "description": "Role of the related resource as a SKOS Concept (DCAT canonical role slot). Present only on a link that expresses a relationship; a plain labeled link such as a license omits it."
+          "description": "Role of the related resource. Present only on a link that expresses a relationship; a plain labeled link such as a license omits it.\nDCAT's declared range is dcat:Role (dcat.ttl: rdfs:range dcat:Role, and dcat:Role rdfs:subClassOf skos:Concept), so the DCAT-native form is a node typed dcat:Role. That form was NOT accepted here before 2026-10-01: this property was cdifConceptOrTermOrString alone, which matches a bare string, a sealed @id reference, a schema:DefinedTerm or a skos:Concept -- none of which a dcat:Role-typed node satisfies, because JSON Schema does no subclass reasoning.\ndcat:Role is added as a branch rather than replacing the others, so the DCAT-native form becomes valid without invalidating anything already written. Note this leaves CDIF LOOSER than DCAT, deliberately: DCAT's range is dcat:Role alone, and CDIF also accepts a plain skos:Concept, a DefinedTerm, an @id reference and a string. That is the same both-forms stance taken on dcterms:relation, and it is a choice rather than an oversight -- do not read the extra branches as something not yet tightened.",
+          "anyOf": [
+            {
+              "description": "A dcat:Role -- DCAT's declared range for dcat:hadRole. Defined inline rather than as its own building block because nothing else in the register needs it yet; dcat:hadRole's domain is owl:unionOf [prov:Attribution, dcat:Relationship], so promote it to a block if a qualified attribution ever needs the same shape.\ndcat:Role rdfs:subClassOf skos:Concept, so the skos:prefLabel / skos:inScheme furniture of a concept is permitted alongside; it is not required here because DCAT states no cardinality constraints on the class -- dcat.ttl declares no rdfs:subClassOf and no owl:Restriction on dcat:Relationship, and the \"mandatory\" wording in the DCAT-3 document is prose in the spec tables rather than an axiom in the vocabulary.",
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "description": "IRI of the role concept, ideally from a controlled vocabulary."
+                },
+                "@type": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "contains": {
+                    "const": "dcat:Role"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "@type"
+              ]
+            },
+            {
+              "$ref": "#/$defs/cdifConceptOrTermOrString"
+            }
+          ]
         },
         "dcterms:relation": {
-          "type": "string",
-          "format": "uri",
-          "description": "URI of the related resource -- the DCAT canonical pointer to what is being related to, which is distinct from schema:url, the presentation URL of the link itself."
+          "description": "The related resource -- the DCAT canonical pointer to what is being related to, which is distinct from schema:url, the presentation URL of the link itself.\nAn @id reference is the RECOMMENDED form and a string is permitted, which is DCMI's own position: \"Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.\" DCMI declares no rdfs:range for this property, and of the 13 DCMI properties carrying an \"intended to be used with non-literal values\" restriction, this is deliberately not one. dcat.ttl does not re-declare or constrain it at all -- the only triple mentioning it in the whole DCAT vocabulary is `dcat:distribution rdfs:subPropertyOf dcterms:relation`.\nSo objectReference-only would be stricter than both DCAT and DCMI and would reject a form the specification sanctions. The anyOf matches how schema:additionalType is handled here: both forms valid, the object form used in examples and required only where a `contains` pins a specific value.\nIt was string-only until 2026-10-01, which rejected the @id form outright. Reported from outside by a PSDI validator taking a things-not-strings approach (profile-core#16): their DCAT catalogue mirrors the DCAT-3 spec examples and wrote {\"@id\": ...}, which failed both layers -- while CDIF's own documented URI serialization policy (agents.md) says URI values SHOULD be {\"@id\": ...}. The register required the one form its own policy argues against.",
+          "anyOf": [
+            {
+              "title": "Object Reference",
+              "description": "A reference to a node defined elsewhere, by its @id.",
+              "type": "object",
+              "properties": {
+                "@id": {
+                  "type": "string",
+                  "description": "resolvable @id of the referenced node"
+                }
+              },
+              "required": [
+                "@id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
+          ]
         }
       },
       "required": [
-        "@type",
-        "schema:url"
+        "@type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "@type"
+            ],
+            "properties": {
+              "@type": {
+                "contains": {
+                  "const": "schema:CreativeWork"
+                }
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "schema:url"
+            ]
+          }
+        }
       ]
     },
     "Person": {
@@ -2168,7 +2308,8 @@
           "description": "string label for person that is meaningful for human users, should format consistently. Recommend 'Family Name, Given name' format."
         },
         "schema:description": {
-          "type": "string"
+          "type": "string",
+          "description": "additional information about the agent or their relation to the described resource"
         },
         "schema:identifier": {
           "description": "identifier for person, recommend ORCID",
@@ -2194,7 +2335,9 @@
           "description": "restrict to email only. Schema.org allows telephone and postal contacts as well",
           "properties": {
             "@type": {
-              "default": "schema:ContactPoint",
+              "default": [
+                "schema:ContactPoint"
+              ],
               "type": "array",
               "items": {
                 "type": "string"
@@ -2266,7 +2409,9 @@
           "type": "string"
         },
         "@type": {
-          "default": "schema:Organization",
+          "default": [
+            "schema:Organization"
+          ],
           "type": "array",
           "items": {
             "anyOf": [
@@ -2307,7 +2452,8 @@
           "description": "other labels by which the organization might be known"
         },
         "schema:description": {
-          "type": "string"
+          "type": "string",
+          "description": "additional information about the agent or their relation to the described resource"
         },
         "schema:identifier": {
           "description": "identifier for organization",

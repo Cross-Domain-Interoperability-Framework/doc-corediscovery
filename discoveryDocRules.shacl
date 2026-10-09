@@ -168,12 +168,9 @@ cdifd:CDIFDatasetMandatoryShape a sh:NodeShape ;
 cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
     sh:property cdifd:citationProperty,
         cdifd:contributorProperty,
-        cdifd:creatorProperty,
         cdifd:datePublishedProperty,
-        cdifd:descriptionProperty,
         cdifd:distributionProperty,
         cdifd:keywordsNoCommaTest,
-        cdifd:keywordsProperty,
         cdifd:metadataIdentifierProperty,
         cdifd:otherIdentifierProperty,
         cdifd:policiesProperty,
@@ -330,24 +327,13 @@ cdifd:CDIFPersonShape a sh:NodeShape ;
     sh:targetClass schema:Person .
 
 cdifd:CDIFRelationShape a sh:NodeShape ;
-    sh:message "A relation link must carry a resolvable schema:url. dcterms:relation (URI of the related resource) and dcat:hadRole (SKOS-typed role) are recommended when the relation distinguishes the related resource from its presentation URL or carries an explicit role." ;
+    sh:message "On a dcat:Relationship, dcterms:relation names the related resource and dcat:hadRole (a skos:Concept) classifies the relation. A Relationship that also declares schema:CreativeWork is a labeled link as well, and CDIFLabeledLinkShape requires its schema:url." ;
     sh:property [ a sh:PropertyShape ;
-            sh:datatype xsd:string ;
-            sh:message "A relation link must have at least one schema:url that resolves over http(s)." ;
-            sh:minCount 1 ;
-            sh:path schema:url ;
-            sh:pattern "^https?://[^\\s]+$" ],
-        [ a sh:PropertyShape ;
-            sh:class skos:Concept ;
-            sh:message "If dcat:hadRole is provided, its value must be a skos:Concept classifying the role of the related resource." ;
-            sh:path dcat:hadRole ;
-            sh:severity sh:Warning ],
-        [ a sh:PropertyShape ;
-            sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:message "If dcterms:relation is provided, it must be a syntactically valid URI." ;
+            sh:message "dcterms:relation must be an @id reference to the related resource (recommended) or a URI-shaped string. DCMI recommends the URI form and permits the string form." ;
+            sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype xsd:string ;
+                        sh:pattern "^[a-zA-Z][a-zA-Z0-9+.-]*:[^\\s]*$" ] ) ;
             sh:path dcterms:relation ;
-            sh:pattern "^[a-zA-Z][a-zA-Z0-9+.-]*:[^\\s]*$" ;
             sh:severity sh:Warning ],
         [ a sh:PropertyShape ;
             sh:datatype xsd:string ;
@@ -356,7 +342,12 @@ cdifd:CDIFRelationShape a sh:NodeShape ;
         [ a sh:PropertyShape ;
             sh:datatype xsd:string ;
             sh:maxCount 1 ;
-            sh:path schema:description ] ;
+            sh:path schema:description ],
+        [ a sh:PropertyShape ;
+            sh:message "dcat:hadRole should classify the role of the related resource: a dcat:Role (DCAT's declared range), or a skos:Concept, schema:DefinedTerm, @id reference or string." ;
+            sh:or ( [ sh:class dcat:Role ] [ sh:class skos:Concept ] [ sh:class schema:DefinedTerm ] [ sh:nodeKind sh:IRI ] [ sh:datatype xsd:string ] ) ;
+            sh:path dcat:hadRole ;
+            sh:severity sh:Warning ] ;
     sh:targetClass dcat:Relationship .
 
 cdifd:CDIFRoleShape a sh:NodeShape ;
@@ -735,6 +726,12 @@ cdifd:contributorProperty a sh:PropertyShape ;
     sh:path schema:contributor ;
     sh:severity sh:Info .
 
+cdifd:creatorProperty a sh:PropertyShape ;
+    sh:message "At least one creator (author/originator) is recommended" ;
+    sh:minCount 1 ;
+    sh:path schema:creator ;
+    sh:severity sh:Warning .
+
 cdifd:dateModifiedProperty a sh:PropertyShape ;
     sh:datatype xsd:string ;
     sh:message "Date of most recent update to resource content is required, using ISO8601 format with at least a year and a month." ;
@@ -749,6 +746,13 @@ cdifd:datePublishedProperty a sh:PropertyShape ;
     sh:path schema:datePublished ;
     sh:pattern "^[1-2][0-9]{3}-([0][1-9]|[1][0-2])(-([0-2][0-9]|[3][0-1])(T([0-1][0-9]|[2][0-3])(:[0-5][0-9])?(:[0-5][0-9](Z|[+-][0-2][0-9]:[0-5][0-9])?)?)?)?$" ;
     sh:severity sh:Info .
+
+cdifd:descriptionProperty a sh:PropertyShape ;
+    sh:datatype xsd:string ;
+    sh:message "A description of the resource is recommended for discovery" ;
+    sh:minCount 1 ;
+    sh:path schema:description ;
+    sh:severity sh:Warning .
 
 cdifd:distributionProperty a sh:PropertyShape ;
     sh:message "a schema:distribution must have either a DataDownload or WebAPI value" ;
@@ -790,6 +794,12 @@ cdifd:keywordsNoCommaTest a sh:PropertyShape ;
     sh:message "Keywords should be provided as an array of separate values, not a single comma-delimited string; an individual keyword literal MUST NOT contain a comma. If a keyword legitimately contains a comma, express it as a schema:DefinedTerm (with schema:name, and ideally schema:identifier / schema:termCode / schema:inDefinedTermSet) instead of a plain string." ;
     sh:or ( [ sh:datatype xsd:string ;
                 sh:pattern "^[^,]*$" ] [ sh:nodeKind sh:BlankNodeOrIRI ] ) ;
+    sh:path schema:keywords ;
+    sh:severity sh:Warning .
+
+cdifd:keywordsProperty a sh:PropertyShape ;
+    sh:message "Keywords are recommended for discovery" ;
+    sh:minCount 1 ;
     sh:path schema:keywords ;
     sh:severity sh:Warning .
 
@@ -941,25 +951,6 @@ cdifd:termLabelProperty a sh:PropertyShape ;
     sh:message "Every skos:Concept must have at least one skos:prefLabel." ;
     sh:minCount 1 ;
     sh:path skos:prefLabel .
-
-cdifd:creatorProperty a sh:PropertyShape ;
-    sh:message "At least one creator (author/originator) is recommended" ;
-    sh:minCount 1 ;
-    sh:path schema:creator ;
-    sh:severity sh:Warning .
-
-cdifd:descriptionProperty a sh:PropertyShape ;
-    sh:datatype xsd:string ;
-    sh:message "A description of the resource is recommended for discovery" ;
-    sh:minCount 1 ;
-    sh:path schema:description ;
-    sh:severity sh:Warning .
-
-cdifd:keywordsProperty a sh:PropertyShape ;
-    sh:message "Keywords are recommended for discovery" ;
-    sh:minCount 1 ;
-    sh:path schema:keywords ;
-    sh:severity sh:Warning .
 
 cdifd:nameProperty a sh:PropertyShape ;
     sh:datatype xsd:string ;
