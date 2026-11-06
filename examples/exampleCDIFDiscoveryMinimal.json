@@ -20,10 +20,25 @@
   ],
   "schema:variableMeasured": [
     {
+      "@id": "ex:yeujpk",
       "@type": [
         "schema:PropertyValue"
       ],
       "schema:name": "sea ice extent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "@id": "ex:varSalinity",
+      "schema:name": "sea_water_practical_salinity"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue"
+      ],
+      "@id": "ex:varOxygen",
+      "schema:name": "dissolved_oxygen"
     }
   ],
   "schema:subjectOf": {
