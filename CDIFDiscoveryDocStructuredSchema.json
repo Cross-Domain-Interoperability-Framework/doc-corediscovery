@@ -909,7 +909,8 @@
       "description": "Brief information about instruments, software or experimental protocols used",
       "type": "array",
       "items": {
-        "title": "very simple links or names of software or instruments used to generate a resource.",
+        "title": "Activity that generated the resource (CDIF core)",
+        "description": "The CDIF core definition of a prov:wasGeneratedBy value: a prov:Activity whose prov:used items are strings or @id references. Any further structure belongs to the profiles that extend it (cdifProvActivity for the schema.org implementation, provActivity for the PROV-O one), which may only narrow it.",
         "type": "object",
         "required": [
           "@type"
@@ -923,91 +924,27 @@
             "minItems": 1,
             "contains": {
               "const": "prov:Activity"
-            }
+            },
+            "description": "Must include prov:Activity. Stated as \"contains\" rather than a single value so an extending profile can add types (cdifProvActivity adds schema:Action)."
           },
           "prov:used": {
             "type": "array",
-            "description": "Entities the activity used. Per PROV-O each value denotes a prov:Entity. An item may be (1) a string URI or free-text reference, (2) an {@id} reference, (3) an inline entity object carrying an @type that includes prov:Entity plus a schema.org type for the kind of thing used, e.g. [\"prov:Entity\",\"schema:Thing\"] (instrument), [\"prov:Entity\",\"schema:CreativeWork\"] (method/protocol), or [\"prov:Entity\",\"schema:SoftwareApplication\"] (software), or (4) a role-keyed wrapper naming what was used through one of the recognized \"used\" relations (schema:instrument, bios:computationalTool, bios:reagent), or (5) a role-keyed wrapper under a role a consuming profile defines for itself, admitted by shape rather than by name. Base leaves the wrapped value loose; profiles/extensions (e.g. cdifProvActivity, adaProduct) pin its shape (Instrument, ComputationalTool, Reagent, ...) and close the set of role names they accept.",
+            "description": "Entities the activity used. Optional. Each item is a string (an IRI or a free-text name) or an object that identifies the entity by @id. The @id reference is deliberately NOT sealed: an extending profile may describe the entity in place as long as it keeps the @id, and a profile that wants only bare references can seal it itself. Role-keyed wrappers (an object whose key names a role, with no @id) are not accepted; in the schema.org implementation what an activity used is recorded with schema:instrument and schema:object instead.",
             "items": {
               "anyOf": [
                 {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/$defs/ObjectReference",
-                  "description": "a resolvable reference to a representation of the software or instrument used"
+                  "type": "string",
+                  "description": "an IRI or a free-text name of the entity used"
                 },
                 {
                   "type": "object",
-                  "description": "an inline prov:Entity used by the activity (see prov:used description)",
+                  "description": "an entity used, identified by @id; it may also be described in place",
+                  "required": [
+                    "@id"
+                  ],
                   "properties": {
-                    "@type": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "minItems": 1,
-                      "contains": {
-                        "const": "prov:Entity"
-                      }
-                    }
-                  },
-                  "required": [
-                    "@type"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "description": "a role-keyed wrapper naming an instrument used by the activity; the extension layer pins the value to an Instrument description.",
-                  "required": [
-                    "schema:instrument"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "description": "a role-keyed wrapper naming a computational tool (software) used; the extension layer pins the value to a ComputationalTool description.",
-                  "required": [
-                    "bios:computationalTool"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "description": "a role-keyed wrapper naming a reagent / material used; the extension layer pins the value to a Reagent description.",
-                  "required": [
-                    "bios:reagent"
-                  ]
-                },
-                {
-                  "type": "object",
-                  "description": "a role-keyed wrapper under a role name this layer does not recognize: an object carrying at least one prefixed-name (CURIE) property other than @id / @type, whose value is an {@id} reference, an inline description, or an array of either. CDIF deliberately does NOT enumerate profile-defined roles here: the three named above (schema:instrument, bios:computationalTool, bios:reagent) are in CDIF/bioschemas scope and stay explicit, while a domain profile is free to relate an activity to what it used through a role of its own without CDIF having to know the term. A consuming profile is expected to CLOSE the set to the roles it defines, so this branch is permissive BY DESIGN at the base layer and the restriction returns at the profile layer. allOf composes correctly in that direction -- base permissive, profile restrictive -- because an allOf intersection can only narrow: a role this layer admits by shape is still rejected by any profile that does not name it.",
-                  "minProperties": 1,
-                  "propertyNames": {
-                    "pattern": "^(@id|@type|[A-Za-z][A-Za-z0-9_.-]*:[A-Za-z_][A-Za-z0-9_.-]*)$"
-                  },
-                  "not": {
-                    "description": "@id / @type alone is the plain {@id} reference branch, not a wrapper; at least one property here must be a role.",
-                    "propertyNames": {
-                      "enum": [
-                        "@id",
-                        "@type"
-                      ]
-                    }
-                  },
-                  "patternProperties": {
-                    "^[A-Za-z][A-Za-z0-9_.-]*:[A-Za-z_][A-Za-z0-9_.-]*$": {
-                      "anyOf": [
-                        {
-                          "type": "object",
-                          "description": "an {@id} reference to, or an inline description of, the entity used in this role"
-                        },
-                        {
-                          "type": "array",
-                          "minItems": 1,
-                          "items": {
-                            "type": "object"
-                          }
-                        }
-                      ]
+                    "@id": {
+                      "type": "string"
                     }
                   }
                 }
