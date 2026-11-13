@@ -9,10 +9,10 @@
   "@type": [
     "schema:Dataset"
   ],
-  "schema:name": "Arctic Sea Ice Extent Monthly Averages",
+  "schema:name": "Sea water chemistry",
   "schema:identifier": "https://doi.org/10.5281/zenodo.1234567",
   "schema:dateModified": "2025-06-15",
-  "schema:url": "https://example.org/dataset/arctic-sea-ice-extent",
+  "schema:url": "https://example.org/dataset/sea-water-chemistry",
   "schema:license": [
     {
       "@id": "https://creativecommons.org/licenses/by/4.0/"
@@ -24,7 +24,7 @@
       "@type": [
         "schema:PropertyValue"
       ],
-      "schema:name": "sea ice extent"
+      "schema:name": "sampleID"
     },
     {
       "@type": [
@@ -39,6 +39,13 @@
       ],
       "@id": "ex:varOxygen",
       "schema:name": "dissolved_oxygen"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": ["schema:DataDownload"],
+      "schema:name": "Sea water data",
+      "schema:contentUrl": "https://example.org/data/ctd-2015-leg15-4.csv"
     }
   ],
   "schema:subjectOf": {
