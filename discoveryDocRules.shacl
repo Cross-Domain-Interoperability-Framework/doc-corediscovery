@@ -234,8 +234,8 @@ cdifd:CDIFDatasetRecommendedShape a sh:NodeShape ;
 
 cdifd:CDIFDiscoveryConformsToShape a sh:NodeShape ;
     sh:property [ a sh:PropertyShape ;
-            sh:hasValue <https://w3id.org/cdif/discovery/1.1> ;
-            sh:message "A catalog record on a dataset using CDIF discovery properties should include dcterms:conformsTo <https://w3id.org/cdif/discovery/1.1>." ;
+            sh:hasValue <https://w3id.org/cdif/discovery/2.0> ;
+            sh:message "A catalog record on a dataset using CDIF discovery properties should include dcterms:conformsTo <https://w3id.org/cdif/discovery/2.0>." ;
             sh:minCount 1 ;
             sh:path dcterms:conformsTo ;
             sh:severity sh:Warning ] ;
@@ -861,9 +861,9 @@ cdifd:metadataIdentifierProperty a sh:PropertyShape ;
     sh:severity sh:Warning .
 
 cdifd:metadataProfileProperty a sh:PropertyShape ;
-    sh:hasValue <https://w3id.org/cdif/core/1.1>,
-        <https://w3id.org/cdif/discovery/1.1> ;
-    sh:message "a CDIF Discovery metadata record must declare conformance to both https://w3id.org/cdif/core/1.1 and https://w3id.org/cdif/discovery/1.1" ;
+    sh:hasValue <https://w3id.org/cdif/core/2.0>,
+        <https://w3id.org/cdif/discovery/2.0> ;
+    sh:message "a CDIF Discovery metadata record must declare conformance to both https://w3id.org/cdif/core/2.0 and https://w3id.org/cdif/discovery/2.0" ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRI ;
     sh:path dcterms:conformsTo ;

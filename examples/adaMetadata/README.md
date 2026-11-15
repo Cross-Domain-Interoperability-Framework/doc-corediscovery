@@ -4,8 +4,8 @@
 Archive) sample-analysis corpus. Each record describes analytical
 data on OSIRIS-REx Bennu samples. All 10 validate clean against the
 CoreDiscovery composite schema and declare
-`https://w3id.org/cdif/core/1.1`, `https://w3id.org/cdif/discovery/1.1`,
-and `https://w3id.org/cdif/manifest/1.1` in
+`https://w3id.org/cdif/core/2.0`, `https://w3id.org/cdif/discovery/2.0`,
+and `https://w3id.org/cdif/manifest/2.0` in
 `schema:subjectOf/dcterms:conformsTo`. Non-CDIF conformance URIs
 (`ada:*`) are preserved alongside.
 
