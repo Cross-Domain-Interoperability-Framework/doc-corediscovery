@@ -387,13 +387,16 @@ cdifd:CDIFRelationShape a sh:NodeShape ;
     sh:targetClass dcat:Relationship .
 
 cdifd:CDIFRoleShape a sh:NodeShape ;
-    sh:message "The schema.org construct for assigining a role to a contributor nests a second schema:contributor node inside a schema:contributor node." ;
-    sh:property [ sh:description "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html" ;
-            sh:message "a Role must be filled by a Person, Organization, or IRI reference to one" ;
-            sh:minCount 1 ;
-            sh:or ( [ sh:class schema:Person ] [ sh:class schema:Organization ] [ sh:nodeKind sh:IRI ] ) ;
-            sh:path schema:contributor ],
-        cdifd:roleNameProperty ;
+    sh:description "https://cross-domain-interoperability-framework.github.io/cdifbook/metadata/schemaorgimplementation.html" ;
+    sh:message "a Role must be filled by a Person, Organization, or IRI reference to one, under schema:contributor, schema:agent or schema:participant (the property the Role sits under)" ;
+    sh:or ( [ sh:property [ sh:minCount 1 ;
+                        sh:or ( [ sh:class schema:Person ] [ sh:class schema:Organization ] [ sh:nodeKind sh:IRI ] ) ;
+                        sh:path schema:contributor ] ] [ sh:property [ sh:minCount 1 ;
+                        sh:or ( [ sh:class schema:Person ] [ sh:class schema:Organization ] [ sh:nodeKind sh:IRI ] ) ;
+                        sh:path schema:agent ] ] [ sh:property [ sh:minCount 1 ;
+                        sh:or ( [ sh:class schema:Person ] [ sh:class schema:Organization ] [ sh:nodeKind sh:IRI ] ) ;
+                        sh:path schema:participant ] ] ) ;
+    sh:property cdifd:roleNameProperty ;
     sh:targetClass schema:Role .
 
 cdifd:CDIFSubjectOfPlacementShape a sh:NodeShape ;
