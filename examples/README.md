@@ -13,11 +13,9 @@ Real-world dataset metadata harvested from the [EarthCube GeoCodes](https://geoc
 | `GeoCodes-bcodmo-dataset.jsonld` | BCO-DMO | Oyster reef organisms, Mission Aransas TX |
 | `GeoCodes-borealis-dataset.jsonld` | Borealis | Global permeability (GLHYMPS 2.0), converted from Croissant |
 | `GeoCodes-dryad-dataset.jsonld` | Dryad | Gridded GDP and Human Development Index |
-| `GeoCodes-earthchem-dataset.jsonld` | EarthChem | Glass analyses by electron microprobe |
 | `GeoCodes-hydroshare-dataset.jsonld` | HydroShare | Chlorophyll-a from Konza prairie streams |
 | `GeoCodes-ieda-dataset.jsonld` | IEDA | Multibeam sonar data, Pacific Ocean |
 | `GeoCodes-opentopography-dataset.jsonld` | OpenTopography | Diablo Canyon LiDAR survey |
-| `GeoCodes-pangaea-dataset.jsonld` | PANGAEA | Historical synthetic nitrogen fertiliser |
 | `GeoCodes-seanoe-dataset.jsonld` | SEANOE | Argo float data from GDAC |
 | `GeoCodes-usap-dataset.jsonld` | USAP | Taylor Dome ice core CO2 |
 
